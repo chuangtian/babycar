@@ -203,7 +203,17 @@
                   </div>
                 </div>
                 <div>
-                  <button
+                  <a  
+                    data-bs-toggle="collapse"
+                    data-bs-target="#exampleModal"
+                    id="btnCollapseClose"
+                      style="width:100%;margin-top: 10px;text-decoration: none;"  
+                      class="t4s-btn t4s-btn-base t4s-btn-style-{{button_style}} t4s-btn-size-{{bk_stts.btn_size}} t4s-btn-color-{{bk_stts.btn_cl}} {% if button_style == 'default' or button_style == 'outline'%}t4s-btn-effect-{{bk_stts.button_effect}} t4s-btn-radius-{{bk_stts.btn_bdr}}{% endif %}"   target="{{bk_stts.open_link}}">
+                     <i class="las la-times" style="font-size:20px"></i>
+                     
+                    &nbsp  <span>Closs</span>
+                  </a>
+<!--                   <button
                     type="button "
                     style="min-width: 35px;min-height: 35px;display: block;margin: 30px auto;border-radius: 50%; background-color: #fff;color: #4d4d4d;border: 1px solid #4d4d4d;"
                     class=" buttonX{% if block.settings.button_style_secondary %}  button--secondary{% else %} button--secondary{% endif %}"
@@ -213,7 +223,7 @@
                   >
                     <i class="las la-times" style="font-size:20px"></i>
                     <span>&nbsp Closs</span>
-                  </button>
+                  </button> -->
                 </div>
               </div>
           {%- endcase -%}
