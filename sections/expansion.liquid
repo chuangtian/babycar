@@ -125,7 +125,90 @@
     {{-html_layout[1]-}}
     <div>
     <div id="exampleModal" class="collapse show  section-{{ section.id }}-padding ">
-      1545654655
+          {%- for block in section.blocks -%}
+          {% case block.type %}
+            {%- when 'collapse_text' -%}
+              <div class="page-width">
+                <div class="grid ">
+                  <div
+                    class="image-with-text__text  rte {{ block.settings.text_style }}"
+                    {{ block.shopify_attributes }}
+                    style="max-width:380px"
+                  >
+                    {{ block.settings.text }}
+                  </div>
+                </div>
+              </div>
+              <div class="image-with-text__media-item  image-with-text__media-item--{{ section.settings.desktop_image_width }} image-with-text__media-item--{{ section.settings.desktop_content_position }} product__media-wrapper">
+                <div
+                  class="image-with-text__media image-with-text__media--{{ section.settings.height }} gradient color-{{ section.settings.color_scheme }}  {% if block.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
+                  {% if block.settings.image != blank %}
+                    style="padding-bottom: {{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%;"
+                  {% endif %}
+                >
+                  {%- if block.settings.image != blank -%}
+                    {%- capture sizes -%}
+                      (min-width: {{ settings.page_width }}px) 100vw,
+                      (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
+                    {%- endcapture -%}
+                    {{
+                      block.settings.image
+                      | image_url: width: 3840
+                      | image_tag:
+                        loading: 'lazy',
+                        sizes: sizes,
+                        widths: '375, 550, 750, 1100, 1500, 1780, 2000, 2880, 3000, 3840'
+                    }}
+                  {%- else -%}
+                    {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                  {%- endif -%}
+                </div>
+              </div>
+              <div class=" page-width">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                      <div
+                        class="image-with-text__text  rte {{ block.settings.text_style }}"
+                        {{ block.shopify_attributes }}
+                      >
+                        {{ block.settings.text1 }}
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                      <div
+                        class="image-with-text__text  rte {{ block.settings.text_style }}"
+                        {{ block.shopify_attributes }}
+                      >
+                        {{ block.settings.text2 }}
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                      <div
+                        class="image-with-text__text  rte {{ block.settings.text_style }}"
+                        {{ block.shopify_attributes }}
+                      >
+                        {{ block.settings.text3 }}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <button
+                    type="button "
+                    style="min-width: 45px;min-height: 45px;display: block;margin: 30px auto;border-radius: 50%;background-color: #fff;"
+                    class=" buttonX{% if block.settings.button_style_secondary %}  button--secondary{% else %} button--secondary{% endif %}"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#exampleModal"
+                    id="btnCollapseClose"
+                  >
+                    <i class="bi bi-x" style="font-size:26px"></i>
+                  </button>
+                </div>
+              </div>
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
     </div>
       
 </div>
