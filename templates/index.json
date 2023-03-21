@@ -170,11 +170,23 @@
             "btn_cl": "dark",
             "button_effect": "sweep-to-right"
           }
+        },
+        "8d247736-1df6-40a1-972b-444a83951ac4": {
+          "type": "collapse_text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text1": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text2": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text3": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body",
+            "image": "shopify:\/\/shop_images\/car.webp"
+          }
         }
       },
       "block_order": [
         "template--18295207035157__97eefcc2-3af8-4bb0-bf22-3ac8f4273adf-16793194697a65bd73-0",
-        "template--18295207035157__97eefcc2-3af8-4bb0-bf22-3ac8f4273adf-16793194697a65bd73-1"
+        "template--18295207035157__97eefcc2-3af8-4bb0-bf22-3ac8f4273adf-16793194697a65bd73-1",
+        "8d247736-1df6-40a1-972b-444a83951ac4"
       ],
       "settings": {
         "design_heading": "12",
