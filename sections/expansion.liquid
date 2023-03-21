@@ -1545,22 +1545,22 @@
 
       if(htmlFont == 'Learn More'){
           $('.plus-font').html('Close');
-          $('#plus-icon').removeClass('bi-plus-circle');
-          $('#plus-icon').addClass('bi-x-circle');
+          $('#plus-icon').removeClass('la-plus');
+          $('#plus-icon').addClass('la-times');
           $('#exampleModal').addClass('show');
 
       }else{
           $('.plus-font').html('Learn More');
-          $('#plus-icon').removeClass('bi-x-circle');
-          $('#plus-icon').addClass('bi-plus-circle');;
+          $('#plus-icon').removeClass('la-times');
+          $('#plus-icon').addClass('la-plus');;
           $('#exampleModal').removeClass('show');
       }
   });
   btnCollapseClose.addEventListener('click', () => {
       // 切换展开收缩区域的状态
         $('.plus-font').html('Learn More');
-        $('#plus-icon').removeClass('bi-x-circle');
-        $('#plus-icon').addClass('bi-plus-circle');;
+        $('#plus-icon').removeClass('la-times');
+        $('#plus-icon').addClass('la-plus');;
         $('#exampleModal').removeClass('show');
   });
 
