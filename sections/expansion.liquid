@@ -143,9 +143,9 @@
               <div class="image-with-text__media-item  image-with-text__media-item--{{ section.settings.desktop_image_width }} image-with-text__media-item--{{ section.settings.desktop_content_position }} product__media-wrapper">
                 <div
                   class="image-with-text__media image-with-text__media--{{ section.settings.height }} gradient color-{{ section.settings.color_scheme }}  {% if block.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
-                  {% if block.settings.image != blank %}
+<!--                   {% if block.settings.image != blank %}
                     style="padding-bottom: {{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%;"
-                  {% endif %}
+                  {% endif %} -->
                 >
                   {%- if block.settings.image != blank -%}
                     {%- capture sizes -%}
