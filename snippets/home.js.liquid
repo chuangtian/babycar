@@ -1,0 +1,57 @@
+<script src="http://code.jquery.com/jquery-1.4.1.js"></script>
+{% if template == "page.compare" %}  
+<script>
+    $(window).scroll(function() {
+        sTop = $(window).scrollTop();
+        if (sTop >= 200) {
+            $(".fixedBlock").addClass("fixedBlock1");
+            // $('.compare>div:last').css('margin-top', $('.fixedBlock').outerHeight(true) + 62 + 'px');
+        } else {
+            $(".fixedBlock").removeClass("fixedBlock1");
+            // $('.compare>div:last').css('margin-top', '0px');
+        }
+    });
+</script>
+{% endif %}
+
+<script>
+    $('.js_open').map(function() {
+        $(this).click(function() {
+            $(this).toggleClass('expanded');
+        })
+    })
+</script>
+
+<script>
+    function copyVideoUrl(event) {
+
+        var value = $(event.target).closest(".discount-code").attr('value');
+        var success;
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val(value).select();
+        try {
+            success = document.execCommand("copy");
+        } catch (e) {
+            succeed = false;
+        }
+        if (success) {
+            $(".discount-code").addClass('click');
+            setTimeout(function() {
+                $('.discount-code').removeClass('click');
+            }, 1000);
+        }
+
+        $temp.remove();
+    }
+</script>
+  
+<script>
+    setTimeout(function() {
+        var url = window.location.href; //获取当前页面的url
+        if (url.indexOf("?") != -1) { //判断是否存在参数
+            url = url.replace(/(\?|#)[^'"]*/, ''); //去除参数
+            window.history.pushState({}, 0, url);
+        }
+    }, 2000);
+</script>
