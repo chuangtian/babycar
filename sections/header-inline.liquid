@@ -10,6 +10,9 @@
   assign space_transparent = se_stts.space_transparent_header -%}
 
 {%- style -%}
+  a {
+    text-decoration: none;
+  }
   {%- assign opnav  = se_stts.opnav | divided_by: 100.0 -%}
   .t4s-header__wrapper {
     --h-text-color      : {{se_stts.clnav}};
@@ -29,9 +32,7 @@
       background-repeat: no-repeat;
   }
   {%- endif -%}
-  a {
-  text-decoration: none;
-}
+
   {%- if h_transparent -%}
 
     .t4s-section-header,#shopify-section-top-bar { --h-space-tr: {% if space_transparent %}30px{% else %}0px{% endif %} }
