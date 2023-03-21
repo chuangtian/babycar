@@ -325,6 +325,7 @@
         "template--18304757039381__17baf4c0-7897-4018-b02b-1a650ba52d74-1679394371b04f51b0-4": {
           "type": "image_parent",
           "settings": {
+            "image": "shopify:\/\/shop_images\/1.jpg",
             "image_position": "8",
             "cl_img": "",
             "link_img1": "",
