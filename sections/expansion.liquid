@@ -125,12 +125,12 @@
     {{-html_layout[1]-}}
     <div>
     <div id="exampleModal" class="collapse show  section-{{ section.id }}-padding ">
-        1111111111
+        
         {%- for block in se_blocks-%}
           {% case block.type %}
             {%- when 'collapse_text' -%}
-              <div class="page-width">
-                <div class="grid ">
+              <div class="container">
+                <div class="grid  ">
                   <div
                     class="image-with-text__text  rte {{ block.settings.text_style }}"
                     {{ block.shopify_attributes }}
