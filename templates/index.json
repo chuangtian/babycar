@@ -212,6 +212,17 @@
     "20349592-4b41-4043-8a5d-8b134602a540": {
       "type": "expansion2",
       "settings": {
+        "image": "shopify:\/\/shop_images\/1.jpg",
+        "image_overlay_opacity": 0,
+        "margin-top": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     },
     "c1962e91-b44f-4468-bae0-a3c0a5f7dfae": {
