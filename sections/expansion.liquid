@@ -1,6 +1,7 @@
 <!-- sections/image_text.liquid -->
 {{ 'section.css' | asset_url | stylesheet_tag }}
 {{ 'image-text.css' | asset_url | stylesheet_tag }}
+{{ 'bootstrap.min.css' | asset_url | stylesheet_tag }}
 {%- liquid
     assign sid = section.id
     assign se_stts = section.settings
@@ -1391,4 +1392,36 @@
       ]
     }
   {%- endschema -%}
-  
+<script src="{{ 'bootstrap.bundle.min.js' | asset_url }}" defer="defer"></script>
+{% javascript %}
+  // 获取展开按钮和收缩按钮的 DOM 元素
+  const btnCollapse = document.getElementById('btnCollapse');
+  const btnCollapseClose = document.getElementById('btnCollapseClose');
+
+  // 为收缩按钮添加 click 事件监听器
+  btnCollapse.addEventListener('click', () => {
+      // 切换展开收缩区域的状态
+      var htmlFont=$('.plus-font').html();
+       console.log(htmlFont);
+
+      if(htmlFont == 'Learn More'){
+          $('.plus-font').html('Close');
+          $('#plus-icon').removeClass('bi-plus-circle');
+          $('#plus-icon').addClass('bi-x-circle');
+          $('#exampleModal').addClass('show');
+
+      }else{
+          $('.plus-font').html('Learn More');
+          $('#plus-icon').removeClass('bi-x-circle');
+          $('#plus-icon').addClass('bi-plus-circle');;
+          $('#exampleModal').removeClass('show');
+      }
+  });
+  btnCollapseClose.addEventListener('click', () => {
+      // 切换展开收缩区域的状态
+        $('.plus-font').html('Learn More');
+        $('#plus-icon').removeClass('bi-x-circle');
+        $('#plus-icon').addClass('bi-plus-circle');;
+        $('#exampleModal').removeClass('show');
+  });
+{% endjavascript %}
