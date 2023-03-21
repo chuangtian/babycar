@@ -209,123 +209,13 @@
         "code_cus_css": ""
       }
     },
-    "17baf4c0-7897-4018-b02b-1a650ba52d74": {
+    "9581c14a-e41d-4e9a-a0d0-8439c2bf6d27": {
       "type": "expansion2",
       "blocks": {
-        "template--18304757039381__17baf4c0-7897-4018-b02b-1a650ba52d74-1679394371b04f51b0-0": {
+        "template--18304757039381__9581c14a-e41d-4e9a-a0d0-8439c2bf6d27-1679394715f240e58b-0": {
           "type": "image_parent",
           "settings": {
             "image": "shopify:\/\/shop_images\/car.webp",
-            "image_position": "8",
-            "cl_img": "",
-            "link_img1": "",
-            "open_link": "_blank",
-            "animate_slide": "none",
-            "text_align": "start",
-            "text_align_mb": "start",
-            "content_width": "auto",
-            "cv_pos": 50,
-            "ch_pos": 50,
-            "cv_pos_mb": 50,
-            "ch_pos_mb": 50,
-            "bg_overlay": "#000",
-            "bg_opacity": 0,
-            "bg_content_cl": "#fff",
-            "bg_content_op": 0,
-            "content_pd_tb": 15,
-            "content_pd_lr": 15,
-            "content_pd_tb_mb": 10,
-            "content_pd_lr_mb": 10,
-            "border_bl": false,
-            "br_color": "#222",
-            "br_bg": "#fff",
-            "br_opacity": 50,
-            "br_style": "solid",
-            "br_pd": 20,
-            "br_pd_mb": 10,
-            "time_animation": 1,
-            "animation_delay": 40
-          }
-        },
-        "template--18304757039381__17baf4c0-7897-4018-b02b-1a650ba52d74-1679394371b04f51b0-1": {
-          "type": "custom_text",
-          "settings": {
-            "text": "Summer 2022",
-            "remove_br_tag": false,
-            "fontf": "inherit",
-            "text_cl": "#fff",
-            "text_fs": 16,
-            "text_lh": 0,
-            "text_fw": 400,
-            "text_ls": 1,
-            "text_mgb": 15,
-            "font_italic": false,
-            "text_shadow": false,
-            "hidden_mobile": false,
-            "text_fs_mb": 16,
-            "text_lh_mb": 0,
-            "text_ls_mb": 0,
-            "text_mgb_mobile": 10,
-            "animation": "none"
-          }
-        },
-        "template--18304757039381__17baf4c0-7897-4018-b02b-1a650ba52d74-1679394371b04f51b0-2": {
-          "type": "custom_text",
-          "settings": {
-            "text": "New Arrival Collection",
-            "remove_br_tag": false,
-            "fontf": "inherit",
-            "text_cl": "#fff",
-            "text_fs": 70,
-            "text_lh": 70,
-            "text_fw": 300,
-            "text_ls": 0,
-            "text_mgb": 25,
-            "font_italic": false,
-            "text_shadow": false,
-            "hidden_mobile": false,
-            "text_fs_mb": 16,
-            "text_lh_mb": 0,
-            "text_ls_mb": 0,
-            "text_mgb_mobile": 10,
-            "animation": "none"
-          }
-        },
-        "template--18304757039381__17baf4c0-7897-4018-b02b-1a650ba52d74-1679394371b04f51b0-3": {
-          "type": "custom_button",
-          "settings": {
-            "button_text": "Button label",
-            "button_link": "",
-            "target_link": "_self",
-            "fontf": "inherit",
-            "button_icon_w": 0,
-            "button_style": "default",
-            "button_effect": "default",
-            "pri_cl": "#222",
-            "second_cl": "",
-            "pri_cl_hover": "#56cfe1",
-            "second_cl_hover": "#fff",
-            "fsbutton": 14,
-            "fwbutton": 400,
-            "button_ls": 0,
-            "button_mh": 42,
-            "button_bdr": 0,
-            "button_pd_lr": 20,
-            "button_mgb": 0,
-            "hidden_mobile": false,
-            "button_icon_w_mb": 0,
-            "fsbutton_mb": 10,
-            "button_mh_mb": 36,
-            "button_pd_lr_mb": 15,
-            "button_ls_mb": 0,
-            "button_mgb_mb": 0,
-            "animation": "none"
-          }
-        },
-        "template--18304757039381__17baf4c0-7897-4018-b02b-1a650ba52d74-1679394371b04f51b0-4": {
-          "type": "image_parent",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/1.jpg",
             "image_position": "8",
             "cl_img": "",
             "link_img1": "",
@@ -357,7 +247,7 @@
             "animation_delay": 40
           }
         },
-        "template--18304757039381__17baf4c0-7897-4018-b02b-1a650ba52d74-1679394371b04f51b0-5": {
+        "template--18304757039381__9581c14a-e41d-4e9a-a0d0-8439c2bf6d27-1679394715f240e58b-1": {
           "type": "custom_text",
           "settings": {
             "text": "Summer 2022",
@@ -379,7 +269,116 @@
             "animation": "none"
           }
         },
-        "template--18304757039381__17baf4c0-7897-4018-b02b-1a650ba52d74-1679394371b04f51b0-6": {
+        "template--18304757039381__9581c14a-e41d-4e9a-a0d0-8439c2bf6d27-1679394715f240e58b-2": {
+          "type": "custom_text",
+          "settings": {
+            "text": "New Arrival Collection",
+            "remove_br_tag": false,
+            "fontf": "inherit",
+            "text_cl": "#fff",
+            "text_fs": 70,
+            "text_lh": 70,
+            "text_fw": 300,
+            "text_ls": 0,
+            "text_mgb": 25,
+            "font_italic": false,
+            "text_shadow": false,
+            "hidden_mobile": false,
+            "text_fs_mb": 16,
+            "text_lh_mb": 0,
+            "text_ls_mb": 0,
+            "text_mgb_mobile": 10,
+            "animation": "none"
+          }
+        },
+        "template--18304757039381__9581c14a-e41d-4e9a-a0d0-8439c2bf6d27-1679394715f240e58b-3": {
+          "type": "custom_button",
+          "settings": {
+            "button_text": "Button label",
+            "button_link": "",
+            "target_link": "_self",
+            "fontf": "inherit",
+            "button_icon_w": 0,
+            "button_style": "default",
+            "button_effect": "default",
+            "pri_cl": "#222",
+            "second_cl": "",
+            "pri_cl_hover": "#56cfe1",
+            "second_cl_hover": "#fff",
+            "fsbutton": 14,
+            "fwbutton": 400,
+            "button_ls": 0,
+            "button_mh": 42,
+            "button_bdr": 0,
+            "button_pd_lr": 20,
+            "button_mgb": 0,
+            "hidden_mobile": false,
+            "button_icon_w_mb": 0,
+            "fsbutton_mb": 10,
+            "button_mh_mb": 36,
+            "button_pd_lr_mb": 15,
+            "button_ls_mb": 0,
+            "button_mgb_mb": 0,
+            "animation": "none"
+          }
+        },
+        "template--18304757039381__9581c14a-e41d-4e9a-a0d0-8439c2bf6d27-1679394715f240e58b-4": {
+          "type": "image_parent",
+          "settings": {
+            "image_position": "8",
+            "cl_img": "",
+            "link_img1": "",
+            "open_link": "_blank",
+            "animate_slide": "none",
+            "text_align": "start",
+            "text_align_mb": "center",
+            "content_width": "auto",
+            "cv_pos": 50,
+            "ch_pos": 50,
+            "cv_pos_mb": 50,
+            "ch_pos_mb": 50,
+            "bg_overlay": "#000",
+            "bg_opacity": 0,
+            "bg_content_cl": "#fff",
+            "bg_content_op": 0,
+            "content_pd_tb": 15,
+            "content_pd_lr": 15,
+            "content_pd_tb_mb": 10,
+            "content_pd_lr_mb": 10,
+            "border_bl": false,
+            "br_color": "#222",
+            "br_bg": "#fff",
+            "br_opacity": 50,
+            "br_style": "solid",
+            "br_pd": 20,
+            "br_pd_mb": 10,
+            "time_animation": 1,
+            "animation_delay": 40
+          }
+        },
+        "template--18304757039381__9581c14a-e41d-4e9a-a0d0-8439c2bf6d27-1679394715f240e58b-5": {
+          "type": "custom_text",
+          "settings": {
+            "text": "Summer 2022",
+            "remove_br_tag": false,
+            "fontf": "inherit",
+            "text_cl": "#fff",
+            "text_fs": 16,
+            "text_lh": 0,
+            "text_fw": 400,
+            "text_ls": 1,
+            "text_mgb": 15,
+            "font_italic": false,
+            "text_shadow": false,
+            "hidden_mobile": false,
+            "text_fs_mb": 16,
+            "text_lh_mb": 0,
+            "text_ls_mb": 0,
+            "text_mgb_mobile": 10,
+            "animation": "none"
+          }
+        },
+        "template--18304757039381__9581c14a-e41d-4e9a-a0d0-8439c2bf6d27-1679394715f240e58b-6": {
           "type": "custom_text",
           "settings": {
             "text": "Lookbook Collection",
@@ -401,7 +400,7 @@
             "animation": "none"
           }
         },
-        "template--18304757039381__17baf4c0-7897-4018-b02b-1a650ba52d74-1679394371b04f51b0-7": {
+        "template--18304757039381__9581c14a-e41d-4e9a-a0d0-8439c2bf6d27-1679394715f240e58b-7": {
           "type": "custom_button",
           "settings": {
             "button_text": "Button label",
@@ -434,14 +433,14 @@
         }
       },
       "block_order": [
-        "template--18304757039381__17baf4c0-7897-4018-b02b-1a650ba52d74-1679394371b04f51b0-0",
-        "template--18304757039381__17baf4c0-7897-4018-b02b-1a650ba52d74-1679394371b04f51b0-1",
-        "template--18304757039381__17baf4c0-7897-4018-b02b-1a650ba52d74-1679394371b04f51b0-2",
-        "template--18304757039381__17baf4c0-7897-4018-b02b-1a650ba52d74-1679394371b04f51b0-3",
-        "template--18304757039381__17baf4c0-7897-4018-b02b-1a650ba52d74-1679394371b04f51b0-4",
-        "template--18304757039381__17baf4c0-7897-4018-b02b-1a650ba52d74-1679394371b04f51b0-5",
-        "template--18304757039381__17baf4c0-7897-4018-b02b-1a650ba52d74-1679394371b04f51b0-6",
-        "template--18304757039381__17baf4c0-7897-4018-b02b-1a650ba52d74-1679394371b04f51b0-7"
+        "template--18304757039381__9581c14a-e41d-4e9a-a0d0-8439c2bf6d27-1679394715f240e58b-0",
+        "template--18304757039381__9581c14a-e41d-4e9a-a0d0-8439c2bf6d27-1679394715f240e58b-1",
+        "template--18304757039381__9581c14a-e41d-4e9a-a0d0-8439c2bf6d27-1679394715f240e58b-2",
+        "template--18304757039381__9581c14a-e41d-4e9a-a0d0-8439c2bf6d27-1679394715f240e58b-3",
+        "template--18304757039381__9581c14a-e41d-4e9a-a0d0-8439c2bf6d27-1679394715f240e58b-4",
+        "template--18304757039381__9581c14a-e41d-4e9a-a0d0-8439c2bf6d27-1679394715f240e58b-5",
+        "template--18304757039381__9581c14a-e41d-4e9a-a0d0-8439c2bf6d27-1679394715f240e58b-6",
+        "template--18304757039381__9581c14a-e41d-4e9a-a0d0-8439c2bf6d27-1679394715f240e58b-7"
       ],
       "settings": {
         "se_height": "t4s_ratioadapt",
@@ -607,7 +606,7 @@
     "9b6ef2dc-8171-49a3-80fe-46d052e3d063",
     "social_widget_53816",
     "97eefcc2-3af8-4bb0-bf22-3ac8f4273adf",
-    "17baf4c0-7897-4018-b02b-1a650ba52d74",
+    "9581c14a-e41d-4e9a-a0d0-8439c2bf6d27",
     "c1962e91-b44f-4468-bae0-a3c0a5f7dfae"
   ]
 }
