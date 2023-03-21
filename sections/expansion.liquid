@@ -1549,12 +1549,14 @@
           $('#plus-icon').removeClass('la-plus');
           $('#plus-icon').addClass('la-times');
           $('#exampleModal').addClass('show');
+        console.log(1);
 
       }else{
           $('.plus-font').html('Learn More');
           $('#plus-icon').removeClass('la-times');
           $('#plus-icon').addClass('la-plus');;
           $('#exampleModal').removeClass('show');
+        console.log(2);
       }
   });
   btnCollapseClose.addEventListener('click', () => {
@@ -1563,6 +1565,7 @@
         $('#plus-icon').removeClass('la-times');
         $('#plus-icon').addClass('la-plus');;
         $('#exampleModal').removeClass('show');
+    console.log(3);
   });
 
 {% endjavascript %}
