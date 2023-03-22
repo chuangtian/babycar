@@ -4,46 +4,46 @@
 {{ 'slideshow.css' | asset_url | stylesheet_tag }}
 {{ 'content-position.css' | asset_url | stylesheet_tag }}
 {{ 'slider-settings.css' | asset_url | stylesheet_tag }}
-{%- liquid
-  assign sid = section.id
-  assign se_blocks = section.blocks
-  assign se_stts = section.settings
-  assign stt_layout = se_stts.layout
-  assign se_height = se_stts.se_height
-  assign use_custom_h = se_stts.use_custom_h
+{%-liquid
+    assign sid = section.id
+    assign se_blocks = section.blocks
+    assign se_stts = section.settings
+    assign stt_layout = se_stts.layout
+    assign se_height = se_stts.se_height
+    assign use_custom_h = se_stts.use_custom_h
 
-  assign index = 1
-  assign arr_blocks_img = se_blocks | where: 'type', 'image_parent'
-  assign slide_eff = se_stts.eff
-  if stt_layout == 't4s-container-wrap'
-    assign html_layout = '<div class="t4s-container">__</div>' | split: '__'
-  else
-    assign html_layout = '__' | split: '__'
-  endif
-  assign isRunLoop = true
-  assign SetBL = true
-  if se_height == 't4s_ratioadapt' or se_height == 't4s_ratio_cuspx'
-    assign attr_img = ''
-  elsif se_height == 't4s_ratioadapt_f'
-    assign attr_img = ''
-    assign SetBL = false
-  else
-    assign attr_img = 'data-'
-  endif
-  if se_stts.btn_owl == 'outline'
-    assign arrow_icon = 1
-  else
-    assign arrow_icon = 2
-  endif
+    assign index = 1
+    assign arr_blocks_img = se_blocks | where: "type", 'image_parent' 
+    assign slide_eff = se_stts.eff
+    if stt_layout == 't4s-container-wrap' 
+        assign html_layout = '<div class="t4s-container">__</div>' | split:'__'
+    else
+        assign html_layout = '__' | split:'__'
+    endif
+    assign isRunLoop = true
+    assign SetBL = true
+    if se_height == 't4s_ratioadapt' or se_height == 't4s_ratio_cuspx'
+        assign attr_img = ''
+    elsif se_height == 't4s_ratioadapt_f'
+        assign attr_img = ''
+        assign SetBL = false
+    else 
+        assign attr_img = 'data-'
+    endif 
+    if se_stts.btn_owl == "outline"
+        assign arrow_icon = 1
+    else
+        assign arrow_icon = 2
+    endif
 
-  assign countdown = false
-  assign use_button = false
-  assign use_animation = false
-  assign general_block = false
-  assign t4s_se_class = 't4s_nt_se_' | append: sid
-  if se_stts.use_cus_css and se_stts.code_cus_css != blank
-    render 'se_cus_css', code_cus_css: se_stts.code_cus_css, t4s_se_class: t4s_se_class
-  endif
+    assign countdown = false
+    assign use_button = false
+    assign use_animation = false
+    assign general_block = false
+    assign t4s_se_class = 't4s_nt_se_' |append:sid
+    if se_stts.use_cus_css and se_stts.code_cus_css != blank
+        render 'se_cus_css',code_cus_css:se_stts.code_cus_css,t4s_se_class:t4s_se_class
+    endif 
 -%}
 {%- capture data_flickityt4s -%}
 {
@@ -53,286 +53,149 @@
     "adaptiveHeight":{% if se_height != 't4s_ratio_fh' or se_height != 't4s_ratioadapt_f'  %}true{% else %}false{% endif %}
 }
 {%- endcapture -%}
-{%- if se_height != 't4s_ratio_fh' -%}
-  {%- capture append_style -%}--aspect-ratio-cusdt : {{se_stts.height_dk}}px;--aspect-ratio-custb : {{se_stts.height_tb}}px;--aspect-ratio-cusmb :{{se_stts.height_mb}}px;{%- endcapture -%}
+{%- if se_height != "t4s_ratio_fh" -%}
+    {%- capture append_style -%}--aspect-ratio-cusdt : {{se_stts.height_dk}}px;--aspect-ratio-custb : {{se_stts.height_tb}}px;--aspect-ratio-cusmb :{{se_stts.height_mb}}px;{%- endcapture -%}
 {%- endif %}
-<div
-  class="t4s-section-inner {{t4s_se_class}} t4s_nt_se_{{sid}}"
-  {% render 'section_style', se_stts: se_stts, append_style: append_style -%}
->
-  {{- html_layout[0] -}}
-  <div
-    class="t4s-slideshow t4s-row t4s-row-cols-1 t4s-gx-0 t4s-flicky-slider t4s_position_8 t4s_cover {{se_height}} t4s-slide-eff-{{slide_eff}} t4scuspx1_{{se_stts.custom_mb}} t4scuspx2_{{se_stts.custom_tb}} t4scuspx3_{{se_stts.custom_dk}}{% if se_stts.nav_btn == true %}  t4s-slider-btn-style-{{se_stts.btn_owl}} t4s-slider-btn-{{se_stts.btn_shape}} t4s-slider-btn-{{se_stts.btn_size}} t4s-slider-btn-cl-{{se_stts.btn_cl}} t4s-slider-btn-vi-{{se_stts.btn_vi}} t4s-slider-btn-hidden-mobile-{{se_stts.btn_hidden_mobile}} {% endif %}{% if se_stts.nav_dot %} t4s-dots-style-{{se_stts.dot_owl}} t4s-dots-cl-{{se_stts.dots_cl}} t4s-dots-round-{{se_stts.dots_round}} t4s-dots-hidden-mobile-{{se_stts.dots_hidden_mobile}} {% endif %} flickityt4s"
-    data-flickityt4s-js="{{data_flickityt4s}}"
-    style="--space-dots: {{se_stts.dots_space}}px;--flickity-btn-pos: 30px;--flickity-btn-pos-mb: 30px;"
-  >
-    {%- for block in arr_blocks_img -%}
-      {%- liquid
-        assign bk_stts = block.settings
-        assign image_mb = bk_stts.image_mb
-        assign image = bk_stts.image | default: image_mb
-        assign mb_image = image_mb | default: image
-        if isRunLoop
-          assign ratio = image.aspect_ratio
-          assign ratiomb = mb_image.aspect_ratio
-          assign isRunLoop = SetBL
-        endif
-        assign url = bk_stts.link_img1
-        assign open_link = bk_stts.open_link
-        assign bg_content_op = bk_stts.bg_content_op | divided_by: 100.0
-        assign bg_content = bk_stts.bg_content_cl | color_modify: 'alpha', bg_content_op
-        assign bg_opacity = bk_stts.bg_opacity | divided_by: 100.0
-        assign bg_overlay = bk_stts.bg_overlay | color_modify: 'alpha', bg_opacity
-        assign br_opacity = bk_stts.br_opacity | divided_by: 100.0
-        assign br_bg = bk_stts.br_bg | color_modify: 'alpha', br_opacity
-        assign ani_delay = 0
-        assign percent_delay = bk_stts.animation_delay | divided_by: 100.0
-        assign time_ani_delay = bk_stts.time_animation | times: percent_delay
-      -%}
-      <div
-        class="t4s-slideshow-item t4s-col-item t4s-slide t4s_position_{{bk_stts.image_position}}"
-        id="b_{{block.id}}"
-        data-select-flickity
-        {{ block.shopify_attributes }}
-        style="--slide-bg-color:{{bk_stts.cl_img}};"
-      >
-        <div
-          class="t4s-slideshow-inner t4s-pr t4s-oh t4s_ratio t4s_ratio_hasmb"
-          {{ attr_img -}}
-          style="--aspect-ratioapt:{{ratio | default:1.7777 }};--aspect-ratioaptmb:{{ratiomb  | default:1.7777 }};"
-        >
-          {% capture class_img %} t4s-slide-{{bk_stts.animate_slide}}{% endcapture %}
-          {%- if image -%}
-            {%- if forloop.first -%}
-              {%- assign class_img_first = 'lazyloadt4s t4s-lz--fadeIn t4s-img-as-bg t4s-d-md-none'
-                | append: class_img
-              -%}
-              {{
-                mb_image
-                | image_url: width: 800
-                | image_tag: class: class_img_first, loading: lazy, widths: '375, 575, 750'
-              }}
-              <img
-                class="lazyloadt4s t4s-lz--fadeIn t4s-img-as-bg t4s-d-none t4s-d-md-block t4s-slide-{{bk_stts.animate_slide}}"
-                data-src="{{ image | image_url: width: 1 }}"
-                data-widths="[800, 1000, 1200, 1400, 1600, 1800, 2000, 2200, 2500, 3000, 3400, 3800, 4100]"
-                data-optimumx="1.5"
-                data-sizes="auto"
-                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                width="{{ image.width }}"
-                height="{{ image.height }}"
-                alt="{{ image.alt | escape }}"
-              >
-              <span
-                class="lazyloadt4s-loader is-bg-img t4s-d-none t4s-d-md-block"
-                style="background: url({{ image | image_url: width: 1 }})"
-              ></span>
-            {%- else -%}
-              <img
-                class="lazyloadt4s t4s-lz--fadeIn t4s-img-as-bg t4s-d-md-none t4s-slide-{{bk_stts.animate_slide}}"
-                data-src="{{ mb_image | image_url: width: 1 }}"
-                data-widths="[375, 575, 750]"
-                data-optimumx="1.5"
-                data-sizes="auto"
-                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                width="{{ mb_image.width }}"
-                height="{{ mb_image.height }}"
-                alt="{{ mb_image.alt | escape }}"
-              >
-              <span
-                class="lazyloadt4s-loader is-bg-img t4s-d-md-none"
-                style="background: url({{ mb_image | image_url: width: 1 }})"
-              ></span>
-              <img
-                class="lazyloadt4s t4s-lz--fadeIn t4s-img-as-bg t4s-d-none t4s-d-md-block t4s-slide-{{bk_stts.animate_slide}}"
-                data-src="{{ image | image_url: width: 1 }}"
-                data-widths="[800, 1000, 1200, 1400, 1600, 1800, 2000, 2200, 2500, 3000, 3400, 3800, 4100]"
-                data-optimumx="1.5"
-                data-sizes="auto"
-                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                width="{{ image.width }}"
-                height="{{ image.height }}"
-                alt="{{ image.alt | escape }}"
-              >
-              <span
-                class="lazyloadt4s-loader is-bg-img t4s-d-none t4s-d-md-block"
-                style="background: url({{ image | image_url: width: 1 }})"
-              ></span>
-            {%- endif -%}
-          {%- else -%}
-            {%- capture current -%}{% cycle 1, 2 %}{%- endcapture -%}
-            {{ 'lifestyle-' | append: current | placeholder_svg_tag: 't4s-placeholder-svg t4s-svg-bg1' }}
-          {%- endif -%}
-
-          {%- capture append_bg_content_style -%}--bg-content:{{bg_content}};--content-pd:{{bk_stts.content_pd_tb}}px {{bk_stts.content_pd_lr}}px;--content-pd-mb:{{bk_stts.content_pd_tb_mb}}px {{bk_stts.content_pd_lr_mb}}px;{%- endcapture -%}
-          {%- if bk_stts.border_bl -%}
-            {%- capture append_bg_border_style -%}--br-color:{{bk_stts.br_color}};--br-style:{{bk_stts.br_style}};--br-pd:{{bk_stts.br_pd}}px;--br-pd-mb:{{bk_stts.br_pd_mb}}px;--border-bg:{{br_bg}};{%- endcapture -%}
-          {%- endif -%}
-          <div class="t4s-content-wrap t4s-pe-none t4s-full-width-link t4s-z-100">
-            <div
-              class="t4s-content-position t4s-{{bk_stts.content_width}} t4s-pa t4s-text-md-{{bk_stts.text_align}} t4s-text-{{bk_stts.text_align_mb}} t4s-bg-content-true t4s-br-content-{{bk_stts.border_bl}} t4s-br-style-{{bk_stts.br_style}}"
-              style="--time-animation:{{bk_stts.time_animation}}s;{%- render 'position_content',ch_pos:bk_stts.ch_pos,cv_pos:bk_stts.cv_pos,ch_pos_mb:bk_stts.ch_pos_mb,cv_pos_mb:bk_stts.cv_pos_mb,append_bg_content_style:append_bg_content_style,append_bg_border_style:append_bg_border_style -%};"
-            >
-              {%- for block in se_blocks offset: index -%}
-                {%- assign index = index | plus: 1 -%}
-                {%- assign bk_stts = block.settings -%}
-                {%- if block.type == 'image_parent' -%}{% break %}{%- endif -%}
-                {%- case block.type -%}
-                  {%- when 'custom_text' -%}
-                    {%- assign general_block = true -%}
-                    {%- if bk_stts.animation != 'none' -%}{%- assign use_animation = true -%}{%- endif -%}
-                    <p
-                      class="t4s-bl-item t4s-animation-{{bk_stts.animation}} t4s-text-bl t4s-fnt-fm-{{bk_stts.fontf}} t4s-font-italic-{{bk_stts.font_italic}} t4s-hidden-mobile-{{bk_stts.hidden_mobile}} t4s-br-mb-{{bk_stts.remove_br_tag}} t4s-text-shadow-{{bk_stts.text_shadow}}"
-                      id="b_{{block.id}}"
-                      {{ block.shopify_attributes }}
-                      {%- render 'bk_cus_style', type: 'custom_text', bk_stts: bk_stts, ani_delay: ani_delay -%}
-                    >
-                      {{ bk_stts.text }}
-                    </p>
-                  {%- when 'space_html' -%}
-                    {%- assign general_block = true -%}
-                    {%- if bk_stts.animation != 'none' -%}{%- assign use_animation = true -%}{%- endif -%}
-                    <div
-                      class="t4s-space-html t4s-bl-item t4s-animation-{{bk_stts.animation}} t4s-hidden-mobile-{{bk_stts.hidden_mobile}}"
-                      id="b_{{block.id}}"
-                      {{ block.shopify_attributes }}
-                      {%- render 'bk_cus_style', type: 'space_html', bk_stts: bk_stts, ani_delay: ani_delay -%}
-                    ></div>
-                  {%- when 'html' -%}
-                    {%- assign general_block = true -%}
-                    {%- if bk_stts.animation != 'none' -%}{%- assign use_animation = true -%}{%- endif -%}
-                    <div
-                      class="t4s-bl-item t4s-animation-{{bk_stts.animation}} t4s-raw-html t4s-hidden-mobile-{{bk_stts.hidden_mobile}}"
-                      id="b_{{block.id}}"
-                      {{ block.shopify_attributes }}
-                      {%- render 'bk_cus_style', type: 'html', bk_stts: bk_stts, ani_delay: ani_delay -%}
-                    >
-                      {{ bk_stts.html_content }}
-                    </div>
-                  {%- when 'image' -%}
-                    {%- assign image = bk_stts.image_child -%}
-                    {%- if image != blank -%}
-                      {%- assign general_block = true -%}
-                      {%- if bk_stts.animation != 'none' -%}{%- assign use_animation = true -%}{%- endif -%}
-                      <div
-                        class="t4s-bl-item t4s-img-child t4s-animation-{{bk_stts.animation}} t4s-hidden-mobile-{{bk_stts.hidden_mobile}}"
-                        id="b_{{block.id}}"
-                        {{ block.shopify_attributes }}
-                        {%- render 'bk_cus_style', type: 'image', bk_stts: bk_stts, ani_delay: ani_delay -%}
-                      >
-                        <img
-                          class="lazyloadt4s t4s-lz--fadeIn"
-                          data-src="{{ image | image_url: width: 1 }}"
-                          data-widths="[100,200,400,600,700,800,900,1000,1200,1400,1600]"
-                          data-optimumx="2"
-                          data-sizes="auto"
-                          src="{% render 'img_svg',w:image.width,h:image.height %}"
-                          width="{{ image.width }}"
-                          height="{{ image.height }}"
-                          alt="{{ image.alt | escape }}"
-                        >
-                        <span class="lazyloadt4s-loader"></span>
-                      </div>
-                    {%- endif -%}
-                  {%- when 'countdown' -%}
-                    {%- if bk_stts.date != blank -%}
-                      {%- if bk_stts.animation != 'none' -%}{%- assign use_animation = true -%}{%- endif -%}
-                      {%- assign countdown = true -%}
-                      <div
-                        class="t4s-bl-item t4s-countdown sepr_coun_dt_wrap t4s-countdown-des-{{bk_stts.cdt_des}} t4s-countdown-size-{{bk_stts.cdt_size}} t4s-animation-{{bk_stts.animation}} t4s-hidden-mobile-{{bk_stts.hidden_mobile}}"
-                        id="b_{{block.id}}"
-                        {%- render 'bk_cus_style', type: 'countdown', bk_stts: bk_stts, ani_delay: ani_delay -%}
-                      >
-                        <div
-                          class="time"
-                          data-countdown-t4s
-                          data-date="{{bk_stts.date}}"
-                          data-keyid="#countdown-{{sid}}"
-                        ></div>
-                      </div>
-                    {% endif %}
-                  {%- when 'custom_button' -%}
-                    {%- if bk_stts.button_link != blank and bk_stts.button_text != blank -%}
-                      {%- if bk_stts.animation != 'none' -%}{%- assign use_animation = true -%}{%- endif -%}
-                      {%- assign use_button = true -%}
-                      {%- assign button_style = bk_stts.button_style -%}
-                      <a
-                        href="{{bk_stts.button_link}}"
-                        target="{{bk_stts.target_link}}"
-                        class="t4s-bl-item t4s-animation-{{bk_stts.animation}} t4s-btn t4s-btn-custom t4s-pe-auto t4s-fnt-fm-{{bk_stts.fontf}} t4s-animation-{{bk_stts.animation}} t4s-hidden-mobile-{{bk_stts.hidden_mobile}} t4s-btn-style-{{button_style}} {% if button_style == 'default' or button_style == 'outline'%}t4s-btn-effect-{{bk_stts.button_effect}}{% endif %}"
-                        id="b_{{block.id}}"
-                        {{ block.shopify_attributes }}
-                        {%- render 'bk_cus_style', type: 'custom_button', bk_stts: bk_stts, ani_delay: ani_delay -%}
-                      >
-                        {{- bk_stts.button_text }}
-                        {%- if bk_stts.button_icon_w > 0 -%}
-                          <svg class="t4s-btn-icon" viewBox="0 0 14 10">
-                            <use xlink:href="#t4s-icon-btn"></use>
-                          </svg>
+<div class="t4s-section-inner {{t4s_se_class}} t4s_nt_se_{{sid}}" {% render 'section_style',se_stts:se_stts,append_style:append_style -%}>       
+    {{-html_layout[0]-}}    
+    <div class="t4s-slideshow t4s-row t4s-row-cols-1 t4s-gx-0 t4s-flicky-slider t4s_position_8 t4s_cover {{se_height}} t4s-slide-eff-{{slide_eff}} t4scuspx1_{{se_stts.custom_mb}} t4scuspx2_{{se_stts.custom_tb}} t4scuspx3_{{se_stts.custom_dk}}{% if se_stts.nav_btn == true %}  t4s-slider-btn-style-{{se_stts.btn_owl}} t4s-slider-btn-{{se_stts.btn_shape}} t4s-slider-btn-{{se_stts.btn_size}} t4s-slider-btn-cl-{{se_stts.btn_cl}} t4s-slider-btn-vi-{{se_stts.btn_vi}} t4s-slider-btn-hidden-mobile-{{se_stts.btn_hidden_mobile}} {% endif %}{% if se_stts.nav_dot %} t4s-dots-style-{{se_stts.dot_owl}} t4s-dots-cl-{{se_stts.dots_cl}} t4s-dots-round-{{se_stts.dots_round}} t4s-dots-hidden-mobile-{{se_stts.dots_hidden_mobile}} {% endif %} flickityt4s" data-flickityt4s-js='{{data_flickityt4s}}'  style="--space-dots: {{se_stts.dots_space}}px;--flickity-btn-pos: 30px;--flickity-btn-pos-mb: 30px;" >
+        {%- for block in arr_blocks_img -%}            
+            {%- liquid  
+            	assign bk_stts = block.settings
+                assign image_mb = bk_stts.image_mb
+                assign image = bk_stts.image | default:image_mb
+                assign mb_image = image_mb | default: image 
+                if isRunLoop
+                    assign ratio = image.aspect_ratio 
+                    assign ratiomb = mb_image.aspect_ratio 
+                    assign isRunLoop = SetBL
+                endif 
+                assign url = bk_stts.link_img1 
+                assign open_link = bk_stts.open_link
+                assign bg_content_op = bk_stts.bg_content_op | divided_by: 100.0 
+                assign bg_content = bk_stts.bg_content_cl | color_modify: 'alpha', bg_content_op 
+                assign bg_opacity = bk_stts.bg_opacity | divided_by: 100.0
+                assign bg_overlay = bk_stts.bg_overlay | color_modify: 'alpha', bg_opacity
+                assign br_opacity = bk_stts.br_opacity | divided_by: 100.0
+                assign br_bg = bk_stts.br_bg | color_modify: 'alpha', br_opacity  
+                assign ani_delay = 0   
+                assign percent_delay = bk_stts.animation_delay | divided_by: 100.0
+                assign time_ani_delay = bk_stts.time_animation | times: percent_delay           
+            -%}
+            <div class="t4s-slideshow-item t4s-col-item t4s-slide t4s_position_{{bk_stts.image_position}}" id="b_{{block.id}}" data-select-flickity {{ block.shopify_attributes }} style="--slide-bg-color:{{bk_stts.cl_img}};">
+                <div class="t4s-slideshow-inner t4s-pr t4s-oh t4s_ratio t4s_ratio_hasmb" {{attr_img}}style="--aspect-ratioapt:{{ratio | default:1.7777 }};--aspect-ratioaptmb:{{ratiomb  | default:1.7777 }};">
+                    {% capture class_img %} t4s-slide-{{bk_stts.animate_slide}}{% endcapture %}
+                        {%- if image -%}   
+                            {%- if forloop.first -%}
+                                {%- assign class_img_first = 'lazyloadt4s t4s-lz--fadeIn t4s-img-as-bg t4s-d-md-none' | append: class_img -%}
+                                {{ mb_image | image_url: width: 800 | image_tag: class: class_img_first, loading: lazy, widths: '375, 575, 750' }}
+                                <img class="lazyloadt4s t4s-lz--fadeIn t4s-img-as-bg t4s-d-none t4s-d-md-block t4s-slide-{{bk_stts.animate_slide}}" data-src="{{ image | image_url: width: 1 }}" data-widths="[800, 1000, 1200, 1400, 1600, 1800, 2000, 2200, 2500, 3000, 3400, 3800, 4100]" data-optimumx="1.5" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="{{ image.width }}" height="{{ image.height }}" alt="{{ image.alt | escape }}">
+                                <span class="lazyloadt4s-loader is-bg-img t4s-d-none t4s-d-md-block" style="background: url({{ image | image_url: width: 1 }})"></span>
+                            {%- else -%}
+                                <img class="lazyloadt4s t4s-lz--fadeIn t4s-img-as-bg t4s-d-md-none t4s-slide-{{bk_stts.animate_slide}}" data-src="{{ mb_image | image_url: width: 1 }}" data-widths="[375, 575, 750]" data-optimumx="1.5" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="{{ mb_image.width }}" height="{{ mb_image.height }}" alt="{{ mb_image.alt | escape }}">
+                                <span class="lazyloadt4s-loader is-bg-img t4s-d-md-none" style="background: url({{ mb_image | image_url: width: 1 }})"></span>
+                                <img class="lazyloadt4s t4s-lz--fadeIn t4s-img-as-bg t4s-d-none t4s-d-md-block t4s-slide-{{bk_stts.animate_slide}}" data-src="{{ image | image_url: width: 1 }}" data-widths="[800, 1000, 1200, 1400, 1600, 1800, 2000, 2200, 2500, 3000, 3400, 3800, 4100]" data-optimumx="1.5" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="{{ image.width }}" height="{{ image.height }}" alt="{{ image.alt | escape }}">
+                                <span class="lazyloadt4s-loader is-bg-img t4s-d-none t4s-d-md-block" style="background: url({{ image | image_url: width: 1 }})"></span>
+                            {%- endif -%}
+                        {%- else -%} 
+                        {%- capture current -%}{% cycle 1, 2 %}{%- endcapture -%}
+                            {{ 'lifestyle-' | append: current | placeholder_svg_tag: 't4s-placeholder-svg t4s-svg-bg1' }}  
                         {%- endif -%}
-                      </a>
-                    {%- endif -%}
-                {%- endcase -%}
-                {%- if bk_stts.animation != 'none' -%}
-                  {%- assign ani_delay = ani_delay | plus: time_ani_delay -%}
-                {%- endif -%}
-              {%- endfor -%}
+
+                        {%- capture append_bg_content_style -%}--bg-content:{{bg_content}};--content-pd:{{bk_stts.content_pd_tb}}px {{bk_stts.content_pd_lr}}px;--content-pd-mb:{{bk_stts.content_pd_tb_mb}}px {{bk_stts.content_pd_lr_mb}}px;{%- endcapture -%}
+                        {%- if bk_stts.border_bl -%}
+                            {%- capture append_bg_border_style -%}--br-color:{{bk_stts.br_color}};--br-style:{{bk_stts.br_style}};--br-pd:{{bk_stts.br_pd}}px;--br-pd-mb:{{bk_stts.br_pd_mb}}px;--border-bg:{{br_bg}};{%- endcapture -%}
+                        {%- endif -%}
+                        <div class="t4s-content-wrap t4s-pe-none t4s-full-width-link t4s-z-100">
+                            <div class="t4s-content-position t4s-{{bk_stts.content_width}} t4s-pa t4s-text-md-{{bk_stts.text_align}} t4s-text-{{bk_stts.text_align_mb}} t4s-bg-content-true t4s-br-content-{{bk_stts.border_bl}} t4s-br-style-{{bk_stts.br_style}}" style="--time-animation:{{bk_stts.time_animation}}s;{%- render 'position_content',ch_pos:bk_stts.ch_pos,cv_pos:bk_stts.cv_pos,ch_pos_mb:bk_stts.ch_pos_mb,cv_pos_mb:bk_stts.cv_pos_mb,append_bg_content_style:append_bg_content_style,append_bg_border_style:append_bg_border_style -%};">  
+                                {%- for block in se_blocks offset:index -%} 
+                                    {%- assign index = index|plus:1 -%}
+                                    {%- assign bk_stts = block.settings -%}
+                                    {%- if block.type == 'image_parent' -%}{% break %}{%-endif-%}
+                                    {%- case block.type -%}
+                                        {%- when 'custom_text' -%}
+                                            {%- assign general_block = true -%}
+                                            {%- if bk_stts.animation !='none' -%}{%- assign use_animation = true -%} {%- endif -%}
+                                            <p class="t4s-bl-item t4s-animation-{{bk_stts.animation}} t4s-text-bl t4s-fnt-fm-{{bk_stts.fontf}} t4s-font-italic-{{bk_stts.font_italic}} t4s-hidden-mobile-{{bk_stts.hidden_mobile}} t4s-br-mb-{{bk_stts.remove_br_tag}} t4s-text-shadow-{{bk_stts.text_shadow}}" id="b_{{block.id}}" {{ block.shopify_attributes }} {%- render 'bk_cus_style',type:'custom_text',bk_stts:bk_stts,ani_delay:ani_delay -%}>{{bk_stts.text}}</p>
+                                        {%- when 'space_html' -%}
+                                            {%- assign general_block = true -%}
+                                            {%- if bk_stts.animation !='none' -%}{%- assign use_animation = true -%} {%- endif -%}
+                                            <div class="t4s-space-html t4s-bl-item t4s-animation-{{bk_stts.animation}} t4s-hidden-mobile-{{bk_stts.hidden_mobile}}" id="b_{{block.id}}" {{ block.shopify_attributes }} {%- render 'bk_cus_style',type:'space_html',bk_stts:bk_stts,ani_delay:ani_delay -%}></div>
+                                        {%- when 'html' -%}
+                                            {%- assign general_block = true -%}
+                                            {%- if bk_stts.animation !='none' -%}{%- assign use_animation = true -%} {%- endif -%}
+                                            <div class="t4s-bl-item t4s-animation-{{bk_stts.animation}} t4s-raw-html t4s-hidden-mobile-{{bk_stts.hidden_mobile}}" id="b_{{block.id}}" {{ block.shopify_attributes }} {%- render 'bk_cus_style',type:'html',bk_stts:bk_stts,ani_delay:ani_delay -%}>{{bk_stts.html_content}}</div>
+                                        {%- when 'image' -%}
+                                            {%- assign image = bk_stts.image_child -%}
+                                            {%- if image != blank -%}
+                                                {%- assign general_block = true -%}
+                                                {%- if bk_stts.animation !='none' -%}{%- assign use_animation = true -%} {%- endif -%}
+                                                <div class="t4s-bl-item t4s-img-child t4s-animation-{{bk_stts.animation}} t4s-hidden-mobile-{{bk_stts.hidden_mobile}}" id="b_{{block.id}}" {{ block.shopify_attributes }} {%- render 'bk_cus_style',type:'image',bk_stts:bk_stts,ani_delay:ani_delay -%}>
+                                                    <img class="lazyloadt4s t4s-lz--fadeIn" data-src="{{ image | image_url: width: 1 }}" data-widths="[100,200,400,600,700,800,900,1000,1200,1400,1600]" data-optimumx="2" data-sizes="auto" src="{% render 'img_svg',w:image.width,h:image.height %}" width="{{ image.width }}" height="{{ image.height }}" alt="{{ image.alt | escape }}">
+                                                    <span class="lazyloadt4s-loader"></span>
+                                                </div>
+                                            {%- endif -%}
+                                        {%- when "countdown" -%}
+                                            {%- if bk_stts.date != blank -%}
+                                                {%- if bk_stts.animation !='none' -%}{%- assign use_animation = true -%} {%- endif -%}
+                                                {%- assign countdown = true -%}
+                                                <div class="t4s-bl-item t4s-countdown sepr_coun_dt_wrap t4s-countdown-des-{{bk_stts.cdt_des}} t4s-countdown-size-{{bk_stts.cdt_size}} t4s-animation-{{bk_stts.animation}} t4s-hidden-mobile-{{bk_stts.hidden_mobile}}" id="b_{{block.id}}" {%- render 'bk_cus_style',type:'countdown',bk_stts:bk_stts,ani_delay:ani_delay -%}>
+                                                    <div class="time" data-countdown-t4s data-date='{{bk_stts.date}}' data-keyid='#countdown-{{sid}}'></div>
+                                                  </div>
+                                            {% endif %}
+                                        {%- when 'custom_button' -%}
+                                            {%- if bk_stts.button_link != blank and bk_stts.button_text != blank -%}
+                                                {%- if bk_stts.animation !='none' -%}{%- assign use_animation = true -%} {%- endif -%}
+                                                {%- assign use_button = true -%}
+                                                {%- assign button_style = bk_stts.button_style -%}
+                                                <a href="{{bk_stts.button_link}}" target="{{bk_stts.target_link}}" class="t4s-bl-item t4s-animation-{{bk_stts.animation}} t4s-btn t4s-btn-custom t4s-pe-auto t4s-fnt-fm-{{bk_stts.fontf}} t4s-animation-{{bk_stts.animation}} t4s-hidden-mobile-{{bk_stts.hidden_mobile}} t4s-btn-style-{{button_style}} {% if button_style == 'default' or button_style == 'outline'%}t4s-btn-effect-{{bk_stts.button_effect}}{% endif %}" id="b_{{block.id}}" {{ block.shopify_attributes }} {%- render 'bk_cus_style',type:'custom_button',bk_stts:bk_stts,ani_delay:ani_delay -%}>{{bk_stts.button_text}} {%- if bk_stts.button_icon_w > 0 -%}<svg  class="t4s-btn-icon" viewBox="0 0 14 10"><use xlink:href="#t4s-icon-btn"></use></svg>{%- endif -%} </a>
+                                            {%- endif -%}
+                                    {%- endcase -%}
+                                    {%- if bk_stts.animation != 'none' %}{% assign ani_delay = ani_delay | plus: time_ani_delay %}{% endif -%}
+                                {%- endfor -%}
+                            </div>
+                        </div>
+                    <a href="{{url}}" target="{{open_link}}" class="t4s-full-width-link{% if url == blank %} t4s-pe-none {% else %} t4s-pe-auto{% endif %}" style="--bg-overlay:{{bg_overlay}};"></a>
+                </div>
             </div>
-          </div>
-          <a
-            href="{{url}}"
-            target="{{open_link}}"
-            class="t4s-full-width-link{% if url == blank %} t4s-pe-none {% else %} t4s-pe-auto{% endif %}"
-            style="--bg-overlay:{{bg_overlay}};"
-          ></a>
-        </div>
-      </div>
-    {%- endfor -%}
-  </div>
-  {{- html_layout[1] -}}
+        {%- endfor -%}
+    </div>  
+    {{-html_layout[1]-}} 
 </div>
 {%- if general_block -%}
-  {{ 'general-block.css' | asset_url | stylesheet_tag }}
+    {{ 'general-block.css' | asset_url | stylesheet_tag }}
 {%- endif -%}
 {%- if use_button -%}
-  {{ 'button-style.css' | asset_url | stylesheet_tag }}
-  <link href="{{ 'custom-effect.css' | asset_url }}" rel="stylesheet" media="print" onload="this.media='all'">
+    {{ 'button-style.css' | asset_url | stylesheet_tag }}
+    <link href="{{ 'custom-effect.css' | asset_url }}" rel="stylesheet" media="print" onload="this.media='all'">
 {%- endif -%}
 {%- if use_animation -%}
-  <link href="{{ 't4s-animation.css' | asset_url }}" rel="stylesheet" media="print" onload="this.media='all'">
+    <link href="{{ 't4s-animation.css' | asset_url }}" rel="stylesheet" media="print" onload="this.media='all'">
 {%- endif -%}
-{%- if countdown -%}
-  {{ 'countdown.css' | asset_url | stylesheet_tag }}
-  <template id="countdown-{{sid}}">
-    <span class="countdown-days">
-      <span class="cd_timet4 cd-number">%-D</span>
-      <span class="cd_txtt4 cd-text"
-        >%!D:{{ 'sections.countdown_text.day' | t }},{{ 'sections.countdown_text.day_plural' | t }};</span
-      >
-    </span>
-    <span class="countdown-hours">
-      <span class="cd_timet4 cd-number">%H</span>
-      <span class="cd_txtt4 cd-text"
-        >%!H:{{ 'sections.countdown_text.hr' | t }},{{ 'sections.countdown_text.hr_plural' | t }};</span
-      >
-    </span>
-    <span class="countdown-min">
-      <span class="cd_timet4 cd-number">%M</span>
-      <span class="cd_txtt4 cd-text"
-        >%!M:{{ 'sections.countdown_text.min' | t }},{{ 'sections.countdown_text.min_plural' | t }};</span
-      >
-    </span>
-    <span class="countdown-sec">
-      <span class="cd_timet4 cd-number">%S</span>
-      <span class="cd_txtt4 cd-text"
-        >%!S:{{ 'sections.countdown_text.sec' | t }},{{ 'sections.countdown_text.sec_plural' | t }};</span
-      >
-    </span>
-  </template>
+{%- if countdown -%} 
+    {{ 'countdown.css' | asset_url | stylesheet_tag }}
+    <template id="countdown-{{sid}}">
+        <span class="countdown-days">
+            <span class="cd_timet4 cd-number">%-D</span>
+            <span class="cd_txtt4 cd-text">%!D:{{"sections.countdown_text.day" | t}},{{"sections.countdown_text.day_plural" | t}};</span>
+        </span>
+        <span class="countdown-hours">
+            <span class="cd_timet4 cd-number">%H</span> 
+            <span class="cd_txtt4 cd-text">%!H:{{"sections.countdown_text.hr" | t}},{{"sections.countdown_text.hr_plural" | t}};</span>
+        </span>
+        <span class="countdown-min">
+            <span class="cd_timet4 cd-number">%M</span> 
+            <span class="cd_txtt4 cd-text">%!M:{{"sections.countdown_text.min" | t}},{{"sections.countdown_text.min_plural" | t}};</span>
+        </span>
+        <span class="countdown-sec">
+            <span class="cd_timet4 cd-number">%S</span> 
+            <span class="cd_txtt4 cd-text">%!S:{{"sections.countdown_text.sec" | t}},{{"sections.countdown_text.sec_plural" | t}};</span>
+        </span>
+    </template>
 {%- endif -%}
 {%- schema -%}
 {
-    "name":"Slideshow2",
+    "name":"Slideshow",
     "tag": "section",
     "class": "t4s-section t4s-section-all t4s_bk_flickity t4s_tp_cd t4s-sec-slideshow",
     "settings":[
@@ -387,7 +250,7 @@
             "id": "height_mb",
             "label": "Section height (Mobile)",
             "default": 250
-        },
+        }, 
         {
             "type":"header",
             "content":"+ Options for carousel layout"
@@ -719,12 +582,12 @@
             "default":false,
             "info": "If you want custom style for this section."
         },
-        {
+        { 
             "id": "code_cus_css",
             "type": "textarea",
             "label": "Code custom css",
             "info": "Use selector .SectionID to style css"
-
+            
           }
     ],
     "blocks":[
@@ -789,7 +652,7 @@
                     ],
                     "label": "Image position",
                     "default": "8"
-                },
+                },    
                 {
                     "type": "color",
                     "id": "cl_img",
@@ -853,7 +716,7 @@
                             "value":"translate-to-bottom"
                         }
                     ]
-                },
+                }, 
                 {"type": "paragraph","content": "————————————————"},
                 {
                     "type":"select",
@@ -1005,21 +868,21 @@
                     "id": "content_pd_tb",
                     "label": "Content padding top/bottom (px)",
                     "default":15,
-                    "info":"Working on the Desktop"
+                    "info":"Working on the Desktop"   
                 },
                 {
                     "type": "number",
                     "id": "content_pd_lr",
                     "label": "Content padding left/right (px)",
                     "default":15,
-                    "info":"Working on the Desktop"
+                    "info":"Working on the Desktop"   
                 },
                 {
                     "type": "number",
                     "id": "content_pd_tb_mb",
                     "label": "Content padding top/bottom (px)",
                     "default":10,
-                    "info":"Working on the Mobile"
+                    "info":"Working on the Mobile"    
                 },
                 {
                     "type": "number",
@@ -1126,7 +989,7 @@
                     "unit":"%",
                     "default":40,
                     "info":"Defines the number of time to wait when the animation previous end, before the animation next will start."
-                }
+                }  
             ]
         },
         {
@@ -1195,7 +1058,7 @@
                     "step":1,
                     "default":0,
                     "unit":"px",
-                    "info":"Set is '0' use to default"
+                    "info":"Set is '0' use to default"            
                 },
                 {
                     "type":"range",
@@ -1263,7 +1126,7 @@
                     "step":1,
                     "default":0,
                     "unit":"px",
-                    "info":"Set is '0' use to default"
+                    "info":"Set is '0' use to default"            
                 },
                 {
                     "type":"range",
@@ -2528,7 +2391,7 @@
                     ]
                 }
             ]
-        },
+        },  
         {
             "type": "space_html",
             "name": "Space HTML",
@@ -2758,14 +2621,14 @@
     "presets": [
         {
             "category": "homepage1",
-            "name":"Slideshow2",
+            "name":"Slideshow",
             "blocks":[
                 {
                     "type":"image_parent",
                     "settings":{
                         "text_align":"start"
                     }
-
+                    
                 },
                 {
                     "type":"custom_text",
@@ -2799,7 +2662,7 @@
                     "settings":{
                         "text_align":"start"
                     }
-
+                    
                 },
                 {
                     "type":"custom_text",
@@ -2833,4 +2696,4 @@
         }
     ]
 }
-{%- endschema -%}
+{% endschema %}
