@@ -107,7 +107,7 @@
                             {%- capture append_bg_border_style -%}--br-color:{{bk_stts.br_color}};--br-style:{{bk_stts.br_style}};--br-pd:{{bk_stts.br_pd}}px;--br-pd-mb:{{bk_stts.br_pd_mb}}px;--border-bg:{{br_bg}};{%- endcapture -%}
                         {%- endif -%}
                         <div class="t4s-content-wrap t4s-pe-none t4s-full-width-link t4s-z-100">
-                            <div class="t4s-content-position t4s-{{bk_stts.content_width}} t4s-pa t4s-text-md-{{bk_stts.text_align}} t4s-text-{{bk_stts.text_align_mb}} t4s-bg-content-true t4s-br-content-{{bk_stts.border_bl}} t4s-br-style-{{bk_stts.br_style}}" style="--time-animation:{{bk_stts.time_animation}}s;{%- render 'position_content',ch_pos:bk_stts.ch_pos,cv_pos:bk_stts.cv_pos,ch_pos_mb:bk_stts.ch_pos_mb,cv_pos_mb:bk_stts.cv_pos_mb,append_bg_content_style:append_bg_content_style,append_bg_border_style:append_bg_border_style -%};">  
+                            <div class="t4s-content-position t4s-{{bk_stts.content_width}} t4s-pa t4s-text-md-{{bk_stts.text_align}} t4s-text-{{bk_stts.text_align_mb}} t4s-bg-content-true t4s-br-content-{{bk_stts.border_bl}} t4s-br-style-{{bk_stts.br_style}}" >  
                                 {%- for block in se_blocks offset:index -%} 
                                     {%- assign index = index|plus:1 -%}
                                     {%- assign bk_stts = block.settings -%}
