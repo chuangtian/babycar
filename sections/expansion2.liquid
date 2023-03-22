@@ -43,9 +43,10 @@
 {{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
 
 <div
-  id="Banner-{{ section.id }}"
-  class="banner margin-top  banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.image_height == 'adapt' and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}"
+  class="t4s-section-inner {{t4s_se_class}} t4s_nt_se_{{sid}}"
+  {% render 'section_style', se_stts: se_stts, append_style: append_style -%}
 >
+  {{- html_layout[0] -}}
   {%- if section.settings.image != blank -%}
     <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}">
       {%- liquid
@@ -151,6 +152,7 @@
       {%- endfor -%}
     </div>
   </div>
+  {{- html_layout[1] -}}
 </div>
 
 {% schema %}
