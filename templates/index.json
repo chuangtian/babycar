@@ -471,7 +471,7 @@
         "template--18304757039381__9efeeb23-41c9-4864-aa9f-f6f2627499ef-1679465747ea9bac88-0": {
           "type": "image_parent",
           "settings": {
-            "image": "shopify:\/\/shop_images\/yellow-car-in-tropics.jpg",
+            "image": "shopify:\/\/shop_images\/Homepage-Model-3-Desktop-LHD.webp",
             "image_position": "8",
             "cl_img": "",
             "link_img1": "",
@@ -659,7 +659,7 @@
         "template--18304757039381__9efeeb23-41c9-4864-aa9f-f6f2627499ef-1679465747ea9bac88-7": {
           "type": "custom_button",
           "settings": {
-            "button_text": "Button label",
+            "button_text": "",
             "button_link": "",
             "target_link": "_self",
             "fontf": "inherit",
