@@ -464,6 +464,11 @@
         "use_cus_css": false,
         "code_cus_css": ""
       }
+    },
+    "f2ee5f1a-008a-4fa1-9731-660d32774023": {
+      "type": "expansion2",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -471,6 +476,7 @@
     "social_widget_53816",
     "97eefcc2-3af8-4bb0-bf22-3ac8f4273adf",
     "c1962e91-b44f-4468-bae0-a3c0a5f7dfae",
-    "b4891829-c578-4ccf-bc52-13d3bc35af49"
+    "b4891829-c578-4ccf-bc52-13d3bc35af49",
+    "f2ee5f1a-008a-4fa1-9731-660d32774023"
   ]
 }
