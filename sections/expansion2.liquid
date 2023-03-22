@@ -75,28 +75,8 @@
                         {%- endif -%} 
                     {%- endfor -%}  
                 {%- endcapture -%}
-                {%-liquid
-                    if bk_stts.post_mobile == "default"
-                        assign order_mobile = 1
-                    elsif bk_stts.post_mobile == "reverse" and forloop_index == 1
-                        assign order_mobile = 2
-                    else
-                        assign order_mobile = 0
-                    endif
-                -%}
-                <div class="t4s-col-img t4s-col-item t4s-col-lg-{{bk_stts.col_dk}} t4s-col-md-{{bk_stts.col_tb}} t4s-col-12 t4s-order-md-{{forloop_index}} t4s-order-{{order_mobile}} t4s-image-text-layout-{{bk_stts.layout_des}} {% if block_first.type == 'bl_image' %}t4s-image-text-col-img-left{% else %}t4s-image-text-col-img-right{% endif %}"> 
-                    {%- if bk_stts.layout_des == "grid" -%}
-                        <div class="t4s-image-text-overlap">
-                            <div class="t4s-image-text-overlap-centered t4s-image-text-overlap-{{index}}">{{html_img_text}}</div>
-                        </div> 
-                    {%- else -%}    
-                        {%- assign use_carousel = true -%}
-                        <div class="t4s-image-text-carousel t4s-flicky-slider t4s-row t4s-gx-0 t4s-gy-0 t4s-row-cols-1 t4s_{{bk_stts.image_ratio}} t4s_position_{{bk_stts.image_position}} t4s_{{bk_stts.image_size}}{% if bk_stts.nav_btn == true %}  t4s-slider-btn-style-{{bk_stts.btn_owl}} t4s-slider-btn-{{bk_stts.btn_shape}} t4s-slider-btn-{{bk_stts.btn_size}} t4s-slider-btn-cl-{{bk_stts.btn_cl}} t4s-slider-btn-vi-{{bk_stts.btn_vi}} t4s-slider-btn-hidden-mobile-{{bk_stts.btn_hidden_mobile}} {% endif %} {% if bk_stts.nav_dot == true %}t4s-dots-style-{{bk_stts.dot_owl}} t4s-dots-cl-{{bk_stts.dots_cl}} t4s-dots-round-{{bk_stts.dots_round}} t4s-dots-hidden-mobile-{{se_stts.dots_hidden_mobile}} {% endif %}  flickityt4s" data-flickityt4s-js='{ "arrowIcon":"{{arrow_icon}}","imagesLoaded": 0,"adaptiveHeight": 1, "contain": 1, "groupCells": "100%", "dragThreshold" : 5, "cellAlign": "left","wrapAround": {{bk_stts.loop}},"prevNextButtons": {{bk_stts.nav_btn}},"percentPosition": 1,"pageDots": {{bk_stts.nav_dot}}, "autoPlay" : {{ bk_stts.au_time | times: 1000 }}, "pauseAutoPlayOnHover" : {{bk_stts.au_hover}} }' style="--space-dots: {{bk_stts.dots_space}}px;--flickity-btn-pos: {{bk_stts.space_h_item}}px;--flickity-btn-pos-mb: {{bk_stts.space_h_item_mb}}px;">
-                            {{html_img_text}}
-                        </div>  
-                    {%- endif -%}     
-
-                </div>
+                
+                
             {%- when 'bl_text' -%}
                 <div class="t4s-col-text t4s-col-item t4s-col-lg-{{bk_stts.col_dk}} t4s-col-md-{{bk_stts.col_tb}} t4s-order-md-{{forloop_index}} t4s-order-1 t4s-col-12 t4s-txt-shadow-{{bk_stts.use_shadow}}">
                     <div class="t4s-image-text-content t4s-text-{{bk_stts.txt_align}} t4s-shadow-wrap" style="--imtxt-subhd-color:{{bk_stts.subhd_color}};--imtxt-hd-color:{{bk_stts.hd_color}};--imtxt-des-color:{{bk_stts.des_color}}">                       
