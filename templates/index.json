@@ -353,13 +353,13 @@
             "text_ls": 0,
             "font_italic": false,
             "text_shadow": false,
-            "text_mgb": 10,
+            "text_mgb": 11,
             "hidden_mobile": false,
             "text_fs_mb": 16,
             "text_lh_mb": 0,
             "text_ls_mb": 0,
             "text_mgb_mobile": 10,
-            "animation": "none"
+            "animation": "fadeInUpBig"
           }
         },
         "template--18304757039381__4fc08943-9dca-4c6e-9627-098b630561bc-167945539558801622-1": {
