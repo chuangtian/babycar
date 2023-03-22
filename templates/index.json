@@ -245,7 +245,7 @@
           "type": "bl_text",
           "settings": {
             "col_dk": "9",
-            "col_tb": "9",
+            "col_tb": "12",
             "text_size": "40,15",
             "txt_align": "center",
             "sub_heading": "",
