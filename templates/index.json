@@ -244,8 +244,8 @@
         "template--18304757039381__f65ab8e0-0336-440c-8068-151013a4a5c8-1679452331bbb4eea6-1": {
           "type": "bl_text",
           "settings": {
-            "col_dk": "4",
-            "col_tb": "4",
+            "col_dk": "9",
+            "col_tb": "9",
             "text_size": "40,15",
             "txt_align": "center",
             "sub_heading": "",
