@@ -211,7 +211,42 @@
     },
     "20349592-4b41-4043-8a5d-8b134602a540": {
       "type": "expansion2",
+      "blocks": {
+        "e568c2e3-6912-414a-bfb9-fe4ebae5a516": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1",
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "9738528a-a052-4c31-880d-f3f6c6814d5c": {
+          "type": "heading2",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1",
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "efe56017-539e-4022-9b72-6e4344a7fd7a": {
+          "type": "heading3",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1",
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "e568c2e3-6912-414a-bfb9-fe4ebae5a516",
+        "9738528a-a052-4c31-880d-f3f6c6814d5c",
+        "efe56017-539e-4022-9b72-6e4344a7fd7a"
+      ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/1.jpg",
         "image_overlay_opacity": 0,
         "margin-top": 0,
         "image_height": "medium",
