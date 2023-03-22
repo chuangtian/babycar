@@ -332,26 +332,10 @@
         "code_cus_css": ""
       }
     },
-    "818da378-a94a-4e90-8ca0-c59f193b1d2f": {
-      "type": "countdown",
+    "f4e9528b-c5b9-4053-a4cc-ca73baf018cb": {
+      "type": "custom-html",
       "settings": {
-        "design_heading": "1",
-        "heading_align": "t4s-text-center",
-        "top_heading": "Countdown timer",
-        "icon_heading": "las la-gem",
-        "top_subheading": "",
-        "tophead_mb": 30,
-        "date": "2022\/12\/26",
-        "cdt_des": "1",
-        "cdt_size": "medium",
-        "box_bdr": 0,
-        "bd_width": 0,
-        "space_item": 10,
-        "number_cl": "#ffffff",
-        "text_cl": "#000000",
-        "border_cl": "#000000",
-        "bg_cl": "#000000",
-        "content_align": "t4s-text-center",
+        "code": "<div class=\"t4s-text-center\" style=\"padding: 15px 0;background-color: #000;color: #fff;\">This is an advanced section. Knowledge of web design languages such as HTML, CSS is required.<\/div>",
         "layout": "t4s-container-wrap",
         "cl_bg": "",
         "cl_bg_gradient": "",
@@ -369,6 +353,6 @@
     "social_widget_53816",
     "97eefcc2-3af8-4bb0-bf22-3ac8f4273adf",
     "c1962e91-b44f-4468-bae0-a3c0a5f7dfae",
-    "818da378-a94a-4e90-8ca0-c59f193b1d2f"
+    "f4e9528b-c5b9-4053-a4cc-ca73baf018cb"
   ]
 }
