@@ -1621,4 +1621,13 @@
 {%- endschema -%}
 
 {%- javascript -%}
+  //在文档加载完毕后执行
+  $(document).ready(function(){
+  	//开始监听滚动条
+  	$(window).scroll(function(){
+  		var top = $(document).scrollTop();
+  		console.log(top);
+  	})
+  })
+
 {%- endjavascript -%}
