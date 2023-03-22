@@ -697,7 +697,7 @@
           "bgnav": "#ffffff",
           "opnav": 100,
           "clnav": "#222222",
-          "clnav_hover": "#dddddd",
+          "clnav_hover": "#fff",
           "h_icon": "kalles",
           "hover_icon": "2",
           "show_search": true,
