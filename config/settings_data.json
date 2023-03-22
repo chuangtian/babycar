@@ -694,6 +694,7 @@
           "align": "center",
           "hover": "hover_sideup",
           "h_navmb": 60,
+          "h__bgimg": "shopify:\/\/shop_images\/hyperlogo_2.png",
           "bgnav": "#ffffff",
           "opnav": 100,
           "clnav": "#222222",
