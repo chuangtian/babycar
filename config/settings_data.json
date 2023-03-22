@@ -695,7 +695,7 @@
           "hover": "hover_sideup",
           "h_navmb": 60,
           "bgnav": "#ffffff",
-          "opnav": 100,
+          "opnav": 39,
           "clnav": "#222222",
           "clnav_hover": "#fff",
           "h_icon": "kalles",
