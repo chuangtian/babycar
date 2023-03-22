@@ -5,10 +5,16 @@
 {{ 'content-position.css' | asset_url | stylesheet_tag }}
 {{ 'slider-settings.css' | asset_url | stylesheet_tag }}
 {%- style -%}
-    
+       .mobile_terminal{
+          margin-top:35%;
+          width: 100%;
+          text-align: center;
+        }
 
     @media screen and (min-width: 750px) {
-      
+        .mobile_terminal{
+          margin-top: 15%;
+        }
       }
 {%- endstyle -%}
 {%-liquid
