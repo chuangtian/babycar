@@ -471,7 +471,7 @@
         "template--18304757039381__9efeeb23-41c9-4864-aa9f-f6f2627499ef-1679465747ea9bac88-0": {
           "type": "image_parent",
           "settings": {
-            "image_mb": "shopify:\/\/shop_images\/yellow-car-in-tropics.jpg",
+            "image": "shopify:\/\/shop_images\/yellow-car-in-tropics.jpg",
             "image_position": "8",
             "cl_img": "",
             "link_img1": "",
