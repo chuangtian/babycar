@@ -1,10 +1,18 @@
 {{ 'bootstrap.min.css' | asset_url | stylesheet_tag }}
-
-<div
-  class="bg-image bg-size-cover"
-  style="background-image: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/a269d7b4-87a9-4057-9ac5-2565e56a188e/bvlatuR/std/4096x2560/Homepage-Model-3-Desktop-LHD?quality=auto-medium&amp;format=auto');"
->
-  <div class="container">阿萨达多撒多</div>
+{% stylesheet %}
+    .bg-image {
+    background-image: url('your-image-url');
+    background-size: cover;
+    background-position: center center;
+  }
+{% endstylesheet %}
+<div class="container-fluid bg-image">
+  <div class="row">
+    <div class="col-md-6">
+      <h2>Hello, World!</h2>
+      <p>This is a demo of a Bootstrap container with a background image.</p>
+    </div>
+  </div>
 </div>
 
 {% schema %}
@@ -14,8 +22,6 @@
 }
 {% endschema %}
 
-{% stylesheet %}
-{% endstylesheet %}
 <script src="{{ 'bootstrap.bundle.min.js' | asset_url }}" defer="defer"></script>
 {% javascript %}
 {% endjavascript %}
