@@ -98,6 +98,7 @@
 
                 </div>
             {%- when 'bl_text' -%}
+              <div class="t4s-container">
                 <div class="t4s-col-text t4s-col-item t4s-col-lg-{{bk_stts.col_dk}} t4s-col-md-{{bk_stts.col_tb}} t4s-order-md-{{forloop_index}} t4s-order-1 t4s-col-12 t4s-txt-shadow-{{bk_stts.use_shadow}}">
                     <div class="t4s-image-text-content t4s-text-{{bk_stts.txt_align}} t4s-shadow-wrap" style="--imtxt-subhd-color:{{bk_stts.subhd_color}};--imtxt-hd-color:{{bk_stts.hd_color}};--imtxt-des-color:{{bk_stts.des_color}}">                       
                         {%- if bk_stts.heading != blank -%}<h3 class="t4s-image-text-heading t4s-fs-md-{{text_size[0]}} t4-fs-30" >{{bk_stts.heading}}</h3>{%- endif -%}
@@ -109,6 +110,7 @@
                         {%- endif -%}
                     </div>
                 </div>
+              </div>
           {%- endcase -%}
       {%- endfor -%}
     </div>
