@@ -244,8 +244,8 @@
         "template--18304757039381__f65ab8e0-0336-440c-8068-151013a4a5c8-1679452331bbb4eea6-1": {
           "type": "bl_text",
           "settings": {
-            "col_dk": "6",
-            "col_tb": "6",
+            "col_dk": "4",
+            "col_tb": "4",
             "text_size": "40,15",
             "txt_align": "center",
             "sub_heading": "",
@@ -271,11 +271,6 @@
         "template--18304757039381__f65ab8e0-0336-440c-8068-151013a4a5c8-1679452331bbb4eea6-1"
       ],
       "settings": {
-        "design_heading": "1",
-        "heading_align": "t4s-text-center",
-        "top_heading": "1123",
-        "icon_heading": "las la-gem",
-        "top_subheading": "123322",
         "tophead_mb": 30,
         "space_h_item": "20",
         "space_v_item": "10",
