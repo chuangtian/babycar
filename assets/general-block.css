@@ -25,6 +25,7 @@
 	color:  var(--text-cl);
 	margin-bottom: var(--text-mgb);
     text-align: center;
+    width:100%
 }
 .t4s-font-italic-true {
     font-style: italic !important;
