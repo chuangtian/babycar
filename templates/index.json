@@ -209,56 +209,6 @@
         "code_cus_css": ""
       }
     },
-    "20349592-4b41-4043-8a5d-8b134602a540": {
-      "type": "expansion2",
-      "blocks": {
-        "e568c2e3-6912-414a-bfb9-fe4ebae5a516": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1",
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "9738528a-a052-4c31-880d-f3f6c6814d5c": {
-          "type": "heading2",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1",
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "efe56017-539e-4022-9b72-6e4344a7fd7a": {
-          "type": "heading3",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1",
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "e568c2e3-6912-414a-bfb9-fe4ebae5a516",
-        "9738528a-a052-4c31-880d-f3f6c6814d5c",
-        "efe56017-539e-4022-9b72-6e4344a7fd7a"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/1.jpg",
-        "image_overlay_opacity": 0,
-        "margin-top": 0,
-        "image_height": "medium",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "c1962e91-b44f-4468-bae0-a3c0a5f7dfae": {
       "type": "custom-section",
       "blocks": {
@@ -381,13 +331,44 @@
         "use_cus_css": false,
         "code_cus_css": ""
       }
+    },
+    "818da378-a94a-4e90-8ca0-c59f193b1d2f": {
+      "type": "countdown",
+      "settings": {
+        "design_heading": "1",
+        "heading_align": "t4s-text-center",
+        "top_heading": "Countdown timer",
+        "icon_heading": "las la-gem",
+        "top_subheading": "",
+        "tophead_mb": 30,
+        "date": "2022\/12\/26",
+        "cdt_des": "1",
+        "cdt_size": "medium",
+        "box_bdr": 0,
+        "bd_width": 0,
+        "space_item": 10,
+        "number_cl": "#ffffff",
+        "text_cl": "#000000",
+        "border_cl": "#000000",
+        "bg_cl": "#000000",
+        "content_align": "t4s-text-center",
+        "layout": "t4s-container-wrap",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": ",,50px,",
+        "pd": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": "",
+        "use_cus_css": false,
+        "code_cus_css": ""
+      }
     }
   },
   "order": [
     "9b6ef2dc-8171-49a3-80fe-46d052e3d063",
     "social_widget_53816",
     "97eefcc2-3af8-4bb0-bf22-3ac8f4273adf",
-    "20349592-4b41-4043-8a5d-8b134602a540",
-    "c1962e91-b44f-4468-bae0-a3c0a5f7dfae"
+    "c1962e91-b44f-4468-bae0-a3c0a5f7dfae",
+    "818da378-a94a-4e90-8ca0-c59f193b1d2f"
   ]
 }
