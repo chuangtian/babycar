@@ -965,310 +965,37 @@
             ]
         },
         {
-            "type":"custom_text",
-            "name":"Text",
-            "settings":[
+          "type": "heading",
+          "name": "text",
+          "limit": 1,
+          "settings": [
+            {
+              "type": "text",
+              "id": "heading",
+              "default": "Image with text",
+              "label": "t:sections.image-with-text.blocks.heading.settings.heading.label"
+            },
+            {
+              "type": "select",
+              "id": "heading_size",
+              "options": [
                 {
-                    "type":"textarea",
-                    "id":"text",
-                    "label":"Input text",
-                    "default":"Text",
-                    "info":"If you want to line break, please add a <br> tag in the text"
+                  "value": "h2",
+                  "label": "t:sections.all.heading_size.options__1.label"
                 },
                 {
-                    "type":"checkbox",
-                    "id":"remove_br_tag",
-                    "label":"Remove <br> tag on mobile",
-                    "default":false
+                  "value": "h1",
+                  "label": "t:sections.all.heading_size.options__2.label"
                 },
                 {
-                    "type": "select",
-                    "id": "fontf",
-                    "default":"inherit",
-                    "label": "Font family",
-                    "options": [
-                        {
-                            "label": "Inherit",
-                            "value": "inherit"
-                        },
-                        {
-                            "label": "Font Family #1",
-                            "value": "1"
-                        },
-                        {
-                            "label": "Font Family #2",
-                            "value": "2"
-                        },
-                        {
-                            "label": "Font Family #3",
-                            "value": "3"
-                        }
-                    ]
-                },
-                {
-                    "type":"color",
-                    "id":"text_cl",
-                    "label":"Color text",
-                    "default":"#fff"
-                },
-                {
-                    "type":"range",
-                    "id":"text_fs",
-                    "label":"Font size",
-                    "max":100,
-                    "min":10,
-                    "step":1,
-                    "unit":"px",
-                    "default":16
-                },
-                {
-                    "type":"range",
-                    "id":"text_lh",
-                    "label":"Line height",
-                    "max":100,
-                    "min":0,
-                    "step":1,
-                    "default":0,
-                    "unit":"px",
-                    "info":"Set is '0' use to default"            
-                },
-                {
-                    "type":"range",
-                    "id":"text_fw",
-                    "label":"Font weight",
-                    "min":100,
-                    "max":900,
-                    "step":100,
-                    "default":400
-                },
-                {
-                    "type":"range",
-                    "id":"text_ls",
-                    "label":"Letter spacing",
-                    "max":10,
-                    "min":0,
-                    "default":0,
-                    "step":0.1,
-                    "unit":"px"
-                },
-                {
-                    "type": "number",
-                    "id": "text_mgb",
-                    "label": "Margin bottom",
-                    "default": 15
-                },
-                {
-                    "type":"checkbox",
-                    "id":"font_italic",
-                    "label":"Enable font style italic",
-                    "default":false
-                },
-                {
-                    "type":"checkbox",
-                    "id":"text_shadow",
-                    "label":"Enable text shadow",
-                    "default":false
-                },
-                {
-                    "type":"header",
-                    "content":"===== Option mobile ====="
-                },
-                {
-                    "type":"checkbox",
-                    "id":"hidden_mobile",
-                    "label":"Hidden on mobile",
-                    "default":false
-                },
-                {
-                    "type":"range",
-                    "id":"text_fs_mb",
-                    "label":"Font size (Mobile)",
-                    "max":60,
-                    "min":10,
-                    "step":1,
-                    "unit":"px",
-                    "default":16
-                },
-                {
-                    "type":"range",
-                    "id":"text_lh_mb",
-                    "label":"Line height (Mobile)",
-                    "max":70,
-                    "min":0,
-                    "step":1,
-                    "default":0,
-                    "unit":"px",
-                    "info":"Set is '0' use to default"            
-                },
-                {
-                    "type":"range",
-                    "id":"text_ls_mb",
-                    "label":"Letter spacing (Mobile)",
-                    "min":0,
-                    "max":10,
-                    "step":0.1,
-                    "unit":"px",
-                    "default":0
-                },
-                {
-                    "type": "number",
-                    "id": "text_mgb_mobile",
-                    "label": "Margin bottom (Mobile)",
-                    "default": 10
-                },
-                {
-                    "type": "paragraph",
-                    "content": "————————————————"
-                },
-                {
-                  "type":"select",
-                  "id":"animation",
-                  "label":"Animation",
-                  "default":"none",
-                  "options":[
-                    {
-                        "label":"None",
-                        "value":"none"
-                    },
-                    {
-                        "label":"fadeIn",
-                        "value":"fadeIn"
-                    },
-                    {
-                        "label":"fadeInDown",
-                        "value":"fadeInDown"
-                    },
-                    {
-                        "label":"fadeInDownBig",
-                        "value":"fadeInDownBig"
-                    },
-                    {
-                        "label":"fadeInLeft",
-                        "value":"fadeInLeft"
-                    },
-                    {
-                        "label":"fadeInLeftBig",
-                        "value":"fadeInLeftBig"
-                    },
-                    {
-                        "label":"fadeInRight",
-                        "value":"fadeInRight"
-                    },
-                    {
-                        "label":"fadeInRightBig",
-                        "value":"fadeInRightBig"
-                    },
-                    {
-                        "label":"fadeInUp",
-                        "value":"fadeInUp"
-                    },
-                    {
-                        "label":"fadeInUpBig",
-                        "value":"fadeInUpBig"
-                    },
-                    {
-                        "label":"fadeInTopLeft",
-                        "value":"fadeInTopLeft"
-                    },
-                    {
-                        "label":"fadeInTopRight",
-                        "value":"fadeInTopRight"
-                    },
-                    {
-                        "label":"fadeInBottomLeft",
-                        "value":"fadeInBottomLeft"
-                    },
-                    {
-                        "label":"fadeInBottomRight",
-                        "value":"fadeInBottomRight"
-                    },
-                    {
-                        "label":"bounceIn",
-                        "value":"bounceIn"
-                    },
-                    {
-                        "label":"bounceInDown",
-                        "value":"bounceInDown"
-                    },
-                    {
-                        "label":"bounceInLeft",
-                        "value":"bounceInLeft"
-                    },
-                    {
-                        "label":"bounceInRight",
-                        "value":"bounceInRight"
-                    },
-                    {
-                        "label":"bounceInUp",
-                        "value":"bounceInUp"
-                    },
-                    {
-                        "label":"zoomIn",
-                        "value":"zoomIn"
-                    },
-                    {
-                        "label":"zoomInDown",
-                        "value":"zoomInDown"
-                    },
-                    {
-                        "label":"zoomInLeft",
-                        "value":"zoomInLeft"
-                    },
-                    {
-                        "label":"zoomInRight",
-                        "value":"zoomInRight"
-                    },
-                    {
-                        "label":"zoomInUp",
-                        "value":"zoomInUp"
-                    },
-                    {
-                        "label":"slideInDown",
-                        "value":"slideInDown"
-                    },
-                    {
-                        "label":"slideInLeft",
-                        "value":"slideInLeft"
-                    },
-                    {
-                        "label":"slideInRight",
-                        "value":"slideInRight"
-                    },
-                    {
-                        "label":"slideInUp",
-                        "value":"slideInUp"
-                    },
-                    {
-                        "label":"lightSpeedInRight",
-                        "value":"lightSpeedInRight"
-                    },
-                    {
-                        "label":"lightSpeedInLeft",
-                        "value":"lightSpeedInLeft"
-                    },
-                    {
-                        "label":"lightSpeedOutRight",
-                        "value":"lightSpeedOutRight"
-                    },
-                    {
-                        "label":"lightSpeedOutLeft",
-                        "value":"lightSpeedOutLeft"
-                    },
-                    {
-                        "label":"jello",
-                        "value":"jello"
-                    },
-                    {
-                        "label":"tada",
-                        "value":"tada"
-                    },
-                    {
-                        "label":"pulse",
-                        "value":"pulse"
-                    }
-                  ]
+                  "value": "h0",
+                  "label": "t:sections.all.heading_size.options__3.label"
                 }
-            ]
+              ],
+              "default": "h1",
+              "label": "t:sections.all.heading_size.label"
+            }
+          ]
         }
     ],
     "presets": [
@@ -1284,23 +1011,7 @@
                     
                 },
                 {
-                    "type":"custom_text",
-                    "settings":{
-                        "text":"Summer 2022",
-                        "text_fs":16,
-                        "text_fw":400,
-                        "text_ls":1
-                    }
-                },
-                {
-                    "type":"custom_text",
-                    "settings":{
-                        "text":"New Arrival Collection",
-                        "text_fs":26,
-                        "text_fw":300,
-                        "text_lh":26,
-                        "text_mgb":25
-                    }
+                  "type": "heading"
                 }
 
             ]
