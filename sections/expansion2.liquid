@@ -139,16 +139,16 @@
                                   <div class="tc-text">
                                       {%- for block in section.blocks -%}
                                           <div class="tc-text">
-                                          {% case block.type %}
-                                              {%- when 'heading' -%}
-                                                  <h2>
-                                                      {{ block.settings.heading | escape }}
-                                                  </h2>
-                                              {%- when 'text' -%}
-                                                  <p>
-                                                      {{ block.settings.text }}
-                                                  </p>
-                                          {%- endcase -%}
+                                            {% case block.type %}
+                                                {%- when 'heading' -%}
+                                                    <h2>
+                                                        {{ block.settings.heading | escape }}
+                                                    </h2>
+                                                {%- when 'text' -%}
+                                                    <p>
+                                                        {{ block.settings.text }}
+                                                    </p>
+                                            {%- endcase -%}
                                         </div>
                                        {%- endfor -%}
                                   
