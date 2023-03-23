@@ -505,8 +505,8 @@
         "template--18304757039381__bfa25dc2-dcf9-4bfa-a545-fe4e0752483a-1679565670b4277ebd-1": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "heading": "Image1",
+            "text": "<p>Pair <\/p>"
           }
         },
         "b74367b7-b813-4c82-b38c-45f2b4c509c8": {
