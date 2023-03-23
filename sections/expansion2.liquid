@@ -120,23 +120,23 @@
                             {%- capture append_bg_border_style -%}--br-color:{{bk_stts.br_color}};--br-style:{{bk_stts.br_style}};--br-pd:{{bk_stts.br_pd}}px;--br-pd-mb:{{bk_stts.br_pd_mb}}px;--border-bg:{{br_bg}};{%- endcapture -%}
                         {%- endif -%}
                         <div class="t4s-content-wrap t4s-pe-none t4s-full-width-link t4s-z-100">
-                            <div class="t4s-content-position t4s-{{bk_stts.content_width}} t4s-pa t4s-text-md-{{bk_stts.text_align}} t4s-text-{{bk_stts.text_align_mb}} t4s-bg-content-true t4s-br-content-{{bk_stts.border_bl}} t4s-br-style-{{bk_stts.br_style}}" 
-                              style="width:100%;margin-top: 10%"
-                            >  
-                                {%- for block in se_blocks offset:index -%} 
-                                    {%- assign index = index|plus:1 -%}
-                                    {%- assign bk_stts = block.settings -%}
-                                    {%- if block.type == 'image_parent' -%}{% break %}{%-endif-%}
-                                    {%- case block.type -%}
-                                        {%- when 'custom_text' -%}
-                                            {%- assign general_block = true -%}
-                                            {%- if bk_stts.animation !='none' -%}{%- assign use_animation = true -%} {%- endif -%}
-                                            <p class="t4s-bl-item t4s-animation-{{bk_stts.animation}} t4s-text-bl1 t4s-fnt-fm-{{bk_stts.fontf}} t4s-font-italic-{{bk_stts.font_italic}} t4s-hidden-mobile-{{bk_stts.hidden_mobile}} t4s-br-mb-{{bk_stts.remove_br_tag}} t4s-text-shadow-{{bk_stts.text_shadow}}" id="b_{{block.id}}" {{ block.shopify_attributes }} {%- render 'bk_cus_style',type:'custom_text',bk_stts:bk_stts,ani_delay:ani_delay -%}>{{bk_stts.text}}</p>
-                                       
-                                    {%- endcase -%}
-                                    {%- if bk_stts.animation != 'none' %}{% assign ani_delay = ani_delay | plus: time_ani_delay %}{% endif -%}
-                                {%- endfor -%}
-                            </div>
+                            <div>
+                              <div class="t4s-content-position t4s-{{bk_stts.content_width}} t4s-pa t4s-text-md-{{bk_stts.text_align}} t4s-text-{{bk_stts.text_align_mb}} t4s-bg-content-true t4s-br-content-{{bk_stts.border_bl}} t4s-br-style-{{bk_stts.br_style}}" >  
+                                  {%- for block in se_blocks offset:index -%} 
+                                      {%- assign index = index|plus:1 -%}
+                                      {%- assign bk_stts = block.settings -%}
+                                      {%- if block.type == 'image_parent' -%}{% break %}{%-endif-%}
+                                      {%- case block.type -%}
+                                          {%- when 'custom_text' -%}
+                                              {%- assign general_block = true -%}
+                                              {%- if bk_stts.animation !='none' -%}{%- assign use_animation = true -%} {%- endif -%}
+                                              <p class="t4s-bl-item t4s-animation-{{bk_stts.animation}} t4s-text-bl1 t4s-fnt-fm-{{bk_stts.fontf}} t4s-font-italic-{{bk_stts.font_italic}} t4s-hidden-mobile-{{bk_stts.hidden_mobile}} t4s-br-mb-{{bk_stts.remove_br_tag}} t4s-text-shadow-{{bk_stts.text_shadow}}" id="b_{{block.id}}" {{ block.shopify_attributes }} {%- render 'bk_cus_style',type:'custom_text',bk_stts:bk_stts,ani_delay:ani_delay -%}>{{bk_stts.text}}</p>
+                                         
+                                      {%- endcase -%}
+                                      {%- if bk_stts.animation != 'none' %}{% assign ani_delay = ani_delay | plus: time_ani_delay %}{% endif -%}
+                                  {%- endfor -%}
+                              </div>
+                            </div
                         </div>
                    
                 </div>
