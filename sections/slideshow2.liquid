@@ -125,15 +125,12 @@
                             >   -->
                                 {% assign num = 1 %}
                                 
-                                {%- for block in se_blocks offset:index -%}
-                                    
+                                {%- for block in se_blocks offset:index -%} 
                                     {%- assign index = index|plus:1 -%}
                                     {%- assign bk_stts = block.settings -%}
                                     {%- if block.type == 'image_parent' -%}{% break %}{%-endif-%}
                                     {%- case block.type -%}
                                         {%- when 'custom_text' -%}
-                                            {% assign num = str | plus: 0 %}
-                                            {{ num | increment }}
                                             {%- assign general_block = true -%}
                                             {%- if bk_stts.animation !='none' -%}{%- assign use_animation = true -%} {%- endif -%}
                                             {%- if num == 2 %}
@@ -220,6 +217,7 @@
                                               {%- endif -%}
                                     {%- endcase -%}
                                     {%- if bk_stts.animation != 'none' %}{% assign ani_delay = ani_delay | plus: time_ani_delay %}{% endif -%}
+                                      {{ num | increment }}
                                 {%- endfor -%}
 <!--                             </div> -->
                         </div>
