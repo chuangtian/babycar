@@ -217,6 +217,7 @@
                                     {%- endcase -%}
                                     {%- if bk_stts.animation != 'none' %}{% assign ani_delay = ani_delay | plus: time_ani_delay %}{% endif -%}
                                      {% increment num %}
+                                      {{ num | increment }}
                                 {%- endfor -%}
 <!--                             </div> -->
                         </div>
