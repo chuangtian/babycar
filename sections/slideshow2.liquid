@@ -132,6 +132,7 @@
                                     {%- if block.type == 'image_parent' -%}{% break %}{%-endif-%}
                                     {%- case block.type -%}
                                         {%- when 'custom_text' -%}
+                                            {% assign num = str | plus: 0 %}
                                             {{ num | increment }}
                                             {%- assign general_block = true -%}
                                             {%- if bk_stts.animation !='none' -%}{%- assign use_animation = true -%} {%- endif -%}
