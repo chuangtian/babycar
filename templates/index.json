@@ -508,11 +508,27 @@
             "heading": "Image with text",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
           }
+        },
+        "b74367b7-b813-4c82-b38c-45f2b4c509c8": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "23a4c099-5267-40fb-9214-5a4e23ea9134": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
         }
       },
       "block_order": [
         "template--18304757039381__bfa25dc2-dcf9-4bfa-a545-fe4e0752483a-1679565670b4277ebd-0",
-        "template--18304757039381__bfa25dc2-dcf9-4bfa-a545-fe4e0752483a-1679565670b4277ebd-1"
+        "template--18304757039381__bfa25dc2-dcf9-4bfa-a545-fe4e0752483a-1679565670b4277ebd-1",
+        "b74367b7-b813-4c82-b38c-45f2b4c509c8",
+        "23a4c099-5267-40fb-9214-5a4e23ea9134"
       ],
       "settings": {
         "se_height": "t4s_ratioadapt",
