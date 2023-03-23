@@ -125,7 +125,8 @@
                             >   -->
                                 {% assign num = 1 %}
                                 
-                                {%- for block in se_blocks offset:index -%} 
+                                {%- for block in se_blocks offset:index -%}
+                                    {{ num | increment }}
                                     {%- assign index = index|plus:1 -%}
                                     {%- assign bk_stts = block.settings -%}
                                     {%- if block.type == 'image_parent' -%}{% break %}{%-endif-%}
@@ -217,7 +218,6 @@
                                               {%- endif -%}
                                     {%- endcase -%}
                                     {%- if bk_stts.animation != 'none' %}{% assign ani_delay = ani_delay | plus: time_ani_delay %}{% endif -%}
-                                      {{ num | increment }}
                                 {%- endfor -%}
 <!--                             </div> -->
                         </div>
