@@ -189,7 +189,7 @@
   }
 {%- endstyle -%}
 
-<div data-header-options='{ "isTransparent": {{h_transparent}},"isSticky": {{se_stts.sticky_header}},"hideScroldown": {{se_stts.scroll_header}} }' class="t4s-header__wrapper t4s-pr t4s-header-layout_{{se_stts.layout}} {% if h__bgimg != blank %} lazyloadt4s t4s-header__bgimg" data-bgset="{{ h__bgimg | image_url: width: 1 }}" data-ratio="{{h__bgimg.aspect_ratio}}" data-sizes="auto"{% else %}"{% endif %} style="position: fixed;width: 100%;">
+<div data-header-options='{ "isTransparent": {{h_transparent}},"isSticky": {{se_stts.sticky_header}},"hideScroldown": {{se_stts.scroll_header}} }' class="t4s-header__wrapper t4s-pr t4s-header-layout_{{se_stts.layout}} {% if h__bgimg != blank %} lazyloadt4s t4s-header__bgimg" data-bgset="{{ h__bgimg | image_url: width: 1 }}" data-ratio="{{h__bgimg.aspect_ratio}}" data-sizes="auto"{% else %}"{% endif %} style="position: fixed;width: 100%;--h-bg-color:#ffffff70;">
   <div class="t4s-container">
     <div data-header-height class="t4s-row t4s-gx-15 t4s-gx-md-30 t4s-align-items-center">
     {%- case se_stts.layout -%}
