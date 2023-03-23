@@ -768,17 +768,17 @@
             "ch_pos": 50,
             "cv_pos_mb": 50,
             "ch_pos_mb": 50,
-            "bg_overlay": "#000",
+            "bg_overlay": "#000000",
             "bg_opacity": 0,
-            "bg_content_cl": "#fff",
+            "bg_content_cl": "#ffffff",
             "bg_content_op": 0,
             "content_pd_tb": 15,
             "content_pd_lr": 15,
             "content_pd_tb_mb": 10,
             "content_pd_lr_mb": 10,
             "border_bl": false,
-            "br_color": "#222",
-            "br_bg": "#fff",
+            "br_color": "#222222",
+            "br_bg": "#ffffff",
             "br_opacity": 50,
             "br_style": "solid",
             "br_pd": 20,
@@ -793,11 +793,27 @@
             "heading": "Image with text",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
           }
+        },
+        "938a925e-6c84-4e6d-a4ca-695e3f35d2a2": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text2",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "8de8615a-cdbb-4d03-91f2-a9d9316c5a72": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text3",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
         }
       },
       "block_order": [
         "template--18304757039381__67af1363-14a5-4848-a787-be0ff6202a21-1679543585fa548399-0",
-        "template--18304757039381__67af1363-14a5-4848-a787-be0ff6202a21-1679543585fa548399-1"
+        "template--18304757039381__67af1363-14a5-4848-a787-be0ff6202a21-1679543585fa548399-1",
+        "938a925e-6c84-4e6d-a4ca-695e3f35d2a2",
+        "8de8615a-cdbb-4d03-91f2-a9d9316c5a72"
       ],
       "settings": {
         "se_height": "t4s_ratioadapt",
