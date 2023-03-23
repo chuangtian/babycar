@@ -471,6 +471,7 @@
         "template--18304757039381__7037844d-65d9-4da0-9a8a-85d8a6b55554-1679473261c42eb74b-0": {
           "type": "image_parent",
           "settings": {
+            "image": "shopify:\/\/shop_images\/DSC00002.jpg",
             "image_position": "8",
             "cl_img": "",
             "link_img1": "",
@@ -755,6 +756,7 @@
         "template--18304757039381__2a5fd7c0-1d42-4691-b5c2-731bf22f3cab-167953545257a10ab6-0": {
           "type": "image_parent",
           "settings": {
+            "image": "shopify:\/\/shop_images\/DSC00041.jpg",
             "image_position": "8",
             "cl_img": "",
             "link_img1": "",
@@ -785,56 +787,10 @@
             "time_animation": 1,
             "animation_delay": 40
           }
-        },
-        "template--18304757039381__2a5fd7c0-1d42-4691-b5c2-731bf22f3cab-167953545257a10ab6-1": {
-          "type": "custom_text",
-          "settings": {
-            "text": "Summer 2022",
-            "remove_br_tag": false,
-            "fontf": "inherit",
-            "text_cl": "#ffffff",
-            "text_fs": 16,
-            "text_lh": 0,
-            "text_fw": 400,
-            "text_ls": 1,
-            "text_mgb": 15,
-            "font_italic": false,
-            "text_shadow": false,
-            "hidden_mobile": false,
-            "text_fs_mb": 16,
-            "text_lh_mb": 0,
-            "text_ls_mb": 0,
-            "text_mgb_mobile": 10,
-            "animation": "none"
-          }
-        },
-        "template--18304757039381__2a5fd7c0-1d42-4691-b5c2-731bf22f3cab-167953545257a10ab6-2": {
-          "type": "custom_text",
-          "settings": {
-            "text": "New Arrival Collection",
-            "remove_br_tag": false,
-            "fontf": "inherit",
-            "text_cl": "#ffffff",
-            "text_fs": 26,
-            "text_lh": 26,
-            "text_fw": 300,
-            "text_ls": 0,
-            "text_mgb": 25,
-            "font_italic": false,
-            "text_shadow": false,
-            "hidden_mobile": false,
-            "text_fs_mb": 16,
-            "text_lh_mb": 0,
-            "text_ls_mb": 0,
-            "text_mgb_mobile": 10,
-            "animation": "none"
-          }
         }
       },
       "block_order": [
-        "template--18304757039381__2a5fd7c0-1d42-4691-b5c2-731bf22f3cab-167953545257a10ab6-0",
-        "template--18304757039381__2a5fd7c0-1d42-4691-b5c2-731bf22f3cab-167953545257a10ab6-1",
-        "template--18304757039381__2a5fd7c0-1d42-4691-b5c2-731bf22f3cab-167953545257a10ab6-2"
+        "template--18304757039381__2a5fd7c0-1d42-4691-b5c2-731bf22f3cab-167953545257a10ab6-0"
       ],
       "settings": {
         "se_height": "t4s_ratioadapt",
