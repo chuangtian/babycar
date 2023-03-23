@@ -137,8 +137,15 @@
                             
                               <div class="t4s-content-position t4s-{{bk_stts.content_width}} t4s-pa t4s-text-md-{{bk_stts.text_align}} t4s-text-{{bk_stts.text_align_mb}} t4s-bg-content-true t4s-br-content-{{bk_stts.border_bl}} t4s-br-style-{{bk_stts.br_style}}"  >
                                   <div class="tc-text">
-                                      <h2>1</h2>
-                                      <p>1awdadsad</p>
+                                      {%- for block in section.blocks -%}
+                                          {% case block.type %}
+                                              {%- when 'heading' -%}
+                                                  <h2>
+                                                      {{ block.settings.heading | escape }}
+                                                  </h2>
+                                              <p>1awdadsad</p>
+                                          {%- endcase -%}
+                                       {%- endfor -%}
                                   </div>
                                   <div  class="tc-text">
                                        <h2>2</h2>
@@ -992,7 +999,7 @@
         },
         {
           "type": "heading",
-          "name": "text",
+          "name": "heading",
           "limit": 1,
           "settings": [
             {
@@ -1005,7 +1012,7 @@
         },
         {
           "type": "text",
-          "name": "t:sections.image-with-text.blocks.text.name",
+          "name": "text",
           "limit": 1,
           "settings": [
             {
