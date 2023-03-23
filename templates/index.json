@@ -465,6 +465,91 @@
         "code_cus_css": ""
       }
     },
+    "bfa25dc2-dcf9-4bfa-a545-fe4e0752483a": {
+      "type": "banner2",
+      "blocks": {
+        "template--18304757039381__bfa25dc2-dcf9-4bfa-a545-fe4e0752483a-1679565670b4277ebd-0": {
+          "type": "image_parent",
+          "settings": {
+            "image_position": "8",
+            "cl_img": "",
+            "link_img1": "",
+            "open_link": "_blank",
+            "animate_slide": "none",
+            "text_align": "start",
+            "text_align_mb": "center",
+            "content_width": "auto",
+            "cv_pos": 50,
+            "ch_pos": 50,
+            "cv_pos_mb": 50,
+            "ch_pos_mb": 50,
+            "bg_overlay": "#000",
+            "bg_opacity": 0,
+            "bg_content_cl": "#fff",
+            "bg_content_op": 0,
+            "content_pd_tb": 15,
+            "content_pd_lr": 15,
+            "content_pd_tb_mb": 10,
+            "content_pd_lr_mb": 10,
+            "border_bl": false,
+            "br_color": "#222",
+            "br_bg": "#fff",
+            "br_opacity": 50,
+            "br_style": "solid",
+            "br_pd": 20,
+            "br_pd_mb": 10,
+            "time_animation": 1,
+            "animation_delay": 40
+          }
+        },
+        "template--18304757039381__bfa25dc2-dcf9-4bfa-a545-fe4e0752483a-1679565670b4277ebd-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--18304757039381__bfa25dc2-dcf9-4bfa-a545-fe4e0752483a-1679565670b4277ebd-0",
+        "template--18304757039381__bfa25dc2-dcf9-4bfa-a545-fe4e0752483a-1679565670b4277ebd-1"
+      ],
+      "settings": {
+        "se_height": "t4s_ratioadapt",
+        "custom_dk": true,
+        "height_dk": 600,
+        "custom_tb": true,
+        "height_tb": 400,
+        "custom_mb": true,
+        "height_mb": 250,
+        "eff": "slide",
+        "loop": true,
+        "au_time": 0,
+        "au_hover": true,
+        "nav_btn": false,
+        "btn_vi": "hover",
+        "btn_owl": "default",
+        "btn_shape": "none",
+        "btn_cl": "dark",
+        "btn_size": "small",
+        "btn_hidden_mobile": false,
+        "nav_dot": false,
+        "dot_owl": "default",
+        "dots_cl": "dark",
+        "dots_round": false,
+        "dots_space": 10,
+        "dots_hidden_mobile": false,
+        "layout": "t4s-container-fluid",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": ",,50px,",
+        "pd": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": "",
+        "use_cus_css": false,
+        "code_cus_css": ""
+      }
+    },
     "7037844d-65d9-4da0-9a8a-85d8a6b55554": {
       "type": "slideshow2",
       "blocks": {
@@ -762,6 +847,7 @@
     "97eefcc2-3af8-4bb0-bf22-3ac8f4273adf",
     "c1962e91-b44f-4468-bae0-a3c0a5f7dfae",
     "b4891829-c578-4ccf-bc52-13d3bc35af49",
+    "bfa25dc2-dcf9-4bfa-a545-fe4e0752483a",
     "7037844d-65d9-4da0-9a8a-85d8a6b55554",
     "67af1363-14a5-4848-a787-be0ff6202a21"
   ]
