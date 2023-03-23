@@ -120,9 +120,9 @@
                             {%- capture append_bg_border_style -%}--br-color:{{bk_stts.br_color}};--br-style:{{bk_stts.br_style}};--br-pd:{{bk_stts.br_pd}}px;--br-pd-mb:{{bk_stts.br_pd_mb}}px;--border-bg:{{br_bg}};{%- endcapture -%}
                         {%- endif -%}
                         <div class="t4s-content-wrap t4s-pe-none t4s-full-width-link t4s-z-100">
-                            <div class="t4s-content-position t4s-{{bk_stts.content_width}} t4s-pa t4s-text-md-{{bk_stts.text_align}} t4s-text-{{bk_stts.text_align_mb}} t4s-bg-content-true t4s-br-content-{{bk_stts.border_bl}} t4s-br-style-{{bk_stts.br_style}}" 
+<!--                             <div class="t4s-content-position t4s-{{bk_stts.content_width}} t4s-pa t4s-text-md-{{bk_stts.text_align}} t4s-text-{{bk_stts.text_align_mb}} t4s-bg-content-true t4s-br-content-{{bk_stts.border_bl}} t4s-br-style-{{bk_stts.br_style}}" 
                               style="width:100%;margin-top: 10%"
-                            >  
+                            >   -->
                                 {%- for block in se_blocks offset:index -%} 
                                     {%- assign index = index|plus:1 -%}
                                     {%- assign bk_stts = block.settings -%}
@@ -211,7 +211,7 @@
                                     {%- endcase -%}
                                     {%- if bk_stts.animation != 'none' %}{% assign ani_delay = ani_delay | plus: time_ani_delay %}{% endif -%}
                                 {%- endfor -%}
-                            </div>
+<!--                             </div> -->
                         </div>
                     <a href="{{url}}" target="{{open_link}}" class="t4s-full-width-link{% if url == blank %} t4s-pe-none {% else %} t4s-pe-auto{% endif %}" style="--bg-overlay:{{bg_overlay}};"></a>
                 </div>
