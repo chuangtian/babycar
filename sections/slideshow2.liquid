@@ -126,12 +126,13 @@
                                 {% assign num = 1 %}
                                 
                                 {%- for block in se_blocks offset:index -%}
-                                    {{ num | increment }}
+                                    
                                     {%- assign index = index|plus:1 -%}
                                     {%- assign bk_stts = block.settings -%}
                                     {%- if block.type == 'image_parent' -%}{% break %}{%-endif-%}
                                     {%- case block.type -%}
                                         {%- when 'custom_text' -%}
+                                            {{ num | increment }}
                                             {%- assign general_block = true -%}
                                             {%- if bk_stts.animation !='none' -%}{%- assign use_animation = true -%} {%- endif -%}
                                             {%- if num == 2 %}
