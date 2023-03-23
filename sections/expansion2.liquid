@@ -138,6 +138,7 @@
                               <div class="t4s-content-position t4s-content-position1 t4s-{{bk_stts.content_width}} t4s-pa t4s-text-md-{{bk_stts.text_align}} t4s-text-{{bk_stts.text_align_mb}} t4s-bg-content-true t4s-br-content-{{bk_stts.border_bl}} t4s-br-style-{{bk_stts.br_style}}"  >
                                   <div class="tc-text">
                                       {%- for block in section.blocks -%}
+                                          <div class="tc-text">
                                           {% case block.type %}
                                               {%- when 'heading' -%}
                                                   <h2>
@@ -148,8 +149,9 @@
                                                       {{ block.settings.text }}
                                                   </p>
                                           {%- endcase -%}
+                                        </div>
                                        {%- endfor -%}
-                                  </div>
+                                  
                                  
           
                               
