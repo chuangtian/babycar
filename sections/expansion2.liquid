@@ -135,6 +135,12 @@
                                             <div>
                                               <p class="t4s-bl-item t4s-animation-{{bk_stts.animation}} t4s-text-bl1 t4s-fnt-fm-{{bk_stts.fontf}} t4s-font-italic-{{bk_stts.font_italic}} t4s-hidden-mobile-{{bk_stts.hidden_mobile}} t4s-br-mb-{{bk_stts.remove_br_tag}} t4s-text-shadow-{{bk_stts.text_shadow}}" id="b_{{block.id}}" {{ block.shopify_attributes }} {%- render 'bk_cus_style',type:'custom_text',bk_stts:bk_stts,ani_delay:ani_delay -%}>{{bk_stts.text}}</p>
                                              </div>
+                                            <div>
+                                              <p class="t4s-bl-item t4s-animation-{{bk_stts.animation}} t4s-text-bl1 t4s-fnt-fm-{{bk_stts.fontf}} t4s-font-italic-{{bk_stts.font_italic}} t4s-hidden-mobile-{{bk_stts.hidden_mobile}} t4s-br-mb-{{bk_stts.remove_br_tag}} t4s-text-shadow-{{bk_stts.text_shadow}}" id="b_{{block.id}}" {{ block.shopify_attributes }} {%- render 'bk_cus_style',type:'custom_text',bk_stts:bk_stts,ani_delay:ani_delay -%}>{{bk_stts.text}}</p>
+                                             </div>
+                                            <div>
+                                              <p class="t4s-bl-item t4s-animation-{{bk_stts.animation}} t4s-text-bl1 t4s-fnt-fm-{{bk_stts.fontf}} t4s-font-italic-{{bk_stts.font_italic}} t4s-hidden-mobile-{{bk_stts.hidden_mobile}} t4s-br-mb-{{bk_stts.remove_br_tag}} t4s-text-shadow-{{bk_stts.text_shadow}}" id="b_{{block.id}}" {{ block.shopify_attributes }} {%- render 'bk_cus_style',type:'custom_text',bk_stts:bk_stts,ani_delay:ani_delay -%}>{{bk_stts.text}}</p>
+                                             </div>
                                       {%- endcase -%}
                                       {%- if bk_stts.animation != 'none' %}{% assign ani_delay = ani_delay | plus: time_ani_delay %}{% endif -%}
                                   {%- endfor -%}
