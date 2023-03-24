@@ -509,7 +509,7 @@
           "top-bar-1": {
             "type": "text",
             "settings": {
-              "text": "<p><strong>Free shipping on all bikes.<\/strong><\/p>",
+              "text": "<p><strong>Free shipping on all bikes<\/strong><\/p>",
               "countdown": "2022\/04\/19",
               "txt_day": "days",
               "dayx": 0,
@@ -553,7 +553,7 @@
           "cl": "#ffffff",
           "cl_a_hover": "#56cfe1",
           "bg": "#ffffff",
-          "bg_op": 89,
+          "bg_op": 100,
           "show_border": false,
           "bd_cl": "#000000",
           "cl_tr": "#ffffff",
