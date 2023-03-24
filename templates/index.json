@@ -853,6 +853,35 @@
     },
     "67af1363-14a5-4848-a787-be0ff6202a21": {
       "type": "expansion2",
+      "blocks": {
+        "dd483685-9c5e-4a78-b151-14b8e68b3628": {
+          "type": "bl_text",
+          "settings": {
+            "col_dk": "12",
+            "col_tb": "6",
+            "text_size": "40,15",
+            "txt_align": "center",
+            "sub_heading": "",
+            "heading": "Image with text",
+            "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "subhd_color": "#222222",
+            "hd_color": "#222222",
+            "des_color": "#878787",
+            "use_shadow": false,
+            "button_label": "Button label",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_icon": false,
+            "button_style": "default",
+            "btn_size": "large",
+            "btn_cl": "dark",
+            "button_effect": "default"
+          }
+        }
+      },
+      "block_order": [
+        "dd483685-9c5e-4a78-b151-14b8e68b3628"
+      ],
       "settings": {
       }
     }
