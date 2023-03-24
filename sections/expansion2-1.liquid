@@ -1384,4 +1384,52 @@
       ]
     }
   {%- endschema -%}
+
+  
+{% javascript %}
+  
+  // 获取展开按钮和收缩按钮的 DOM 元素
+  const btnCollapse2 = document.getElementById('btnCollapse2');
+  // const btnCollapseClose = document.getElementById('btnCollapseClose2');
+
+  // 为收缩按钮添加 click 事件监听器
+  btnCollapse2.addEventListener('click', () => {
+      // 切换展开收缩区域的状态
+      var htmlFont=$('.plus-html').html();
+       console.log(htmlFont);
+
+      if(htmlFont == 'Learn More'){
+          $('.plus-html').html('Close');
+          $('#plus-icon-html2').removeClass('la-plus');
+          $('#plus-icon-html2').addClass('la-times');
+          // $('#exampleModal').toggleClass('show');
+          $('#exampleModal').css('display','block');
+        
+        console.log(11);
+
+      }else{
+          $('.plus-html').html('Learn More');
+          $('#plus-icon-html2').removeClass('la-times');
+          $('#plus-icon-html2').addClass('la-plus');;
+          // $('#exampleModal').toggleClass('show');
+          $('#exampleModal').css('display','none');
+          changeHash('#dv');
+        console.log(21);
+      }
+  });
+  // btnCollapseClose.addEventListener('click', () => {
+  //     // 切换展开收缩区域的状态
+  //       $('.plus-html').html('Learn More');
+  //       $('#plus-icon-html2').removeClass('la-times');
+  //       $('#plus-icon-html2').addClass('la-plus');;
+  //       // $('#exampleModal').toggleClass('show');
+  //       $('#exampleModal').css('display','none');
+  //       changeHash('#dv');
+  //   console.log(31);
+  // });
+  function changeHash(idName) {
+          document.querySelector(idName).scrollIntoView({block: "center"});
+  };
+
+{% endjavascript %}
   
