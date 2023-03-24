@@ -122,7 +122,7 @@
      <div style=" display: flex;justify-content: center;align-items: center;">
       <a  
         
-        id="btnCollapseClose"
+        id="btnCollapseClose2"
           style="margin-top: 10px;text-decoration: none;background: #fff;color: #222222;border: 1px solid #222222;"  
           class="t4s-btn t4s-btn-base t4s-btn-style-default t4s-btn-size-extra-medium t4s-btn-color-dark t4s-btn-effect-sweep-to-right t4s-btn-radius-">
          <i class="las la-times" style="font-size:20px"></i>
@@ -1410,7 +1410,7 @@
   
   // 获取展开按钮和收缩按钮的 DOM 元素
   const btnCollapse2 = document.getElementById('btnCollapse2');
-  // const btnCollapseClose = document.getElementById('btnCollapseClose2');
+  // const btnCollapseClose2 = document.getElementById('btnCollapseClose2');
 
   // 为收缩按钮添加 click 事件监听器
   btnCollapse2.addEventListener('click', () => {
@@ -1437,30 +1437,21 @@
         console.log(21);
       }
   });
-  // btnCollapseClose.addEventListener('click', () => {
-  //     // 切换展开收缩区域的状态
-  //       $('.plus-html2').html('Learn More');
-  //       $('#plus-icon-html2').removeClass('la-times');
-  //       $('#plus-icon-html2').addClass('la-plus');;
-  //       // $('#exampleModal').toggleClass('show');
-  //       $('#exampleModal').css('display','none');
-  //       changeHash('#dv2');
-  //   console.log(31);
-  // });
+  btnCollapseClose2.addEventListener('click', () => {
+      // 切换展开收缩区域的状态
+        $('.plus-html2').html('Learn More');
+        $('#plus-icon-html2').removeClass('la-times');
+        $('#plus-icon-html2').addClass('la-plus');;
+        // $('#exampleModal').toggleClass('show');
+        $('#exampleModal2').css('display','none');
+        changeHash('#dv2');
+    console.log(31);
+  });
   function changeHash(idName) {
           document.querySelector(idName).scrollIntoView({block: "center"});
   };
 
 
 
-
-
-
-
-
-
-
-
-  
 {% endjavascript %}
   
