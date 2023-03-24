@@ -509,7 +509,7 @@
           "top-bar-1": {
             "type": "text",
             "settings": {
-              "text": "<p><strong>Subscribe to us and enjoy $200 discount code<\/strong><\/p>",
+              "text": "<p><strong>Free shipping on all bikes.<\/strong><\/p>",
               "countdown": "2022\/04\/19",
               "txt_day": "days",
               "dayx": 0,
