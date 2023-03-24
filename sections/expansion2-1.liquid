@@ -37,6 +37,7 @@
           assign button_style = bk_stts.button_style 
           assign forloop_index =  forloop.index
         -%}
+        {{ forloop_index }}
         {%- case block.type -%}
             {%- when 'bl_image' -%}
                 {%-liquid 
