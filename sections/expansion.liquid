@@ -119,7 +119,7 @@
                             <a style="width:100%;text-decoration: none;" class="t4s-btn t4s-btn-base t4s-btn-style-{{button_style}} t4s-btn-size-{{bk_stts.btn_size}} t4s-btn-color-{{bk_stts.btn_cl}} {% if button_style == 'default' or button_style == 'outline'%}t4s-btn-effect-{{bk_stts.button_effect}} t4s-btn-radius-{{bk_stts.btn_bdr}}{% endif %}" href="{{bk_stts.button_link}}"  target="{{bk_stts.open_link}}">{{bk_stts.button_label}} {%- if bk_stts.btn_icon -%}<svg  class="t4s-btn-icon" viewBox="0 0 14 10"><use xlink:href="#t4s-icon-btn"></use></svg>{%- endif -%}</a>
                         {%- endif -%}
                         <a  data-bs-toggle="collapse"
-                            data-bs-target="#exampleModal"
+                            data-bs-target="#exampleModal2"
                             id="btnCollapse"
                             style="width:100%;margin-top: 10px;text-decoration: none;background: #fff;color: #222222;border: 1px solid #222222;"  
                             class="t4s-btn t4s-btn-base t4s-btn-style-{{button_style}} t4s-btn-size-{{bk_stts.btn_size}} t4s-btn-color-{{bk_stts.btn_cl}} {% if button_style == 'default' or button_style == 'outline'%}t4s-btn-effect-{{bk_stts.button_effect}} t4s-btn-radius-{{bk_stts.btn_bdr}}{% endif %}"   target="{{bk_stts.open_link}}">
@@ -134,7 +134,7 @@
     </div>
     {{-html_layout[1]-}}
     <div>
-    <div id="exampleModal" class="collapse   section-{{ section.id }}-padding " style="margin: 80px 0 80px 0;">
+    <div id="exampleModal2" class="collapse   section-{{ section.id }}-padding " style="margin: 80px 0 80px 0;">
         
         {%- for block in se_blocks-%}
           {% case block.type %}
@@ -205,7 +205,7 @@
                 <div style=" display: flex;justify-content: center;align-items: center;">
                   <a  
                     data-bs-toggle="collapse"
-                    data-bs-target="#exampleModal"
+                    data-bs-target="#exampleModal2"
                     id="btnCollapseClose"
                       style="margin-top: 10px;text-decoration: none;background: #fff;color: #222222;border: 1px solid #222222;"  
                       class="t4s-btn t4s-btn-base t4s-btn-style-default t4s-btn-size-extra-medium t4s-btn-color-dark t4s-btn-effect-sweep-to-right t4s-btn-radius-">
@@ -1549,14 +1549,14 @@
           $('.plus-font').html('Close');
           $('#plus-icon').removeClass('la-plus');
           $('#plus-icon').addClass('la-times');
-          $('#exampleModal').addClass('show');
+          $('#exampleModal2').addClass('show');
         console.log(1);
 
       }else{
           $('.plus-font').html('Learn More');
           $('#plus-icon').removeClass('la-times');
           $('#plus-icon').addClass('la-plus');;
-          $('#exampleModal').removeClass('show');
+          $('#exampleModal2').removeClass('show');
         console.log(2);
       }
   });
@@ -1565,7 +1565,7 @@
         $('.plus-font').html('Learn More');
         $('#plus-icon').removeClass('la-times');
         $('#plus-icon').addClass('la-plus');;
-        $('#exampleModal').removeClass('show');
+        $('#exampleModal2').removeClass('show');
     console.log(3);
   });
 
