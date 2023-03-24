@@ -24,7 +24,7 @@
             <p  style="margin-bottom: 5px">1</p>
             <p  style="margin-bottom: 5px">2</p>
             {%- if bk_stts.button_link != blank and bk_stts.button_label != blank -%}
-                <a style="width:100%;text-decoration: none;" class="t4s-btn t4s-btn-base t4s-btn-style-{{button_style}} t4s-btn-size-{{bk_stts.btn_size}} t4s-btn-color-{{bk_stts.btn_cl}} {% if button_style == 'default' or button_style == 'outline'%}t4s-btn-effect-{{bk_stts.button_effect}} t4s-btn-radius-{{bk_stts.btn_bdr}}{% endif %}" href="{{bk_stts.button_link}}"  target="{{bk_stts.open_link}}">{{bk_stts.button_label}} {%- if bk_stts.btn_icon -%}<svg  class="t4s-btn-icon" viewBox="0 0 14 10"><use xlink:href="#t4s-icon-btn"></use></svg>{%- endif -%}</a>
+                <a style="text-decoration: none;" class="t4s-btn t4s-btn-base t4s-btn-style-{{button_style}} t4s-btn-size-{{bk_stts.btn_size}} t4s-btn-color-{{bk_stts.btn_cl}} {% if button_style == 'default' or button_style == 'outline'%}t4s-btn-effect-{{bk_stts.button_effect}} t4s-btn-radius-{{bk_stts.btn_bdr}}{% endif %}" href="{{bk_stts.button_link}}"  target="{{bk_stts.open_link}}">{{bk_stts.button_label}} {%- if bk_stts.btn_icon -%}<svg  class="t4s-btn-icon" viewBox="0 0 14 10"><use xlink:href="#t4s-icon-btn"></use></svg>{%- endif -%}</a>
             {%- endif -%}
             <a  
                 id="btnCollapse"
