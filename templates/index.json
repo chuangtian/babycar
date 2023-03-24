@@ -851,27 +851,25 @@
         "code_cus_css": ""
       }
     },
-    "67af1363-14a5-4848-a787-be0ff6202a21": {
+    "f5e99521-7d22-48c8-9c1f-0c1e5c4517d4": {
       "type": "expansion2",
       "blocks": {
-        "dd483685-9c5e-4a78-b151-14b8e68b3628": {
+        "template--18304757039381__f5e99521-7d22-48c8-9c1f-0c1e5c4517d4-167964046939b61cef-0": {
           "type": "bl_text",
           "settings": {
-            "text_size": "30,15",
-            "sub_heading": "11122",
+            "text_size": "40,15",
+            "sub_heading": "",
             "heading": "Image with text",
             "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "button_label": "Button label1",
-            "button_link": "shopify:\/\/products\/macfox-e-bike-taillight",
+            "button_label": "Button label",
+            "button_link": "shopify:\/\/products\/macfox-e-bike-double-seat",
             "open_link": "_blank",
-            "btn_size": "medium",
-            "btn_cl": "dark",
-            "button_effect": "fade"
+            "btn_size": "large"
           }
         }
       },
       "block_order": [
-        "dd483685-9c5e-4a78-b151-14b8e68b3628"
+        "template--18304757039381__f5e99521-7d22-48c8-9c1f-0c1e5c4517d4-167964046939b61cef-0"
       ],
       "settings": {
       }
@@ -885,6 +883,6 @@
     "b4891829-c578-4ccf-bc52-13d3bc35af49",
     "bfa25dc2-dcf9-4bfa-a545-fe4e0752483a",
     "7037844d-65d9-4da0-9a8a-85d8a6b55554",
-    "67af1363-14a5-4848-a787-be0ff6202a21"
+    "f5e99521-7d22-48c8-9c1f-0c1e5c4517d4"
   ]
 }
