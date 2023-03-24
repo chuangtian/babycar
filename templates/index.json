@@ -866,7 +866,7 @@
             "open_link": "_blank",
             "btn_size": "medium",
             "btn_cl": "dark",
-            "button_effect": "sweep-to-left"
+            "button_effect": "default"
           }
         }
       },
