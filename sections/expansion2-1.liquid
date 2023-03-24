@@ -28,7 +28,7 @@
     {%- if stt_layout == 't4s-se-container' -%}
     <div class="t4s-container-inner{% if stt_image_bg != blank %} t4s-has-imgbg lazyloadt4s{% endif %}" {% if stt_image_bg != blank %} data-bgset="{{ stt_image_bg | image_url: width: 1 }}" data-sizes="auto"  data-optimumx="1.5"{% endif %}>{% endif -%}
     {%- render 'section_tophead',se_stts:se_stts -%}
-    <div class="t4s-image-text t4s-row t4s-align-items-center t4s-row t4s-gx-md-{{se_stts.space_h_item}} t4s-gy-md-{{se_stts.space_v_item}} t4s-gx-{{se_stts.space_h_item_mb}} t4s-gy-{{se_stts.space_v_item_mb}}">
+    
       {%- for block in se_blocks-%}
         {%- liquid
           assign bk_stts = block.settings 
@@ -37,7 +37,8 @@
           assign button_style = bk_stts.button_style 
           assign forloop_index =  forloop.index
         -%}
-        {{ forloop_index }}
+        {{ forloop_index | modulo: 2 }}
+
         {%- case block.type -%}
             {%- when 'bl_image' -%}
                 {%-liquid 
@@ -112,8 +113,9 @@
                     </div>
                 </div>
           {%- endcase -%}
+
       {%- endfor -%}
-    </div>
+    
     {{-html_layout[1]-}}
     </div>
 </div>
