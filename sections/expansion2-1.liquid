@@ -38,7 +38,6 @@
           assign forloop_index =  forloop.index
           assign odd = forloop_index | modulo: 2
         -%}
-        {{ odd }}
       {%- if odd == 1 -%}
               <div class="t4s-image-text t4s-row t4s-align-items-center t4s-row t4s-gx-md-{{se_stts.space_h_item}} t4s-gy-md-{{se_stts.space_v_item}} t4s-gx-{{se_stts.space_h_item_mb}} t4s-gy-{{se_stts.space_v_item_mb}}">
         {%- endif -%} 
