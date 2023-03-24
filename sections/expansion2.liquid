@@ -21,8 +21,8 @@
         -%}
         {%- case block.type -%}
           {%- when 'bl_text' -%}
-            <p  style="margin-bottom: 5px">1</p>
-            <p  style="margin-bottom: 5px">2</p>
+            {%- if bk_stts.heading != blank -%}<h3 class="t4s-image-text-heading t4s-fs-md-{{text_size[0]}} t4-fs-30" >{{bk_stts.heading}}</h3>{%- endif -%}
+            {%- if bk_stts.text -%}<div class="t4s-image-text-des t4-fs-md-{{text_size[1]}} t4s-fs-15">{{bk_stts.text}}</div>{%- endif -%}
             
             <a  
                 id="btnCollapse"
