@@ -122,7 +122,7 @@
                             id="btnCollapse"
                             style="width:100%;margin-top: 10px;text-decoration: none;background: #fff;color: #222222;border: 1px solid #222222;"  
                             class="t4s-btn t4s-btn-base t4s-btn-style-{{button_style}} t4s-btn-size-{{bk_stts.btn_size}} t4s-btn-color-{{bk_stts.btn_cl}} {% if button_style == 'default' or button_style == 'outline'%}t4s-btn-effect-{{bk_stts.button_effect}} t4s-btn-radius-{{bk_stts.btn_bdr}}{% endif %}"   target="{{bk_stts.open_link}}">
-                          <i id="plus-icon plus-icon-html"  class="las la-plus" style="font-size: 20px;"></i>
+                          <i id="plus-icon"  class="las la-plus" style="font-size: 20px;"></i>
                            
                           &nbsp  <span class="plus-font plus-html">Learn More</span>
                         </a>
@@ -1544,8 +1544,8 @@
 
       if(htmlFont == 'Learn More'){
           $('.plus-html').html('Close');
-          $('#plus-icon-html').removeClass('la-plus');
-          $('#plus-icon-html').addClass('la-times');
+          $('#plus-icon').removeClass('la-plus');
+          $('#plus-icon').addClass('la-times');
           // $('#exampleModal').toggleClass('show');
           $('#exampleModal').css('display','block');
         
@@ -1553,8 +1553,8 @@
 
       }else{
           $('.plus-html').html('Learn More');
-          $('#plus-icon-html').removeClass('la-times');
-          $('#plus-icon-html').addClass('la-plus');;
+          $('#plus-icon').removeClass('la-times');
+          $('#plus-icon').addClass('la-plus');;
           // $('#exampleModal').toggleClass('show');
           $('#exampleModal').css('display','none');
           changeHash('#dv');
@@ -1564,8 +1564,8 @@
   btnCollapseClose.addEventListener('click', () => {
       // 切换展开收缩区域的状态
         $('.plus-html').html('Learn More');
-        $('#plus-icon-html').removeClass('la-times');
-        $('#plus-icon-html').addClass('la-plus');;
+        $('#plus-icon').removeClass('la-times');
+        $('#plus-icon').addClass('la-plus');;
         // $('#exampleModal').toggleClass('show');
         $('#exampleModal').css('display','none');
         changeHash('#dv');
