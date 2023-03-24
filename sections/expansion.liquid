@@ -1,7 +1,6 @@
 <!-- sections/image_text.liquid -->
 {{ 'section.css' | asset_url | stylesheet_tag }}
 {{ 'image-text.css' | asset_url | stylesheet_tag }}
-{{ 'bootstrap.min.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
   .collapsing {
@@ -1531,7 +1530,6 @@
     }
   {%- endschema -%}
   
-<script src="{{ 'bootstrap.bundle.min.js' | asset_url }}" defer="defer"></script>
 {% javascript %}
   
   // 获取展开按钮和收缩按钮的 DOM 元素
@@ -1551,7 +1549,7 @@
           // $('#exampleModal').toggleClass('show');
           $('#exampleModal').css('display','block');
         
-        console.log(1);
+        console.log(11);
 
       }else{
           $('.plus-font').html('Learn More');
@@ -1559,7 +1557,7 @@
           $('#plus-icon').addClass('la-plus');;
           // $('#exampleModal').toggleClass('show');
           $('#exampleModal').css('display','none');
-        console.log(2);
+        console.log(21);
       }
   });
   btnCollapseClose.addEventListener('click', () => {
@@ -1569,7 +1567,7 @@
         $('#plus-icon').addClass('la-plus');;
         // $('#exampleModal').toggleClass('show');
         $('#exampleModal').css('display','none');
-    console.log(3);
+    console.log(31);
   });
 
 {% endjavascript %}
