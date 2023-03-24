@@ -1557,7 +1557,7 @@
           $('#plus-icon').addClass('la-plus');;
           // $('#exampleModal').toggleClass('show');
           $('#exampleModal').css('display','none');
-          changeHash('dv');
+          changeHash('#dv');
         console.log(21);
       }
   });
@@ -1568,12 +1568,13 @@
         $('#plus-icon').addClass('la-plus');;
         // $('#exampleModal').toggleClass('show');
         $('#exampleModal').css('display','none');
-        changeHash('dv');
+        changeHash('#dv');
     console.log(31);
   });
   function changeHash(idName) {
           document.querySelector(idName).scrollIntoView({block: "center"});
   };
+
 
   
 {% endjavascript %}
