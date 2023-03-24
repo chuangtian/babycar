@@ -865,7 +865,7 @@
             "button_link": "shopify:\/\/products\/macfox-e-bike-double-seat",
             "open_link": "_blank",
             "button_style": "default",
-            "btn_size": "large",
+            "btn_size": "medium",
             "btn_cl": "dark",
             "button_effect": "sweep-to-right"
           }
