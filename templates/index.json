@@ -864,10 +864,9 @@
             "button_label": "Button label1",
             "button_link": "shopify:\/\/products\/macfox-e-bike-taillight",
             "open_link": "_blank",
-            "button_style": "default",
             "btn_size": "medium",
             "btn_cl": "dark",
-            "button_effect": "default"
+            "button_effect": "sweep-to-left"
           }
         }
       },
