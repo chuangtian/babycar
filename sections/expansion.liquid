@@ -1549,16 +1549,16 @@
           $('.plus-font').html('Close');
           $('#plus-icon').removeClass('la-plus');
           $('#plus-icon').addClass('la-times');
-          $('#exampleModal').toggleClass('show');
+          $('#exampleModal').addClass('show');
         
-        console.log(11);
+        console.log(111);
 
       }else{
           $('.plus-font').html('Learn More');
           $('#plus-icon').removeClass('la-times');
           $('#plus-icon').addClass('la-plus');;
-          $('#exampleModal').toggleClass('show');
-        console.log(22);
+          $('#exampleModal').removeClass('show');
+        console.log(222);
       }
   });
   btnCollapseClose.addEventListener('click', () => {
@@ -1566,8 +1566,8 @@
         $('.plus-font').html('Learn More');
         $('#plus-icon').removeClass('la-times');
         $('#plus-icon').addClass('la-plus');;
-        $('#exampleModal').toggleClass('show');
-    console.log(33);
+        $('#exampleModal').removeClass('show');
+    console.log(333);
   });
 
 {% endjavascript %}
