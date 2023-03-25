@@ -468,6 +468,7 @@
         },
         "9be174ed-7470-41da-a22a-2520b6069424": {
           "type": "image_parent",
+          "disabled": true,
           "settings": {
             "image_position": "8",
             "cl_img": "",
@@ -583,6 +584,7 @@
         },
         "df7c3bed-4f82-45d5-a608-4b463c0daee7": {
           "type": "image_parent",
+          "disabled": true,
           "settings": {
             "image_position": "8",
             "cl_img": "",
@@ -617,6 +619,7 @@
         },
         "9936ccba-ac35-4093-b7e1-c83e536151d4": {
           "type": "custom_text",
+          "disabled": true,
           "settings": {
             "text": "Summer 2022",
             "remove_br_tag": false,
@@ -639,6 +642,7 @@
         },
         "57ab212f-593c-4334-a247-ddfd9d926a5d": {
           "type": "custom_text",
+          "disabled": true,
           "settings": {
             "text": "Lookbook Collection",
             "remove_br_tag": false,
@@ -661,6 +665,7 @@
         },
         "be90cceb-00d4-4fa9-b9f7-095c8eafeeea": {
           "type": "custom_button",
+          "disabled": true,
           "settings": {
             "button_text": "Button label",
             "button_text2": "Button label2",
@@ -784,6 +789,7 @@
         },
         "94e40a34-6582-4fb1-8c87-2a617bdb41ed": {
           "type": "image_parent",
+          "disabled": true,
           "settings": {
             "image_position": "8",
             "cl_img": "",
@@ -899,6 +905,7 @@
         },
         "37f0fa13-ac40-4ba0-95cb-3f951c1369c4": {
           "type": "image_parent",
+          "disabled": true,
           "settings": {
             "image_position": "8",
             "cl_img": "",
@@ -933,6 +940,7 @@
         },
         "cacf8f17-4cb5-4eff-bef6-5edd8a768375": {
           "type": "custom_text",
+          "disabled": true,
           "settings": {
             "text": "Summer 2022",
             "remove_br_tag": false,
@@ -955,6 +963,7 @@
         },
         "71415444-5577-4ace-8767-35d835210bcd": {
           "type": "custom_text",
+          "disabled": true,
           "settings": {
             "text": "Lookbook Collection",
             "remove_br_tag": false,
@@ -977,6 +986,7 @@
         },
         "583e4bb9-b9a8-4649-89a3-d74305dea13e": {
           "type": "custom_button",
+          "disabled": true,
           "settings": {
             "button_text": "Button label",
             "button_text2": "Button label2",
@@ -1070,6 +1080,7 @@
     },
     "97eefcc2-3af8-4bb0-bf22-3ac8f4273adf": {
       "type": "expansion",
+      "disabled": true,
       "blocks": {
         "template--18295207035157__97eefcc2-3af8-4bb0-bf22-3ac8f4273adf-16793194697a65bd73-0": {
           "type": "bl_image",
