@@ -221,7 +221,7 @@
           "fb241ffe-22ac-49b8-b307-d71dca6054d6": {
             "type": "html",
             "settings": {
-              "html_content": "<p style=\"color: #222222;\"><i class=\"las la-home fs__16\"><\/i> 3101 W Miller rd Garland TX, USA 75041<\/p>\n<p style=\"color: #222222;\"><i class=\"las la-phone fs__16\"><\/i> +1 (949)-328-1727<\/p>\n<p style=\"color: #222222;\"><i class=\"las la-envelope fs__16\"><\/i> support@macfoxbike.com<\/p>\n<p style=\"color: #222222;\"><i class=\"las la-clock fs__16\"><\/i> Monday-Friday, 9AM-6PM(PST)<\/p>",
+              "html_content": "<p style=\"color: #222222;\"><i class=\"las la-home fs__16\"><\/i> 3101 W Miller rd Garland TX, USA 75041<\/p>\n<p style=\"color: #222222;\"><i class=\"las la-phone fs__16\"><\/i> +1 (949)-328-1727<\/p>\n<p style=\"color: #222222;\"><i class=\"las la-envelope fs__16\"><\/i> support@hypergogo.com<\/p>\n<p style=\"color: #222222;\"><i class=\"las la-clock fs__16\"><\/i> Monday-Friday, 9AM-6PM(PST)<\/p>",
               "hidden_mobile": false
             }
           },
@@ -2028,11 +2028,11 @@
               "btn_ck": true,
               "txt2": "Do not show it anymore.",
               "input_cl": "#878787",
-              "border_cl": "#000",
+              "border_cl": "#000000",
               "btn_cl": "#ffffff",
               "btn_bg_cl": "#222222",
               "btn_hover_cl": "#ffffff",
-              "btn_hover_bg_cl": "#56CFE1",
+              "btn_hover_bg_cl": "#56cfe1",
               "news_layout": "1",
               "mb": false,
               "index": true,
