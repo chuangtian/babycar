@@ -1587,6 +1587,7 @@
         },
         "1581b314-c50a-4d37-bdcc-c5dc3a26e84a": {
           "type": "image_parent",
+          "disabled": true,
           "settings": {
             "image_position": "8",
             "cl_img": "",
@@ -1621,6 +1622,7 @@
         },
         "dd37e89c-1666-47cf-a9dd-be287b9822eb": {
           "type": "custom_text",
+          "disabled": true,
           "settings": {
             "text": "Summer 2022",
             "remove_br_tag": false,
@@ -1643,6 +1645,7 @@
         },
         "67459491-03d5-4fed-aa23-a199bd37beed": {
           "type": "custom_text",
+          "disabled": true,
           "settings": {
             "text": "Lookbook Collection",
             "remove_br_tag": false,
@@ -1665,6 +1668,7 @@
         },
         "b87c2736-278c-4e1c-9c47-d75b9ec74ee5": {
           "type": "custom_button",
+          "disabled": true,
           "settings": {
             "button_text": "Button label",
             "button_text2": "Button label2",
