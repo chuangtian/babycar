@@ -2427,14 +2427,12 @@
         "code_cus_css": ""
       }
     },
-    "7b377576-318b-459f-b956-27b6d0182c8d": {
-      "type": "banner2",
+    "d027d5d8-1042-42bd-a68a-3023202ab846": {
+      "type": "slideshow",
       "blocks": {
-        "template--18304757039381__7b377576-318b-459f-b956-27b6d0182c8d-16798957962d3c181a-0": {
+        "template--18304757039381__d027d5d8-1042-42bd-a68a-3023202ab846-1679896033a99e4204-0": {
           "type": "image_parent",
           "settings": {
-            "image": "shopify:\/\/shop_images\/MB-06_PLUS.jpg",
-            "image_mb": "shopify:\/\/shop_images\/DSC07384.jpg",
             "image_position": "8",
             "cl_img": "",
             "link_img1": "",
@@ -2466,23 +2464,90 @@
             "animation_delay": 40
           }
         },
-        "template--18304757039381__7b377576-318b-459f-b956-27b6d0182c8d-16798957962d3c181a-1": {
-          "type": "heading",
+        "template--18304757039381__d027d5d8-1042-42bd-a68a-3023202ab846-1679896033a99e4204-1": {
+          "type": "custom_text",
           "settings": {
-            "heading": "Image with text",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "text": "Summer 2022",
+            "remove_br_tag": false,
+            "fontf": "inherit",
+            "text_cl": "#fff",
+            "text_fs": 16,
+            "text_lh": 0,
+            "text_fw": 400,
+            "text_ls": 1,
+            "text_mgb": 15,
+            "font_italic": false,
+            "text_shadow": false,
+            "hidden_mobile": false,
+            "text_fs_mb": 16,
+            "text_lh_mb": 0,
+            "text_ls_mb": 0,
+            "text_mgb_mobile": 10,
+            "animation": "none"
           }
         },
-        "e25d04e4-615c-4105-a68f-142c0f84a3c8": {
+        "template--18304757039381__d027d5d8-1042-42bd-a68a-3023202ab846-1679896033a99e4204-2": {
+          "type": "custom_text",
+          "settings": {
+            "text": "New Arrival Collection",
+            "remove_br_tag": false,
+            "fontf": "inherit",
+            "text_cl": "#fff",
+            "text_fs": 70,
+            "text_lh": 70,
+            "text_fw": 300,
+            "text_ls": 0,
+            "text_mgb": 25,
+            "font_italic": false,
+            "text_shadow": false,
+            "hidden_mobile": false,
+            "text_fs_mb": 16,
+            "text_lh_mb": 0,
+            "text_ls_mb": 0,
+            "text_mgb_mobile": 10,
+            "animation": "none"
+          }
+        },
+        "template--18304757039381__d027d5d8-1042-42bd-a68a-3023202ab846-1679896033a99e4204-3": {
+          "type": "custom_button",
+          "settings": {
+            "button_text": "Button label",
+            "button_link": "",
+            "target_link": "_self",
+            "fontf": "inherit",
+            "button_icon_w": 0,
+            "button_style": "default",
+            "button_effect": "default",
+            "pri_cl": "#222",
+            "second_cl": "",
+            "pri_cl_hover": "#56cfe1",
+            "second_cl_hover": "#fff",
+            "fsbutton": 14,
+            "fwbutton": 400,
+            "button_ls": 0,
+            "button_mh": 42,
+            "button_bdr": 0,
+            "button_pd_lr": 20,
+            "button_mgb": 0,
+            "hidden_mobile": false,
+            "button_icon_w_mb": 0,
+            "fsbutton_mb": 10,
+            "button_mh_mb": 36,
+            "button_pd_lr_mb": 15,
+            "button_ls_mb": 0,
+            "button_mgb_mb": 0,
+            "animation": "none"
+          }
+        },
+        "template--18304757039381__d027d5d8-1042-42bd-a68a-3023202ab846-1679896033a99e4204-4": {
           "type": "image_parent",
           "settings": {
-            "image": "shopify:\/\/shop_images\/MB-06_PLUS.jpg",
             "image_position": "8",
             "cl_img": "",
             "link_img1": "",
             "open_link": "_blank",
             "animate_slide": "none",
-            "text_align": "center",
+            "text_align": "start",
             "text_align_mb": "center",
             "content_width": "auto",
             "cv_pos": 50,
@@ -2508,52 +2573,96 @@
             "animation_delay": 40
           }
         },
-        "8f49c782-bb9e-4dd5-bb2e-955b11acea63": {
-          "type": "image_parent",
+        "template--18304757039381__d027d5d8-1042-42bd-a68a-3023202ab846-1679896033a99e4204-5": {
+          "type": "custom_text",
           "settings": {
-            "image": "shopify:\/\/shop_images\/MB-03_plus.jpg",
-            "image_position": "8",
-            "cl_img": "",
-            "link_img1": "",
-            "open_link": "_blank",
-            "animate_slide": "none",
-            "text_align": "center",
-            "text_align_mb": "center",
-            "content_width": "auto",
-            "cv_pos": 50,
-            "ch_pos": 50,
-            "cv_pos_mb": 50,
-            "ch_pos_mb": 50,
-            "bg_overlay": "#000",
-            "bg_opacity": 0,
-            "bg_content_cl": "#fff",
-            "bg_content_op": 0,
-            "content_pd_tb": 15,
-            "content_pd_lr": 15,
-            "content_pd_tb_mb": 10,
-            "content_pd_lr_mb": 10,
-            "border_bl": false,
-            "br_color": "#222",
-            "br_bg": "#fff",
-            "br_opacity": 50,
-            "br_style": "solid",
-            "br_pd": 20,
-            "br_pd_mb": 10,
-            "time_animation": 1,
-            "animation_delay": 40
+            "text": "Summer 2022",
+            "remove_br_tag": false,
+            "fontf": "inherit",
+            "text_cl": "#fff",
+            "text_fs": 16,
+            "text_lh": 0,
+            "text_fw": 400,
+            "text_ls": 1,
+            "text_mgb": 15,
+            "font_italic": false,
+            "text_shadow": false,
+            "hidden_mobile": false,
+            "text_fs_mb": 16,
+            "text_lh_mb": 0,
+            "text_ls_mb": 0,
+            "text_mgb_mobile": 10,
+            "animation": "none"
+          }
+        },
+        "template--18304757039381__d027d5d8-1042-42bd-a68a-3023202ab846-1679896033a99e4204-6": {
+          "type": "custom_text",
+          "settings": {
+            "text": "Lookbook Collection",
+            "remove_br_tag": false,
+            "fontf": "inherit",
+            "text_cl": "#fff",
+            "text_fs": 70,
+            "text_lh": 70,
+            "text_fw": 300,
+            "text_ls": 0,
+            "text_mgb": 25,
+            "font_italic": false,
+            "text_shadow": false,
+            "hidden_mobile": false,
+            "text_fs_mb": 16,
+            "text_lh_mb": 0,
+            "text_ls_mb": 0,
+            "text_mgb_mobile": 10,
+            "animation": "none"
+          }
+        },
+        "template--18304757039381__d027d5d8-1042-42bd-a68a-3023202ab846-1679896033a99e4204-7": {
+          "type": "custom_button",
+          "settings": {
+            "button_text": "Button label",
+            "button_link": "",
+            "target_link": "_self",
+            "fontf": "inherit",
+            "button_icon_w": 0,
+            "button_style": "default",
+            "button_effect": "default",
+            "pri_cl": "#222",
+            "second_cl": "",
+            "pri_cl_hover": "#56cfe1",
+            "second_cl_hover": "#fff",
+            "fsbutton": 14,
+            "fwbutton": 400,
+            "button_ls": 0,
+            "button_mh": 42,
+            "button_bdr": 0,
+            "button_pd_lr": 20,
+            "button_mgb": 0,
+            "hidden_mobile": false,
+            "button_icon_w_mb": 0,
+            "fsbutton_mb": 10,
+            "button_mh_mb": 36,
+            "button_pd_lr_mb": 15,
+            "button_ls_mb": 0,
+            "button_mgb_mb": 0,
+            "animation": "none"
           }
         }
       },
       "block_order": [
-        "template--18304757039381__7b377576-318b-459f-b956-27b6d0182c8d-16798957962d3c181a-0",
-        "template--18304757039381__7b377576-318b-459f-b956-27b6d0182c8d-16798957962d3c181a-1",
-        "e25d04e4-615c-4105-a68f-142c0f84a3c8",
-        "8f49c782-bb9e-4dd5-bb2e-955b11acea63"
+        "template--18304757039381__d027d5d8-1042-42bd-a68a-3023202ab846-1679896033a99e4204-0",
+        "template--18304757039381__d027d5d8-1042-42bd-a68a-3023202ab846-1679896033a99e4204-1",
+        "template--18304757039381__d027d5d8-1042-42bd-a68a-3023202ab846-1679896033a99e4204-2",
+        "template--18304757039381__d027d5d8-1042-42bd-a68a-3023202ab846-1679896033a99e4204-3",
+        "template--18304757039381__d027d5d8-1042-42bd-a68a-3023202ab846-1679896033a99e4204-4",
+        "template--18304757039381__d027d5d8-1042-42bd-a68a-3023202ab846-1679896033a99e4204-5",
+        "template--18304757039381__d027d5d8-1042-42bd-a68a-3023202ab846-1679896033a99e4204-6",
+        "template--18304757039381__d027d5d8-1042-42bd-a68a-3023202ab846-1679896033a99e4204-7"
       ],
       "settings": {
-        "se_height": "t4s_ratioadapt",
+        "se_height": "t4s_ratio_cuspx",
         "custom_dk": true,
-        "height_dk": 600,
+        "height_dk": 300,
         "custom_tb": true,
         "height_tb": 400,
         "custom_mb": true,
@@ -2601,6 +2710,6 @@
     "bfa25dc2-dcf9-4bfa-a545-fe4e0752483a",
     "9979132e-e814-4528-9518-f61fb181bc3b",
     "89f78f47-8480-4bef-8f36-6dd06a9d5542",
-    "7b377576-318b-459f-b956-27b6d0182c8d"
+    "d027d5d8-1042-42bd-a68a-3023202ab846"
   ]
 }
