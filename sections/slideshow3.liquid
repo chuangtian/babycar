@@ -2697,3 +2697,51 @@
     ]
 }
 {% endschema %}
+          
+<script src="{{ 'bootstrap.bundle.min.js' | asset_url }}" defer="defer"></script>         
+{% javascript %}
+  
+  // 获取展开按钮和收缩按钮的 DOM 元素
+  const btnCollapse2 = document.getElementById('btnCollapse2');
+  const btnCollapseClose2 = document.getElementById('btnCollapseClose2');
+
+  // 为收缩按钮添加 click 事件监听器
+  btnCollapse2.addEventListener('click', () => {
+      // 切换展开收缩区域的状态
+      var htmlFont=$('.plus-html2').html();
+       console.log(htmlFont);
+
+      if(htmlFont == 'Learn More'){
+          $('.plus-html2').html('Close');
+          $('#plus-icon2').removeClass('la-plus');
+          $('#plus-icon2').addClass('la-times');
+          // $('#exampleModal').toggleClass('show');
+          $('#exampleModal2').css('display','block');
+        
+        console.log(11);
+
+      }else{
+          $('.plus-html2').html('Learn More');
+          $('#plus-icon2').removeClass('la-times');
+          $('#plus-icon2').addClass('la-plus');;
+          // $('#exampleModal').toggleClass('show');
+          $('#exampleModal2').css('display','none');
+          changeHash('#dv2');
+        console.log(21);
+      }
+  });
+  btnCollapseClose2.addEventListener('click', () => {
+      // 切换展开收缩区域的状态
+        $('.plus-html2').html('Learn More');
+        $('#plus-icon2').removeClass('la-times');
+        $('#plus-icon2').addClass('la-plus');;
+        // $('#exampleModal').toggleClass('show');
+        $('#exampleModal2').css('display','none');
+        changeHash('#dv2');
+    console.log(31);
+  });
+  function changeHash(idName) {
+          document.querySelector(idName).scrollIntoView({block: "center"});
+  };
+
+{% endjavascript %}
