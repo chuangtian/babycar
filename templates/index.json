@@ -2512,6 +2512,88 @@
         "use_cus_css": false,
         "code_cus_css": ""
       }
+    },
+    "5165ed14-b00a-4cbe-8111-7a856c717f02": {
+      "type": "slideshow3",
+      "blocks": {
+        "template--18304757039381__5165ed14-b00a-4cbe-8111-7a856c717f02-16799118929cf76a99-0": {
+          "type": "image_item",
+          "settings": {
+            "link": ""
+          }
+        },
+        "template--18304757039381__5165ed14-b00a-4cbe-8111-7a856c717f02-16799118929cf76a99-1": {
+          "type": "image_item",
+          "settings": {
+            "link": ""
+          }
+        },
+        "template--18304757039381__5165ed14-b00a-4cbe-8111-7a856c717f02-16799118929cf76a99-2": {
+          "type": "image_item",
+          "settings": {
+            "link": ""
+          }
+        },
+        "template--18304757039381__5165ed14-b00a-4cbe-8111-7a856c717f02-16799118929cf76a99-3": {
+          "type": "image_item",
+          "settings": {
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18304757039381__5165ed14-b00a-4cbe-8111-7a856c717f02-16799118929cf76a99-0",
+        "template--18304757039381__5165ed14-b00a-4cbe-8111-7a856c717f02-16799118929cf76a99-1",
+        "template--18304757039381__5165ed14-b00a-4cbe-8111-7a856c717f02-16799118929cf76a99-2",
+        "template--18304757039381__5165ed14-b00a-4cbe-8111-7a856c717f02-16799118929cf76a99-3"
+      ],
+      "settings": {
+        "design_heading": "1",
+        "heading_align": "t4s-text-center",
+        "top_heading": "Gallery",
+        "icon_heading": "las la-gem",
+        "top_subheading": "",
+        "tophead_mb": 30,
+        "layout_des": "2",
+        "click_image": "data-t4s-gallery",
+        "nav_thumbs": true,
+        "open_link": "_blank",
+        "item_rd": 0,
+        "img_effect": "none",
+        "b_effect": "none",
+        "image_ratio": "ratioadapt",
+        "image_size": "cover",
+        "image_position": "8",
+        "col_dk": "3",
+        "col_tb": "2",
+        "col_mb": "2",
+        "space_item": "30",
+        "space_item_mb": "10",
+        "loop": true,
+        "au_time": 0,
+        "au_hover": true,
+        "nav_btn": true,
+        "btn_vi": "hover",
+        "btn_owl": "default",
+        "btn_shape": "none",
+        "btn_cl": "dark",
+        "btn_size": "small",
+        "btn_hidden_mobile": false,
+        "nav_dot": true,
+        "dot_owl": "default",
+        "dots_cl": "dark",
+        "dots_round": false,
+        "dots_space": 10,
+        "layout": "t4s-container-wrap",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": ",,50px,",
+        "pd": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": "",
+        "use_cus_css": false,
+        "code_cus_css": ""
+      }
     }
   },
   "order": [
@@ -2528,6 +2610,7 @@
     "bfa25dc2-dcf9-4bfa-a545-fe4e0752483a",
     "9979132e-e814-4528-9518-f61fb181bc3b",
     "89f78f47-8480-4bef-8f36-6dd06a9d5542",
-    "543d85ed-7312-4481-9711-e4715dd3f18b"
+    "543d85ed-7312-4481-9711-e4715dd3f18b",
+    "5165ed14-b00a-4cbe-8111-7a856c717f02"
   ]
 }
