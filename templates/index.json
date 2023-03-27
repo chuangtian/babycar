@@ -2427,13 +2427,12 @@
         "code_cus_css": ""
       }
     },
-    "d027d5d8-1042-42bd-a68a-3023202ab846": {
-      "type": "slideshow",
+    "9aa9674f-1dd3-4c5b-a982-fbf82644c691": {
+      "type": "slideshow3",
       "blocks": {
-        "template--18304757039381__d027d5d8-1042-42bd-a68a-3023202ab846-1679896033a99e4204-0": {
+        "template--18304757039381__9aa9674f-1dd3-4c5b-a982-fbf82644c691-167990678521337709-0": {
           "type": "image_parent",
           "settings": {
-            "image": "shopify:\/\/shop_images\/MB-06_PLUS.jpg",
             "image_position": "8",
             "cl_img": "",
             "link_img1": "",
@@ -2465,7 +2464,7 @@
             "animation_delay": 40
           }
         },
-        "template--18304757039381__d027d5d8-1042-42bd-a68a-3023202ab846-1679896033a99e4204-1": {
+        "template--18304757039381__9aa9674f-1dd3-4c5b-a982-fbf82644c691-167990678521337709-1": {
           "type": "custom_text",
           "settings": {
             "text": "Summer 2022",
@@ -2487,7 +2486,7 @@
             "animation": "none"
           }
         },
-        "template--18304757039381__d027d5d8-1042-42bd-a68a-3023202ab846-1679896033a99e4204-2": {
+        "template--18304757039381__9aa9674f-1dd3-4c5b-a982-fbf82644c691-167990678521337709-2": {
           "type": "custom_text",
           "settings": {
             "text": "New Arrival Collection",
@@ -2509,7 +2508,7 @@
             "animation": "none"
           }
         },
-        "template--18304757039381__d027d5d8-1042-42bd-a68a-3023202ab846-1679896033a99e4204-3": {
+        "template--18304757039381__9aa9674f-1dd3-4c5b-a982-fbf82644c691-167990678521337709-3": {
           "type": "custom_button",
           "settings": {
             "button_text": "Button label",
@@ -2540,7 +2539,7 @@
             "animation": "none"
           }
         },
-        "template--18304757039381__d027d5d8-1042-42bd-a68a-3023202ab846-1679896033a99e4204-4": {
+        "template--18304757039381__9aa9674f-1dd3-4c5b-a982-fbf82644c691-167990678521337709-4": {
           "type": "image_parent",
           "settings": {
             "image_position": "8",
@@ -2574,7 +2573,7 @@
             "animation_delay": 40
           }
         },
-        "template--18304757039381__d027d5d8-1042-42bd-a68a-3023202ab846-1679896033a99e4204-5": {
+        "template--18304757039381__9aa9674f-1dd3-4c5b-a982-fbf82644c691-167990678521337709-5": {
           "type": "custom_text",
           "settings": {
             "text": "Summer 2022",
@@ -2596,7 +2595,7 @@
             "animation": "none"
           }
         },
-        "template--18304757039381__d027d5d8-1042-42bd-a68a-3023202ab846-1679896033a99e4204-6": {
+        "template--18304757039381__9aa9674f-1dd3-4c5b-a982-fbf82644c691-167990678521337709-6": {
           "type": "custom_text",
           "settings": {
             "text": "Lookbook Collection",
@@ -2618,7 +2617,7 @@
             "animation": "none"
           }
         },
-        "template--18304757039381__d027d5d8-1042-42bd-a68a-3023202ab846-1679896033a99e4204-7": {
+        "template--18304757039381__9aa9674f-1dd3-4c5b-a982-fbf82644c691-167990678521337709-7": {
           "type": "custom_button",
           "settings": {
             "button_text": "Button label",
@@ -2651,19 +2650,19 @@
         }
       },
       "block_order": [
-        "template--18304757039381__d027d5d8-1042-42bd-a68a-3023202ab846-1679896033a99e4204-0",
-        "template--18304757039381__d027d5d8-1042-42bd-a68a-3023202ab846-1679896033a99e4204-1",
-        "template--18304757039381__d027d5d8-1042-42bd-a68a-3023202ab846-1679896033a99e4204-2",
-        "template--18304757039381__d027d5d8-1042-42bd-a68a-3023202ab846-1679896033a99e4204-3",
-        "template--18304757039381__d027d5d8-1042-42bd-a68a-3023202ab846-1679896033a99e4204-4",
-        "template--18304757039381__d027d5d8-1042-42bd-a68a-3023202ab846-1679896033a99e4204-5",
-        "template--18304757039381__d027d5d8-1042-42bd-a68a-3023202ab846-1679896033a99e4204-6",
-        "template--18304757039381__d027d5d8-1042-42bd-a68a-3023202ab846-1679896033a99e4204-7"
+        "template--18304757039381__9aa9674f-1dd3-4c5b-a982-fbf82644c691-167990678521337709-0",
+        "template--18304757039381__9aa9674f-1dd3-4c5b-a982-fbf82644c691-167990678521337709-1",
+        "template--18304757039381__9aa9674f-1dd3-4c5b-a982-fbf82644c691-167990678521337709-2",
+        "template--18304757039381__9aa9674f-1dd3-4c5b-a982-fbf82644c691-167990678521337709-3",
+        "template--18304757039381__9aa9674f-1dd3-4c5b-a982-fbf82644c691-167990678521337709-4",
+        "template--18304757039381__9aa9674f-1dd3-4c5b-a982-fbf82644c691-167990678521337709-5",
+        "template--18304757039381__9aa9674f-1dd3-4c5b-a982-fbf82644c691-167990678521337709-6",
+        "template--18304757039381__9aa9674f-1dd3-4c5b-a982-fbf82644c691-167990678521337709-7"
       ],
       "settings": {
-        "se_height": "t4s_ratio_cuspx",
+        "se_height": "t4s_ratioadapt",
         "custom_dk": true,
-        "height_dk": 300,
+        "height_dk": 600,
         "custom_tb": true,
         "height_tb": 400,
         "custom_mb": true,
@@ -2711,6 +2710,6 @@
     "bfa25dc2-dcf9-4bfa-a545-fe4e0752483a",
     "9979132e-e814-4528-9518-f61fb181bc3b",
     "89f78f47-8480-4bef-8f36-6dd06a9d5542",
-    "d027d5d8-1042-42bd-a68a-3023202ab846"
+    "9aa9674f-1dd3-4c5b-a982-fbf82644c691"
   ]
 }
