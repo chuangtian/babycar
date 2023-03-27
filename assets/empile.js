@@ -2,21 +2,20 @@
   // ### 1、通用方法
 
   var is = {
-
     str: function (a) {
-      return typeof a === 'string';
+      return typeof a === "string";
     },
     und: function (a) {
       return a === void 0;
     },
     bol: function (a) {
-      return typeof a === 'boolean';
+      return typeof a === "boolean";
     },
     true: function (a) {
       return a === true;
     },
     num: function (a) {
-      return typeof a === 'number';
+      return typeof a === "number";
     },
     finite: function (a) {
       return this.num(a) && isFinite(a);
@@ -25,13 +24,18 @@
       return a === null;
     },
     fun: function (a) {
-      return typeof a === 'function';
+      return typeof a === "function";
     },
     arr: function (a) {
       return Array.isArray(a);
     },
     obj: function (a) {
-      return (a !== null && typeof a === 'object' && 'constructor' in a && a.constructor === Object);
+      return (
+        a !== null &&
+        typeof a === "object" &&
+        "constructor" in a &&
+        a.constructor === Object
+      );
     },
     emptyObj: function (a) {
       return this.obj(a) && a.length === 0;
@@ -39,30 +43,32 @@
     emptyArr: function (a) {
       return this.arr(a) && a.length === 0;
     },
-
-  }
+  };
 
   // 生成唯一标识符
   function uuid(len, radix) {
-    var chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'.split('');
+    var chars =
+      "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz".split(
+        ""
+      );
     var uuid = [],
       i;
     radix = radix || chars.length;
 
     if (len) {
-      for (i = 0; i < len; i++) uuid[i] = chars[0 | Math.random() * radix];
+      for (i = 0; i < len; i++) uuid[i] = chars[0 | (Math.random() * radix)];
     } else {
       var r;
-      uuid[8] = uuid[13] = uuid[18] = uuid[23] = '-';
-      uuid[14] = '4';
+      uuid[8] = uuid[13] = uuid[18] = uuid[23] = "-";
+      uuid[14] = "4";
       for (i = 0; i < 36; i++) {
         if (!uuid[i]) {
-          r = 0 | Math.random() * 16;
-          uuid[i] = chars[(i == 19) ? (r & 0x3) | 0x8 : r];
+          r = 0 | (Math.random() * 16);
+          uuid[i] = chars[i == 19 ? (r & 0x3) | 0x8 : r];
         }
       }
     }
-    return uuid.join('');
+    return uuid.join("");
   }
 
   // 判断数据类型
@@ -80,12 +86,13 @@
   // 获取HTMLElement元素的类名选择器
   function getClassSelector(el) {
     var arr = this.toArray(el.classList);
-    return is.emptyArr(arr) ? '' : '.' + arr.join('.');
+    return is.emptyArr(arr) ? "" : "." + arr.join(".");
   }
 
   // 向上遍历（查找指定父级）closest
   function closest(ele, tar) {
-    if (!Element.prototype.isPrototypeOf(ele)) throw new TypeError(ele + 'is not a Element!');
+    if (!Element.prototype.isPrototypeOf(ele))
+      throw new TypeError(ele + "is not a Element!");
     var _this = this;
     var elArr = (function () {
       if (tar instanceof HTMLElement) return [tar];
@@ -93,11 +100,7 @@
         tar = doc.querySelectorAll(tar);
       } catch (err) {}
       var tarType = _this.typeOf(tar),
-        tarTypeOptions = [
-          'NodeList',
-          'HTMLCollection',
-          'Array',
-        ];
+        tarTypeOptions = ["NodeList", "HTMLCollection", "Array"];
       if (tarTypeOptions.indexOf(tarType) > -1) return _this.toArray(tar);
     })();
     do {
@@ -111,16 +114,18 @@
   function flat(arr, d) {
     var _this = this;
     d = d || 1;
-    return d > 0 ?
-      arr.reduce(function (total, now) {
-        return total.concat(Array.isArray(now) ? _this.flat(now, d - 1) : now);
-      }, []) :
-      arr.slice();
+    return d > 0
+      ? arr.reduce(function (total, now) {
+          return total.concat(
+            Array.isArray(now) ? _this.flat(now, d - 1) : now
+          );
+        }, [])
+      : arr.slice();
   }
 
   // 对数值数组：即Object.values
   function values(obj) {
-    if (obj !== Object(obj)) throw new TypeError(obj + 'is a non-object');
+    if (obj !== Object(obj)) throw new TypeError(obj + "is a non-object");
     return Object.keys(obj).map(function (e) {
       return obj[e];
     });
@@ -135,15 +140,11 @@
   }
 
   function getPageVisibility() {
-    var hiddenArr = [
-        'hidden',
-        'webkitHidden',
-        'mozHidden',
-      ],
+    var hiddenArr = ["hidden", "webkitHidden", "mozHidden"],
       visibilityStateArr = [
-        'visibilityState',
-        'webkitVisibilityState',
-        'mozVisibilityState',
+        "visibilityState",
+        "webkitVisibilityState",
+        "mozVisibilityState",
       ];
     var values = [hiddenArr, visibilityStateArr].map(function (arr) {
       return find(arr, function (attr) {
@@ -153,7 +154,7 @@
     return {
       hidden: values[0],
       visibilityState: values[1],
-    }
+    };
   }
 
   // 获取元素的计算属性，参数：el元素、css属性、pseudoEl伪元素
@@ -164,10 +165,14 @@
 
   // 获取元素translate值
   function getTranslate(el) {
-    if (!el instanceof Element) throw new TypeError(el + 'is not a Element');
-    var transformArr = this.computedStyle(el, 'transform').replace(/\(|\)/g, '').split(','),
-      isThreeD = transformArr[0].indexOf('3d') > -1,
-      translateArr = isThreeD ? transformArr.slice(12, 15) : transformArr.slice(4),
+    if (!el instanceof Element) throw new TypeError(el + "is not a Element");
+    var transformArr = this.computedStyle(el, "transform")
+        .replace(/\(|\)/g, "")
+        .split(","),
+      isThreeD = transformArr[0].indexOf("3d") > -1,
+      translateArr = isThreeD
+        ? transformArr.slice(12, 15)
+        : transformArr.slice(4),
       result = {
         x: 0,
         y: 0,
@@ -190,7 +195,7 @@
         fn.apply(thisArg, arguments);
         prevTime = now;
       }
-    }
+    };
   }
 
   function extend(tarObj, initObj) {
@@ -206,7 +211,6 @@
     });
   }
 
-
   var _ = {
     uuid: uuid,
     flat: flat,
@@ -221,26 +225,24 @@
     getTranslate: getTranslate,
     getClassSelector: getClassSelector,
     pageVisibility: getPageVisibility(),
-  }
-
+  };
 
   // ### 2、参数中CSS样式对象的解析方法和类
 
   // 2.1 处理CSS样式对象工具类
   var CssUtils = {
-
     // 将小驼峰形式转成-连接符形式
     toConnectorForm: function (prop) {
       var rgep = /[A-Z]/g,
         res = null,
-        matchedChar = '',
+        matchedChar = "",
         replacedChar = function () {
-          return '-' + matchedChar.toLowerCase();
+          return "-" + matchedChar.toLowerCase();
         };
       while ((res = rgep.exec(prop)) !== null) {
         matchedChar = res[0];
         prop = prop.replace(matchedChar, replacedChar());
-      };
+      }
       return prop;
     },
 
@@ -259,7 +261,7 @@
     // 删除CSS对象的无用属性
     removeUselessKey: function (cssObj) {
       Object.keys(cssObj).forEach(function (key) {
-        is.und(cssObj[key]) && (delete cssObj[key]);
+        is.und(cssObj[key]) && delete cssObj[key];
       });
     },
 
@@ -267,7 +269,7 @@
     obtainAvailStyles() {
       var sheets = _.toArray(doc.styleSheets),
         availSheets = sheets.filter(function (sheetList) {
-          return !sheetList.disabled && sheetList.ownerNode.tagName === 'STYLE';
+          return !sheetList.disabled && sheetList.ownerNode.tagName === "STYLE";
         });
       return availSheets;
     },
@@ -281,19 +283,24 @@
 
     // 获取cssText样式规则
     cssText: function (cssObj, key) {
-      var value = Object.keys(cssObj).map(function (key) {
-        return key + ':' + cssObj[key] + '!important;';
-      }).join('');
-      return key + '{' + value + '}';
+      var value = Object.keys(cssObj)
+        .map(function (key) {
+          return key + ":" + cssObj[key] + "!important;";
+        })
+        .join("");
+      return key + "{" + value + "}";
     },
-
-  }
+  };
 
   // 2.2 EmpileCssParser解析类
 
   function EmpileCssParser(cssParam) {
     if (!new.target) {
-      throw new TypeError('The constructor ' + arguments.callee.name + ' cannot be invoked widthout "new"');
+      throw new TypeError(
+        "The constructor " +
+          arguments.callee.name +
+          ' cannot be invoked widthout "new"'
+      );
     }
 
     var _this = this;
@@ -302,13 +309,13 @@
     this.lastSheet = this.getLastStyle();
     // 获取计算后的css对象
     this.computeCssObj = (function () {
-      var typeOptions = ['Function', 'Object'],
+      var typeOptions = ["Function", "Object"],
         computeMethodFn = [_this.exeCssFnSelf, _this.generateCssObj],
         cssParamType = _.typeOf(_this.cssParam),
         typeIndex = typeOptions.indexOf(cssParamType);
       return function () {
         return computeMethodFn[typeIndex].apply(_this, arguments);
-      }
+      };
     })();
 
     this.init();
@@ -331,7 +338,7 @@
   EmpileCssParserProto.getLastStyle = function () {
     var lastSheet = null;
     if (is.emptyArr(this.sheets)) {
-      lastSheet = doc.createElement('style');
+      lastSheet = doc.createElement("style");
       doc.head.appendChild(lastSheet);
       this.sheets = this.obtainAvailStyles();
     } else {
@@ -378,11 +385,9 @@
   // 将EmpileCssParserProto绑定为EmpileCssParser的原型
   EmpileCssParser.prototype = EmpileCssParserProto;
 
-
   // ## 3、EventDispatcher，自定义事件类
 
   var EventDispatcher = {
-
     on: function (name, cb) {
       var stores = this.eventStores;
       if (is.und(stores[name])) {
@@ -402,7 +407,7 @@
       once = function () {
         cb.call(_this);
         _this.off(name, cb);
-      }
+      };
       once.source = cb;
       this.on(name, once);
     },
@@ -430,9 +435,8 @@
         return callback !== cb || callback.source !== cb;
       });
       return true;
-    }
-
-  }
+    },
+  };
 
   // ### 4、轮播图主体代码部分
 
@@ -456,7 +460,7 @@
         absCoord = Math.abs(coord); // 坐标系索引绝对值
 
       var uidVal = dataAttrArr[index].dataSlideId, // 卡片'data-slide-id'属性值
-        selector = '[' + uidKey + '="' + uidVal + '"]'; // css规则选择器
+        selector = "[" + uidKey + '="' + uidVal + '"]'; // css规则选择器
 
       var cssObj = empileCss.computeCssObj(coord, absCoord, index), // 获取计算后的CssParam
         cssText = empileCss.cssText(cssObj, selector); // 生成cssText内容
@@ -476,14 +480,16 @@
       length = originList.length,
       mediant = Math.floor((length - 1) / 2),
       viewSplitIndex = length - mediant,
-      list = originList.slice(viewSplitIndex).concat(originList.slice(0, viewSplitIndex)),
-      dataSlideId = 'data-empile-slide-id',
-      dataSlideIndex = 'data-empile-slide-index',
+      list = originList
+        .slice(viewSplitIndex)
+        .concat(originList.slice(0, viewSplitIndex)),
+      dataSlideId = "data-empile-slide-id",
+      dataSlideIndex = "data-empile-slide-index",
       dataAttrArr = list.map(function (item, index) {
         return {
           dataSlideId: _.uuid(14, 16),
           dataSlideIndex: index,
-        }
+        };
       });
 
     this.slides = {
@@ -495,17 +501,17 @@
       dataSlideIndex: dataSlideIndex,
       clickable: clickable,
       dataAttrArr: dataAttrArr,
-    }
+    };
   }
 
   function initEventHandler() {
     var empile = this,
       params = empile.params,
-      eventsHandlerConfig = ['on', 'once'].map(function (key) {
+      eventsHandlerConfig = ["on", "once"].map(function (key) {
         return {
           type: key,
           value: params[key],
-        }
+        };
       });
 
     function filterEventType(typeObj) {
@@ -515,9 +521,10 @@
 
       if (is.obj(eventsObj)) {
         events = Object.keys(eventsObj);
-        events.length > 0 && events.forEach(function (key) {
-          empile[type](key, eventsObj[key]);
-        });
+        events.length > 0 &&
+          events.forEach(function (key) {
+            empile[type](key, eventsObj[key]);
+          });
       }
     }
     eventsHandlerConfig.forEach(filterEventType);
@@ -529,11 +536,10 @@
       pagination = params.pagination,
       notPointBeginReg = /^[^.]+/, //判断不是.开头且长度大于0的字符串
       el = null,
-      bulletClass = '',
-      bulletActiveClass = '';
+      bulletClass = "",
+      bulletActiveClass = "";
 
     if (is.obj(pagination)) {
-
       el = pagination.el;
       bulletClass = pagination.bulletClass;
       bulletActiveClass = pagination.bulletActiveClass;
@@ -543,19 +549,17 @@
         notPointBeginReg.test(bulletClass) &&
         el instanceof Element
       ) {
-        pagination.dots = _.toArray(el.querySelectorAll('.' + bulletClass));
+        pagination.dots = _.toArray(el.querySelectorAll("." + bulletClass));
         pagination.enable = true;
         pagination.click = true;
         return;
       }
-
     }
 
     params.pagination = {
       enable: false,
       click: false,
-    }
-
+    };
   }
 
   var Init = {
@@ -563,14 +567,13 @@
     initSlidesInfo: initSlidesInfo,
     initEventHandler: initEventHandler,
     initPagination: initPagination,
-  }
-
+  };
 
   // slideTo
 
   var TRANSITION_HOOKS = {
-    slideChange: 'slideChange',
-  }
+    slideChange: "slideChange",
+  };
 
   function slideToPrev() {
     var empile = this,
@@ -605,7 +608,7 @@
     slideToPrev: slideToPrev,
     slideToNext: slideToNext,
     slideToSlide: slideToSlide,
-  }
+  };
 
   // update
   function updateSlideDataAttr() {
@@ -645,14 +648,15 @@
     var bulletActiveClass = pagination.bulletActiveClass,
       dots = pagination.dots;
     //找到之前的active圆点
-    var activeDots = _.find(dots, function (dot) {
-      return dot.classList.contains(bulletActiveClass);
-    }) || dots[0];
+    var activeDots =
+      _.find(dots, function (dot) {
+        return dot.classList.contains(bulletActiveClass);
+      }) || dots[0];
     //清除之前的active样式类
     activeDots.classList.remove(bulletActiveClass);
     //给当前圆点添加active样式类
     dots[this.activeIndex].classList.add(bulletActiveClass);
-  }
+  };
 
   function update() {
     this.updateSlideDataAttr();
@@ -665,21 +669,17 @@
     updateActiveIndex: updateActiveIndex,
     updateDotsCss: updateDotsCss,
     update: update,
-  }
-
+  };
 
   var prototypes = {
     Init: Init,
     EventDispatcher: EventDispatcher,
     SlideTo: SlideTo,
     Update: Update,
-  }
-
-
+  };
 
   // Autoplay
   var Autoplay = {
-
     init: function () {
       var empile = this,
         autoplay = empile.params.autoplay,
@@ -688,12 +688,13 @@
       if (is.bol(autoplay)) {
         is.true(autoplay) && (delay = 4000);
       } else if (is.obj(autoplay)) {
-        if (is.und(autoplay.delay)) throw new Error('autoplay.delay is not defined!')
+        if (is.und(autoplay.delay))
+          throw new Error("autoplay.delay is not defined!");
         autoplay.delay = delay = parseFloat(autoplay.delay);
       }
       empile.params.autoplay = {
         delay: delay,
-      }
+      };
 
       // 如果delay时间是有效的，就准许自动轮播
       if (is.num(delay) && delay !== 0) {
@@ -703,9 +704,9 @@
 
         return function () {
           empile.autoplay.run();
-        }
+        };
       }
-      return function () {}
+      return function () {};
     },
 
     run: function () {
@@ -724,7 +725,7 @@
         return function () {
           clearInterval(empile.autoplay.timer);
           empile.autoplay.timer = void 0;
-        }
+        };
       }
       return function () {};
     },
@@ -740,48 +741,53 @@
         if (is.true(docHiddenOff)) delay = 2000;
         else return;
       } else if (is.obj(docHiddenOff)) {
-        if (is.und(docHiddenOff.delay)) throw new Error('docHiddenOff.delay is not defined!');
+        if (is.und(docHiddenOff.delay))
+          throw new Error("docHiddenOff.delay is not defined!");
         docHiddenOff.delay = delay = parseFloat(docHiddenOff.delay);
       }
       autoplay.docHiddenOff = {
         delay: delay,
-      }
+      };
 
       return function () {
         var autoplay = empile.autoplay,
           visibleTimer = null,
           isPageHidden = false,
-          hiddenFn = delay === 0 ? function () {
-            autoplay.stop()
-          } : function () {
-            isPageHidden = true;
-            visibleTimer = setTimeout(function () {
-              autoplay.stop();
-            }, delay);
-          },
-          visibleFn = delay === 0 ? function () {
-            clearTimeout(visibleTimer);
-            autoplay.init();
-          } : function () {
-            if (isPageHidden) {
-              isPageHidden = false;
-              clearTimeout(visibleTimer);
-              autoplay.init();
-            }
-          };
-        doc.addEventListener('visibilitychange', function () {
+          hiddenFn =
+            delay === 0
+              ? function () {
+                  autoplay.stop();
+                }
+              : function () {
+                  isPageHidden = true;
+                  visibleTimer = setTimeout(function () {
+                    autoplay.stop();
+                  }, delay);
+                },
+          visibleFn =
+            delay === 0
+              ? function () {
+                  clearTimeout(visibleTimer);
+                  autoplay.init();
+                }
+              : function () {
+                  if (isPageHidden) {
+                    isPageHidden = false;
+                    clearTimeout(visibleTimer);
+                    autoplay.init();
+                  }
+                };
+        doc.addEventListener("visibilitychange", function () {
           var pageHidden = doc[pageHiddenAttr];
           if (pageHidden) hiddenFn();
           else visibleFn();
         });
-      }
+      };
     },
-
-  }
+  };
 
   // Click
   var Click = {
-
     init: function () {
       var empile = this;
       empile.click.getCanClickEles();
@@ -792,7 +798,7 @@
     run: function () {
       var wrapper = this.wrapper,
         wrapperClickFun = this.click.getClickFun();
-      wrapper.parentElement.addEventListener('click', wrapperClickFun);
+      wrapper.parentElement.addEventListener("click", wrapperClickFun);
     },
 
     getClickFun() {
@@ -807,7 +813,9 @@
         pagination = params.pagination,
         paginationDots = pagination.dots,
         waitForTransition = params.waitForTransition,
-        transitionDuration = parseFloat(_.computedStyle(slides.list[0], 'transition-duration')), // 过渡时长
+        transitionDuration = parseFloat(
+          _.computedStyle(slides.list[0], "transition-duration")
+        ), // 过渡时长
         interval = transitionDuration * 1000;
 
       var wrapperClickFn = function (ev) {
@@ -815,7 +823,8 @@
           return e === _.closest(ev.target, e);
         });
         // 如果点击的不是目标元素或者目标元素是中间那张卡片，就不执行切换效果。
-        if (is.und(willTar) || willTar.getAttribute(dataSlideIndex) == mediant) return;
+        if (is.und(willTar) || willTar.getAttribute(dataSlideIndex) == mediant)
+          return;
         empile.autoplay.stop();
 
         if (willTar === navigation.prevEl) {
@@ -828,10 +837,11 @@
           var dotIndex = paginationDots.indexOf(willTar);
           dotIndex > -1 && empile.slideToSlide(originList[dotIndex]);
         }
+      };
 
-      }
-
-      return is.true(waitForTransition) ? _.throttle(wrapperClickFn, interval) : wrapperClickFn;
+      return is.true(waitForTransition)
+        ? _.throttle(wrapperClickFn, interval)
+        : wrapperClickFn;
     },
 
     getCanClickEles: function () {
@@ -844,14 +854,13 @@
         !is.null(navigation[key]) && canClickEles.push(navigation[key]);
       });
       is.true(slides.clickable) && canClickEles.push(slides.list);
-      is.true(pagination.clickable) && pagination.dots.forEach(function (dot) {
-        canClickEles.push(dot);
-      });
+      is.true(pagination.clickable) &&
+        pagination.dots.forEach(function (dot) {
+          canClickEles.push(dot);
+        });
       empile.click.canClickEles = _.flat(canClickEles, Infinity);
     },
-
-  }
-
+  };
 
   var defaultParams = {
     isClickSlide: false,
@@ -863,14 +872,14 @@
     },
     pagination: {
       el: null,
-      bulletClass: '',
-      bulletActiveClass: '',
+      bulletClass: "",
+      bulletActiveClass: "",
       clickable: false,
       enable: false,
       dots: [],
     },
     css: {},
-  }
+  };
 
   var Empile = function (wrapper, params) {
     _.extend(params, defaultParams); // 存储修正后的params
@@ -896,7 +905,7 @@
     });
 
     this.init();
-  }
+  };
 
   Empile.prototype.init = function () {
     var empile = this;
@@ -907,11 +916,12 @@
     empile.update(); // 给卡片设置所需的data-属性
     empile.autoplay.init(); // 初始化定时器
     empile.click.init(); // 初始化点击事件
-  }
+  };
 
   Object.keys(prototypes).forEach(function (group) {
     Object.keys(prototypes[group]).forEach(function (method) {
-      !Empile.prototype[method] && (Empile.prototype[method] = prototypes[group][method]);
+      !Empile.prototype[method] &&
+        (Empile.prototype[method] = prototypes[group][method]);
     });
   });
 
