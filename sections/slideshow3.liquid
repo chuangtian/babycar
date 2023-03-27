@@ -3,6 +3,14 @@
 {{ 'custom-effect.css' | asset_url | stylesheet_tag }}
 {{ 'slider-settings.css' | asset_url | stylesheet_tag }}
 {{ 'pre_flickityt4s.min.css' | asset_url | stylesheet_tag }}
+{%- style -%}
+  .previous {
+     left:15px;
+    }
+  .next{
+    right:15px;
+  }
+{%- endstyle -%}
 {%- liquid
   assign sid = section.id
   assign se_stts = section.settings
