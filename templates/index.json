@@ -2427,86 +2427,66 @@
         "code_cus_css": ""
       }
     },
-    "1f16c0bb-be0f-4ea7-9273-d3651f669246": {
+    "543d85ed-7312-4481-9711-e4715dd3f18b": {
       "type": "image-gallery",
       "blocks": {
-        "template--18304757039381__1f16c0bb-be0f-4ea7-9273-d3651f669246-167990922639d33d45-0": {
+        "template--18304757039381__543d85ed-7312-4481-9711-e4715dd3f18b-167990922639d33d45-0": {
           "type": "image_item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/DSC07384.jpg",
-            "link": ""
-          }
-        },
-        "template--18304757039381__1f16c0bb-be0f-4ea7-9273-d3651f669246-167990922639d33d45-1": {
-          "type": "image_item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/MB-06_PLUS.jpg",
-            "link": ""
-          }
-        },
-        "template--18304757039381__1f16c0bb-be0f-4ea7-9273-d3651f669246-167990922639d33d45-2": {
-          "type": "image_item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/DSC04462.jpg",
-            "link": ""
-          }
-        },
-        "template--18304757039381__1f16c0bb-be0f-4ea7-9273-d3651f669246-167990922639d33d45-3": {
-          "type": "image_item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/DSC00002.jpg",
-            "link": ""
-          }
-        },
-        "6eef66ee-b3bf-4c47-a097-7d7e3e97dcd2": {
-          "type": "image_item",
-          "disabled": true,
           "settings": {
             "link": ""
           }
         },
-        "ef4463c5-8a63-470c-b3b0-d55c47b8e7c2": {
+        "template--18304757039381__543d85ed-7312-4481-9711-e4715dd3f18b-167990922639d33d45-1": {
           "type": "image_item",
-          "disabled": true,
+          "settings": {
+            "link": ""
+          }
+        },
+        "template--18304757039381__543d85ed-7312-4481-9711-e4715dd3f18b-167990922639d33d45-2": {
+          "type": "image_item",
+          "settings": {
+            "link": ""
+          }
+        },
+        "template--18304757039381__543d85ed-7312-4481-9711-e4715dd3f18b-167990922639d33d45-3": {
+          "type": "image_item",
           "settings": {
             "link": ""
           }
         }
       },
       "block_order": [
-        "template--18304757039381__1f16c0bb-be0f-4ea7-9273-d3651f669246-167990922639d33d45-0",
-        "template--18304757039381__1f16c0bb-be0f-4ea7-9273-d3651f669246-167990922639d33d45-1",
-        "template--18304757039381__1f16c0bb-be0f-4ea7-9273-d3651f669246-167990922639d33d45-2",
-        "template--18304757039381__1f16c0bb-be0f-4ea7-9273-d3651f669246-167990922639d33d45-3",
-        "6eef66ee-b3bf-4c47-a097-7d7e3e97dcd2",
-        "ef4463c5-8a63-470c-b3b0-d55c47b8e7c2"
+        "template--18304757039381__543d85ed-7312-4481-9711-e4715dd3f18b-167990922639d33d45-0",
+        "template--18304757039381__543d85ed-7312-4481-9711-e4715dd3f18b-167990922639d33d45-1",
+        "template--18304757039381__543d85ed-7312-4481-9711-e4715dd3f18b-167990922639d33d45-2",
+        "template--18304757039381__543d85ed-7312-4481-9711-e4715dd3f18b-167990922639d33d45-3"
       ],
       "settings": {
-        "design_heading": "2",
+        "design_heading": "1",
         "heading_align": "t4s-text-center",
         "top_heading": "Gallery",
         "icon_heading": "las la-gem",
         "top_subheading": "",
         "tophead_mb": 30,
-        "layout_des": "2",
+        "layout_des": "3",
         "click_image": "data-t4s-gallery",
         "nav_thumbs": true,
         "open_link": "_blank",
-        "item_rd": 1,
-        "img_effect": "bounceIn",
+        "item_rd": 0,
+        "img_effect": "none",
         "b_effect": "none",
-        "image_ratio": "ratio16_9",
+        "image_ratio": "ratioadapt",
         "image_size": "contain",
         "image_position": "8",
-        "col_dk": "1",
-        "col_tb": "1",
-        "col_mb": "1",
+        "col_dk": "2",
+        "col_tb": "2",
+        "col_mb": "2",
         "space_item": "30",
         "space_item_mb": "10",
         "loop": true,
-        "au_time": 12,
-        "au_hover": false,
-        "nav_btn": false,
+        "au_time": 0,
+        "au_hover": true,
+        "nav_btn": true,
         "btn_vi": "hover",
         "btn_owl": "default",
         "btn_shape": "none",
@@ -2518,7 +2498,7 @@
         "dots_cl": "dark",
         "dots_round": false,
         "dots_space": 10,
-        "layout": "t4s-se-container",
+        "layout": "t4s-container-wrap",
         "cl_bg": "",
         "cl_bg_gradient": "",
         "mg": ",,50px,",
@@ -2544,6 +2524,6 @@
     "bfa25dc2-dcf9-4bfa-a545-fe4e0752483a",
     "9979132e-e814-4528-9518-f61fb181bc3b",
     "89f78f47-8480-4bef-8f36-6dd06a9d5542",
-    "1f16c0bb-be0f-4ea7-9273-d3651f669246"
+    "543d85ed-7312-4481-9711-e4715dd3f18b"
   ]
 }
