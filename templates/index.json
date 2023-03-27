@@ -2577,7 +2577,7 @@
         "au_time": 0,
         "au_hover": true,
         "nav_btn": true,
-        "btn_vi": "always",
+        "btn_vi": "hover",
         "btn_owl": "default",
         "btn_shape": "round",
         "btn_cl": "dark",
