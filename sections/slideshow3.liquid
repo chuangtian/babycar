@@ -83,7 +83,80 @@
                 assign percent_delay = bk_stts.animation_delay | divided_by: 100.0
                 assign time_ani_delay = bk_stts.time_animation | times: percent_delay           
             -%}
-          
+            <div class="wrapper horizontal demo1">
+            
+
+            <ul class="container">
+
+                <li class="cards-list">
+
+                    <div class="img">
+
+                        <img src="image/p1.png" alt="">
+
+                    </div>
+                    <div class="main-con">
+
+                        <h4 class="name">醉刘的摄影狮</h4>
+
+                        <p class="content">
+                            准旗舰游戏拍照手机魅族 X8，不止有实力，还有最美刘海屏！
+                        </p>
+
+                        <p class="label">魅族 X8</p>
+
+                    </div>
+                </li>
+                <li class="cards-list">
+
+                    <div class="img">
+
+                        <img src="image/p2.png" alt="">
+
+                    </div>
+                    <div class="main-con">
+
+                        <h4 class="name">屌丝扮海绵</h4>
+
+                        <p class="content">
+
+                            “窗含西岭千秋雪” 魅族 16th 用旗舰双摄带你领略诗句中的美景。
+                        </p>
+
+                        <p class="label">魅族 16th</p>
+
+                    </div>
+                </li>
+               
+
+            </ul>
+
+            <ul class='navigation'>
+                <li class="dot"></li>
+                <li class="dot"></li>
+                <li class="dot"></li>
+                <li class="dot"></li>
+                <li class="dot"></li>
+                <li class="dot"></li>
+                <li class="dot"></li>
+                <li class="dot"></li>
+                <li class="dot"></li>
+                <li class="dot"></li>
+                <li class="dot"></li>
+            </ul>
+
+            <i class="btn-direct btn-left">
+
+                <span class="shift-left"></span>
+
+            </i>
+            <i class="btn-direct btn-right">
+
+                <span class="shift-right"></span>
+
+            </i>
+
+        </div>
             <div class="t4s-slideshow-item t4s-col-item t4s-slide t4s_position_{{bk_stts.image_position}}" id="b_{{block.id}}" data-select-flickity {{ block.shopify_attributes }} style="--slide-bg-color:{{bk_stts.cl_img}};">
                 <div class="t4s-slideshow-inner t4s-pr t4s-oh t4s_ratio t4s_ratio_hasmb" {{attr_img}}style="--aspect-ratioapt:{{ratio | default:1.7777 }};--aspect-ratioaptmb:{{ratiomb  | default:1.7777 }};">
                     {% capture class_img %} t4s-slide-{{bk_stts.animate_slide}}{% endcapture %}
