@@ -157,7 +157,7 @@
             </i>
 
         </div>
-            <div class="t4s-slideshow-item t4s-col-item t4s-slide t4s_position_{{bk_stts.image_position}}" id="b_{{block.id}}" data-select-flickity {{ block.shopify_attributes }} style="--slide-bg-color:{{bk_stts.cl_img}};">
+            <div class="t4s-slideshow-item t4s-col-item t4s-slide t4s_position_{{bk_stts.image_position}}" id="b_{{block.id}}" data-select-flickity {{ block.shopify_attributes }} style="--slide-bg-color:{{bk_stts.cl_img}}; display:none">
                 <div class="t4s-slideshow-inner t4s-pr t4s-oh t4s_ratio t4s_ratio_hasmb" {{attr_img}}style="--aspect-ratioapt:{{ratio | default:1.7777 }};--aspect-ratioaptmb:{{ratiomb  | default:1.7777 }};">
                     {% capture class_img %} t4s-slide-{{bk_stts.animate_slide}}{% endcapture %}
                         {%- if image -%}   
