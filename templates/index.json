@@ -2494,7 +2494,7 @@
         "open_link": "_blank",
         "item_rd": 20,
         "img_effect": "bounceIn",
-        "b_effect": "none",
+        "b_effect": "border-run",
         "image_ratio": "ratioadapt",
         "image_size": "cover",
         "image_position": "8",
