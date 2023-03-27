@@ -2479,7 +2479,7 @@
         "item_rd": 0,
         "img_effect": "none",
         "b_effect": "none",
-        "image_ratio": "ratioadapt",
+        "image_ratio": "ratio16_9",
         "image_size": "contain",
         "image_position": "8",
         "col_dk": "3",
