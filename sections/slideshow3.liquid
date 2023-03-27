@@ -5,8 +5,8 @@
 {{ 'pre_flickityt4s.min.css' | asset_url | stylesheet_tag }}
 {%- style -%}
   .left-css{
-   left:25% !important; 
-    width:50% !important;
+/*    left:25% !important; 
+    width:50% !important; */
   }
 {%- endstyle -%}
 {%- liquid
@@ -65,7 +65,7 @@
                 assign ARRhtml = ARRhtml1
               endif
             -%}
-             <div  {{click_image}}--item class="left-css t4s-col-item t4s-gallery-item {{click_class}}" id="b_{{block.id}}" data-select-flickity >
+             <div  {{click_image}}--item class="left-css t4s-col-item t4s-gallery-item {{click_class}}" id="b_{{block.id}}" data-select-flickity  style="left:25% !important;width:50% !important;">
               <{{ARRhtml[0]}} {{ARRhtml[1]}}href="{{ bk_stts.link}}" {{ARRhtml[2]}}target="{{open_link}}" class="t4s-eff t4s-eff-{{b_effect}} t4s-eff-img-{{img_effect}}" {{click_image}}--open>
                 <div data-cacl-slide class="t4s_ratio t4s-img-wrap" style="--aspect-ratioapt: {{image.aspect_ratio | default: 2}};">
                   {%- if image != blank -%}
