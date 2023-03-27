@@ -590,7 +590,6 @@
           },
           "2601ba5a-81b0-4536-afdf-4a86a9a2be0e": {
             "type": "mega",
-            "disabled": true,
             "settings": {
               "title": "Accessories",
               "url": "shopify:\/\/collections\/accessories",
@@ -611,7 +610,6 @@
           },
           "a5c8d08c-71f2-47cb-bd31-10728deed408": {
             "type": "mega",
-            "disabled": true,
             "settings": {
               "title": "Customize",
               "url": "shopify:\/\/collections\/customize",
@@ -632,7 +630,6 @@
           },
           "050658d4-c357-4062-b112-ae7ba4e478d7": {
             "type": "base",
-            "disabled": true,
             "settings": {
               "title": "Compare",
               "url": "shopify:\/\/pages\/compare",
@@ -646,7 +643,6 @@
           },
           "cca207ae-af77-4ef7-bae6-9038b301b1b7": {
             "type": "mega",
-            "disabled": true,
             "settings": {
               "title": "Community",
               "url": "",
@@ -667,7 +663,6 @@
           },
           "472a7f7e-2738-471e-ba65-91d84148776c": {
             "type": "drop",
-            "disabled": true,
             "settings": {
               "title": "Support",
               "url": "",
