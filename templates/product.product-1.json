@@ -813,6 +813,7 @@
         "template--18304757367061__cca029e1-dddb-4119-9859-598826dc20a8-1679983264222a20cc-0": {
           "type": "bl_image",
           "settings": {
+            "image1": "shopify:\/\/shop_images\/Disc_brake.jpg",
             "col_dk": "6",
             "col_tb": "6",
             "layout_des": "carousel",
