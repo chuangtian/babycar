@@ -2243,7 +2243,7 @@
         "template--18304757039381__89f78f47-8480-4bef-8f36-6dd06a9d5542-1679651537bf518ae8-0": {
           "type": "bl_image",
           "settings": {
-            "image1": "shopify:\/\/shop_images\/Disc_brake.jpg",
+            "image1": "shopify:\/\/shop_images\/banner1.jpg",
             "col_dk": "6",
             "col_tb": "6",
             "layout_des": "carousel",
@@ -2320,6 +2320,7 @@
         "e8af79c1-1511-445c-b5d4-c7126820a9fd": {
           "type": "bl_image",
           "settings": {
+            "image1": "shopify:\/\/shop_images\/banner1.jpg",
             "col_dk": "6",
             "col_tb": "6",
             "layout_des": "carousel",
@@ -2372,6 +2373,7 @@
         "48c092b3-e02f-4280-9359-160501418533": {
           "type": "bl_image",
           "settings": {
+            "image1": "shopify:\/\/shop_images\/banner1.jpg",
             "col_dk": "6",
             "col_tb": "6",
             "layout_des": "carousel",
