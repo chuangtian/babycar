@@ -77,7 +77,7 @@
                     {{ 'image' | placeholder_svg_tag: 't4s-placeholder-svg t4s-obj-eff' }} 
                   {%- endif -%} 
                 </div>
-                <div>1236544</div>
+                <div {%- render 'bk_cus_style',type:'custom_text',bk_stts:bk_stts,ani_delay:ani_delay -%}>{{bk_stts.text}}</div>
               </{{ARRhtml[0]}}>
             </div>
           {%- endfor -%}
@@ -1022,6 +1022,19 @@
             "type": "url",
             "id": "link",
             "label": "Link"
+          },
+          {
+              "type":"textarea",
+              "id":"text",
+              "label":"Input text",
+              "default":"Text",
+              "info":"If you want to line break, please add a <br> tag in the text"
+          },
+          {
+              "type":"color",
+              "id":"text_cl",
+              "label":"Color text",
+              "default":"#fff"
           }
         ]
       }
