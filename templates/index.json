@@ -2610,11 +2610,6 @@
         "use_cus_css": false,
         "code_cus_css": ""
       }
-    },
-    "7bd5a172-18aa-4db3-9c90-fdcfee9b077b": {
-      "type": "test",
-      "settings": {
-      }
     }
   },
   "order": [
@@ -2632,7 +2627,6 @@
     "9979132e-e814-4528-9518-f61fb181bc3b",
     "89f78f47-8480-4bef-8f36-6dd06a9d5542",
     "543d85ed-7312-4481-9711-e4715dd3f18b",
-    "afa6061b-68dc-4f47-87f5-726bf4d7dfe3",
-    "7bd5a172-18aa-4db3-9c90-fdcfee9b077b"
+    "afa6061b-68dc-4f47-87f5-726bf4d7dfe3"
   ]
 }
