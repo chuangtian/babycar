@@ -1390,6 +1390,7 @@
         "e0f0a7bf-0e50-44f1-b9b4-d89efb7e982b": {
           "type": "bl_image",
           "settings": {
+            "image1": "shopify:\/\/shop_images\/display.jpg",
             "col_dk": "6",
             "col_tb": "6",
             "layout_des": "carousel",
