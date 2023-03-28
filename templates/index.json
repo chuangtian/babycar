@@ -2532,6 +2532,7 @@
         },
         "template--18304757039381__5165ed14-b00a-4cbe-8111-7a856c717f02-16799118929cf76a99-2": {
           "type": "image_item",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/MB-03_plus.jpg",
             "link": ""
@@ -2539,6 +2540,7 @@
         },
         "template--18304757039381__5165ed14-b00a-4cbe-8111-7a856c717f02-16799118929cf76a99-3": {
           "type": "image_item",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/MB-03.182_1d709878-129e-4561-9812-43c6905cfec2.jpg",
             "link": ""
@@ -2558,7 +2560,7 @@
         "icon_heading": "las la-gem",
         "top_subheading": "",
         "tophead_mb": 30,
-        "layout_des": "2",
+        "layout_des": "1",
         "click_image": "data-t4s-gallery",
         "nav_thumbs": false,
         "open_link": "_blank",
@@ -2568,7 +2570,7 @@
         "image_ratio": "ratioadapt",
         "image_size": "cover",
         "image_position": "8",
-        "col_dk": "3",
+        "col_dk": "2",
         "col_tb": "2",
         "col_mb": "1",
         "space_item": "30",
