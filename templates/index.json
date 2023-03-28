@@ -2531,8 +2531,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/MB-06.jpg",
             "link": "",
-            "text": "Text",
-            "text_cl": "#fff",
+            "text": "Text2",
+            "text_cl": "#ec0101",
             "text_fs": 16
           }
         },
