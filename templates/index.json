@@ -2521,7 +2521,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/MB-06_PLUS.jpg",
             "link": "",
-            "text": "<p style=\" width:100%;align-items: center;\">\nText\n\n111\n<\/p>",
+            "text": "<p style=\" width:100%;text-align: center;\">\nText\n\n111\n<\/p>",
             "text_cl": "#fff",
             "text_fs": 40
           }
