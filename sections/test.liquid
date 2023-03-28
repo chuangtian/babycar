@@ -1,6 +1,114 @@
+{%- style -%}
+  * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            position: relative;
+            /* width: 1500px;
+            height: 400px; */
+            width: 100%;
+            height: 100%;
+            top: 200px;
+            margin: auto;
+        }
+        .wrapper{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #eee;
+            perspective: 800px;
+            transform-style: preserve-3d;
+        }
+        .image{
+            float: left;
+            width: 300px;
+            height: 200px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            border-radius: 8px;
+            transition: transform 1s ease-in-out;
+        }
+        
+        /* 左右按钮 */
+        .btn{
+            position: relative;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -25px);
+            width: 1250px;
+            z-index: 999
+        }
+        .btn .left,
+        .btn .right {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            font-size: 30px;
+            text-align: center;
+            cursor: pointer;
+            color: white;
+            line-height: 50px;
+            border-radius: 50%;
+            background-color: rgba(0,0,0,0.4);
+        }
+        .btn .left {
+            left: 0;
+        }
+        .btn .right {
+            right: 0;
+        }
+        .btn span:hover {
+            background-color: rgba(0,0,0,0.7);
+        }
+        
+        /* 小圆圈 */
+        .point{
+            position: absolute;
+            left: 50%;
+            bottom: 10px;
+            transform: translate(-50%, 200px);
+            height: 14px;
+            z-index: 999
+        
+        }
+        .point>li {
+            list-style: none;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background-color: white;
+            float: left;
+            margin: 0 2px;
+            border: 2px solid rgb(160, 162, 167);
+            box-sizing: border-box;
+        }
+        .point .current {
+            border: 2px solid rgb(70, 71, 71);
+            background-color: rgb(119, 116, 116);
+        }
+{%- endstyle -%}
+<div class="box">
+        <div class="wrapper">
+            <img src="image/p1.png" class="image">
+            <img src="image/p2.png" class="image">
+            <img src="image/p3.png" class="image">
+            <img src="image/p4.png" class="image">
+            <!-- <img src="image/p5.png" class="image"> -->
+        </div>
+        <div class="btn" id="btn">
+            <span class="left"><</span>
+            <span class="right">></span>
+        </div>
+        <ul class="point"></ul>
+</div>
 {% schema %}
   {
-    "name": "Section name",
+    "name": "test",
     "settings": []
   }
 {% endschema %}
