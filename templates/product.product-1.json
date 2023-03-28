@@ -1000,221 +1000,202 @@
         "code_cus_css": ""
       }
     },
-    "a3f88e20-2a8e-40dc-ab10-17993b70201c": {
-      "type": "feature_columns",
+    "8e68a5e0-c22b-4c02-b7e2-a7e3d276d1b7": {
+      "type": "expansion2",
       "blocks": {
-        "template--17032844771617__a3f88e20-2a8e-40dc-ab10-17993b70201c-1670754134efff77e9-0": {
-          "type": "text_block",
-          "disabled": true,
+        "c8e27206-692c-4044-be9c-d48137040dd5": {
+          "type": "bl_text",
           "settings": {
-            "enable_image": true,
-            "title": "48V LED Headlight",
-            "text": "<p>High-end headlights, low power consumption, high brightness, wide range, can see everything ahead when driving at night, and play a role in reminding pedestrians and vehicles.<\/p>",
-            "button_label": "",
+            "text_size": "40,15",
+            "sub_heading": "",
+            "heading": "Performance and Functionality",
+            "text": "<p>The top priority for any parent is the safety of their child, and the HYPER GOGO ATV takes this seriously. With features like a rear disc brake, pneumatic tires, and adjustable speed modes, parents can trust that their child is riding a vehicle designed with safety in mind.<\/p>",
+            "button_label": "Button label",
             "button_link": "",
             "open_link": "_blank",
-            "btn_icon": false,
             "button_style": "default",
-            "btn_size": "large",
+            "btn_size": "medium",
             "btn_cl": "dark",
-            "button_effect": "fade"
-          }
-        },
-        "template--17032844771617__a3f88e20-2a8e-40dc-ab10-17993b70201c-1670754134efff77e9-1": {
-          "type": "text_block",
-          "disabled": true,
-          "settings": {
-            "enable_image": true,
-            "title": "Integrated Brake Rear Light",
-            "text": "<p>Whether it is day or night, the light reminder function when braking can keep the rear pedestrians and vehicles at a safe distance. At the same time, the tail lights can also keep on to prevent rear-end collisions at night.<\/p>",
-            "button_label": "",
-            "button_link": "",
-            "open_link": "_blank",
-            "btn_icon": false,
-            "button_style": "default",
-            "btn_size": "large",
-            "btn_cl": "dark",
-            "button_effect": "fade"
-          }
-        },
-        "template--17032844771617__a3f88e20-2a8e-40dc-ab10-17993b70201c-1670754134efff77e9-2": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "title": "The 7-speed Shifter",
-            "text": "<p>The high-end version of the seven-speed transmission system can maintain the ideal pedaling pace and torque no matter whether it is climbing, flat road or downhill.<\/p>",
-            "button_label": "",
-            "button_link": "",
-            "open_link": "_blank",
-            "btn_icon": false,
-            "button_style": "default",
-            "btn_size": "large",
-            "btn_cl": "dark",
-            "button_effect": "fade"
-          }
-        },
-        "f2f3354c-bc4e-4d7f-aa3e-1db2687a26b2": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "title": "Mechanical Disc Brakes",
-            "text": "<p>Sensitive front and rear disc brakes cooperate with the suspension system to reduce the impact caused by inertia when braking.<\/p>",
-            "button_label": "",
-            "button_link": "",
-            "open_link": "_blank",
-            "btn_icon": false,
-            "button_style": "default",
-            "btn_size": "large",
-            "btn_cl": "dark",
-            "button_effect": "fade"
-          }
-        },
-        "c45f12b7-ddd3-4814-94a7-71cfe4d9a6f5": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "title": "Extra Long Double Seat",
-            "text": "<p>Different from conventional ebikes, macfox has an extra-long comfortable seat and uses PU memory foam to eliminate the fatigue for the rider during long-distance riding.<\/p>",
-            "button_label": "",
-            "button_link": "",
-            "open_link": "_blank",
-            "btn_icon": false,
-            "button_style": "default",
-            "btn_size": "large",
-            "btn_cl": "dark",
-            "button_effect": "fade"
-          }
-        },
-        "950277aa-027b-4e9c-8494-5e3f28f4d693": {
-          "type": "text_block",
-          "disabled": true,
-          "settings": {
-            "enable_image": true,
-            "title": "Ergonomic Half Twist Throttle",
-            "text": "<p>When tired of pedaling, take a break and cruise. Gently twist the throttle on your right to accelerate.<\/p>",
-            "button_label": "",
-            "button_link": "",
-            "open_link": "_blank",
-            "btn_icon": false,
-            "button_style": "default",
-            "btn_size": "large",
-            "btn_cl": "dark",
-            "button_effect": "fade"
-          }
-        },
-        "505ead31-83a3-43e8-9f16-ea73626a603a": {
-          "type": "text_block",
-          "disabled": true,
-          "settings": {
-            "enable_image": true,
-            "title": "Adjustable Saddle",
-            "text": "<p>This bike seat is a durable and comfortable saddle that decreases the impact of road bumps. You may adjust your posture by moving the saddle up and down as well as back and forth.<\/p>",
-            "button_label": "",
-            "button_link": "",
-            "open_link": "_blank",
-            "btn_icon": false,
-            "button_style": "default",
-            "btn_size": "large",
-            "btn_cl": "dark",
-            "button_effect": "fade"
-          }
-        },
-        "26058b19-7c3d-4553-8d4f-6b60586ef119": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "title": "20\"*4.0\" CST Tires",
-            "text": "<p>The fierce thick tire and knobby tread pattern still maintain strong grip and traction in harsh terrains such as dry land, mud, asphalt and sand.<\/p>",
-            "button_label": "",
-            "button_link": "",
-            "open_link": "_blank",
-            "btn_icon": false,
-            "button_style": "default",
-            "btn_size": "large",
-            "btn_cl": "dark",
-            "button_effect": "fade"
-          }
-        },
-        "ae6269df-143d-4f81-87eb-9dc771c3f251": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "title": "Gear Mode",
-            "text": "<p>Rotary plate accelerator mode, which can be used with pedal assisted riding to achieve optimal energy saving, three gears for you to switch at will.<\/p>",
-            "button_label": "",
-            "button_link": "",
-            "open_link": "_blank",
-            "btn_icon": false,
-            "button_style": "default",
-            "btn_size": "large",
-            "btn_cl": "dark",
-            "button_effect": "fade"
-          }
-        },
-        "d0179f23-a8cb-4df3-997d-e4e287d9f656": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "title": "Display Screen",
-            "text": "<p>The light and compact LCD screen is designed for energy saving. It provides speed, mileage and power display in different gears, monitors your riding status in real time, and eliminates power anxiety.<\/p>",
-            "button_label": "",
-            "button_link": "",
-            "open_link": "_blank",
-            "btn_icon": false,
-            "button_style": "default",
-            "btn_size": "large",
-            "btn_cl": "dark",
-            "button_effect": "fade"
-          }
-        },
-        "d190264d-6baf-4cb5-8569-fe78bbfc0613": {
-          "type": "text_block",
-          "disabled": true,
-          "settings": {
-            "enable_image": true,
-            "title": "Full Fenders",
-            "text": "<p>Fenders on both the front and rear are complete with all of the necessary hardware. They're incredibly resilient and keep you dry and clean from water and mud.<\/p>",
-            "button_label": "",
-            "button_link": "",
-            "open_link": "_blank",
-            "btn_icon": false,
-            "button_style": "default",
-            "btn_size": "large",
-            "btn_cl": "dark",
-            "button_effect": "fade"
-          }
-        },
-        "4373572d-e4b6-4589-b21c-dcebf73ef1b9": {
-          "type": "text_block",
-          "disabled": true,
-          "settings": {
-            "enable_image": true,
-            "title": "Center Stand",
-            "text": "<p>Built with rust-resistant, sturdy, and durable aluminum alloy.<\/p>",
-            "button_label": "",
-            "button_link": "",
-            "open_link": "_blank",
-            "btn_icon": false,
-            "button_style": "default",
-            "btn_size": "large",
-            "btn_cl": "dark",
-            "button_effect": "fade"
+            "button_effect": "default"
           }
         }
       },
       "block_order": [
-        "template--17032844771617__a3f88e20-2a8e-40dc-ab10-17993b70201c-1670754134efff77e9-0",
-        "template--17032844771617__a3f88e20-2a8e-40dc-ab10-17993b70201c-1670754134efff77e9-1",
-        "template--17032844771617__a3f88e20-2a8e-40dc-ab10-17993b70201c-1670754134efff77e9-2",
-        "f2f3354c-bc4e-4d7f-aa3e-1db2687a26b2",
-        "c45f12b7-ddd3-4814-94a7-71cfe4d9a6f5",
-        "950277aa-027b-4e9c-8494-5e3f28f4d693",
-        "505ead31-83a3-43e8-9f16-ea73626a603a",
-        "26058b19-7c3d-4553-8d4f-6b60586ef119",
-        "ae6269df-143d-4f81-87eb-9dc771c3f251",
-        "d0179f23-a8cb-4df3-997d-e4e287d9f656",
-        "d190264d-6baf-4cb5-8569-fe78bbfc0613",
-        "4373572d-e4b6-4589-b21c-dcebf73ef1b9"
+        "c8e27206-692c-4044-be9c-d48137040dd5"
+      ],
+      "settings": {
+      }
+    },
+    "abf25882-f73b-43e3-b021-05247126bd04": {
+      "type": "expansion2-1",
+      "blocks": {
+        "36ceb843-f711-408e-b6b1-b3a23d005ecc": {
+          "type": "bl_image",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/diesha.jpg",
+            "col_dk": "6",
+            "col_tb": "6",
+            "layout_des": "carousel",
+            "post_mobile": "default",
+            "image_ratio": "ratioadapt",
+            "image_size": "cover",
+            "image_position": "8",
+            "loop": true,
+            "au_time": 0,
+            "au_hover": true,
+            "nav_btn": false,
+            "btn_vi": "hover",
+            "btn_owl": "default",
+            "btn_shape": "none",
+            "btn_cl": "dark",
+            "btn_size": "small",
+            "btn_hidden_mobile": true,
+            "nav_dot": false,
+            "dot_owl": "default",
+            "dots_cl": "dark",
+            "dots_round": true,
+            "dots_space": 10,
+            "dots_hidden_mobile": false
+          }
+        },
+        "880191b7-9da3-4ffc-9027-2fb0ccb5d7e6": {
+          "type": "bl_text",
+          "settings": {
+            "col_dk": "6",
+            "col_tb": "6",
+            "text_size": "40,15",
+            "txt_align": "center",
+            "sub_heading": "",
+            "heading": "Rear disc brake",
+            "text": "<p>The rear disc brake provides reliable stopping power, which is important for safety when riding.<\/p>",
+            "subhd_color": "#222222",
+            "hd_color": "#222222",
+            "des_color": "#878787",
+            "use_shadow": false,
+            "button_label": "Button label",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_icon": false,
+            "button_style": "default",
+            "btn_size": "large",
+            "btn_cl": "dark",
+            "button_effect": "default"
+          }
+        },
+        "f5f263f7-46d5-4b90-864c-9f18f7139333": {
+          "type": "bl_text",
+          "settings": {
+            "col_dk": "6",
+            "col_tb": "6",
+            "text_size": "40,15",
+            "txt_align": "center",
+            "sub_heading": "",
+            "heading": "Pneumatic tires",
+            "text": "<p>The 13\" pneumatic tires offer a smooth and stable ride, and are better able to handle uneven terrain than solid tires.<\/p>",
+            "subhd_color": "#222222",
+            "hd_color": "#222222",
+            "des_color": "#878787",
+            "use_shadow": false,
+            "button_label": "Button label",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_icon": false,
+            "button_style": "default",
+            "btn_size": "large",
+            "btn_cl": "dark",
+            "button_effect": "default"
+          }
+        },
+        "bdbfcf2c-f3dd-472d-b8d0-6ba0c0368106": {
+          "type": "bl_image",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/trie_3c85136a-84ab-433a-be6d-8bb7b7bd5ae7.jpg",
+            "col_dk": "6",
+            "col_tb": "6",
+            "layout_des": "carousel",
+            "post_mobile": "default",
+            "image_ratio": "ratioadapt",
+            "image_size": "cover",
+            "image_position": "8",
+            "loop": true,
+            "au_time": 0,
+            "au_hover": true,
+            "nav_btn": false,
+            "btn_vi": "hover",
+            "btn_owl": "default",
+            "btn_shape": "none",
+            "btn_cl": "dark",
+            "btn_size": "small",
+            "btn_hidden_mobile": true,
+            "nav_dot": false,
+            "dot_owl": "default",
+            "dots_cl": "dark",
+            "dots_round": true,
+            "dots_space": 10,
+            "dots_hidden_mobile": false
+          }
+        },
+        "c26a7424-543b-4f5b-b29f-74e6b85d214c": {
+          "type": "bl_text",
+          "settings": {
+            "col_dk": "6",
+            "col_tb": "6",
+            "text_size": "40,15",
+            "txt_align": "center",
+            "sub_heading": "",
+            "heading": "Adjustable speed modes",
+            "text": "<p>Safety is a top priority with the Hypergogo ATV, and the adjustable speed modes are designed with that in mind. With two speed options to choose from, parents can select the appropriate speed for their child's skill level and experience, ensuring a safe and enjoyable riding experience. The maximum speed of 10 mph provides a thrilling ride while maintaining a safe speed for younger riders.<\/p>",
+            "subhd_color": "#222222",
+            "hd_color": "#222222",
+            "des_color": "#878787",
+            "use_shadow": false,
+            "button_label": "Button label",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_icon": false,
+            "button_style": "default",
+            "btn_size": "large",
+            "btn_cl": "dark",
+            "button_effect": "default"
+          }
+        },
+        "0ca5b227-9573-4c14-9707-179e42bceecc": {
+          "type": "bl_image",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/speed.jpg",
+            "col_dk": "6",
+            "col_tb": "6",
+            "layout_des": "carousel",
+            "post_mobile": "default",
+            "image_ratio": "ratioadapt",
+            "image_size": "cover",
+            "image_position": "8",
+            "loop": true,
+            "au_time": 0,
+            "au_hover": true,
+            "nav_btn": false,
+            "btn_vi": "hover",
+            "btn_owl": "default",
+            "btn_shape": "none",
+            "btn_cl": "dark",
+            "btn_size": "small",
+            "btn_hidden_mobile": true,
+            "nav_dot": false,
+            "dot_owl": "default",
+            "dots_cl": "dark",
+            "dots_round": true,
+            "dots_space": 10,
+            "dots_hidden_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "36ceb843-f711-408e-b6b1-b3a23d005ecc",
+        "880191b7-9da3-4ffc-9027-2fb0ccb5d7e6",
+        "f5f263f7-46d5-4b90-864c-9f18f7139333",
+        "bdbfcf2c-f3dd-472d-b8d0-6ba0c0368106",
+        "c26a7424-543b-4f5b-b29f-74e6b85d214c",
+        "0ca5b227-9573-4c14-9707-179e42bceecc"
       ],
       "settings": {
         "design_heading": "1",
@@ -1223,48 +1204,17 @@
         "icon_heading": "las la-gem",
         "top_subheading": "",
         "tophead_mb": 30,
-        "text_align": "start",
-        "pos_text": "default",
-        "fs_title": 26,
-        "fs_text": 16,
-        "fs_title_mb": 22,
-        "fs_text_mb": 15,
-        "image_ratio": "ratio16_9",
-        "image_size": "cover",
-        "image_position": "8",
-        "img_effect": "none",
-        "b_effect": "none",
-        "layout_des": "1",
-        "space_h_item": "30",
-        "space_v_item": "30",
-        "space_h_item_mb": "10",
+        "space_h_item": "0",
+        "space_v_item": "10",
+        "space_h_item_mb": "20",
         "space_v_item_mb": "10",
-        "col_dk": "3",
-        "col_tb": "2",
-        "col_mb": "1",
-        "loop": true,
-        "au_time": 0,
-        "au_hover": true,
-        "nav_btn": false,
-        "btn_vi": "hover",
-        "btn_owl": "default",
-        "btn_shape": "none",
-        "btn_cl": "dark",
-        "btn_size": "small",
-        "btn_hidden_mobile": true,
-        "nav_dot": false,
-        "dot_owl": "default",
-        "dots_cl": "dark",
-        "dots_round": true,
-        "dots_space": 10,
-        "dots_hidden_mobile": false,
-        "layout": "t4s-container-fluid",
-        "cl_bg": "",
+        "layout": "t4s-container-wrap",
+        "cl_bg": "#fff",
         "cl_bg_gradient": "",
-        "mg": "50px,,50px,",
-        "pd": "0,40px,0,40px",
+        "mg": ",,50px,",
+        "pd": "",
         "mg_mb": ",,30px,",
-        "pd_mb": "0,15px,0,15px",
+        "pd_mb": "",
         "use_cus_css": false,
         "code_cus_css": ""
       }
@@ -1748,7 +1698,8 @@
     "76661683-eefc-4168-9772-dde28519017d",
     "83fb5a7d-51d7-4350-9587-fefd29a47b32",
     "cca029e1-dddb-4119-9859-598826dc20a8",
-    "a3f88e20-2a8e-40dc-ab10-17993b70201c",
+    "8e68a5e0-c22b-4c02-b7e2-a7e3d276d1b7",
+    "abf25882-f73b-43e3-b021-05247126bd04",
     "d9b226c3-a0e1-45c9-9f64-b5ae79210001",
     "602619e3-8408-4b38-9f07-62da435a1135",
     "6ebd3ff8-a77d-4bc7-bd2b-3eb32ac0f9b5",
