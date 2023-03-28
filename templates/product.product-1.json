@@ -1000,465 +1000,6 @@
         "code_cus_css": ""
       }
     },
-    "8e68a5e0-c22b-4c02-b7e2-a7e3d276d1b7": {
-      "type": "expansion2",
-      "blocks": {
-        "c8e27206-692c-4044-be9c-d48137040dd5": {
-          "type": "bl_text",
-          "settings": {
-            "text_size": "40,15",
-            "sub_heading": "",
-            "heading": "Performance and Functionality",
-            "text": "<p>The top priority for any parent is the safety of their child, and the HYPER GOGO ATV takes this seriously. With features like a rear disc brake, pneumatic tires, and adjustable speed modes, parents can trust that their child is riding a vehicle designed with safety in mind.<\/p>",
-            "button_label": "Button label",
-            "button_link": "",
-            "open_link": "_blank",
-            "button_style": "default",
-            "btn_size": "medium",
-            "btn_cl": "dark",
-            "button_effect": "default"
-          }
-        }
-      },
-      "block_order": [
-        "c8e27206-692c-4044-be9c-d48137040dd5"
-      ],
-      "settings": {
-      }
-    },
-    "abf25882-f73b-43e3-b021-05247126bd04": {
-      "type": "expansion2-1",
-      "blocks": {
-        "36ceb843-f711-408e-b6b1-b3a23d005ecc": {
-          "type": "bl_image",
-          "settings": {
-            "image1": "shopify:\/\/shop_images\/diesha.jpg",
-            "col_dk": "6",
-            "col_tb": "6",
-            "layout_des": "carousel",
-            "post_mobile": "default",
-            "image_ratio": "ratioadapt",
-            "image_size": "cover",
-            "image_position": "8",
-            "loop": true,
-            "au_time": 0,
-            "au_hover": true,
-            "nav_btn": false,
-            "btn_vi": "hover",
-            "btn_owl": "default",
-            "btn_shape": "none",
-            "btn_cl": "dark",
-            "btn_size": "small",
-            "btn_hidden_mobile": true,
-            "nav_dot": false,
-            "dot_owl": "default",
-            "dots_cl": "dark",
-            "dots_round": true,
-            "dots_space": 10,
-            "dots_hidden_mobile": false
-          }
-        },
-        "880191b7-9da3-4ffc-9027-2fb0ccb5d7e6": {
-          "type": "bl_text",
-          "settings": {
-            "col_dk": "6",
-            "col_tb": "6",
-            "text_size": "40,15",
-            "txt_align": "center",
-            "sub_heading": "",
-            "heading": "Rear disc brake",
-            "text": "<p>The rear disc brake provides reliable stopping power, which is important for safety when riding.<\/p>",
-            "subhd_color": "#222222",
-            "hd_color": "#222222",
-            "des_color": "#878787",
-            "use_shadow": false,
-            "button_label": "Button label",
-            "button_link": "",
-            "open_link": "_blank",
-            "btn_icon": false,
-            "button_style": "default",
-            "btn_size": "large",
-            "btn_cl": "dark",
-            "button_effect": "default"
-          }
-        },
-        "f5f263f7-46d5-4b90-864c-9f18f7139333": {
-          "type": "bl_text",
-          "settings": {
-            "col_dk": "6",
-            "col_tb": "6",
-            "text_size": "40,15",
-            "txt_align": "center",
-            "sub_heading": "",
-            "heading": "Pneumatic tires",
-            "text": "<p>The 13\" pneumatic tires offer a smooth and stable ride, and are better able to handle uneven terrain than solid tires.<\/p>",
-            "subhd_color": "#222222",
-            "hd_color": "#222222",
-            "des_color": "#878787",
-            "use_shadow": false,
-            "button_label": "Button label",
-            "button_link": "",
-            "open_link": "_blank",
-            "btn_icon": false,
-            "button_style": "default",
-            "btn_size": "large",
-            "btn_cl": "dark",
-            "button_effect": "default"
-          }
-        },
-        "bdbfcf2c-f3dd-472d-b8d0-6ba0c0368106": {
-          "type": "bl_image",
-          "settings": {
-            "image1": "shopify:\/\/shop_images\/trie_3c85136a-84ab-433a-be6d-8bb7b7bd5ae7.jpg",
-            "col_dk": "6",
-            "col_tb": "6",
-            "layout_des": "carousel",
-            "post_mobile": "default",
-            "image_ratio": "ratioadapt",
-            "image_size": "cover",
-            "image_position": "8",
-            "loop": true,
-            "au_time": 0,
-            "au_hover": true,
-            "nav_btn": false,
-            "btn_vi": "hover",
-            "btn_owl": "default",
-            "btn_shape": "none",
-            "btn_cl": "dark",
-            "btn_size": "small",
-            "btn_hidden_mobile": true,
-            "nav_dot": false,
-            "dot_owl": "default",
-            "dots_cl": "dark",
-            "dots_round": true,
-            "dots_space": 10,
-            "dots_hidden_mobile": false
-          }
-        },
-        "c26a7424-543b-4f5b-b29f-74e6b85d214c": {
-          "type": "bl_text",
-          "settings": {
-            "col_dk": "6",
-            "col_tb": "6",
-            "text_size": "40,15",
-            "txt_align": "center",
-            "sub_heading": "",
-            "heading": "Adjustable speed modes",
-            "text": "<p>Safety is a top priority with the Hypergogo ATV, and the adjustable speed modes are designed with that in mind. With two speed options to choose from, parents can select the appropriate speed for their child's skill level and experience, ensuring a safe and enjoyable riding experience. The maximum speed of 10 mph provides a thrilling ride while maintaining a safe speed for younger riders.<\/p>",
-            "subhd_color": "#222222",
-            "hd_color": "#222222",
-            "des_color": "#878787",
-            "use_shadow": false,
-            "button_label": "Button label",
-            "button_link": "",
-            "open_link": "_blank",
-            "btn_icon": false,
-            "button_style": "default",
-            "btn_size": "large",
-            "btn_cl": "dark",
-            "button_effect": "default"
-          }
-        },
-        "0ca5b227-9573-4c14-9707-179e42bceecc": {
-          "type": "bl_image",
-          "settings": {
-            "image1": "shopify:\/\/shop_images\/speed.jpg",
-            "col_dk": "6",
-            "col_tb": "6",
-            "layout_des": "carousel",
-            "post_mobile": "default",
-            "image_ratio": "ratioadapt",
-            "image_size": "cover",
-            "image_position": "8",
-            "loop": true,
-            "au_time": 0,
-            "au_hover": true,
-            "nav_btn": false,
-            "btn_vi": "hover",
-            "btn_owl": "default",
-            "btn_shape": "none",
-            "btn_cl": "dark",
-            "btn_size": "small",
-            "btn_hidden_mobile": true,
-            "nav_dot": false,
-            "dot_owl": "default",
-            "dots_cl": "dark",
-            "dots_round": true,
-            "dots_space": 10,
-            "dots_hidden_mobile": false
-          }
-        }
-      },
-      "block_order": [
-        "36ceb843-f711-408e-b6b1-b3a23d005ecc",
-        "880191b7-9da3-4ffc-9027-2fb0ccb5d7e6",
-        "f5f263f7-46d5-4b90-864c-9f18f7139333",
-        "bdbfcf2c-f3dd-472d-b8d0-6ba0c0368106",
-        "c26a7424-543b-4f5b-b29f-74e6b85d214c",
-        "0ca5b227-9573-4c14-9707-179e42bceecc"
-      ],
-      "settings": {
-        "design_heading": "1",
-        "heading_align": "t4s-text-center",
-        "top_heading": "",
-        "icon_heading": "las la-gem",
-        "top_subheading": "",
-        "tophead_mb": 30,
-        "space_h_item": "0",
-        "space_v_item": "10",
-        "space_h_item_mb": "20",
-        "space_v_item_mb": "10",
-        "layout": "t4s-container-wrap",
-        "cl_bg": "#fff",
-        "cl_bg_gradient": "",
-        "mg": ",,50px,",
-        "pd": "",
-        "mg_mb": ",,30px,",
-        "pd_mb": "",
-        "use_cus_css": false,
-        "code_cus_css": ""
-      }
-    },
-    "d9b226c3-a0e1-45c9-9f64-b5ae79210001": {
-      "type": "background_video",
-      "disabled": true,
-      "blocks": {
-        "template--17032844771617__d9b226c3-a0e1-45c9-9f64-b5ae79210001-1670735903dedb3861-1": {
-          "type": "custom_text",
-          "settings": {
-            "text": "Macfox-X2",
-            "remove_br_tag": false,
-            "fontf": "inherit",
-            "text_cl": "#ffffff",
-            "text_fs": 40,
-            "text_lh": 70,
-            "text_fw": 800,
-            "text_ls": 0,
-            "text_mgb": 20,
-            "font_italic": false,
-            "text_shadow": false,
-            "hidden_mobile": false,
-            "text_fs_mb": 22,
-            "text_lh_mb": 0,
-            "text_ls_mb": 0,
-            "text_mgb_mobile": 10,
-            "animation": "none"
-          }
-        },
-        "template--17032844771617__d9b226c3-a0e1-45c9-9f64-b5ae79210001-1670735903dedb3861-0": {
-          "type": "custom_text",
-          "settings": {
-            "text": "",
-            "remove_br_tag": false,
-            "fontf": "inherit",
-            "text_cl": "#ffffff",
-            "text_fs": 28,
-            "text_lh": 0,
-            "text_fw": 600,
-            "text_ls": 1,
-            "text_mgb": 650,
-            "font_italic": false,
-            "text_shadow": false,
-            "hidden_mobile": false,
-            "text_fs_mb": 16,
-            "text_lh_mb": 0,
-            "text_ls_mb": 0,
-            "text_mgb_mobile": 180,
-            "animation": "none"
-          }
-        },
-        "9e335249-b29c-4cee-9ae7-0b8f80a0c344": {
-          "type": "custom_text",
-          "disabled": true,
-          "settings": {
-            "text": "The Macfox-X2 is designed for those seeking new thrills, featuring a powerful brushless motor with a peak output of 1000W and a high-end suspension system. The lightweight and sturdy aluminum alloy frame ensures stability and agility. Get ready to embark on your next adventure with Macfox-X2!",
-            "remove_br_tag": false,
-            "fontf": "inherit",
-            "text_cl": "#ffffff",
-            "text_fs": 16,
-            "text_lh": 26,
-            "text_fw": 400,
-            "text_ls": 0,
-            "text_mgb": 15,
-            "font_italic": true,
-            "text_shadow": false,
-            "hidden_mobile": false,
-            "text_fs_mb": 15,
-            "text_lh_mb": 20,
-            "text_ls_mb": 0,
-            "text_mgb_mobile": 10,
-            "animation": "none"
-          }
-        }
-      },
-      "block_order": [
-        "template--17032844771617__d9b226c3-a0e1-45c9-9f64-b5ae79210001-1670735903dedb3861-1",
-        "template--17032844771617__d9b226c3-a0e1-45c9-9f64-b5ae79210001-1670735903dedb3861-0",
-        "9e335249-b29c-4cee-9ae7-0b8f80a0c344"
-      ],
-      "settings": {
-        "se_height": "t4s_ratio_cuspx",
-        "custom_dk": true,
-        "height_dk": 1080,
-        "custom_tb": true,
-        "height_tb": 400,
-        "custom_mb": true,
-        "height_mb": 250,
-        "source": "1",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=7YGQarqfgmo",
-        "file_link": "",
-        "text_align": "start",
-        "text_align_mb": "start",
-        "content_width": "container",
-        "cv_pos": 50,
-        "ch_pos": 0,
-        "cv_pos_mb": 50,
-        "ch_pos_mb": 50,
-        "bg_overlay": "#000000",
-        "bg_opacity": 0,
-        "bg_content_cl": "#ffffff",
-        "bg_content_op": 0,
-        "content_pd_tb": 15,
-        "content_pd_lr": 15,
-        "content_pd_tb_mb": 10,
-        "content_pd_lr_mb": 10,
-        "border_bl": false,
-        "br_color": "#222222",
-        "br_bg": "#ffffff",
-        "br_opacity": 50,
-        "br_style": "solid",
-        "br_pd": 20,
-        "br_pd_mb": 10,
-        "time_animation": 1,
-        "animation_delay": 40,
-        "layout": "t4s-container-fluid",
-        "cl_bg": "",
-        "cl_bg_gradient": "",
-        "mg": "",
-        "pd": "",
-        "mg_mb": "",
-        "pd_mb": "",
-        "use_cus_css": false,
-        "code_cus_css": ""
-      }
-    },
-    "602619e3-8408-4b38-9f07-62da435a1135": {
-      "type": "custom-section",
-      "blocks": {
-        "template--17772547277118__602619e3-8408-4b38-9f07-62da435a1135-1678240891ddec6dd2-0": {
-          "type": "bl_col",
-          "settings": {
-            "col_dk": "7",
-            "col_tb": "7",
-            "col_mb": "12",
-            "align_vertical": false,
-            "content_align": "center",
-            "content_align_tablet": "center",
-            "content_align_mobile": "center",
-            "padding_inner": "",
-            "padding_inner_tb": "",
-            "padding_inner_mb": "",
-            "bg_cl": "rgba(0,0,0,0)"
-          }
-        },
-        "e022314a-bb9c-4fa9-af61-76f404c27ef9": {
-          "type": "image",
-          "settings": {
-            "img_link": "",
-            "open_link": "_self",
-            "img_width": 0,
-            "img_width_mb": 0,
-            "img_align": "center",
-            "img_align_tb": "center",
-            "img_align_mobile": "center",
-            "b_effect": "none",
-            "hidden_mobile": false,
-            "mgb": 0,
-            "mgb_mb": 0
-          }
-        },
-        "template--17772547277118__602619e3-8408-4b38-9f07-62da435a1135-1678240891ddec6dd2-3": {
-          "type": "bl_col",
-          "settings": {
-            "col_dk": "5",
-            "col_tb": "5",
-            "col_mb": "12",
-            "align_vertical": false,
-            "content_align": "start",
-            "content_align_tablet": "start",
-            "content_align_mobile": "start",
-            "padding_inner": "",
-            "padding_inner_tb": "",
-            "padding_inner_mb": "",
-            "bg_cl": "rgba(0,0,0,0)"
-          }
-        },
-        "447c9ef8-f643-4222-a7d8-6c8c43e4d646": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "{%- render 'Product Switch' -%}"
-          }
-        },
-        "93bd41b4-d33b-4484-b7bc-73a433a72102": {
-          "type": "bl_col",
-          "settings": {
-            "col_dk": "12",
-            "col_tb": "12",
-            "col_mb": "12",
-            "align_vertical": false,
-            "content_align": "center",
-            "content_align_tablet": "center",
-            "content_align_mobile": "center",
-            "padding_inner": "",
-            "padding_inner_tb": "",
-            "padding_inner_mb": "",
-            "bg_cl": "#ffffff"
-          }
-        },
-        "cb1e30e8-f3a4-48e9-921a-7ec7f8f4714c": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "img_link": "",
-            "open_link": "_self",
-            "img_width": 0,
-            "img_width_mb": 0,
-            "img_align": "center",
-            "img_align_tb": "center",
-            "img_align_mobile": "center",
-            "b_effect": "none",
-            "hidden_mobile": false,
-            "mgb": 20,
-            "mgb_mb": 20
-          }
-        }
-      },
-      "block_order": [
-        "template--17772547277118__602619e3-8408-4b38-9f07-62da435a1135-1678240891ddec6dd2-0",
-        "e022314a-bb9c-4fa9-af61-76f404c27ef9",
-        "template--17772547277118__602619e3-8408-4b38-9f07-62da435a1135-1678240891ddec6dd2-3",
-        "447c9ef8-f643-4222-a7d8-6c8c43e4d646",
-        "93bd41b4-d33b-4484-b7bc-73a433a72102",
-        "cb1e30e8-f3a4-48e9-921a-7ec7f8f4714c"
-      ],
-      "settings": {
-        "space_h_item": "0",
-        "space_v_item": "0",
-        "space_h_item_mb": "0",
-        "space_v_item_mb": "0",
-        "layout": "t4s-container-fluid",
-        "cl_bg": "#000000",
-        "cl_bg_gradient": "",
-        "mg": "",
-        "pd": "50px,,50px,",
-        "mg_tb": ",,50px,",
-        "pd_tb": "",
-        "mg_mb": ",,30px,",
-        "pd_mb": "",
-        "use_cus_css": false,
-        "code_cus_css": ""
-      }
-    },
     "6ebd3ff8-a77d-4bc7-bd2b-3eb32ac0f9b5": {
       "type": "video_click",
       "disabled": true,
@@ -1686,6 +1227,114 @@
       "disabled": true,
       "settings": {
       }
+    },
+    "0d0ad402-b092-479f-a281-55db65320cf3": {
+      "type": "expansion2",
+      "blocks": {
+        "template--18304757367061__0d0ad402-b092-479f-a281-55db65320cf3-167999262382325bad-0": {
+          "type": "bl_text",
+          "settings": {
+            "text_size": "40,15",
+            "sub_heading": "",
+            "heading": "Performance and Functionality",
+            "text": "<p>While safety is paramount, parents also want their child to have fun and enjoy their ride. The HYPERGOGO ATV offers a 36V 350W motor, two speed modes, and a maximum range of 10 miles, ensuring a thrilling ride every time. Additionally, the HYPERGOGO app allows parents to set the initial speed and change the working and light modes, adding an extra layer of customization to the ride.<\/p>",
+            "button_label": "Button label",
+            "button_link": "",
+            "open_link": "_blank",
+            "button_style": "default",
+            "btn_size": "large",
+            "btn_cl": "dark",
+            "button_effect": "default"
+          }
+        }
+      },
+      "block_order": [
+        "template--18304757367061__0d0ad402-b092-479f-a281-55db65320cf3-167999262382325bad-0"
+      ],
+      "settings": {
+      }
+    },
+    "26f319dd-ead4-4275-b929-9ef179960714": {
+      "type": "expansion2-1",
+      "blocks": {
+        "template--18304757367061__26f319dd-ead4-4275-b929-9ef179960714-1679992630ac5a5c3f-0": {
+          "type": "bl_image",
+          "settings": {
+            "col_dk": "6",
+            "col_tb": "6",
+            "layout_des": "carousel",
+            "post_mobile": "default",
+            "image_ratio": "ratioadapt",
+            "image_size": "cover",
+            "image_position": "8",
+            "loop": true,
+            "au_time": 0,
+            "au_hover": true,
+            "nav_btn": false,
+            "btn_vi": "hover",
+            "btn_owl": "default",
+            "btn_shape": "none",
+            "btn_cl": "dark",
+            "btn_size": "small",
+            "btn_hidden_mobile": true,
+            "nav_dot": false,
+            "dot_owl": "default",
+            "dots_cl": "dark",
+            "dots_round": true,
+            "dots_space": 10,
+            "dots_hidden_mobile": false
+          }
+        },
+        "template--18304757367061__26f319dd-ead4-4275-b929-9ef179960714-1679992630ac5a5c3f-1": {
+          "type": "bl_text",
+          "settings": {
+            "col_dk": "6",
+            "col_tb": "6",
+            "text_size": "40,15",
+            "txt_align": "center",
+            "sub_heading": "",
+            "heading": "Image with text",
+            "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "subhd_color": "#222222",
+            "hd_color": "#222222",
+            "des_color": "#878787",
+            "use_shadow": false,
+            "button_label": "Button label",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_icon": false,
+            "button_style": "default",
+            "btn_size": "large",
+            "btn_cl": "dark",
+            "button_effect": "default"
+          }
+        }
+      },
+      "block_order": [
+        "template--18304757367061__26f319dd-ead4-4275-b929-9ef179960714-1679992630ac5a5c3f-0",
+        "template--18304757367061__26f319dd-ead4-4275-b929-9ef179960714-1679992630ac5a5c3f-1"
+      ],
+      "settings": {
+        "design_heading": "1",
+        "heading_align": "t4s-text-center",
+        "top_heading": "",
+        "icon_heading": "las la-gem",
+        "top_subheading": "",
+        "tophead_mb": 30,
+        "space_h_item": "20",
+        "space_v_item": "10",
+        "space_h_item_mb": "20",
+        "space_v_item_mb": "10",
+        "layout": "t4s-container-wrap",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": ",,50px,",
+        "pd": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": "",
+        "use_cus_css": false,
+        "code_cus_css": ""
+      }
     }
   },
   "order": [
@@ -1698,10 +1347,6 @@
     "76661683-eefc-4168-9772-dde28519017d",
     "83fb5a7d-51d7-4350-9587-fefd29a47b32",
     "cca029e1-dddb-4119-9859-598826dc20a8",
-    "8e68a5e0-c22b-4c02-b7e2-a7e3d276d1b7",
-    "abf25882-f73b-43e3-b021-05247126bd04",
-    "d9b226c3-a0e1-45c9-9f64-b5ae79210001",
-    "602619e3-8408-4b38-9f07-62da435a1135",
     "6ebd3ff8-a77d-4bc7-bd2b-3eb32ac0f9b5",
     "d890ad80-147c-47b9-b7ae-858910f91fed",
     "16777261638bad5b0c",
@@ -1713,6 +1358,8 @@
     "16777197536bade3b7",
     "product-recommendations",
     "recently-viewed-products",
-    "16777240793e0d7145"
+    "16777240793e0d7145",
+    "0d0ad402-b092-479f-a281-55db65320cf3",
+    "26f319dd-ead4-4275-b929-9ef179960714"
   ]
 }
