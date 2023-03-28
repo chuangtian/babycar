@@ -1260,6 +1260,7 @@
         "template--18304757367061__26f319dd-ead4-4275-b929-9ef179960714-1679992630ac5a5c3f-0": {
           "type": "bl_image",
           "settings": {
+            "image1": "shopify:\/\/shop_images\/moto.jpg",
             "col_dk": "6",
             "col_tb": "6",
             "layout_des": "carousel",
