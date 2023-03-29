@@ -2077,7 +2077,7 @@
             "animate_slide": "none",
             "text_align": "center",
             "text_align_mb": "center",
-            "content_width": "auto",
+            "content_width": "container",
             "cv_pos": 50,
             "ch_pos": 50,
             "cv_pos_mb": 50,
