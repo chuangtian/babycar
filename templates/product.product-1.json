@@ -1153,17 +1153,17 @@
         "ch_pos": 50,
         "cv_pos_mb": 50,
         "ch_pos_mb": 50,
-        "bg_overlay": "#000",
+        "bg_overlay": "#000000",
         "bg_opacity": 0,
-        "bg_content_cl": "#fff",
+        "bg_content_cl": "#ffffff",
         "bg_content_op": 0,
         "content_pd_tb": 15,
         "content_pd_lr": 15,
         "content_pd_tb_mb": 10,
         "content_pd_lr_mb": 10,
         "border_bl": false,
-        "br_color": "#222",
-        "br_bg": "#fff",
+        "br_color": "#222222",
+        "br_bg": "#ffffff",
         "br_opacity": 50,
         "br_style": "none",
         "br_pd": 20,
@@ -1527,17 +1527,17 @@
         "ch_pos": 50,
         "cv_pos_mb": 50,
         "ch_pos_mb": 50,
-        "bg_overlay": "#000",
+        "bg_overlay": "#000000",
         "bg_opacity": 0,
-        "bg_content_cl": "#fff",
+        "bg_content_cl": "#ffffff",
         "bg_content_op": 0,
         "content_pd_tb": 15,
         "content_pd_lr": 15,
         "content_pd_tb_mb": 10,
         "content_pd_lr_mb": 10,
         "border_bl": false,
-        "br_color": "#222",
-        "br_bg": "#fff",
+        "br_color": "#222222",
+        "br_bg": "#ffffff",
         "br_opacity": 50,
         "br_style": "solid",
         "br_pd": 20,
@@ -1545,7 +1545,7 @@
         "time_animation": 1,
         "animation_delay": 40,
         "layout": "t4s-container-fluid",
-        "cl_bg": "#fff",
+        "cl_bg": "#ffffff",
         "cl_bg_gradient": "",
         "mg": "",
         "pd": "",
@@ -1719,6 +1719,32 @@
         "use_cus_css": false,
         "code_cus_css": ""
       }
+    },
+    "db610a0f-fcbe-4ec8-85d4-d92b0e2446ad": {
+      "type": "expansion5",
+      "blocks": {
+        "template--18304757367061__db610a0f-fcbe-4ec8-85d4-d92b0e2446ad-168008412243d5677f-0": {
+          "type": "bl_text",
+          "settings": {
+            "text_size": "40,15",
+            "sub_heading": "",
+            "heading": "Image with text",
+            "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": "",
+            "open_link": "_blank",
+            "button_style": "default",
+            "btn_size": "large",
+            "btn_cl": "dark",
+            "button_effect": "default"
+          }
+        }
+      },
+      "block_order": [
+        "template--18304757367061__db610a0f-fcbe-4ec8-85d4-d92b0e2446ad-168008412243d5677f-0"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -1741,6 +1767,7 @@
     "1328cebd-cacf-42b9-b878-75cd0a9bcebb",
     "6d8fc448-0334-497d-a22e-2005a961bb22",
     "c7caf8e0-9ad6-4988-9af9-12f48443f693",
-    "c94de19e-c1bf-4e11-a2d5-cd5ff6087d36"
+    "c94de19e-c1bf-4e11-a2d5-cd5ff6087d36",
+    "db610a0f-fcbe-4ec8-85d4-d92b0e2446ad"
   ]
 }
