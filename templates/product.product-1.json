@@ -734,7 +734,7 @@
         "template--18304757367061__76661683-eefc-4168-9772-dde28519017d-1679983779f92bd12e-2"
       ],
       "settings": {
-        "se_height": "t4s_ratio_fh",
+        "se_height": "t4s_ratioadapt",
         "custom_dk": true,
         "height_dk": 600,
         "custom_tb": true,
