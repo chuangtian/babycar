@@ -630,6 +630,7 @@
           },
           "050658d4-c357-4062-b112-ae7ba4e478d7": {
             "type": "base",
+            "disabled": true,
             "settings": {
               "title": "Compare",
               "url": "shopify:\/\/pages\/compare",
