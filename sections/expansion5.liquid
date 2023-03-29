@@ -52,7 +52,7 @@
     
   </div>
 </div>
-{% if template contains 'mobile' %}
+{% if request.user_agent contains 'Mobile' %}
   <!-- 这是移动设备 -->
 {% else %}
   <!-- 这是桌面设备 -->
