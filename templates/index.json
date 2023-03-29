@@ -440,10 +440,21 @@
             "text_cl": "#333333",
             "text_fs": 40
           }
+        },
+        "2c2be33c-8fb2-414f-87f2-b1c244f0bfcc": {
+          "type": "image_item",
+          "disabled": true,
+          "settings": {
+            "link": "",
+            "text": "Text",
+            "text_cl": "#fff",
+            "text_fs": 16
+          }
         }
       },
       "block_order": [
-        "template--18304757039381__afa6061b-68dc-4f47-87f5-726bf4d7dfe3-1679972124aa116b68-0"
+        "template--18304757039381__afa6061b-68dc-4f47-87f5-726bf4d7dfe3-1679972124aa116b68-0",
+        "2c2be33c-8fb2-414f-87f2-b1c244f0bfcc"
       ],
       "settings": {
         "design_heading": "1",
@@ -462,7 +473,7 @@
         "image_ratio": "ratioadapt",
         "image_size": "cover",
         "image_position": "8",
-        "col_dk": "1",
+        "col_dk": "2",
         "col_tb": "2",
         "col_mb": "1",
         "space_item": "30",
