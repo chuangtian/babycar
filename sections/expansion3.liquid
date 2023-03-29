@@ -15,6 +15,22 @@
     assign sid = section.id
     assign se_stts = section.settings
     assign se_blocks = section.blocks
+    assign block_first = se_blocks.first
+    assign stt_layout = se_stts.layout
+    assign stt_image_bg = se_stts.image_bg
+    if stt_layout == 't4s-se-container' 
+        assign html_layout = '<div class="t4s-container">__</div></div>' | split:'__'
+    elsif stt_layout == 't4s-container-wrap'
+        assign html_layout = '<div class="t4s-container">__</div>' | split:'__'
+    else
+        assign html_layout = '__' | split:'__'
+    endif
+    assign use_button = false 
+    assign use_carousel = false
+    assign t4s_se_class = 't4s_nt_se_' |append:sid
+    if se_stts.use_cus_css and se_stts.code_cus_css != blank
+        render 'se_cus_css',code_cus_css:se_stts.code_cus_css,t4s_se_class:t4s_se_class
+    endif 
 -%}
 <div class="container">
   <div class="row">
@@ -56,7 +72,7 @@
 
 {%- schema -%}
     {
-      "name": "expansion2",
+      "name": "expansion3",
       "tag": "section",
       "class": "t4s-section t4s-section-all t4s_tp_flickity",
       "settings": [
@@ -280,7 +296,7 @@
     ],
     "presets": [
         {
-          "name": "expansion2",
+          "name": "expansion3",
           "category": "homepage",
           "blocks":[
             {
