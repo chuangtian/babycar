@@ -1213,6 +1213,7 @@
         "template--18304757367061__1328cebd-cacf-42b9-b878-75cd0a9bcebb-1680070251e007955a-0": {
           "type": "bl_image",
           "settings": {
+            "image1": "shopify:\/\/shop_images\/moto_080a29f6-b50c-400c-8ac8-17fbfda0c46f.jpg",
             "col_dk": "6",
             "col_tb": "6",
             "layout_des": "carousel",
