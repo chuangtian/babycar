@@ -773,7 +773,7 @@
         "layout": "t4s-container-fluid",
         "cl_bg": "",
         "cl_bg_gradient": "",
-        "mg": "",
+        "mg": "20px,20px,20px,20px,",
         "pd": "",
         "mg_mb": ",,30px,",
         "pd_mb": "",
@@ -1173,7 +1173,7 @@
         "layout": "t4s-container-fluid",
         "cl_bg": "",
         "cl_bg_gradient": "",
-        "mg": "",
+        "mg": "20px,20px,20px,20px,",
         "pd": "",
         "mg_mb": ",,30px,",
         "pd_mb": "",
@@ -1545,10 +1545,10 @@
         "time_animation": 1,
         "animation_delay": 40,
         "layout": "t4s-container-fluid",
-        "cl_bg": "",
+        "cl_bg": "#fff",
         "cl_bg_gradient": "",
         "mg": "",
-        "pd": "",
+        "pd": "20px,20px,20px,20px,",
         "mg_mb": ",,30px,",
         "pd_mb": "",
         "use_cus_css": false,
@@ -1577,6 +1577,9 @@
       },
       "block_order": [
         "template--18304757367061__c7caf8e0-9ad6-4988-9af9-12f48443f693-1680070257c1f2369a-0"
+      ],
+      "custom_css": [
+
       ],
       "settings": {
       }
