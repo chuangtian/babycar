@@ -1449,10 +1449,10 @@
     console.log(31);
   });
   function changeHash(idName) {
-          document.querySelector(idName).scrollIntoView(true);
+          document.querySelector(idName).scrollIntoView({block: "center"});
   };
   function changeHash2(idName) {
-          document.querySelector(idName).scrollIntoView({block: "start"});
+          document.querySelector(idName).scrollIntoView(true);
   };
 
 
