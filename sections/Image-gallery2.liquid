@@ -1073,6 +1073,8 @@
                 
 
 {% javascript %}
-                    $('.center').css('position','initial');
+      {%- if se_stts.col_dk == "1" -%}    
+          $('.center').css('position','initial');
+      {%- endif -%}
 {% endjavascript %}
  
