@@ -97,7 +97,11 @@ t4sp-theme t4s-wrapper__{{settings.general_layout}} rtl_{{isRTL}} swatch_color_s
       </ul>
     {%- render 'render_bottom' -%}
     {%- render 'home.js' -%}
-    <script>
+   
+  {%- render "ecom_footer"-%}</body>
+  <script src="{{ 'bootstrap.bundle.min.js' | asset_url }}" defer="defer"></script>
+
+ <script>
       
         //在文档加载完毕后执行
         $(document).ready(function(){
@@ -111,9 +115,6 @@ t4sp-theme t4s-wrapper__{{settings.general_layout}} rtl_{{isRTL}} swatch_color_s
                 }
         	})
         })
-      
+       $('.center').css('position','initial');
    </script>
-  {%- render "ecom_footer"-%}</body>
-  <script src="{{ 'bootstrap.bundle.min.js' | asset_url }}" defer="defer"></script>
-
 </html>
