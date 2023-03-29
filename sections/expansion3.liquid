@@ -14,7 +14,7 @@
     assign se_stts = section.settings
     assign se_blocks = section.blocks
 -%}
-<div  id="ydd3"  class="container">
+<div class="container">
   <div class="row">
     
       {%- for block in se_blocks-%}
@@ -31,7 +31,7 @@
               
               {%- if bk_stts.sub_heading != blank -%}<p class="t4s-image-text-subheading t4s-fs-md-{{text_size[1]}} t4s-fs-15">{{bk_stts.sub_heading}}</p>{%- endif -%}
               {%- if bk_stts.heading != blank -%}<h3 class="t4s-image-text-heading t4s-fs-md-{{text_size[0]}} t4-fs-30" >{{bk_stts.heading}}</h3>{%- endif -%}
-              <span style="padding-right: 8%;">
+              <span   id="ydd3"  style="padding-right: 8%;">
                 <button  id="btnCollapse3" class="btn btn-outline-secondary rounded-circle "  style="border: 1px solid black;width: 40px;height: 40px;font-size: 22px;">
                   <i  id="plus-icon3"  class="las la-plus"></i>
                 </button>
