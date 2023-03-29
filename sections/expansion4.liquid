@@ -8,6 +8,25 @@
   .hc:hover{
     color:#242424 !important;
   }
+   /* 定义电脑端样式 */
+    @media (min-width: 750px) {
+        .pc {
+           display: block;
+        }
+      .yd {
+           display: none;
+        }
+    }
+
+    /* 定义手机端样式 */
+    @media (max-width: 749px) {
+         .pc {
+           display: none;
+        }
+      .yd {
+           display: block;
+        }
+    }
 {%- endstyle -%}
 {%- liquid
     assign sid = section.id
