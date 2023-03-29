@@ -190,7 +190,7 @@
           "link_hover_cl": "#56cfe1",
           "border_cl": "#e6e6e6",
           "layout": "t4s-container-wrap",
-          "cl_bg": "#fff",
+          "cl_bg": "#ffffff",
           "cl_bg_gradient": "",
           "mg": "",
           "pd": "20px,,5px,",
@@ -245,7 +245,7 @@
           "fc416dc1-4897-448f-a04d-60212934dea9": {
             "type": "bl_col",
             "settings": {
-              "col_heading": "MACFOX",
+              "col_heading": "HYPER GOGO",
               "menu": "",
               "menu_style": "1",
               "col_dk": "2",
