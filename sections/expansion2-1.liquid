@@ -1412,7 +1412,7 @@
   // 获取展开按钮和收缩按钮的 DOM 元素
   const btnCollapse2 = document.getElementById('btnCollapse2');
   const btnCollapseClose2 = document.getElementById('btnCollapseClose2');
-   // $('#exampleModal2').css('display','none');
+   $('#exampleModal2').css('display','none');
   // 为收缩按钮添加 click 事件监听器
   btnCollapse2.addEventListener('click', () => {
       // 切换展开收缩区域的状态
@@ -1423,8 +1423,8 @@
           $('.plus-html2').html('Close');
           $('#plus-icon2').removeClass('la-plus');
           $('#plus-icon2').addClass('la-times');
-          $('#exampleModal').addClass('show');
-          //$('#exampleModal2').css('display','block');
+          // $('#exampleModal').addClass('show');
+          $('#exampleModal2').css('display','block');
         
         console.log(11);
 
@@ -1432,8 +1432,8 @@
           $('.plus-html2').html('Learn More');
           $('#plus-icon2').removeClass('la-times');
           $('#plus-icon2').addClass('la-plus');;
-          $('#exampleModal').removeClass('show');
-          //$('#exampleModal2').css('display','none');
+          // $('#exampleModal').removeClass('show');
+          $('#exampleModal2').css('display','none');
           changeHash('#dv2');
         console.log(21);
       }
@@ -1443,8 +1443,8 @@
         $('.plus-html2').html('Learn More');
         $('#plus-icon2').removeClass('la-times');
         $('#plus-icon2').addClass('la-plus');;
-        $('#exampleModal').removeClass('show');
-        //$('#exampleModal2').css('display','none');
+        // $('#exampleModal').removeClass('show');
+        $('#exampleModal2').css('display','none');
         changeHash('#dv2');
     console.log(31);
   });
@@ -1452,14 +1452,5 @@
           document.querySelector(idName).scrollIntoView({block: "center"});
   };
 
-
-
-
-
-
-
-
-
-  
 {% endjavascript %}
   
