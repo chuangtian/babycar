@@ -1590,6 +1590,7 @@
         "template--18304757367061__c94de19e-c1bf-4e11-a2d5-cd5ff6087d36-168007026285d885d9-0": {
           "type": "bl_image",
           "settings": {
+            "image1": "shopify:\/\/shop_images\/seat.jpg",
             "col_dk": "6",
             "col_tb": "6",
             "layout_des": "carousel",
@@ -1666,6 +1667,7 @@
         "93792b4d-9e5a-439a-95a4-2950769f2b48": {
           "type": "bl_image",
           "settings": {
+            "image1": "shopify:\/\/shop_images\/deng.jpg",
             "col_dk": "6",
             "col_tb": "6",
             "layout_des": "carousel",
