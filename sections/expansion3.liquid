@@ -83,12 +83,12 @@
         -%}
         {%- case block.type -%}
           {%- when 'bl_text' -%}
-            <div class="col-md-4 order-md-1 order-2" style="padding: 20px;">
+            <div class="col-md-4 order-md-1 order-1" style="padding: 20px;">
               
               {%- if bk_stts.sub_heading != blank -%}<p class="t4s-image-text-subheading t4s-fs-md-{{text_size[1]}} t4s-fs-15">{{bk_stts.sub_heading}}</p>{%- endif -%}
               {%- if bk_stts.heading != blank -%}<h3 class="t4s-image-text-heading t4s-fs-md-{{text_size[0]}} t4-fs-30" >{{bk_stts.heading}}</h3>{%- endif -%}
             </div>
-          <div class="col-md-4 order-md-1 order-2" style="padding: 20px;">
+          <div class="col-md-4 order-md-2 order-3" style="padding: 20px;">
               <span   id="ydd3"  style="padding-right: 8%;">
                 <button  id="btnCollapse3" class="btn btn-outline-secondary rounded-circle "  style="border: 1px solid black;width: 40px;height: 40px;font-size: 22px;">
                   <i  id="plus-icon3"  class="las la-plus"></i>
@@ -100,7 +100,7 @@
                   <a style="text-decoration: none;width: 48%;" class="hc t4s-btn t4s-btn-base t4s-btn-style-{{button_style}} t4s-btn-size-{{bk_stts.btn_size}} t4s-btn-color-{{bk_stts.btn_cl}} {% if button_style == 'default' or button_style == 'outline'%}t4s-btn-effect-{{bk_stts.button_effect}} t4s-btn-radius-{{bk_stts.btn_bdr}}{% endif %}" href="{{bk_stts.button_link}}"  target="{{bk_stts.open_link}}">{{bk_stts.button_label}} {%- if bk_stts.btn_icon -%}<svg  class="t4s-btn-icon" viewBox="0 0 14 10"><use xlink:href="#t4s-icon-btn"></use></svg>{%- endif -%}</a>
               {%- endif -%}
             </div>
-            <div class="col-md-8 order-md-2 order-1"  style="padding: 20px;">
+            <div class="col-md-8 order-md-3 order-2"  style="padding: 20px;">
              {%- if bk_stts.text -%}<div class="t4s-image-text-des t4-fs-md-{{text_size[1]}} t4s-fs-15">{{bk_stts.text}}</div>{%- endif -%}
             </div>
         {%- endcase -%}
