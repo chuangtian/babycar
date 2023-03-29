@@ -111,14 +111,14 @@
                 assign time_ani_delay = bk_stts.time_animation | times: percent_delay           
             -%}
             <div class="t4s-slideshow-item t4s-col-item t4s-slide t4s_position_{{bk_stts.image_position}}" id="b_{{block.id}}" data-select-flickity {{ block.shopify_attributes }} style="--slide-bg-color:{{bk_stts.cl_img}};">
-                <div class="t4s-slideshow-inner t4s-pr t4s-oh t4s_ratio t4s_ratio_hasmb" {{attr_img}}style="--aspect-ratioapt:{{ratio | default:1.7777 }};--aspect-ratioaptmb:{{ratiomb  | default:1.7777 }};">
+                <div class="t4s-slideshow-inner t4s-pr t4s-oh t4s_ratio t4s_ratio_hasmb" {{attr_img}}style="--aspect-ratioapt:{{ratio | default:1.7777 }};--aspect-ratioaptmb:{{ratiomb  | default:1.7777 }};max-height:75vh" >
                     {% capture class_img %} t4s-slide-{{bk_stts.animate_slide}}{% endcapture %}
                         {%- if image -%}   
                           
                             {%- if forloop.first -%}
                                 {%- assign class_img_first = 'lazyloadt4s t4s-lz--fadeIn t4s-img-as-bg t4s-d-md-none' | append: class_img -%}
                                 {{ mb_image | image_url: width: 800 | image_tag: class: class_img_first, loading: lazy, widths: '375, 575, 750' }}
-                                <img class="lazyloadt4s t4s-lz--fadeIn t4s-img-as-bg t4s-d-none t4s-d-md-block t4s-slide-{{bk_stts.animate_slide}}" data-src="{{ image | image_url: width: 1 }}" data-widths="[800, 1000, 1200, 1400, 1600, 1800, 2000, 2200, 2500, 3000, 3400, 3800, 4100]" data-optimumx="1.5" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="{{ image.width }}" height="{{ image.height }}" alt="{{ image.alt | escape }}"  style="max-height:75vh">
+                                <img class="lazyloadt4s t4s-lz--fadeIn t4s-img-as-bg t4s-d-none t4s-d-md-block t4s-slide-{{bk_stts.animate_slide}}" data-src="{{ image | image_url: width: 1 }}" data-widths="[800, 1000, 1200, 1400, 1600, 1800, 2000, 2200, 2500, 3000, 3400, 3800, 4100]" data-optimumx="1.5" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="{{ image.width }}" height="{{ image.height }}" alt="{{ image.alt | escape }}" >
                                 <span class="lazyloadt4s-loader is-bg-img t4s-d-none t4s-d-md-block" style="background: url({{ image | image_url: width: 1 }})"></span>
                             {%- else -%}
                                 <img class="lazyloadt4s t4s-lz--fadeIn t4s-img-as-bg t4s-d-md-none t4s-slide-{{bk_stts.animate_slide}}" data-src="{{ mb_image | image_url: width: 1 }}" data-widths="[375, 575, 750]" data-optimumx="1.5" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="{{ mb_image.width }}" height="{{ mb_image.height }}" alt="{{ mb_image.alt | escape }}">
