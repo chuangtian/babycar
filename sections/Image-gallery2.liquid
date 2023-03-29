@@ -70,8 +70,9 @@
              
                {%- if se_stts.col_dk == "1" -%}
                 
-                <div {{click_image}}--item class="t4s-col-item t4s-gallery-item {{click_class}}" id="b_{{block.id}}" data-select-flickity  style="transform: translateX(0%);max-width: 720px;    margin: 0 auto !important; position: initial !important;">
-               {%- else -%}
+                <div {{click_image}}--item class="center t4s-col-item t4s-gallery-item {{click_class}}" id="b_{{block.id}}" data-select-flickity  style="transform: translateX(0%);max-width: 720px;    margin: 0 auto !important;">
+                   
+                {%- else -%}
                  <div {{click_image}}--item class="t4s-col-item t4s-gallery-item {{click_class}}" id="b_{{block.id}}" data-select-flickity {{ block.shopify_attributes }}>
                {%- endif -%}
               <{{ARRhtml[0]}} {{ARRhtml[1]}}href="{{ bk_stts.link}}" {{ARRhtml[2]}}target="{{open_link}}" class="t4s-eff t4s-eff-{{b_effect}} t4s-eff-img-{{img_effect}}" {{click_image}}--open>
@@ -1069,3 +1070,9 @@
     ]
   }
  {%- endschema -%} 
+                
+
+{% javascript %}
+                    $('.center').css('position','initial');
+{% endjavascript %}
+ 
