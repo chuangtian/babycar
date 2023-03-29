@@ -1513,7 +1513,7 @@
     "6d8fc448-0334-497d-a22e-2005a961bb22": {
       "type": "hero_image",
       "settings": {
-        "se_height": "t4s_ratio_fh",
+        "se_height": "t4s_ratioadapt",
         "custom_dk": true,
         "height_dk": 600,
         "custom_tb": true,
