@@ -990,7 +990,7 @@
         "space_h_item_mb": "20",
         "space_v_item_mb": "10",
         "layout": "t4s-container-wrap",
-        "cl_bg": "#fff",
+        "cl_bg": "#ffffff",
         "cl_bg_gradient": "",
         "mg": ",,50px,",
         "pd": "",
@@ -1224,20 +1224,19 @@
     },
     "16777240793e0d7145": {
       "type": "apps",
-      "disabled": true,
       "settings": {
       }
     },
-    "0d0ad402-b092-479f-a281-55db65320cf3": {
-      "type": "expansion2",
+    "a1704b0c-ae67-4881-af3f-3ed58b49a3b8": {
+      "type": "expansion3",
       "blocks": {
-        "template--18304757367061__0d0ad402-b092-479f-a281-55db65320cf3-167999262382325bad-0": {
+        "template--18304757367061__a1704b0c-ae67-4881-af3f-3ed58b49a3b8-1680070244d4b38072-0": {
           "type": "bl_text",
           "settings": {
             "text_size": "40,15",
             "sub_heading": "",
-            "heading": "Performance and Functionality",
-            "text": "<p>While safety is paramount, parents also want their child to have fun and enjoy their ride. The HYPERGOGO ATV offers a 36V 350W motor, two speed modes, and a maximum range of 10 miles, ensuring a thrilling ride every time. Additionally, the HYPERGOGO app allows parents to set the initial speed and change the working and light modes, adding an extra layer of customization to the ride.<\/p>",
+            "heading": "Image with text",
+            "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "button_label": "Button label",
             "button_link": "",
             "open_link": "_blank",
@@ -1249,18 +1248,17 @@
         }
       },
       "block_order": [
-        "template--18304757367061__0d0ad402-b092-479f-a281-55db65320cf3-167999262382325bad-0"
+        "template--18304757367061__a1704b0c-ae67-4881-af3f-3ed58b49a3b8-1680070244d4b38072-0"
       ],
       "settings": {
       }
     },
-    "26f319dd-ead4-4275-b929-9ef179960714": {
-      "type": "expansion2-1",
+    "1328cebd-cacf-42b9-b878-75cd0a9bcebb": {
+      "type": "expansion3-1",
       "blocks": {
-        "template--18304757367061__26f319dd-ead4-4275-b929-9ef179960714-1679992630ac5a5c3f-0": {
+        "template--18304757367061__1328cebd-cacf-42b9-b878-75cd0a9bcebb-1680070251e007955a-0": {
           "type": "bl_image",
           "settings": {
-            "image1": "shopify:\/\/shop_images\/moto.jpg",
             "col_dk": "6",
             "col_tb": "6",
             "layout_des": "carousel",
@@ -1286,7 +1284,7 @@
             "dots_hidden_mobile": false
           }
         },
-        "template--18304757367061__26f319dd-ead4-4275-b929-9ef179960714-1679992630ac5a5c3f-1": {
+        "template--18304757367061__1328cebd-cacf-42b9-b878-75cd0a9bcebb-1680070251e007955a-1": {
           "type": "bl_text",
           "settings": {
             "col_dk": "6",
@@ -1294,8 +1292,8 @@
             "text_size": "40,15",
             "txt_align": "center",
             "sub_heading": "",
-            "heading": "Motor",
-            "text": "<p>The 36V 350W brushed motor provides strong and consistent power to the ATV, ensuring that it can tackle hills and rough terrain with ease.<\/p>",
+            "heading": "Image with text",
+            "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "subhd_color": "#222222",
             "hd_color": "#222222",
             "des_color": "#878787",
@@ -1308,122 +1306,12 @@
             "btn_size": "large",
             "btn_cl": "dark",
             "button_effect": "default"
-          }
-        },
-        "01a79bfc-9594-4834-9847-97dc86741e2f": {
-          "type": "bl_text",
-          "settings": {
-            "col_dk": "6",
-            "col_tb": "6",
-            "text_size": "40,15",
-            "txt_align": "center",
-            "sub_heading": "",
-            "heading": "Suspension",
-            "text": "<p>The suspension system helps to absorb shocks and vibrations, providing a smoother and more comfortable ride.<\/p>",
-            "subhd_color": "#222222",
-            "hd_color": "#222222",
-            "des_color": "#878787",
-            "use_shadow": false,
-            "button_label": "Button label",
-            "button_link": "",
-            "open_link": "_blank",
-            "btn_icon": false,
-            "button_style": "default",
-            "btn_size": "large",
-            "btn_cl": "dark",
-            "button_effect": "default"
-          }
-        },
-        "96904a9e-4a9f-4830-b895-8d852e56bb60": {
-          "type": "bl_image",
-          "settings": {
-            "image1": "shopify:\/\/shop_images\/jianzhen.jpg",
-            "col_dk": "6",
-            "col_tb": "6",
-            "layout_des": "carousel",
-            "post_mobile": "default",
-            "image_ratio": "ratioadapt",
-            "image_size": "cover",
-            "image_position": "8",
-            "loop": true,
-            "au_time": 0,
-            "au_hover": true,
-            "nav_btn": false,
-            "btn_vi": "hover",
-            "btn_owl": "default",
-            "btn_shape": "none",
-            "btn_cl": "dark",
-            "btn_size": "small",
-            "btn_hidden_mobile": true,
-            "nav_dot": false,
-            "dot_owl": "default",
-            "dots_cl": "dark",
-            "dots_round": true,
-            "dots_space": 10,
-            "dots_hidden_mobile": false
-          }
-        },
-        "a173c33b-d8cd-4e6a-ba23-87764331b6fa": {
-          "type": "bl_text",
-          "settings": {
-            "col_dk": "6",
-            "col_tb": "6",
-            "text_size": "40,15",
-            "txt_align": "center",
-            "sub_heading": "",
-            "heading": "Hypergogo App",
-            "text": "<p>The app allows riders to change the light modes and working modes of the ATV, as well as set the initial speed for different modes.<\/p>",
-            "subhd_color": "#222222",
-            "hd_color": "#222222",
-            "des_color": "#878787",
-            "use_shadow": false,
-            "button_label": "Button label",
-            "button_link": "",
-            "open_link": "_blank",
-            "btn_icon": false,
-            "button_style": "default",
-            "btn_size": "large",
-            "btn_cl": "dark",
-            "button_effect": "default"
-          }
-        },
-        "e0f0a7bf-0e50-44f1-b9b4-d89efb7e982b": {
-          "type": "bl_image",
-          "settings": {
-            "image1": "shopify:\/\/shop_images\/display.jpg",
-            "col_dk": "6",
-            "col_tb": "6",
-            "layout_des": "carousel",
-            "post_mobile": "default",
-            "image_ratio": "ratioadapt",
-            "image_size": "cover",
-            "image_position": "8",
-            "loop": true,
-            "au_time": 0,
-            "au_hover": true,
-            "nav_btn": false,
-            "btn_vi": "hover",
-            "btn_owl": "default",
-            "btn_shape": "none",
-            "btn_cl": "dark",
-            "btn_size": "small",
-            "btn_hidden_mobile": true,
-            "nav_dot": false,
-            "dot_owl": "default",
-            "dots_cl": "dark",
-            "dots_round": true,
-            "dots_space": 10,
-            "dots_hidden_mobile": false
           }
         }
       },
       "block_order": [
-        "template--18304757367061__26f319dd-ead4-4275-b929-9ef179960714-1679992630ac5a5c3f-0",
-        "template--18304757367061__26f319dd-ead4-4275-b929-9ef179960714-1679992630ac5a5c3f-1",
-        "01a79bfc-9594-4834-9847-97dc86741e2f",
-        "96904a9e-4a9f-4830-b895-8d852e56bb60",
-        "a173c33b-d8cd-4e6a-ba23-87764331b6fa",
-        "e0f0a7bf-0e50-44f1-b9b4-d89efb7e982b"
+        "template--18304757367061__1328cebd-cacf-42b9-b878-75cd0a9bcebb-1680070251e007955a-0",
+        "template--18304757367061__1328cebd-cacf-42b9-b878-75cd0a9bcebb-1680070251e007955a-1"
       ],
       "settings": {
         "design_heading": "1",
@@ -1432,7 +1320,115 @@
         "icon_heading": "las la-gem",
         "top_subheading": "",
         "tophead_mb": 30,
-        "space_h_item": "0",
+        "space_h_item": "20",
+        "space_v_item": "10",
+        "space_h_item_mb": "20",
+        "space_v_item_mb": "10",
+        "layout": "t4s-container-wrap",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": ",,50px,",
+        "pd": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": "",
+        "use_cus_css": false,
+        "code_cus_css": ""
+      }
+    },
+    "c7caf8e0-9ad6-4988-9af9-12f48443f693": {
+      "type": "expansion4",
+      "blocks": {
+        "template--18304757367061__c7caf8e0-9ad6-4988-9af9-12f48443f693-1680070257c1f2369a-0": {
+          "type": "bl_text",
+          "settings": {
+            "text_size": "40,15",
+            "sub_heading": "",
+            "heading": "Image with text",
+            "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": "",
+            "open_link": "_blank",
+            "button_style": "default",
+            "btn_size": "large",
+            "btn_cl": "dark",
+            "button_effect": "default"
+          }
+        }
+      },
+      "block_order": [
+        "template--18304757367061__c7caf8e0-9ad6-4988-9af9-12f48443f693-1680070257c1f2369a-0"
+      ],
+      "settings": {
+      }
+    },
+    "c94de19e-c1bf-4e11-a2d5-cd5ff6087d36": {
+      "type": "expansion4-1",
+      "blocks": {
+        "template--18304757367061__c94de19e-c1bf-4e11-a2d5-cd5ff6087d36-168007026285d885d9-0": {
+          "type": "bl_image",
+          "settings": {
+            "col_dk": "6",
+            "col_tb": "6",
+            "layout_des": "carousel",
+            "post_mobile": "default",
+            "image_ratio": "ratioadapt",
+            "image_size": "cover",
+            "image_position": "8",
+            "loop": true,
+            "au_time": 0,
+            "au_hover": true,
+            "nav_btn": false,
+            "btn_vi": "hover",
+            "btn_owl": "default",
+            "btn_shape": "none",
+            "btn_cl": "dark",
+            "btn_size": "small",
+            "btn_hidden_mobile": true,
+            "nav_dot": false,
+            "dot_owl": "default",
+            "dots_cl": "dark",
+            "dots_round": true,
+            "dots_space": 10,
+            "dots_hidden_mobile": false
+          }
+        },
+        "template--18304757367061__c94de19e-c1bf-4e11-a2d5-cd5ff6087d36-168007026285d885d9-1": {
+          "type": "bl_text",
+          "settings": {
+            "col_dk": "6",
+            "col_tb": "6",
+            "text_size": "40,15",
+            "txt_align": "center",
+            "sub_heading": "",
+            "heading": "Image with text",
+            "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "subhd_color": "#222222",
+            "hd_color": "#222222",
+            "des_color": "#878787",
+            "use_shadow": false,
+            "button_label": "Button label",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_icon": false,
+            "button_style": "default",
+            "btn_size": "large",
+            "btn_cl": "dark",
+            "button_effect": "default"
+          }
+        }
+      },
+      "block_order": [
+        "template--18304757367061__c94de19e-c1bf-4e11-a2d5-cd5ff6087d36-168007026285d885d9-0",
+        "template--18304757367061__c94de19e-c1bf-4e11-a2d5-cd5ff6087d36-168007026285d885d9-1"
+      ],
+      "settings": {
+        "design_heading": "1",
+        "heading_align": "t4s-text-center",
+        "top_heading": "",
+        "icon_heading": "las la-gem",
+        "top_subheading": "",
+        "tophead_mb": 30,
+        "space_h_item": "20",
         "space_v_item": "10",
         "space_h_item_mb": "20",
         "space_v_item_mb": "10",
@@ -1470,7 +1466,9 @@
     "product-recommendations",
     "recently-viewed-products",
     "16777240793e0d7145",
-    "0d0ad402-b092-479f-a281-55db65320cf3",
-    "26f319dd-ead4-4275-b929-9ef179960714"
+    "a1704b0c-ae67-4881-af3f-3ed58b49a3b8",
+    "1328cebd-cacf-42b9-b878-75cd0a9bcebb",
+    "c7caf8e0-9ad6-4988-9af9-12f48443f693",
+    "c94de19e-c1bf-4e11-a2d5-cd5ff6087d36"
   ]
 }
