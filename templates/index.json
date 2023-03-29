@@ -493,291 +493,6 @@
         "code_cus_css": ""
       }
     },
-    "58ed8039-1aee-4aad-94f8-fa846a34cf54": {
-      "type": "slideshow2",
-      "blocks": {
-        "9be174ed-7470-41da-a22a-2520b6069424": {
-          "type": "image_parent",
-          "disabled": true,
-          "settings": {
-            "image_position": "8",
-            "cl_img": "",
-            "link_img1": "",
-            "open_link": "_blank",
-            "animate_slide": "none",
-            "text_align": "start",
-            "text_align_mb": "center",
-            "content_width": "auto",
-            "cv_pos": 50,
-            "ch_pos": 50,
-            "cv_pos_mb": 50,
-            "ch_pos_mb": 50,
-            "bg_overlay": "#000000",
-            "bg_opacity": 0,
-            "bg_content_cl": "#ffffff",
-            "bg_content_op": 0,
-            "content_pd_tb": 15,
-            "content_pd_lr": 15,
-            "content_pd_tb_mb": 10,
-            "content_pd_lr_mb": 10,
-            "border_bl": false,
-            "br_color": "#222222",
-            "br_bg": "#ffffff",
-            "br_opacity": 50,
-            "br_style": "solid",
-            "br_pd": 20,
-            "br_pd_mb": 10,
-            "time_animation": 1,
-            "animation_delay": 40
-          }
-        },
-        "0c056fe3-6941-431d-98c0-e49d0349f922": {
-          "type": "custom_text",
-          "settings": {
-            "text": "Summer 2022",
-            "remove_br_tag": false,
-            "fontf": "inherit",
-            "text_cl": "#ffffff",
-            "text_fs": 16,
-            "text_lh": 0,
-            "text_fw": 400,
-            "text_ls": 1,
-            "text_mgb": 15,
-            "font_italic": false,
-            "text_shadow": false,
-            "hidden_mobile": false,
-            "text_fs_mb": 16,
-            "text_lh_mb": 0,
-            "text_ls_mb": 0,
-            "text_mgb_mobile": 10,
-            "animation": "none"
-          }
-        },
-        "d23bd7e4-5258-47a3-a7aa-b101dab86d16": {
-          "type": "custom_text",
-          "settings": {
-            "text": "New Arrival Collection",
-            "remove_br_tag": false,
-            "fontf": "inherit",
-            "text_cl": "#ffffff",
-            "text_fs": 16,
-            "text_lh": 26,
-            "text_fw": 300,
-            "text_ls": 0,
-            "text_mgb": 25,
-            "font_italic": false,
-            "text_shadow": false,
-            "hidden_mobile": false,
-            "text_fs_mb": 16,
-            "text_lh_mb": 0,
-            "text_ls_mb": 0,
-            "text_mgb_mobile": 10,
-            "animation": "none"
-          }
-        },
-        "88a157da-dcaa-4c5f-a05d-43c43841ad42": {
-          "type": "custom_button",
-          "settings": {
-            "button_text": "Button label1",
-            "button_text2": "Button label2",
-            "button_link": "shopify:\/\/products\/macfox-high-end",
-            "button_link2": "shopify:\/\/products\/macfox-high-end",
-            "target_link": "_self",
-            "fontf": "inherit",
-            "button_icon_w": 0,
-            "button_style": "default",
-            "button_effect": "default",
-            "pri_cl": "#222222",
-            "second_cl": "",
-            "pri_cl_hover": "#56cfe1",
-            "second_cl_hover": "#ffffff",
-            "pri_cl2": "#222222",
-            "second_cl2": "",
-            "pri_cl_hover2": "#56cfe1",
-            "second_cl_hover2": "#ffffff",
-            "fsbutton": 14,
-            "fwbutton": 400,
-            "button_ls": 0,
-            "button_mh": 42,
-            "button_bdr": 0,
-            "button_pd_lr": 20,
-            "button_mgb": 0,
-            "hidden_mobile": false,
-            "button_icon_w_mb": 0,
-            "fsbutton_mb": 10,
-            "button_mh_mb": 36,
-            "button_pd_lr_mb": 15,
-            "button_ls_mb": 0,
-            "button_mgb_mb": 0,
-            "animation": "none"
-          }
-        },
-        "df7c3bed-4f82-45d5-a608-4b463c0daee7": {
-          "type": "image_parent",
-          "disabled": true,
-          "settings": {
-            "image_position": "8",
-            "cl_img": "",
-            "link_img1": "",
-            "open_link": "_blank",
-            "animate_slide": "none",
-            "text_align": "start",
-            "text_align_mb": "center",
-            "content_width": "auto",
-            "cv_pos": 50,
-            "ch_pos": 50,
-            "cv_pos_mb": 50,
-            "ch_pos_mb": 50,
-            "bg_overlay": "#000000",
-            "bg_opacity": 0,
-            "bg_content_cl": "#ffffff",
-            "bg_content_op": 0,
-            "content_pd_tb": 15,
-            "content_pd_lr": 15,
-            "content_pd_tb_mb": 10,
-            "content_pd_lr_mb": 10,
-            "border_bl": false,
-            "br_color": "#222222",
-            "br_bg": "#ffffff",
-            "br_opacity": 50,
-            "br_style": "solid",
-            "br_pd": 20,
-            "br_pd_mb": 10,
-            "time_animation": 1,
-            "animation_delay": 40
-          }
-        },
-        "9936ccba-ac35-4093-b7e1-c83e536151d4": {
-          "type": "custom_text",
-          "disabled": true,
-          "settings": {
-            "text": "Summer 2022",
-            "remove_br_tag": false,
-            "fontf": "inherit",
-            "text_cl": "#ffffff",
-            "text_fs": 16,
-            "text_lh": 0,
-            "text_fw": 400,
-            "text_ls": 1,
-            "text_mgb": 15,
-            "font_italic": false,
-            "text_shadow": false,
-            "hidden_mobile": false,
-            "text_fs_mb": 16,
-            "text_lh_mb": 0,
-            "text_ls_mb": 0,
-            "text_mgb_mobile": 10,
-            "animation": "none"
-          }
-        },
-        "57ab212f-593c-4334-a247-ddfd9d926a5d": {
-          "type": "custom_text",
-          "disabled": true,
-          "settings": {
-            "text": "Lookbook Collection",
-            "remove_br_tag": false,
-            "fontf": "inherit",
-            "text_cl": "#ffffff",
-            "text_fs": 70,
-            "text_lh": 70,
-            "text_fw": 300,
-            "text_ls": 0,
-            "text_mgb": 25,
-            "font_italic": false,
-            "text_shadow": false,
-            "hidden_mobile": false,
-            "text_fs_mb": 16,
-            "text_lh_mb": 0,
-            "text_ls_mb": 0,
-            "text_mgb_mobile": 10,
-            "animation": "none"
-          }
-        },
-        "be90cceb-00d4-4fa9-b9f7-095c8eafeeea": {
-          "type": "custom_button",
-          "disabled": true,
-          "settings": {
-            "button_text": "Button label",
-            "button_text2": "Button label2",
-            "button_link": "",
-            "button_link2": "",
-            "target_link": "_self",
-            "fontf": "inherit",
-            "button_icon_w": 0,
-            "button_style": "default",
-            "button_effect": "default",
-            "pri_cl": "#222222",
-            "second_cl": "",
-            "pri_cl_hover": "#56cfe1",
-            "second_cl_hover": "#ffffff",
-            "pri_cl2": "#222222",
-            "second_cl2": "",
-            "pri_cl_hover2": "#56cfe1",
-            "second_cl_hover2": "#ffffff",
-            "fsbutton": 14,
-            "fwbutton": 400,
-            "button_ls": 0,
-            "button_mh": 42,
-            "button_bdr": 0,
-            "button_pd_lr": 20,
-            "button_mgb": 0,
-            "hidden_mobile": false,
-            "button_icon_w_mb": 0,
-            "fsbutton_mb": 10,
-            "button_mh_mb": 36,
-            "button_pd_lr_mb": 15,
-            "button_ls_mb": 0,
-            "button_mgb_mb": 0,
-            "animation": "none"
-          }
-        }
-      },
-      "block_order": [
-        "9be174ed-7470-41da-a22a-2520b6069424",
-        "0c056fe3-6941-431d-98c0-e49d0349f922",
-        "d23bd7e4-5258-47a3-a7aa-b101dab86d16",
-        "88a157da-dcaa-4c5f-a05d-43c43841ad42",
-        "df7c3bed-4f82-45d5-a608-4b463c0daee7",
-        "9936ccba-ac35-4093-b7e1-c83e536151d4",
-        "57ab212f-593c-4334-a247-ddfd9d926a5d",
-        "be90cceb-00d4-4fa9-b9f7-095c8eafeeea"
-      ],
-      "settings": {
-        "se_height": "t4s_ratio_fh",
-        "custom_dk": true,
-        "height_dk": 600,
-        "custom_tb": true,
-        "height_tb": 400,
-        "custom_mb": true,
-        "height_mb": 250,
-        "eff": "slide",
-        "loop": true,
-        "au_time": 0,
-        "au_hover": true,
-        "nav_btn": false,
-        "btn_vi": "hover",
-        "btn_owl": "default",
-        "btn_shape": "none",
-        "btn_cl": "dark",
-        "btn_size": "small",
-        "btn_hidden_mobile": false,
-        "nav_dot": false,
-        "dot_owl": "default",
-        "dots_cl": "dark",
-        "dots_round": false,
-        "dots_space": 10,
-        "dots_hidden_mobile": false,
-        "layout": "t4s-container-fluid",
-        "cl_bg": "",
-        "cl_bg_gradient": "",
-        "mg": "",
-        "pd": "",
-        "mg_mb": ",,30px,",
-        "pd_mb": "",
-        "use_cus_css": false,
-        "code_cus_css": ""
-      }
-    },
     "b856f38b-5bc5-49c7-a3df-40b5f6095bd2": {
       "type": "slideshow2",
       "blocks": {
@@ -2031,10 +1746,10 @@
         "code_cus_css": ""
       }
     },
-    "cbe97681-41ce-4f55-8b19-76616ea889b9": {
-      "type": "expansion2",
+    "017029d2-ad8b-4598-88ed-ed0ee259509d": {
+      "type": "expansion5",
       "blocks": {
-        "template--18304757039381__cbe97681-41ce-4f55-8b19-76616ea889b9-1680088304b5df016e-0": {
+        "template--18304757039381__017029d2-ad8b-4598-88ed-ed0ee259509d-1680086759ec12af52-0": {
           "type": "bl_text",
           "settings": {
             "text_size": "40,15",
@@ -2052,60 +1767,24 @@
         }
       },
       "block_order": [
-        "template--18304757039381__cbe97681-41ce-4f55-8b19-76616ea889b9-1680088304b5df016e-0"
+        "template--18304757039381__017029d2-ad8b-4598-88ed-ed0ee259509d-1680086759ec12af52-0"
       ],
       "settings": {
       }
     },
-    "c77beb0a-8edf-4258-9909-9f84e01dbc4d": {
-      "type": "expansion2-1",
+    "3af4f2f3-d20c-44c0-9a95-e5cd9b3adeae": {
+      "type": "expansion2",
       "blocks": {
-        "template--18304757039381__c77beb0a-8edf-4258-9909-9f84e01dbc4d-1680089240cf515e57-0": {
-          "type": "bl_image",
-          "settings": {
-            "col_dk": "6",
-            "col_tb": "6",
-            "layout_des": "carousel",
-            "post_mobile": "default",
-            "image_ratio": "ratioadapt",
-            "image_size": "cover",
-            "image_position": "8",
-            "loop": true,
-            "au_time": 0,
-            "au_hover": true,
-            "nav_btn": false,
-            "btn_vi": "hover",
-            "btn_owl": "default",
-            "btn_shape": "none",
-            "btn_cl": "dark",
-            "btn_size": "small",
-            "btn_hidden_mobile": true,
-            "nav_dot": false,
-            "dot_owl": "default",
-            "dots_cl": "dark",
-            "dots_round": true,
-            "dots_space": 10,
-            "dots_hidden_mobile": false
-          }
-        },
-        "template--18304757039381__c77beb0a-8edf-4258-9909-9f84e01dbc4d-1680089240cf515e57-1": {
+        "template--18304757039381__3af4f2f3-d20c-44c0-9a95-e5cd9b3adeae-1680088304b5df016e-0": {
           "type": "bl_text",
           "settings": {
-            "col_dk": "6",
-            "col_tb": "6",
             "text_size": "40,15",
-            "txt_align": "center",
             "sub_heading": "",
             "heading": "Image with text",
             "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "subhd_color": "#222222",
-            "hd_color": "#222222",
-            "des_color": "#878787",
-            "use_shadow": false,
             "button_label": "Button label",
             "button_link": "",
             "open_link": "_blank",
-            "btn_icon": false,
             "button_style": "default",
             "btn_size": "large",
             "btn_cl": "dark",
@@ -2114,29 +1793,9 @@
         }
       },
       "block_order": [
-        "template--18304757039381__c77beb0a-8edf-4258-9909-9f84e01dbc4d-1680089240cf515e57-0",
-        "template--18304757039381__c77beb0a-8edf-4258-9909-9f84e01dbc4d-1680089240cf515e57-1"
+        "template--18304757039381__3af4f2f3-d20c-44c0-9a95-e5cd9b3adeae-1680088304b5df016e-0"
       ],
       "settings": {
-        "design_heading": "1",
-        "heading_align": "t4s-text-center",
-        "top_heading": "",
-        "icon_heading": "las la-gem",
-        "top_subheading": "",
-        "tophead_mb": 30,
-        "space_h_item": "20",
-        "space_v_item": "10",
-        "space_h_item_mb": "20",
-        "space_v_item_mb": "10",
-        "layout": "t4s-container-wrap",
-        "cl_bg": "",
-        "cl_bg_gradient": "",
-        "mg": ",,50px,",
-        "pd": "",
-        "mg_mb": ",,30px,",
-        "pd_mb": "",
-        "use_cus_css": false,
-        "code_cus_css": ""
       }
     }
   },
@@ -2144,7 +1803,6 @@
     "9b6ef2dc-8171-49a3-80fe-46d052e3d063",
     "7037844d-65d9-4da0-9a8a-85d8a6b55554",
     "afa6061b-68dc-4f47-87f5-726bf4d7dfe3",
-    "58ed8039-1aee-4aad-94f8-fa846a34cf54",
     "b856f38b-5bc5-49c7-a3df-40b5f6095bd2",
     "06cf74e3-e93f-44a6-9422-d8fbf516e684",
     "ab14f150-e425-4202-8b7f-813c05bed177",
@@ -2152,7 +1810,7 @@
     "97eefcc2-3af8-4bb0-bf22-3ac8f4273adf",
     "c1962e91-b44f-4468-bae0-a3c0a5f7dfae",
     "b4891829-c578-4ccf-bc52-13d3bc35af49",
-    "cbe97681-41ce-4f55-8b19-76616ea889b9",
-    "c77beb0a-8edf-4258-9909-9f84e01dbc4d"
+    "017029d2-ad8b-4598-88ed-ed0ee259509d",
+    "3af4f2f3-d20c-44c0-9a95-e5cd9b3adeae"
   ]
 }
