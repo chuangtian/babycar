@@ -70,6 +70,120 @@
 </div>
 
 
+<div  id="dv2"  class="t4s-section-inner {{t4s_se_class}} t4s_nt_se_{{sid}} {{stt_layout}}{% if stt_image_bg != blank and stt_layout != 't4s-se-container' %} t4s-has-imgbg lazyloadt4s{% endif %}" {% if stt_image_bg != blank and stt_layout != 't4s-se-container' %} data-bgset="{{ stt_image_bg | image_url: width: 1 }}" data-sizes="auto"  data-optimumx="1.5"{% endif %} {% render 'section_style',se_stts:se_stts -%} >
+    <div   id="exampleModal2" style="display: show;"  >
+    {{-html_layout[0]-}}
+    {%- if stt_layout == 't4s-se-container' -%}
+    <div class="t4s-container-inner{% if stt_image_bg != blank %} t4s-has-imgbg lazyloadt4s{% endif %}" {% if stt_image_bg != blank %} data-bgset="{{ stt_image_bg | image_url: width: 1 }}" data-sizes="auto"  data-optimumx="1.5"{% endif %}>{% endif -%}
+    {%- render 'section_tophead',se_stts:se_stts -%}
+    
+      {%- for block in se_blocks-%}
+        {%- liquid
+          assign bk_stts = block.settings 
+          assign image = bk_stts.image 
+          assign text_size = bk_stts.text_size | split:"," 
+          assign button_style = bk_stts.button_style 
+          assign forloop_index =  forloop.index
+          assign odd = forloop_index | modulo: 2
+        -%}
+        {%- if odd == 1 -%}
+              <div class="tanchuang t4s-image-text t4s-row t4s-align-items-center t4s-row t4s-gx-md-{{se_stts.space_h_item}} t4s-gy-md-{{se_stts.space_v_item}} t4s-gx-{{se_stts.space_h_item_mb}} t4s-gy-{{se_stts.space_v_item_mb}}">
+        {%- endif -%} 
+        {%- case block.type -%}
+            {%- when 'bl_image' -%}
+                {%-liquid 
+                    assign index = 0 
+                    if bk_stts.btn_owl == "outline"
+                        assign arrow_icon = 1
+                    else
+                        assign arrow_icon = 2
+                    endif
+                -%}
+                {%- capture html_img_text -%}
+                    {%- for i in (1..5) -%}
+                        {%- assign image_list = 'image' | append:i -%}
+                        {%- assign image = bk_stts[image_list]  -%}
+                        {%- if forloop.first -%}
+                            {%- if image == blank -%}
+                                {{ 'image' | placeholder_svg_tag: 't4s-placeholder-svg' }}
+                            {%- endif -%} 
+                        {%- endif -%}
+                        {%- if bk_stts.layout_des == "grid" -%}
+                            {%- if image != blank -%}
+                                {%- assign index = index | plus:1 -%}   
+                                <div class="t4s-image-text-overlap-item" >           
+                                    <img class="lazyloadt4s" data-src="{{ image | image_url: width: 1 }}" data-widths="[100,200,400,600,700,800,900,1000,1200,1400,1600]" data-optimumx="2" data-sizes="auto" src="{% render 'img_svg',w:image.width,h:image.height %}" width="{{ image.width }}" height="{{ image.height }}" alt="{{ image.alt | escape }}">    
+                                    <span class="lazyloadt4s-loader"></span>              
+                                </div>
+                            {%- endif -%}
+                        {%- else -%}
+                            {%- if image != blank -%}
+                                <div class="t4s-col-item" >
+                                    <div class="t4s_ratio" style="--aspect-ratioapt:{{image.aspect_ratio}}">
+                                        <img class="lazyloadt4s" data-src="{{ image | image_url: width: 1 }}" data-widths="[100,200,400,600,700,800,900,1000,1200,1400,1600]" data-optimumx="2" data-sizes="auto" src="{% render 'img_svg',w:image.width,h:image.height %}" width="{{ image.width }}" height="{{ image.height }}" alt="{{ image.alt | escape }}">    
+                                        <span class="lazyloadt4s-loader is-bg-img" style="background: url({{ image | image_url: width: 1 }});"></span>
+                                    </div>
+                                </div>
+                            {%- endif -%} 
+                        {%- endif -%} 
+                    {%- endfor -%}  
+                {%- endcapture -%}
+                {%-liquid
+                    if bk_stts.post_mobile == "default"
+                        assign order_mobile = 1
+                    elsif bk_stts.post_mobile == "reverse" and forloop_index == 1
+                        assign order_mobile = 2
+                    else
+                        assign order_mobile = 0
+                    endif
+                -%}
+                <div class="t4s-col-img t4s-col-item t4s-col-lg-{{bk_stts.col_dk}} t4s-col-md-{{bk_stts.col_tb}} t4s-col-12 t4s-order-md-{{forloop_index}} t4s-order-{{order_mobile}} t4s-image-text-layout-{{bk_stts.layout_des}} {% if block_first.type == 'bl_image' %}t4s-image-text-col-img-left{% else %}t4s-image-text-col-img-right{% endif %}"> 
+                    {%- if bk_stts.layout_des == "grid" -%}
+                        <div class="t4s-image-text-overlap">
+                            <div class="t4s-image-text-overlap-centered t4s-image-text-overlap-{{index}}">{{html_img_text}}</div>
+                        </div> 
+                    {%- else -%}    
+                        {%- assign use_carousel = true -%}
+                        <div class="t4s-image-text-carousel t4s-flicky-slider t4s-row t4s-gx-0 t4s-gy-0 t4s-row-cols-1 t4s_{{bk_stts.image_ratio}} t4s_position_{{bk_stts.image_position}} t4s_{{bk_stts.image_size}}{% if bk_stts.nav_btn == true %}  t4s-slider-btn-style-{{bk_stts.btn_owl}} t4s-slider-btn-{{bk_stts.btn_shape}} t4s-slider-btn-{{bk_stts.btn_size}} t4s-slider-btn-cl-{{bk_stts.btn_cl}} t4s-slider-btn-vi-{{bk_stts.btn_vi}} t4s-slider-btn-hidden-mobile-{{bk_stts.btn_hidden_mobile}} {% endif %} {% if bk_stts.nav_dot == true %}t4s-dots-style-{{bk_stts.dot_owl}} t4s-dots-cl-{{bk_stts.dots_cl}} t4s-dots-round-{{bk_stts.dots_round}} t4s-dots-hidden-mobile-{{se_stts.dots_hidden_mobile}} {% endif %}  flickityt4s" data-flickityt4s-js='{ "arrowIcon":"{{arrow_icon}}","imagesLoaded": 0,"adaptiveHeight": 1, "contain": 1, "groupCells": "100%", "dragThreshold" : 5, "cellAlign": "left","wrapAround": {{bk_stts.loop}},"prevNextButtons": {{bk_stts.nav_btn}},"percentPosition": 1,"pageDots": {{bk_stts.nav_dot}}, "autoPlay" : {{ bk_stts.au_time | times: 1000 }}, "pauseAutoPlayOnHover" : {{bk_stts.au_hover}} }' style="--space-dots: {{bk_stts.dots_space}}px;--flickity-btn-pos: {{bk_stts.space_h_item}}px;--flickity-btn-pos-mb: {{bk_stts.space_h_item_mb}}px;">
+                            {{html_img_text}}
+                        </div>  
+                    {%- endif -%}     
+
+                </div>
+            {%- when 'bl_text' -%}
+                <div class="t4s-col-text t4s-col-item t4s-col-lg-{{bk_stts.col_dk}} t4s-col-md-{{bk_stts.col_tb}} t4s-order-md-{{forloop_index}} t4s-order-1 t4s-col-12 t4s-txt-shadow-{{bk_stts.use_shadow}}">
+                    <div class="t4s-image-text-content t4s-text-{{bk_stts.txt_align}} t4s-shadow-wrap" style="--imtxt-subhd-color:{{bk_stts.subhd_color}};--imtxt-hd-color:{{bk_stts.hd_color}};--imtxt-des-color:{{bk_stts.des_color}}">                       
+                        {%- if bk_stts.heading != blank -%}<h3 class="t4s-image-text-heading t4s-fs-md-{{text_size[0]}} t4-fs-30" >{{bk_stts.heading}}</h3>{%- endif -%}
+                        {%- if bk_stts.sub_heading != blank -%}<p class="t4s-image-text-subheading t4s-fs-md-{{text_size[1]}} t4s-fs-15">{{bk_stts.sub_heading}}</p>{%- endif -%} 
+                        {%- if bk_stts.text -%}<div class="t4s-image-text-des t4-fs-md-{{text_size[1]}} t4s-fs-15">{{bk_stts.text}}</div>{%- endif -%}
+                        {%- if bk_stts.button_link != blank and bk_stts.button_label != blank -%}
+                        {%- assign use_button = true -%}
+                            <a class="t4s-btn t4s-btn-base t4s-btn-style-{{button_style}} t4s-btn-size-{{bk_stts.btn_size}} t4s-btn-color-{{bk_stts.btn_cl}} {% if button_style == 'default' or button_style == 'outline'%}t4s-btn-effect-{{bk_stts.button_effect}} t4s-btn-radius-{{bk_stts.btn_bdr}}{% endif %}" href="{{bk_stts.button_link}}"  target="{{bk_stts.open_link}}">{{bk_stts.button_label}} {%- if bk_stts.btn_icon -%}<svg  class="t4s-btn-icon" viewBox="0 0 14 10"><use xlink:href="#t4s-icon-btn"></use></svg>{%- endif -%}</a>
+                        {%- endif -%}
+                    </div>
+                </div>
+          {%- endcase -%}
+         {%- if odd != 1 -%}
+             </div>
+        {% endif %}
+      {%- endfor -%}
+     <div style=" display: flex;justify-content: center;align-items: center;">
+      <a  
+        
+        id="btnCollapseClose2"
+          style="margin-top: 10px;text-decoration: none;background: #fff;color: #222222;border: 1px solid #222222;"  
+          class="t4s-btn t4s-btn-base t4s-btn-style-default t4s-btn-size-extra-medium t4s-btn-color-dark t4s-btn-effect-sweep-to-right t4s-btn-radius-">
+         <i class="las la-times" style="font-size:20px"></i>
+         
+        &nbsp  <span>Close</span>
+      </a>
+
+    </div>
+    {{-html_layout[1]-}}
+    </div>
+</div>
+
+
 {%- schema -%}
     {
       "name": "expansion3",
