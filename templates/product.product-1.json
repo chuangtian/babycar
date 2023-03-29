@@ -1342,6 +1342,7 @@
         "4568870d-04b7-4900-8672-1f9b0103dd8b": {
           "type": "bl_image",
           "settings": {
+            "image1": "shopify:\/\/shop_images\/display.jpg",
             "col_dk": "6",
             "col_tb": "6",
             "layout_des": "carousel",
