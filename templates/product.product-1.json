@@ -1567,6 +1567,168 @@
         "use_cus_css": false,
         "code_cus_css": ""
       }
+    },
+    "e906b531-5ea9-4fef-a0cd-dfd6e938af41": {
+      "type": "expansion5",
+      "blocks": {
+        "template--18304757367061__e906b531-5ea9-4fef-a0cd-dfd6e938af41-168007113732f95d05-0": {
+          "type": "bl_text",
+          "settings": {
+            "text_size": "40,15",
+            "sub_heading": "",
+            "heading": "Image with text",
+            "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": "",
+            "open_link": "_blank",
+            "button_style": "default",
+            "btn_size": "large",
+            "btn_cl": "dark",
+            "button_effect": "default"
+          }
+        }
+      },
+      "block_order": [
+        "template--18304757367061__e906b531-5ea9-4fef-a0cd-dfd6e938af41-168007113732f95d05-0"
+      ],
+      "settings": {
+      }
+    },
+    "17de015d-f333-46fe-973e-b430a72fa09c": {
+      "type": "expansion5-1",
+      "blocks": {
+        "template--18304757367061__17de015d-f333-46fe-973e-b430a72fa09c-168007114673ca35b6-0": {
+          "type": "bl_image",
+          "settings": {
+            "col_dk": "6",
+            "col_tb": "6",
+            "layout_des": "carousel",
+            "post_mobile": "default",
+            "image_ratio": "ratioadapt",
+            "image_size": "cover",
+            "image_position": "8",
+            "loop": true,
+            "au_time": 0,
+            "au_hover": true,
+            "nav_btn": false,
+            "btn_vi": "hover",
+            "btn_owl": "default",
+            "btn_shape": "none",
+            "btn_cl": "dark",
+            "btn_size": "small",
+            "btn_hidden_mobile": true,
+            "nav_dot": false,
+            "dot_owl": "default",
+            "dots_cl": "dark",
+            "dots_round": true,
+            "dots_space": 10,
+            "dots_hidden_mobile": false
+          }
+        },
+        "template--18304757367061__17de015d-f333-46fe-973e-b430a72fa09c-168007114673ca35b6-1": {
+          "type": "bl_text",
+          "settings": {
+            "col_dk": "6",
+            "col_tb": "6",
+            "text_size": "40,15",
+            "txt_align": "center",
+            "sub_heading": "",
+            "heading": "Image with text",
+            "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "subhd_color": "#222222",
+            "hd_color": "#222222",
+            "des_color": "#878787",
+            "use_shadow": false,
+            "button_label": "Button label",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_icon": false,
+            "button_style": "default",
+            "btn_size": "large",
+            "btn_cl": "dark",
+            "button_effect": "default"
+          }
+        },
+        "0e3c66e9-cfdf-4fc2-9c6d-762c412a422d": {
+          "type": "bl_text",
+          "settings": {
+            "col_dk": "6",
+            "col_tb": "6",
+            "text_size": "40,15",
+            "txt_align": "center",
+            "sub_heading": "",
+            "heading": "Image with text",
+            "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "subhd_color": "#222222",
+            "hd_color": "#222222",
+            "des_color": "#878787",
+            "use_shadow": false,
+            "button_label": "Button label",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_icon": false,
+            "button_style": "default",
+            "btn_size": "large",
+            "btn_cl": "dark",
+            "button_effect": "default"
+          }
+        },
+        "c38c4791-5e8a-40de-b9fd-09013ebd1d2f": {
+          "type": "bl_image",
+          "settings": {
+            "col_dk": "6",
+            "col_tb": "6",
+            "layout_des": "carousel",
+            "post_mobile": "default",
+            "image_ratio": "ratioadapt",
+            "image_size": "cover",
+            "image_position": "8",
+            "loop": true,
+            "au_time": 0,
+            "au_hover": true,
+            "nav_btn": false,
+            "btn_vi": "hover",
+            "btn_owl": "default",
+            "btn_shape": "none",
+            "btn_cl": "dark",
+            "btn_size": "small",
+            "btn_hidden_mobile": true,
+            "nav_dot": false,
+            "dot_owl": "default",
+            "dots_cl": "dark",
+            "dots_round": true,
+            "dots_space": 10,
+            "dots_hidden_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18304757367061__17de015d-f333-46fe-973e-b430a72fa09c-168007114673ca35b6-0",
+        "template--18304757367061__17de015d-f333-46fe-973e-b430a72fa09c-168007114673ca35b6-1",
+        "0e3c66e9-cfdf-4fc2-9c6d-762c412a422d",
+        "c38c4791-5e8a-40de-b9fd-09013ebd1d2f"
+      ],
+      "settings": {
+        "design_heading": "1",
+        "heading_align": "t4s-text-center",
+        "top_heading": "",
+        "icon_heading": "las la-gem",
+        "top_subheading": "",
+        "tophead_mb": 30,
+        "space_h_item": "0",
+        "space_v_item": "10",
+        "space_h_item_mb": "20",
+        "space_v_item_mb": "10",
+        "layout": "t4s-container-wrap",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": ",,50px,",
+        "pd": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": "",
+        "use_cus_css": false,
+        "code_cus_css": ""
+      }
     }
   },
   "order": [
@@ -1588,6 +1750,8 @@
     "a1704b0c-ae67-4881-af3f-3ed58b49a3b8",
     "1328cebd-cacf-42b9-b878-75cd0a9bcebb",
     "c7caf8e0-9ad6-4988-9af9-12f48443f693",
-    "c94de19e-c1bf-4e11-a2d5-cd5ff6087d36"
+    "c94de19e-c1bf-4e11-a2d5-cd5ff6087d36",
+    "e906b531-5ea9-4fef-a0cd-dfd6e938af41",
+    "17de015d-f333-46fe-973e-b430a72fa09c"
   ]
 }
