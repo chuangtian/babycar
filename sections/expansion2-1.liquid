@@ -1414,7 +1414,7 @@
   const btnCollapseClose2 = document.getElementById('btnCollapseClose2');
    $('#exampleModal2').css('display','none');
   // 为收缩按钮添加 click 事件监听器
-  /*
+  
   btnCollapse2.addEventListener('click', () => {
       // 切换展开收缩区域的状态
       var htmlFont=$('.plus-html2').html();
@@ -1439,7 +1439,7 @@
         console.log(21);
       }
   });
-  */
+  
   btnCollapseClose2.addEventListener('click', () => {
       // 切换展开收缩区域的状态
         $('.plus-html2').html('Learn More');
@@ -1450,30 +1450,7 @@
         changeHash('#dv2');
     console.log(31);
   });
-  $(".btnCollapse2").click(function(){
-     // 切换展开收缩区域的状态
-      var htmlFont=$('.plus-html2').html();
-       console.log(htmlFont);
-
-      if(htmlFont == 'Learn More'){
-          $('.plus-html2').html('Close');
-          $('#plus-icon2').removeClass('la-plus');
-          $('#plus-icon2').addClass('la-times');
-          // $('#exampleModal').addClass('show');
-          $('#exampleModal2').css('display','block');
-          changeHash2('#ydd2');
-        console.log(11);
-
-      }else{
-          $('.plus-html2').html('Learn More');
-          $('#plus-icon2').removeClass('la-times');
-          $('#plus-icon2').addClass('la-plus');;
-          // $('#exampleModal').removeClass('show');
-          $('#exampleModal2').css('display','none');
-          changeHash('#dv2');
-        console.log(21);
-      }
-  });
+  
   function changeHash(idName) {
           document.querySelector(idName).scrollIntoView({block: "center"});
   };
