@@ -1548,7 +1548,7 @@
         "cl_bg": "#fff",
         "cl_bg_gradient": "",
         "mg": "",
-        "pd": "20px,20px,20px,20px,",
+        "pd": "",
         "mg_mb": ",,30px,",
         "pd_mb": "",
         "use_cus_css": false,
