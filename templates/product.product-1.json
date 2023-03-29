@@ -1540,11 +1540,65 @@
             "btn_cl": "dark",
             "button_effect": "default"
           }
+        },
+        "de5fe155-d459-4534-be70-818fe5496217": {
+          "type": "bl_text",
+          "settings": {
+            "col_dk": "6",
+            "col_tb": "6",
+            "text_size": "40,15",
+            "txt_align": "center",
+            "sub_heading": "",
+            "heading": "Image with text",
+            "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "subhd_color": "#222222",
+            "hd_color": "#222222",
+            "des_color": "#878787",
+            "use_shadow": false,
+            "button_label": "Button label",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_icon": false,
+            "button_style": "default",
+            "btn_size": "large",
+            "btn_cl": "dark",
+            "button_effect": "default"
+          }
+        },
+        "93792b4d-9e5a-439a-95a4-2950769f2b48": {
+          "type": "bl_image",
+          "settings": {
+            "col_dk": "6",
+            "col_tb": "6",
+            "layout_des": "carousel",
+            "post_mobile": "default",
+            "image_ratio": "ratioadapt",
+            "image_size": "cover",
+            "image_position": "8",
+            "loop": true,
+            "au_time": 0,
+            "au_hover": true,
+            "nav_btn": false,
+            "btn_vi": "hover",
+            "btn_owl": "default",
+            "btn_shape": "none",
+            "btn_cl": "dark",
+            "btn_size": "small",
+            "btn_hidden_mobile": true,
+            "nav_dot": false,
+            "dot_owl": "default",
+            "dots_cl": "dark",
+            "dots_round": true,
+            "dots_space": 10,
+            "dots_hidden_mobile": false
+          }
         }
       },
       "block_order": [
         "template--18304757367061__c94de19e-c1bf-4e11-a2d5-cd5ff6087d36-168007026285d885d9-0",
-        "template--18304757367061__c94de19e-c1bf-4e11-a2d5-cd5ff6087d36-168007026285d885d9-1"
+        "template--18304757367061__c94de19e-c1bf-4e11-a2d5-cd5ff6087d36-168007026285d885d9-1",
+        "de5fe155-d459-4534-be70-818fe5496217",
+        "93792b4d-9e5a-439a-95a4-2950769f2b48"
       ],
       "settings": {
         "design_heading": "1",
