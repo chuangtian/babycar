@@ -1,12 +1,295 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
+{{ 'button-style.css' | asset_url | stylesheet_tag }}
+<link href="{{ 'custom-effect.css' | asset_url }}" rel="stylesheet" media="print" onload="this.media='all'">
+{%- style -%}
+  .btn-outline-secondary:hover {
+      background-color: #ddd;
+      color:#242424;
+    }
+  .hc:hover{
+    color:#242424 !important;
   }
-{% endschema %}
+{%- endstyle -%}
+{%- liquid
+    assign sid = section.id
+    assign se_stts = section.settings
+    assign se_blocks = section.blocks
+-%}
+<div class="container">
+  <div class="row">
+    
+      {%- for block in se_blocks-%}
+        {%- liquid
+          assign bk_stts = block.settings 
+          assign image = bk_stts.image 
+          assign text_size = bk_stts.text_size | split:"," 
+          assign button_style = bk_stts.button_style 
+          assign forloop_index =  forloop.index
+        -%}
+        {%- case block.type -%}
+          {%- when 'bl_text' -%}
+            <div class="col-md-4 order-md-1 order-2" style="padding: 20px;">
+              
+              {%- if bk_stts.sub_heading != blank -%}<p class="t4s-image-text-subheading t4s-fs-md-{{text_size[1]}} t4s-fs-15">{{bk_stts.sub_heading}}</p>{%- endif -%}
+              {%- if bk_stts.heading != blank -%}<h3 class="t4s-image-text-heading t4s-fs-md-{{text_size[0]}} t4-fs-30" >{{bk_stts.heading}}</h3>{%- endif -%}
+              <span style="padding-right: 8%;">
+                <button  id="btnCollapse2" class="btn btn-outline-secondary rounded-circle "  style="border: 1px solid black;width: 40px;height: 40px;font-size: 22px;">
+                  <i  id="plus-icon2"  class="las la-plus"></i>
+                </button>
+                <span class="plus-html2">Learn More</span>
+              </span>
 
-{% stylesheet %}
-{% endstylesheet %}
+              {%- if bk_stts.button_link != blank and bk_stts.button_label != blank -%}
+                  <a style="text-decoration: none;width: 48%;" class="hc t4s-btn t4s-btn-base t4s-btn-style-{{button_style}} t4s-btn-size-{{bk_stts.btn_size}} t4s-btn-color-{{bk_stts.btn_cl}} {% if button_style == 'default' or button_style == 'outline'%}t4s-btn-effect-{{bk_stts.button_effect}} t4s-btn-radius-{{bk_stts.btn_bdr}}{% endif %}" href="{{bk_stts.button_link}}"  target="{{bk_stts.open_link}}">{{bk_stts.button_label}} {%- if bk_stts.btn_icon -%}<svg  class="t4s-btn-icon" viewBox="0 0 14 10"><use xlink:href="#t4s-icon-btn"></use></svg>{%- endif -%}</a>
+              {%- endif -%}
+            </div>
+            <div class="col-md-8 order-md-2 order-1"  style="padding: 20px;">
+             {%- if bk_stts.text -%}<div class="t4s-image-text-des t4-fs-md-{{text_size[1]}} t4s-fs-15">{{bk_stts.text}}</div>{%- endif -%}
+            </div>
+        {%- endcase -%}
+      {%- endfor -%}
+    
+  </div>
+</div>
+
+
+{%- schema -%}
+    {
+      "name": "expansion2",
+      "tag": "section",
+      "class": "t4s-section t4s-section-all t4s_tp_flickity",
+      "settings": [
+        
+    ],
+    "blocks":[
+      {
+        "type":"bl_text",
+        "limit":1,
+        "name":"Text",
+        "settings":[
+            {
+                "type": "header",
+                "content": "+ Text"
+            },
+            {
+                "type": "select",
+                "id": "text_size",
+                "label": "Text size",
+                "default": "40,15",
+                "options": [
+                {
+                    "value": "30,15",
+                    "label": "Small"
+                },
+                {
+                    "value": "40,15",
+                    "label": "Medium"
+                },
+                {
+                    "value": "60,18",
+                    "label": "Large"
+                }
+                ]    
+            },
+            {
+                "type": "text",
+                "id": "sub_heading",
+                "label": "Sub heading"
+            },
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "Heading",
+                "default": "Image with text"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "Text",
+                "default": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
+            },
+            {
+                "type":"header",
+                "content":"+ Button"
+            },
+            {
+                "type": "text",
+                "id": "button_label",
+                "label": "Button label",
+                "info":"If set blank will not show",
+                "default": "Button label"
+            },
+            {
+                "type": "url",
+                "id": "button_link",
+                "label": "Button link",
+                "info":"If set blank will not show"
+            },
+            {
+                "type": "select",
+                "id": "open_link",
+                "label": "Open link in",
+                "default": "_blank",
+                "info":"Only working when has a link",
+                "options": [
+                {
+                    "value": "_self",
+                    "label": "Current window"
+                },
+                {
+                    "value": "_blank",
+                    "label": "New window"
+                }
+                ]
+            },
+            {
+                "type": "select",
+                "id": "button_style",
+                "label": "Button style",
+                "options": [
+                    {
+                        "label": "Default",
+                        "value": "default"
+                    },
+                    {
+                        "label": "Outline",
+                        "value": "outline"
+                    },
+                    {
+                        "label": "Bordered bottom",
+                        "value": "bordered"
+                    },
+                    {
+                        "label": "Link",
+                        "value": "link"
+                    }
+                ]
+            },
+            {
+                "type": "select",
+                "id": "btn_size",
+                "label": "Button size",
+                "default":"large",
+                "options": [
+                    {
+                        "label": "Extra small",
+                        "value": "small"
+                    },
+                    {
+                        "label": "Small",
+                        "value": "extra-small"
+                    },
+                    {
+                        "label": "Medium",
+                        "value": "medium"
+                    },
+                    {
+                        "label": "Large",
+                        "value": "extra-medium"
+                    },
+                    {
+                        "label": "Extra large",
+                        "value": "large"
+                    },
+                    {
+                        "label": "Extra extra large",
+                        "value": "extra-large"
+                    }
+                ]
+            },
+            {
+                "type": "select",
+                "id": "btn_cl",
+                "label": "Button color",
+                "default": "dark",
+                "options": [
+                    {
+                        "value": "light",
+                        "label": "Light"
+                    },
+                    {
+                        "value": "dark",
+                        "label": "Dark"
+                    },
+                    {
+                        "value": "primary",
+                        "label": "Primary"
+                    },
+                    {
+                        "value": "custom1",
+                        "label": "Custom color 1"
+                    },
+                    {
+                        "value": "custom2",
+                        "label": "Custom color 2"
+                    }
+                ]
+            },
+            {
+                "type":"select",
+                "id":"button_effect",
+                "label":"Button hover effect",
+                "default":"default",
+                "info":"Only working button style default, outline",
+                "options":[
+                    {
+                        "label":"Default",
+                        "value":"default"
+                    },
+                    {
+                        "label":"Fade",
+                        "value":"fade"
+                    },
+                    {
+                    "label":"Rectangle out",
+                    "value":"rectangle-out"
+                    },
+                    {
+                        "label":"Sweep to right",
+                        "value":"sweep-to-right"
+                    },
+                    {
+                        "label":"Sweep to left",
+                        "value":"sweep-to-left"
+                    },
+                    {
+                        "label":"Sweep to bottom",
+                        "value":"sweep-to-bottom"
+                    },
+                    {
+                        "label":"Sweep to top",
+                        "value":"sweep-to-top"
+                    },
+                    {
+                        "label":"Shutter out horizontal",
+                        "value":"shutter-out-horizontal"
+                    },
+                    {
+                        "label":"Outline",
+                        "value":"outline"
+                    },
+                    {
+                        "label":"Shadow",
+                        "value":"shadow"
+                    }
+                ]
+            }
+        ]
+      }
+    ],
+    "presets": [
+        {
+          "name": "expansion2",
+          "category": "homepage",
+          "blocks":[
+            {
+              "type":"bl_text"
+            }
+          ]
+        }
+      ]
+    }
+  {%- endschema -%}
+
 
 {% javascript %}
 {% endjavascript %}
