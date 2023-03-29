@@ -10,15 +10,21 @@
   }
   /* 定义电脑端样式 */
     @media (min-width: 750px) {
-        #my-div {
-            background-color: yellow;
+        .pc {
+           display: block;
+        }
+      .yd {
+           display: none;
         }
     }
 
     /* 定义手机端样式 */
     @media (max-width: 749px) {
-        #my-div {
-            background-color: red;
+         .pc {
+           display: none;
+        }
+      .yd {
+           display: block;
         }
     }
 {%- endstyle -%}
