@@ -434,7 +434,7 @@
         "template--18304757039381__afa6061b-68dc-4f47-87f5-726bf4d7dfe3-1679972124aa116b68-0": {
           "type": "image_item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/MB-06_PLUS.jpg",
+            "image": "shopify:\/\/shop_images\/DSC04818.jpg",
             "link": "",
             "text": "<p style=\" width:100%;text-align: center;\">\n<span style=\"color:red\">Text<\/span>\n<br>\n<span>111<\/span>\n<\/p>",
             "text_cl": "#333333",
@@ -444,44 +444,22 @@
         "template--18304757039381__afa6061b-68dc-4f47-87f5-726bf4d7dfe3-1679972124aa116b68-1": {
           "type": "image_item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/MB-06.jpg",
+            "image": "shopify:\/\/shop_images\/DSC04825.jpg",
             "link": "",
             "text": "Text2",
             "text_cl": "#ec0101",
-            "text_fs": 16
-          }
-        },
-        "template--18304757039381__afa6061b-68dc-4f47-87f5-726bf4d7dfe3-1679972124aa116b68-2": {
-          "type": "image_item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/MB-03_plus.jpg",
-            "link": "",
-            "text": "Text",
-            "text_cl": "#ffffff",
-            "text_fs": 16
-          }
-        },
-        "template--18304757039381__afa6061b-68dc-4f47-87f5-726bf4d7dfe3-1679972124aa116b68-3": {
-          "type": "image_item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/MB-03.182_1d709878-129e-4561-9812-43c6905cfec2.jpg",
-            "link": "",
-            "text": "Text",
-            "text_cl": "#ffffff",
             "text_fs": 16
           }
         }
       },
       "block_order": [
         "template--18304757039381__afa6061b-68dc-4f47-87f5-726bf4d7dfe3-1679972124aa116b68-0",
-        "template--18304757039381__afa6061b-68dc-4f47-87f5-726bf4d7dfe3-1679972124aa116b68-1",
-        "template--18304757039381__afa6061b-68dc-4f47-87f5-726bf4d7dfe3-1679972124aa116b68-2",
-        "template--18304757039381__afa6061b-68dc-4f47-87f5-726bf4d7dfe3-1679972124aa116b68-3"
+        "template--18304757039381__afa6061b-68dc-4f47-87f5-726bf4d7dfe3-1679972124aa116b68-1"
       ],
       "settings": {
         "design_heading": "1",
         "heading_align": "t4s-text-center",
-        "top_heading": "Gallery",
+        "top_heading": "ATV",
         "icon_heading": "las la-gem",
         "top_subheading": "",
         "tophead_mb": 30,
