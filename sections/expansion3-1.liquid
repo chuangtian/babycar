@@ -1414,7 +1414,7 @@
   const btnCollapseClose3 = document.getElementById('btnCollapseClose3');
    $('#exampleModal3').css('display','none');
   // 为收缩按钮添加 click 事件监听器
-  btnCollapse2.addEventListener('click', () => {
+  btnCollapse3.addEventListener('click', () => {
       // 切换展开收缩区域的状态
       var htmlFont=$('.plus-html3').html();
        console.log(htmlFont);
@@ -1437,7 +1437,7 @@
         console.log(21);
       }
   });
-  btnCollapseClose2.addEventListener('click', () => {
+  btnCollapseClose3.addEventListener('click', () => {
       // 切换展开收缩区域的状态
         $('.plus-html3').html('Learn More');
         $('#plus-icon3').removeClass('la-times');
@@ -1451,5 +1451,9 @@
           document.querySelector(idName).scrollIntoView({block: "center"});
   };
 
+
+
+
+  
 {% endjavascript %}
   
