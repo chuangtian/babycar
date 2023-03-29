@@ -1134,7 +1134,7 @@
     "365387c3-cfb5-4937-9d8d-f9f61a228371": {
       "type": "hero_image",
       "settings": {
-        "se_height": "t4s_ratio_cuspx",
+        "se_height": "t4s_ratio_fh",
         "custom_dk": true,
         "height_dk": 600,
         "custom_tb": false,
