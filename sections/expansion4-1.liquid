@@ -22,8 +22,8 @@
         render 'se_cus_css',code_cus_css:se_stts.code_cus_css,t4s_se_class:t4s_se_class
     endif 
 -%}
-<div  id="dv3"  class="t4s-section-inner {{t4s_se_class}} t4s_nt_se_{{sid}} {{stt_layout}}{% if stt_image_bg != blank and stt_layout != 't4s-se-container' %} t4s-has-imgbg lazyloadt4s{% endif %}" {% if stt_image_bg != blank and stt_layout != 't4s-se-container' %} data-bgset="{{ stt_image_bg | image_url: width: 1 }}" data-sizes="auto"  data-optimumx="1.5"{% endif %} {% render 'section_style',se_stts:se_stts -%} >
-    <div   id="exampleModal3"   >
+<div  id="dv4"  class="t4s-section-inner {{t4s_se_class}} t4s_nt_se_{{sid}} {{stt_layout}}{% if stt_image_bg != blank and stt_layout != 't4s-se-container' %} t4s-has-imgbg lazyloadt4s{% endif %}" {% if stt_image_bg != blank and stt_layout != 't4s-se-container' %} data-bgset="{{ stt_image_bg | image_url: width: 1 }}" data-sizes="auto"  data-optimumx="1.5"{% endif %} {% render 'section_style',se_stts:se_stts -%} >
+    <div   id="exampleModal4"   >
     {{-html_layout[0]-}}
     {%- if stt_layout == 't4s-se-container' -%}
     <div class="t4s-container-inner{% if stt_image_bg != blank %} t4s-has-imgbg lazyloadt4s{% endif %}" {% if stt_image_bg != blank %} data-bgset="{{ stt_image_bg | image_url: width: 1 }}" data-sizes="auto"  data-optimumx="1.5"{% endif %}>{% endif -%}
@@ -122,7 +122,7 @@
      <div style=" display: flex;justify-content: center;align-items: center;">
       <a  
         
-        id="btnCollapseClose3"
+        id="btnCollapseClose4"
           style="margin-top: 10px;text-decoration: none;background: #fff;color: #222222;border: 1px solid #222222;"  
           class="t4s-btn t4s-btn-base t4s-btn-style-default t4s-btn-size-extra-medium t4s-btn-color-dark t4s-btn-effect-sweep-to-right t4s-btn-radius-">
          <i class="las la-times" style="font-size:20px"></i>
@@ -1410,41 +1410,41 @@
 {% javascript %}
   
   // 获取展开按钮和收缩按钮的 DOM 元素
-  const btnCollapse3 = document.getElementById('btnCollapse3');
-  const btnCollapseClose3 = document.getElementById('btnCollapseClose3');
-   $('#exampleModal3').css('display','none');
+  const btnCollapse4 = document.getElementById('btnCollapse4');
+  const btnCollapseClose4 = document.getElementById('btnCollapseClose4');
+   $('#exampleModal4').css('display','none');
   // 为收缩按钮添加 click 事件监听器
-  btnCollapse3.addEventListener('click', () => {
+  btnCollapse4.addEventListener('click', () => {
       // 切换展开收缩区域的状态
-      var htmlFont=$('.plus-html3').html();
+      var htmlFont=$('.plus-html4').html();
        console.log(htmlFont);
 
       if(htmlFont == 'Learn More'){
-          $('.plus-html3').html('Close');
-          $('#plus-icon3').removeClass('la-plus');
-          $('#plus-icon3').addClass('la-times');
+          $('.plus-html4').html('Close');
+          $('#plus-icon4').removeClass('la-plus');
+          $('#plus-icon4').addClass('la-times');
           // $('#exampleModal').addClass('show');
-          $('#exampleModal3').css('display','block');
+          $('#exampleModal4').css('display','block');
         console.log(11);
 
       }else{
-          $('.plus-html3').html('Learn More');
-          $('#plus-icon3').removeClass('la-times');
-          $('#plus-icon3').addClass('la-plus');;
+          $('.plus-html4').html('Learn More');
+          $('#plus-icon4').removeClass('la-times');
+          $('#plus-icon4').addClass('la-plus');;
           // $('#exampleModal').removeClass('show');
-          $('#exampleModal3').css('display','none');
-          changeHash('#dv3');
+          $('#exampleModal4').css('display','none');
+          changeHash('#dv4');
         console.log(21);
       }
   });
-  btnCollapseClose3.addEventListener('click', () => {
+  btnCollapseClose4.addEventListener('click', () => {
       // 切换展开收缩区域的状态
-        $('.plus-html3').html('Learn More');
-        $('#plus-icon3').removeClass('la-times');
-        $('#plus-icon3').addClass('la-plus');;
+        $('.plus-html4').html('Learn More');
+        $('#plus-icon4').removeClass('la-times');
+        $('#plus-icon4').addClass('la-plus');;
         // $('#exampleModal').removeClass('show');
-        $('#exampleModal3').css('display','none');
-        changeHash('#dv3');
+        $('#exampleModal4').css('display','none');
+        changeHash('#dv4');
     console.log(31);
   });
   function changeHash(idName) {
