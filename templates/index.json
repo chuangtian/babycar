@@ -440,10 +440,21 @@
             "text_cl": "#333333",
             "text_fs": 40
           }
+        },
+        "5e5592e5-a9eb-40c0-8326-b219631abb4e": {
+          "type": "image_item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/DSC04825.jpg",
+            "link": "",
+            "text": "Text",
+            "text_cl": "#fff",
+            "text_fs": 16
+          }
         }
       },
       "block_order": [
-        "template--18304757039381__afa6061b-68dc-4f47-87f5-726bf4d7dfe3-1679972124aa116b68-0"
+        "template--18304757039381__afa6061b-68dc-4f47-87f5-726bf4d7dfe3-1679972124aa116b68-0",
+        "5e5592e5-a9eb-40c0-8326-b219631abb4e"
       ],
       "settings": {
         "design_heading": "1",
