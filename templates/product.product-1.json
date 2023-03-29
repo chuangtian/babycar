@@ -1395,6 +1395,7 @@
         "7de1f8eb-f614-4e3f-99e6-774613ac9238": {
           "type": "bl_image",
           "settings": {
+            "image1": "shopify:\/\/shop_images\/jianzhen_ef5e04ea-0567-4eed-9005-0a82daa20863.jpg",
             "col_dk": "6",
             "col_tb": "6",
             "layout_des": "carousel",
@@ -1423,6 +1424,7 @@
         "634f8741-2d6f-49d8-9f0a-47db2e6267f5": {
           "type": "bl_image",
           "settings": {
+            "image1": "shopify:\/\/shop_images\/on_and_off.jpg",
             "col_dk": "6",
             "col_tb": "6",
             "layout_des": "carousel",
