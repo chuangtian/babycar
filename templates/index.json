@@ -1746,32 +1746,6 @@
         "code_cus_css": ""
       }
     },
-    "017029d2-ad8b-4598-88ed-ed0ee259509d": {
-      "type": "expansion5",
-      "blocks": {
-        "template--18304757039381__017029d2-ad8b-4598-88ed-ed0ee259509d-1680086759ec12af52-0": {
-          "type": "bl_text",
-          "settings": {
-            "text_size": "40,15",
-            "sub_heading": "",
-            "heading": "Image with text",
-            "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "button_label": "Button label",
-            "button_link": "",
-            "open_link": "_blank",
-            "button_style": "default",
-            "btn_size": "large",
-            "btn_cl": "dark",
-            "button_effect": "default"
-          }
-        }
-      },
-      "block_order": [
-        "template--18304757039381__017029d2-ad8b-4598-88ed-ed0ee259509d-1680086759ec12af52-0"
-      ],
-      "settings": {
-      }
-    },
     "3af4f2f3-d20c-44c0-9a95-e5cd9b3adeae": {
       "type": "expansion2",
       "blocks": {
@@ -1810,7 +1784,6 @@
     "97eefcc2-3af8-4bb0-bf22-3ac8f4273adf",
     "c1962e91-b44f-4468-bae0-a3c0a5f7dfae",
     "b4891829-c578-4ccf-bc52-13d3bc35af49",
-    "017029d2-ad8b-4598-88ed-ed0ee259509d",
     "3af4f2f3-d20c-44c0-9a95-e5cd9b3adeae"
   ]
 }
