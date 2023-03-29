@@ -1290,6 +1290,7 @@
         "728072e1-ebb9-422e-b043-0dde54c2ac24": {
           "type": "bl_image",
           "settings": {
+            "image1": "shopify:\/\/shop_images\/battery.jpg",
             "col_dk": "6",
             "col_tb": "6",
             "layout_des": "carousel",
