@@ -482,7 +482,7 @@
         "dots_cl": "dark",
         "dots_round": true,
         "dots_space": 10,
-        "layout": "t4s-container-wrap",
+        "layout": "t4s-container-fluid",
         "cl_bg": "#ffffff",
         "cl_bg_gradient": "",
         "mg": ",,50px,",
