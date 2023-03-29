@@ -190,7 +190,7 @@
           "link_hover_cl": "#56cfe1",
           "border_cl": "#e6e6e6",
           "layout": "t4s-container-wrap",
-          "cl_bg": "#fff",
+          "cl_bg": "#ffffff",
           "cl_bg_gradient": "",
           "mg": "",
           "pd": "20px,,5px,",
@@ -591,7 +591,7 @@
           "2601ba5a-81b0-4536-afdf-4a86a9a2be0e": {
             "type": "mega",
             "settings": {
-              "title": "Accessories",
+              "title": "Kid's Motor",
               "url": "shopify:\/\/collections\/accessories",
               "open_link": "_self",
               "icon": "",
