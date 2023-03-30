@@ -1461,10 +1461,10 @@
   //在文档加载完毕后执行
   $(document).ready(function(){
         //开始监听滚动条btnCollapseClose2
-       var heitop=$('#btnCollapseClose2').offset().top;
         $(window).scroll(function(){
             var pingmuhei = $(window).height();
             var top = $(document).scrollTop();
+            var heitop=$('#btnCollapseClose2').offset().top;
             var dibugaodu=top+pingmuhei;
             if(heitop>0 && heitop>dibugaodu){
                  $('#btnCollapseClose2').css('position','fixed');
@@ -1479,12 +1479,14 @@
             console.log(top);
             console.log(heitop);
             console.log(dibugaodu);
-            console.log("tc5");
+            console.log("tc4");
         })
     })
 
 
 
+
+  
 
 
 
