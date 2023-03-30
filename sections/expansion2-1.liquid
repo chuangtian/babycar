@@ -1,6 +1,16 @@
 <!-- sections/image_text.liquid -->
 {{ 'section.css' | asset_url | stylesheet_tag }}
 {{ 'image-text.css' | asset_url | stylesheet_tag }}
+{%- style -%}
+    .fd2{
+      position:fixed;
+      bottom:1vh;
+    }
+
+
+
+  
+{%- endstyle -%}
 {%- liquid
     assign sid = section.id
     assign se_stts = section.settings
@@ -124,7 +134,7 @@
         
         id="btnCollapseClose2"
           style="margin-top: 10px;text-decoration: none;background: #fff;color: #222222;border: 1px solid #222222;"  
-          class="t4s-btn t4s-btn-base t4s-btn-style-default t4s-btn-size-extra-medium t4s-btn-color-dark t4s-btn-effect-sweep-to-right t4s-btn-radius-">
+          class="t4s-btn t4s-btn-base t4s-btn-style-default t4s-btn-size-extra-medium t4s-btn-color-dark t4s-btn-effect-sweep-to-right t4s-btn-radius- fd2">
          <i class="las la-times" style="font-size:20px"></i>
          
         &nbsp  <span>Close</span>
@@ -1433,7 +1443,7 @@
       }else{
           $('.plus-html2').html('Learn More');
           $('#plus-icon2').removeClass('la-times');
-          $('#plus-icon2').addClass('la-plus');;
+          $('#plus-icon2').addClass('la-plus');
           // $('#exampleModal').removeClass('show');
           $('#exampleModal2').css('display','none');
           changeHash('#dv2');
@@ -1444,7 +1454,7 @@
       // 切换展开收缩区域的状态
         $('.plus-html2').html('Learn More');
         $('#plus-icon2').removeClass('la-times');
-        $('#plus-icon2').addClass('la-plus');;
+        $('#plus-icon2').addClass('la-plus');
         // $('#exampleModal').removeClass('show');
         $('#exampleModal2').css('display','none');
         changeHash('#dv2');
@@ -1471,13 +1481,11 @@
             var dibugaodu=top+pingmuhei;
             var xiaoshi=exampleModal2top+exampleModal2hei+btnCollapseClose2hei;
             if(heitop>0 && heitop<xiaoshi){
-                 $('#btnCollapseClose2').css('position','fixed');
-                 $('#btnCollapseClose2').css('bottom','1vh');
+                  $('#btnCollapseClose2').addClass('fd2');
                 console.log("tc1");
             }else{
-                 $('#btnCollapseClose2').removeAttr('position');
-                 $('#btnCollapseClose2').removeAttr('bottom');
-                console.log("tc12");
+                 $('#btnCollapseClose2').removeClass('fd2');
+                console.log("tc2");
             }
             
             console.log(pingmuhei);
