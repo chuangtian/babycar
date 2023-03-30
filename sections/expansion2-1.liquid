@@ -1462,11 +1462,15 @@
   $(document).ready(function(){
         //开始监听滚动条btnCollapseClose2
         $(window).scroll(function(){
-            var top = $(document).scrollTop();
             var hei=$('#exampleModal2').height();
+            var top = $(document).scrollTop()+200;
             var heitop=$('#exampleModal2').offset().top;
-            if(heitop>0){
+            if(heitop>0 && heitop<top){
               //$('#btnCollapseClose2').css('height');
+              var a =top-heitop;
+              var b =hei-a;
+              $('#btnCollapseClose2').css('margin-top','-'+b+'px');
+              console.log(a);
             }
             console.log(hei);
             console.log(top);
