@@ -1462,6 +1462,28 @@
           document.querySelector(idName).scrollIntoView({block: "start"});
   };
 
+  //在文档加载完毕后执行
+  $(document).ready(function(){
+        //开始监听滚动条btnCollapseClose2
+        $(window).scroll(function(){
+            var pingmuhei = $(window).height();
+            var top = $(document).scrollTop();
+            var exampleModal4hei = $('#exampleModal4').height();
+            var btnCollapseClose4hei = $('#btnCollapseClose4').height();
+            var exampleModal4top=$('#exampleModal4').offset().top;
+            var heitop4=$('#btnCollapseClose4').offset().top;
+            var dibugaodu=top+pingmuhei;
+            var xiaoshi4=exampleModal4top+exampleModal4hei+50;
+          if(heitop4>0){
+             if(dibugaodu<xiaoshi4 && dibugaodu>exampleModal4top ){
+                $('#btnCollapseClose4').addClass('fd4');
+             }else{
+                $('#btnCollapseClose4').removeClass('fd4');
+             }
+          }
+        })
+    })
+
 
 {% endjavascript %}
   
