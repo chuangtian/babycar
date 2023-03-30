@@ -1465,9 +1465,10 @@
             var pingmuhei = $(window).height();
             var top = $(document).scrollTop();
             var exampleModal2hei = $('#exampleModal2').height();
+            var exampleModal2top=$('#exampleModal2').offset().top;
             var heitop=$('#btnCollapseClose2').offset().top;
             var dibugaodu=top+pingmuhei;
-            var xiaoshi=top+exampleModal2hei;
+            var xiaoshi=exampleModal2top+exampleModal2hei;
             if(heitop>0 && heitop>xiaoshi){
                  $('#btnCollapseClose2').css('position','fixed');
                  $('#btnCollapseClose2').css('bottom','1vh');
