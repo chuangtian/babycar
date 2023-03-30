@@ -1462,8 +1462,10 @@
   $(document).ready(function(){
         //开始监听滚动条btnCollapseClose2
         $(window).scroll(function(){
+            var pingmuhei = $(window).height();
             var top = $(document).scrollTop();
             var heitop=$('#btnCollapseClose2').offset().top;
+            console.log(pingmuhei);
             console.log(top);
             console.log(heitop);
         })
