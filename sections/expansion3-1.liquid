@@ -1437,7 +1437,7 @@
       }else{
           $('.plus-html3').html('Learn More');
           $('#plus-icon3').removeClass('la-times');
-          $('#plus-icon3').addClass('la-plus');;
+          $('#plus-icon3').addClass('la-plus');
           // $('#exampleModal').removeClass('show');
           $('#exampleModal3').css('display','none');
           changeHash('#dv3');
@@ -1448,7 +1448,7 @@
       // 切换展开收缩区域的状态
         $('.plus-html3').html('Learn More');
         $('#plus-icon3').removeClass('la-times');
-        $('#plus-icon3').addClass('la-plus');;
+        $('#plus-icon3').addClass('la-plus');
         // $('#exampleModal').removeClass('show');
         $('#exampleModal3').css('display','none');
         changeHash('#dv3');
@@ -1461,6 +1461,28 @@
   function changeHash2(idName) {
           document.querySelector(idName).scrollIntoView({block: "start"});
   };
- 
+  
+ //在文档加载完毕后执行
+  $(document).ready(function(){
+        //开始监听滚动条btnCollapseClose2
+        $(window).scroll(function(){
+            var pingmuhei = $(window).height();
+            var top = $(document).scrollTop();
+            var exampleModal3hei = $('#exampleModal3').height();
+            var btnCollapseClose3hei = $('#btnCollapseClose3').height();
+            var exampleModal3top=$('#exampleModal3').offset().top;
+            var heitop3=$('#btnCollapseClose3').offset().top;
+            var dibugaodu=top+pingmuhei;
+            var xiaoshi3=exampleModal3top+exampleModal3hei+50;
+          if(heitop>0){
+             if(dibugaodu<xiaoshi3 && dibugaodu>exampleModal3top ){
+                $('#btnCollapseClose3').addClass('fd3');
+             }else{
+                $('#btnCollapseClose3').removeClass('fd3');
+             }
+          }
+        })
+    })
+
 {% endjavascript %}
   
