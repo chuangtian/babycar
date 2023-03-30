@@ -114,6 +114,7 @@
           "type": "image_parent",
           "settings": {
             "image": "shopify:\/\/shop_images\/DSC04462.jpg",
+            "image_mb": "shopify:\/\/shop_images\/DSC08227.jpg",
             "image_position": "8",
             "cl_img": "",
             "link_img1": "",
@@ -447,7 +448,7 @@
             "image": "shopify:\/\/shop_images\/DSC04825.jpg",
             "link": "",
             "text": "Text",
-            "text_cl": "#fff",
+            "text_cl": "#ffffff",
             "text_fs": 16
           }
         }
