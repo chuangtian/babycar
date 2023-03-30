@@ -1770,7 +1770,6 @@
         },
         "dadcb808-696e-4c62-94e6-806821e18544": {
           "type": "bl_image",
-          "disabled": true,
           "settings": {
             "col_dk": "6",
             "col_tb": "6",
@@ -1799,7 +1798,6 @@
         },
         "a7719cab-ba6b-4464-9f52-736e4e6101cd": {
           "type": "bl_text",
-          "disabled": true,
           "settings": {
             "col_dk": "6",
             "col_tb": "6",
