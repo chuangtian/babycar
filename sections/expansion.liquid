@@ -8,7 +8,12 @@
       transition: height 1s linear;
       overflow: hidden;
     }
-
+@media screen and (min-width:750px){
+      .pcg{
+        width:50%; 
+        margin:0 auto;
+      }
+  }
 {%- endstyle -%}
 
 {%- liquid
@@ -149,7 +154,7 @@
                   </div>
                 </div>
               </div>
-              <div class="image-with-text__media-item  image-with-text__media-item--{{ section.settings.desktop_image_width }} image-with-text__media-item--{{ section.settings.desktop_content_position }} product__media-wrapper">
+              <div class="image-with-text__media-item pcg image-with-text__media-item--{{ section.settings.desktop_image_width }} image-with-text__media-item--{{ section.settings.desktop_content_position }} product__media-wrapper">
                 <div
                   class="image-with-text__media image-with-text__media--{{ section.settings.height }} gradient color-{{ section.settings.color_scheme }}  {% if block.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
                  
