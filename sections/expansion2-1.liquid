@@ -1464,6 +1464,7 @@
         $(window).scroll(function(){
             var pingmuhei = $(window).height();
             var top = $(document).scrollTop();
+            var exampleModal2hei = $('#exampleModal2').height();
             var heitop=$('#btnCollapseClose2').offset().top;
             var dibugaodu=top+pingmuhei;
             if(heitop>0 && heitop>dibugaodu){
@@ -1475,8 +1476,10 @@
                  $('#btnCollapseClose2').removeAttr('bottom');
                 console.log("tc12");
             }
+            
             console.log(pingmuhei);
             console.log(top);
+            console.log(exampleModal2hei);
             console.log(heitop);
             console.log(dibugaodu);
             console.log("tc4");
@@ -1484,6 +1487,13 @@
     })
 
 
+
+
+
+
+
+
+  
 
 
   
