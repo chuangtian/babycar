@@ -1458,13 +1458,21 @@
           document.querySelector(idName).scrollIntoView(true);
   };
 
+  //在文档加载完毕后执行
+  $(document).ready(function(){
+        //开始监听滚动条btnCollapseClose2
+        $(window).scroll(function(){
+            var hei=$('#exampleModal2').height();
+            var top = $(document).scrollTop()+200;
+            var heitop=$('#exampleModal2').offset().top;
+            console.log(hei);
+            console.log(top);
+            console.log(heitop);
+        })
+    })
 
 
 
-
-
-
-  
 
   
 {% endjavascript %}
