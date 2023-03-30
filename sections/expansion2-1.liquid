@@ -1460,11 +1460,14 @@
 
   //在文档加载完毕后执行
   $(document).ready(function(){
-        //开始监听滚动条
+        //开始监听滚动条btnCollapseClose2
         $(window).scroll(function(){
             var top = $(document).scrollTop();
-            var hei=$('#exampleModal2').css('height');
+            var hei=$('#exampleModal2').height();
             var heitop=$('#exampleModal2').offset().top;
+            if(heitop>0){
+              //$('#btnCollapseClose2').css('height');
+            }
             console.log(hei);
             console.log(top);
             console.log(heitop);
