@@ -1462,6 +1462,29 @@ function changeHash2(idName) {
   };
 
 
+  //在文档加载完毕后执行
+  $(document).ready(function(){
+        //开始监听滚动条btnCollapseClose2
+        $(window).scroll(function(){
+            var pingmuhei = $(window).height();
+            var top = $(document).scrollTop();
+            var exampleModal5hei = $('#exampleModal5').height();
+            var btnCollapseClose5hei = $('#btnCollapseClose5').height();
+            var exampleModal5top=$('#exampleModal5').offset().top;
+            var heitop5=$('#btnCollapseClose5').offset().top;
+            var dibugaodu=top+pingmuhei;
+            var xiaoshi5=exampleModal5top+exampleModal5hei+50;
+          if(heitop5>0){
+             if(dibugaodu<xiaoshi5 && dibugaodu>exampleModal5top ){
+                $('#btnCollapseClose5').addClass('fd5');
+             }else{
+                $('#btnCollapseClose5').removeClass('fd5');
+             }
+          }
+        })
+    })
+
+
   
 {% endjavascript %}
   
