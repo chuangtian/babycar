@@ -1,6 +1,12 @@
 <!-- sections/image_text.liquid -->
 {{ 'section.css' | asset_url | stylesheet_tag }}
 {{ 'image-text.css' | asset_url | stylesheet_tag }}
+{%- style -%}
+    .fd5{
+      position:fixed !important;
+      bottom:1vh !important;
+    }
+{%- endstyle -%}
 {%- liquid
     assign sid = section.id
     assign se_stts = section.settings
