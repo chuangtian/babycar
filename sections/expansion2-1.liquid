@@ -1468,8 +1468,8 @@
             var exampleModal2top=$('#exampleModal2').offset().top;
             var heitop=$('#btnCollapseClose2').offset().top;
             var dibugaodu=top+pingmuhei;
-            var xiaoshi=exampleModal2top+exampleModal2hei;
-            if(heitop>0 && heitop>xiaoshi){
+            var xiaoshi=exampleModal2top+exampleModal2hei-100;
+            if(heitop>0 && heitop<xiaoshi){
                  $('#btnCollapseClose2').css('position','fixed');
                  $('#btnCollapseClose2').css('bottom','1vh');
                 console.log("tc1");
@@ -1484,18 +1484,9 @@
             console.log(xiaoshi);
             console.log(heitop);
             console.log(dibugaodu);
-            console.log("tc8");
+            console.log("tc9");
         })
     })
-
-
-
-
-
-
-
-
-
 
 
 
