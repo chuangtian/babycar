@@ -1466,7 +1466,7 @@
             var top = $(document).scrollTop();
             var heitop=$('#btnCollapseClose2').offset().top;
             var dibugaodu=top+pingmuhei;
-            if(heitop>0 && heitop<dibugaodu){
+            if(heitop>0 && heitop>dibugaodu){
                  $('#btnCollapseClose2').css('position','fixed');
                  $('#btnCollapseClose2').css('bottom','1vh');
                 console.log("tc1");
@@ -1479,10 +1479,20 @@
             console.log(top);
             console.log(heitop);
             console.log(dibugaodu);
-            console.log("tc3");
+            console.log("tc4");
         })
     })
 
+
+
+
+
+
+
+
+
+
+  
 
 {% endjavascript %}
   
