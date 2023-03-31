@@ -889,7 +889,6 @@
         "115e92d1-2666-4f29-a705-4ed5fae40a2d": {
           "type": "bl_image",
           "settings": {
-            "image1": "shopify:\/\/shop_images\/trie_3c85136a-84ab-433a-be6d-8bb7b7bd5ae7.jpg",
             "col_dk": "6",
             "col_tb": "6",
             "layout_des": "carousel",
@@ -942,7 +941,6 @@
         "df620c53-de45-4b3b-80ed-055d7555417a": {
           "type": "bl_image",
           "settings": {
-            "image1": "shopify:\/\/shop_images\/speed.jpg",
             "col_dk": "6",
             "col_tb": "6",
             "layout_des": "carousel",
