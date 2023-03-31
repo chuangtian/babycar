@@ -790,7 +790,7 @@
             "text_size": "40,15",
             "sub_heading": "",
             "heading": "Safety",
-            "text": "<p>The top priority for any parent is the safety of their child, and the HYPER GOGO ATV takes this seriously. With features like a rear disc brake, pneumatic tires, and adjustable speed modes, parents can trust that their child is riding a vehicle designed with safety in mind.<\/p>",
+            "text": "<p>Hypergogo Cruiser 12 is designed with safety as the top priority. It features a rear hub brake system that ensures reliable and efficient braking performance. The moderate top speed of 16 km\/h also ensures the safety of children during operation.<\/p>",
             "button_label": "Button label",
             "button_link": "",
             "open_link": "_blank",
@@ -813,7 +813,6 @@
         "template--18304757367061__cca029e1-dddb-4119-9859-598826dc20a8-1679983264222a20cc-0": {
           "type": "bl_image",
           "settings": {
-            "image1": "shopify:\/\/shop_images\/diesha.jpg",
             "col_dk": "6",
             "col_tb": "6",
             "layout_des": "carousel",
