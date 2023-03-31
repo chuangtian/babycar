@@ -1191,7 +1191,7 @@
             "txt_align": "center",
             "sub_heading": "",
             "heading": "Motor",
-            "text": "<p>The 36V 350W brushed motor provides strong and consistent power to the ATV, ensuring that it can tackle hills and rough terrain with ease.<\/p>",
+            "text": "<p>Equipped with a 24V 150W electric motor for a thrilling driving experience.<\/p>",
             "subhd_color": "#222222",
             "hd_color": "#ffffff",
             "des_color": "#ffffff",
@@ -1215,7 +1215,7 @@
             "txt_align": "center",
             "sub_heading": "",
             "heading": "Battery",
-            "text": "<p>The Li-ion 18650 37V\/5.2A battery provides up to 60 minutes of ride time, depending on the rider's weight and road conditions.<\/p>",
+            "text": "<p>Powered by a 24V 5A lead acid battery for stable power support.<\/p>",
             "subhd_color": "#222222",
             "hd_color": "#ffffff",
             "des_color": "#ffffff",
@@ -1260,6 +1260,7 @@
         },
         "dd061833-f602-4cbe-884b-e33cfa0adcaa": {
           "type": "bl_text",
+          "disabled": true,
           "settings": {
             "col_dk": "6",
             "col_tb": "6",
@@ -1284,6 +1285,7 @@
         },
         "4568870d-04b7-4900-8672-1f9b0103dd8b": {
           "type": "bl_image",
+          "disabled": true,
           "settings": {
             "col_dk": "6",
             "col_tb": "6",
@@ -1318,8 +1320,8 @@
             "text_size": "40,15",
             "txt_align": "center",
             "sub_heading": "",
-            "heading": "Suspension",
-            "text": "<p>The suspension system helps to absorb shocks and vibrations, providing a smoother and more comfortable ride.<\/p>",
+            "heading": "Weight capacity",
+            "text": "<p>Maximum load of 65 kg, suitable for children of different sizes.<\/p>",
             "subhd_color": "#222222",
             "hd_color": "#ffffff",
             "des_color": "#ffffff",
@@ -1364,6 +1366,7 @@
         },
         "634f8741-2d6f-49d8-9f0a-47db2e6267f5": {
           "type": "bl_image",
+          "disabled": true,
           "settings": {
             "col_dk": "6",
             "col_tb": "6",
@@ -1392,6 +1395,7 @@
         },
         "47d3cee3-0c3a-47a7-990f-ee5281eb5508": {
           "type": "bl_text",
+          "disabled": true,
           "settings": {
             "col_dk": "6",
             "col_tb": "6",
