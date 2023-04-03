@@ -1400,15 +1400,6 @@
         "code_cus_css": ""
       }
     },
-    "social_widget_53816": {
-      "type": "social-widget",
-      "disabled": true,
-      "settings": {
-        "social_widget_id": "53816",
-        "social_product_id": "none",
-        "social_widget_type": "none"
-      }
-    },
     "97eefcc2-3af8-4bb0-bf22-3ac8f4273adf": {
       "type": "expansion",
       "disabled": true,
@@ -1737,6 +1728,84 @@
         "use_cus_css": false,
         "code_cus_css": ""
       }
+    },
+    "be730dd6-81c8-4a6b-9e7a-957676bb3c2f": {
+      "type": "blog-post",
+      "settings": {
+        "design_heading": "1",
+        "heading_align": "t4s-text-center",
+        "top_heading": "Blog post",
+        "icon_heading": "las la-gem",
+        "top_subheading": "",
+        "tophead_mb": 30,
+        "blog": "",
+        "post_des": "1",
+        "show_cate": false,
+        "show_tags": false,
+        "show_cnt": true,
+        "show_au": true,
+        "show_dt": true,
+        "show_cm": false,
+        "show_rm": false,
+        "show_irm": false,
+        "date": "date",
+        "content_align": "t4s-text-start",
+        "limit": 8,
+        "img_effect": "none",
+        "b_effect": "none",
+        "image_ratio": "ratioadapt",
+        "image_size": "cover",
+        "image_position": "8",
+        "col_dk": "3",
+        "col_tb": "2",
+        "col_mb": "1",
+        "space_h_item": "30",
+        "space_v_item": "30",
+        "space_h_item_mb": "10",
+        "space_v_item_mb": "10",
+        "layout_des": "2",
+        "loop": true,
+        "au_time": 0,
+        "au_hover": true,
+        "nav_btn": false,
+        "btn_vi": "hover",
+        "btn_owl": "default",
+        "btn_shape": "none",
+        "btn_cl": "dark",
+        "btn_size": "small",
+        "btn_hidden_mobile": true,
+        "nav_dot": false,
+        "dot_owl": "default",
+        "dots_cl": "dark",
+        "dots_round": true,
+        "dots_space": 10,
+        "dots_hidden_mobile": false,
+        "use_pagination": "none",
+        "enable_bar_lm": true,
+        "btn_icon": false,
+        "button_style": "default",
+        "btns_size": "large",
+        "btns_cl": "dark",
+        "button_effect": "default",
+        "btn_pos": "t4s-text-center",
+        "layout": "t4s-container-wrap",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": ",,50px,",
+        "pd": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": "",
+        "use_cus_css": false,
+        "code_cus_css": ""
+      }
+    },
+    "social_widget_53816": {
+      "type": "social-widget",
+      "settings": {
+        "social_widget_id": "53816",
+        "social_product_id": "none",
+        "social_widget_type": "none"
+      }
     }
   },
   "order": [
@@ -1746,10 +1815,11 @@
     "b856f38b-5bc5-49c7-a3df-40b5f6095bd2",
     "06cf74e3-e93f-44a6-9422-d8fbf516e684",
     "ab14f150-e425-4202-8b7f-813c05bed177",
-    "social_widget_53816",
     "97eefcc2-3af8-4bb0-bf22-3ac8f4273adf",
     "c3ec41c7-d7f7-40cc-b772-a8bb327ac9a7",
     "71d89a81-d119-4ef7-b099-d8fa4ebb328d",
-    "fb039f39-4044-4d73-b30a-25448333fa21"
+    "fb039f39-4044-4d73-b30a-25448333fa21",
+    "be730dd6-81c8-4a6b-9e7a-957676bb3c2f",
+    "social_widget_53816"
   ]
 }
