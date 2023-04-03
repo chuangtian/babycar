@@ -1551,9 +1551,9 @@
         "template--18304757039381__71d89a81-d119-4ef7-b099-d8fa4ebb328d-16804889892f8fe06e-2": {
           "type": "newsletter",
           "settings": {
-            "form_width": 0,
+            "form_width": 600,
             "form_width_mb": 0,
-            "newl_des": "1",
+            "newl_des": "2",
             "news_align": "center",
             "newl_size": "small",
             "btn_icon": false,
