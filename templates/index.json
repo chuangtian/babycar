@@ -1402,6 +1402,7 @@
     },
     "social_widget_53816": {
       "type": "social-widget",
+      "disabled": true,
       "settings": {
         "social_widget_id": "53816",
         "social_product_id": "none",
@@ -1496,6 +1497,147 @@
         "cl_bg": "",
         "cl_bg_gradient": "",
         "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": "",
+        "use_cus_css": false,
+        "code_cus_css": ""
+      }
+    },
+    "c3ec41c7-d7f7-40cc-b772-a8bb327ac9a7": {
+      "type": "testimonials",
+      "blocks": {
+        "template--18304757039381__c3ec41c7-d7f7-40cc-b772-a8bb327ac9a7-16805131757d782337-0": {
+          "type": "quote",
+          "settings": {
+            "content": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "title": "Olivia Sterling",
+            "pos": "",
+            "rating": 5
+          }
+        },
+        "template--18304757039381__c3ec41c7-d7f7-40cc-b772-a8bb327ac9a7-16805131757d782337-1": {
+          "type": "quote",
+          "settings": {
+            "content": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "title": "Harper Lane",
+            "pos": "",
+            "rating": 5
+          }
+        },
+        "template--18304757039381__c3ec41c7-d7f7-40cc-b772-a8bb327ac9a7-16805131757d782337-2": {
+          "type": "quote",
+          "settings": {
+            "content": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "title": "Jackson Carter",
+            "pos": "",
+            "rating": 5
+          }
+        }
+      },
+      "block_order": [
+        "template--18304757039381__c3ec41c7-d7f7-40cc-b772-a8bb327ac9a7-16805131757d782337-0",
+        "template--18304757039381__c3ec41c7-d7f7-40cc-b772-a8bb327ac9a7-16805131757d782337-1",
+        "template--18304757039381__c3ec41c7-d7f7-40cc-b772-a8bb327ac9a7-16805131757d782337-2"
+      ],
+      "settings": {
+        "design_heading": "1",
+        "heading_align": "t4s-text-center",
+        "top_heading": "Testimonials",
+        "icon_heading": "las la-gem",
+        "top_subheading": "",
+        "tophead_mb": 30,
+        "ter_des": "1",
+        "cl_name": "#222222",
+        "cl_content": "#878787",
+        "cl_bd": "",
+        "cl_bg_item": "",
+        "bdr": 0,
+        "content_align": "text-start",
+        "col_dk": "3",
+        "col_tb": "2",
+        "col_mb": "1",
+        "space_h_item": "30",
+        "space_v_item": "30",
+        "space_h_item_mb": "10",
+        "space_v_item_mb": "10",
+        "layout_des": "1",
+        "loop": true,
+        "au_time": 0,
+        "au_hover": true,
+        "nav_btn": false,
+        "btn_vi": "hover",
+        "btn_owl": "default",
+        "btn_shape": "none",
+        "btn_cl": "dark",
+        "btn_size": "small",
+        "btn_hidden_mobile": true,
+        "nav_dot": false,
+        "dot_owl": "default",
+        "dots_cl": "dark",
+        "dots_round": true,
+        "dots_space": 10,
+        "dots_hidden_mobile": false,
+        "layout": "t4s-container-wrap",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": ",,50px,",
+        "pd": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": "",
+        "use_cus_css": false,
+        "code_cus_css": ""
+      }
+    },
+    "fb039f39-4044-4d73-b30a-25448333fa21": {
+      "type": "about_us",
+      "blocks": {
+        "template--18304757039381__fb039f39-4044-4d73-b30a-25448333fa21-1680512020f858e797-0": {
+          "type": "bl_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/parents_play_6cb29443-03b5-401a-93e3-3b2832945ff5.jpg",
+            "use_border": true,
+            "video_url": "",
+            "mgb": 15,
+            "mgb_mb": 10
+          }
+        },
+        "template--18304757039381__fb039f39-4044-4d73-b30a-25448333fa21-1680512020f858e797-1": {
+          "type": "bl_text",
+          "settings": {
+            "text": "<p>Hyper Gogo is a brand dedicated to providing high-quality and safe outdoor recreational products for children. Our mission is to encourage children to explore the world around them and to have fun while doing it.<\/p><p>Our brand was born out of a passion for outdoor adventure and a desire to share that passion with the next generation. We believe that spending time outside, away from screens and devices, is essential for a child's physical and mental development.<\/p><p>At Hyper Gogo, safety is our top priority. We design our products with safety features that meet or exceed industry standards, and we use only the best materials to ensure durability and reliability.<\/p><p>We are committed to making our products accessible to families from all walks of life, and we strive to provide excellent customer service to all our customers. We believe in creating a community of like-minded individuals who share our passion for adventure and the outdoors.<\/p><p>Join us on our journey to inspire the next generation of adventurers. Explore the world with Hyper Gogo!<\/p>",
+            "mgb": 25,
+            "mgb_mb": 10
+          }
+        },
+        "template--18304757039381__fb039f39-4044-4d73-b30a-25448333fa21-1680512020f858e797-2": {
+          "type": "bl_sig",
+          "settings": {
+            "mgb": 15,
+            "mgb_mb": 10
+          }
+        }
+      },
+      "block_order": [
+        "template--18304757039381__fb039f39-4044-4d73-b30a-25448333fa21-1680512020f858e797-0",
+        "template--18304757039381__fb039f39-4044-4d73-b30a-25448333fa21-1680512020f858e797-1",
+        "template--18304757039381__fb039f39-4044-4d73-b30a-25448333fa21-1680512020f858e797-2"
+      ],
+      "settings": {
+        "design_heading": "1",
+        "heading_align": "t4s-text-center",
+        "top_heading": "",
+        "icon_heading": "las la-gem",
+        "top_subheading": "",
+        "tophead_mb": 30,
+        "txt_align": "center",
+        "image_ratio": "ratio16_9",
+        "image_size": "cover",
+        "image_position": "8",
+        "layout": "t4s-container-wrap",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": ",,50px,",
         "pd": "",
         "mg_mb": ",,30px,",
         "pd_mb": "",
@@ -1606,6 +1748,8 @@
     "ab14f150-e425-4202-8b7f-813c05bed177",
     "social_widget_53816",
     "97eefcc2-3af8-4bb0-bf22-3ac8f4273adf",
+    "c3ec41c7-d7f7-40cc-b772-a8bb327ac9a7",
+    "fb039f39-4044-4d73-b30a-25448333fa21",
     "71d89a81-d119-4ef7-b099-d8fa4ebb328d"
   ]
 }
