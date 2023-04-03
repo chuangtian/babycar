@@ -125,7 +125,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/DSC04825.jpg",
             "link": "",
-            "text": "Text",
+            "text": "<p style=\"width: 100%; text-align: center; font-size: 18px;\">\n  <span style=\"color: black; font-size: 15px;\">For Ages:<\/span>\n  <span style=\"font-size: 15px; font-weight: bold;\">10+ years old<\/span>\n  <br>\n  <span style=\"color: black; font-size: 15px;\">Child Height:<\/span>\n  <span style=\"font-size: 15px; font-weight: bold;\">37\"-63\"<\/span>\n<\/p>",
             "text_cl": "#ffffff",
             "text_fs": 16
           }
