@@ -175,7 +175,7 @@
         "layout": "t4s-container-fluid",
         "cl_bg": "#ffffff",
         "cl_bg_gradient": "",
-        "mg": ",,50px,",
+        "mg": ",,20px,",
         "pd": "",
         "mg_mb": ",,30px,",
         "pd_mb": "",
@@ -1580,6 +1580,62 @@
         "code_cus_css": ""
       }
     },
+    "fb039f39-4044-4d73-b30a-25448333fa21": {
+      "type": "about_us",
+      "blocks": {
+        "template--18304757039381__fb039f39-4044-4d73-b30a-25448333fa21-1680512020f858e797-0": {
+          "type": "bl_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/parents_5018ea5c-796a-40db-be7d-45125254c9c1.jpg",
+            "use_border": true,
+            "video_url": "",
+            "mgb": 15,
+            "mgb_mb": 10
+          }
+        },
+        "template--18304757039381__fb039f39-4044-4d73-b30a-25448333fa21-1680512020f858e797-1": {
+          "type": "bl_text",
+          "settings": {
+            "text": "<p>Hyper Gogo is a brand dedicated to providing high-quality and safe outdoor recreational products for children. Our mission is to encourage children to explore the world around them and to have fun while doing it.<\/p><p>Our brand was born out of a passion for outdoor adventure and a desire to share that passion with the next generation. We believe that spending time outside, away from screens and devices, is essential for a child's physical and mental development.<\/p><p>At Hyper Gogo, safety is our top priority. We design our products with safety features that meet or exceed industry standards, and we use only the best materials to ensure durability and reliability.<\/p><p>We are committed to making our products accessible to families from all walks of life, and we strive to provide excellent customer service to all our customers. We believe in creating a community of like-minded individuals who share our passion for adventure and the outdoors.<\/p><p>Join us on our journey to inspire the next generation of adventurers. Explore the world with Hyper Gogo!<\/p>",
+            "mgb": 25,
+            "mgb_mb": 10
+          }
+        },
+        "template--18304757039381__fb039f39-4044-4d73-b30a-25448333fa21-1680512020f858e797-2": {
+          "type": "bl_sig",
+          "settings": {
+            "mgb": 15,
+            "mgb_mb": 10
+          }
+        }
+      },
+      "block_order": [
+        "template--18304757039381__fb039f39-4044-4d73-b30a-25448333fa21-1680512020f858e797-0",
+        "template--18304757039381__fb039f39-4044-4d73-b30a-25448333fa21-1680512020f858e797-1",
+        "template--18304757039381__fb039f39-4044-4d73-b30a-25448333fa21-1680512020f858e797-2"
+      ],
+      "settings": {
+        "design_heading": "2",
+        "heading_align": "t4s-text-center",
+        "top_heading": "HYPER GOGO Brand Story",
+        "icon_heading": "las la-gem",
+        "top_subheading": "",
+        "tophead_mb": 30,
+        "txt_align": "center",
+        "image_ratio": "ratioadapt",
+        "image_size": "cover",
+        "image_position": "8",
+        "layout": "t4s-container-wrap",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": ",,50px,",
+        "pd": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": "",
+        "use_cus_css": false,
+        "code_cus_css": ""
+      }
+    },
     "71d89a81-d119-4ef7-b099-d8fa4ebb328d": {
       "type": "newsletter",
       "blocks": {
@@ -1667,62 +1723,6 @@
         "parallax": false,
         "mg": ",,30px,",
         "pd": "50px,,50px,",
-        "mg_mb": ",,30px,",
-        "pd_mb": "",
-        "use_cus_css": false,
-        "code_cus_css": ""
-      }
-    },
-    "fb039f39-4044-4d73-b30a-25448333fa21": {
-      "type": "about_us",
-      "blocks": {
-        "template--18304757039381__fb039f39-4044-4d73-b30a-25448333fa21-1680512020f858e797-0": {
-          "type": "bl_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/parents_5018ea5c-796a-40db-be7d-45125254c9c1.jpg",
-            "use_border": true,
-            "video_url": "",
-            "mgb": 15,
-            "mgb_mb": 10
-          }
-        },
-        "template--18304757039381__fb039f39-4044-4d73-b30a-25448333fa21-1680512020f858e797-1": {
-          "type": "bl_text",
-          "settings": {
-            "text": "<p>Hyper Gogo is a brand dedicated to providing high-quality and safe outdoor recreational products for children. Our mission is to encourage children to explore the world around them and to have fun while doing it.<\/p><p>Our brand was born out of a passion for outdoor adventure and a desire to share that passion with the next generation. We believe that spending time outside, away from screens and devices, is essential for a child's physical and mental development.<\/p><p>At Hyper Gogo, safety is our top priority. We design our products with safety features that meet or exceed industry standards, and we use only the best materials to ensure durability and reliability.<\/p><p>We are committed to making our products accessible to families from all walks of life, and we strive to provide excellent customer service to all our customers. We believe in creating a community of like-minded individuals who share our passion for adventure and the outdoors.<\/p><p>Join us on our journey to inspire the next generation of adventurers. Explore the world with Hyper Gogo!<\/p>",
-            "mgb": 25,
-            "mgb_mb": 10
-          }
-        },
-        "template--18304757039381__fb039f39-4044-4d73-b30a-25448333fa21-1680512020f858e797-2": {
-          "type": "bl_sig",
-          "settings": {
-            "mgb": 15,
-            "mgb_mb": 10
-          }
-        }
-      },
-      "block_order": [
-        "template--18304757039381__fb039f39-4044-4d73-b30a-25448333fa21-1680512020f858e797-0",
-        "template--18304757039381__fb039f39-4044-4d73-b30a-25448333fa21-1680512020f858e797-1",
-        "template--18304757039381__fb039f39-4044-4d73-b30a-25448333fa21-1680512020f858e797-2"
-      ],
-      "settings": {
-        "design_heading": "1",
-        "heading_align": "t4s-text-center",
-        "top_heading": "HYPER GOGO Brand Story",
-        "icon_heading": "las la-gem",
-        "top_subheading": "",
-        "tophead_mb": 30,
-        "txt_align": "center",
-        "image_ratio": "ratioadapt",
-        "image_size": "cover",
-        "image_position": "8",
-        "layout": "t4s-container-wrap",
-        "cl_bg": "",
-        "cl_bg_gradient": "",
-        "mg": ",,50px,",
-        "pd": "",
         "mg_mb": ",,30px,",
         "pd_mb": "",
         "use_cus_css": false,
@@ -1817,8 +1817,8 @@
     "ab14f150-e425-4202-8b7f-813c05bed177",
     "97eefcc2-3af8-4bb0-bf22-3ac8f4273adf",
     "c3ec41c7-d7f7-40cc-b772-a8bb327ac9a7",
-    "71d89a81-d119-4ef7-b099-d8fa4ebb328d",
     "fb039f39-4044-4d73-b30a-25448333fa21",
+    "71d89a81-d119-4ef7-b099-d8fa4ebb328d",
     "be730dd6-81c8-4a6b-9e7a-957676bb3c2f",
     "social_widget_53816"
   ]
