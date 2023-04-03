@@ -107,6 +107,104 @@
         "code_cus_css": ""
       }
     },
+    "aa8fe0bc-38cb-47f0-bba7-0ea68a46ff8b": {
+      "type": "Image-gallery2",
+      "blocks": {
+        "template--18304757039381__aa8fe0bc-38cb-47f0-bba7-0ea68a46ff8b-1680522241f5c3e4c5-0": {
+          "type": "image_item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MB-03.162.png",
+            "link": "",
+            "text": "Text",
+            "text_cl": "#fff",
+            "text_fs": 16
+          }
+        },
+        "template--18304757039381__aa8fe0bc-38cb-47f0-bba7-0ea68a46ff8b-1680522241f5c3e4c5-1": {
+          "type": "image_item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MB-03.150.png",
+            "link": "",
+            "text": "Text",
+            "text_cl": "#fff",
+            "text_fs": 16
+          }
+        },
+        "template--18304757039381__aa8fe0bc-38cb-47f0-bba7-0ea68a46ff8b-1680522241f5c3e4c5-2": {
+          "type": "image_item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MB-03.212.png",
+            "link": "",
+            "text": "Text",
+            "text_cl": "#fff",
+            "text_fs": 16
+          }
+        },
+        "template--18304757039381__aa8fe0bc-38cb-47f0-bba7-0ea68a46ff8b-1680522241f5c3e4c5-3": {
+          "type": "image_item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MB-03.209.png",
+            "link": "",
+            "text": "Text",
+            "text_cl": "#fff",
+            "text_fs": 16
+          }
+        }
+      },
+      "block_order": [
+        "template--18304757039381__aa8fe0bc-38cb-47f0-bba7-0ea68a46ff8b-1680522241f5c3e4c5-0",
+        "template--18304757039381__aa8fe0bc-38cb-47f0-bba7-0ea68a46ff8b-1680522241f5c3e4c5-1",
+        "template--18304757039381__aa8fe0bc-38cb-47f0-bba7-0ea68a46ff8b-1680522241f5c3e4c5-2",
+        "template--18304757039381__aa8fe0bc-38cb-47f0-bba7-0ea68a46ff8b-1680522241f5c3e4c5-3"
+      ],
+      "settings": {
+        "design_heading": "1",
+        "heading_align": "t4s-text-center",
+        "top_heading": "Gallery",
+        "icon_heading": "las la-gem",
+        "top_subheading": "",
+        "tophead_mb": 30,
+        "layout_des": "2",
+        "click_image": "data-t4s-gallery",
+        "nav_thumbs": true,
+        "open_link": "_blank",
+        "item_rd": 0,
+        "img_effect": "none",
+        "b_effect": "none",
+        "image_ratio": "ratioadapt",
+        "image_size": "cover",
+        "image_position": "8",
+        "col_dk": "1",
+        "col_tb": "2",
+        "col_mb": "2",
+        "space_item": "30",
+        "space_item_mb": "10",
+        "loop": true,
+        "au_time": 0,
+        "au_hover": true,
+        "nav_btn": true,
+        "btn_vi": "hover",
+        "btn_owl": "default",
+        "btn_shape": "none",
+        "btn_cl": "dark",
+        "btn_size": "small",
+        "btn_hidden_mobile": false,
+        "nav_dot": true,
+        "dot_owl": "default",
+        "dots_cl": "dark",
+        "dots_round": true,
+        "dots_space": 10,
+        "layout": "t4s-container-wrap",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": ",,50px,",
+        "pd": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": "",
+        "use_cus_css": false,
+        "code_cus_css": ""
+      }
+    },
     "afa6061b-68dc-4f47-87f5-726bf4d7dfe3": {
       "type": "Image-gallery2",
       "blocks": {
@@ -1810,6 +1908,7 @@
   },
   "order": [
     "9b6ef2dc-8171-49a3-80fe-46d052e3d063",
+    "aa8fe0bc-38cb-47f0-bba7-0ea68a46ff8b",
     "afa6061b-68dc-4f47-87f5-726bf4d7dfe3",
     "7037844d-65d9-4da0-9a8a-85d8a6b55554",
     "b856f38b-5bc5-49c7-a3df-40b5f6095bd2",
