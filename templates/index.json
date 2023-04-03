@@ -1409,6 +1409,7 @@
     },
     "97eefcc2-3af8-4bb0-bf22-3ac8f4273adf": {
       "type": "expansion",
+      "disabled": true,
       "blocks": {
         "template--18295207035157__97eefcc2-3af8-4bb0-bf22-3ac8f4273adf-16793194697a65bd73-0": {
           "type": "bl_image",
