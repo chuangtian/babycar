@@ -115,7 +115,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/DSC04818.jpg",
             "link": "",
-            "text": "<p style=\"width: 100%; text-align: center; font-size: 18px;\">\n  <span style=\"color: red; font-size: 20px;\">For Ages:<\/span>\n  <span style=\"font-size: 20px;\">10+ years old<\/span>\n  <br>\n  <span style=\"color: red; font-size: 20px;\">Child Height:<\/span>\n  <span style=\"font-size: 20px;\">95-130cm<\/span>\n<\/p>",
+            "text": "<p style=\"width: 100%; text-align: center; font-size: 18px;\">\n  <span style=\"color: black; font-size: 15px;\">For Ages:<\/span>\n  <span style=\"font-size: 15px; font-weight: bold;\">10+ years old<\/span>\n  <br>\n  <span style=\"color: black; font-size: 15px;\">Child Height:<\/span>\n  <span style=\"font-size: 15px; font-weight: bold;\">95-130cm<\/span>\n<\/p>",
             "text_cl": "#333333",
             "text_fs": 40
           }
