@@ -155,7 +155,7 @@
         "col_dk": "2",
         "col_tb": "2",
         "col_mb": "1",
-        "space_item": "30",
+        "space_item": "10",
         "space_item_mb": "10",
         "loop": true,
         "au_time": 0,
