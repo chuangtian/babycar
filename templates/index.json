@@ -126,7 +126,7 @@
             "image": "shopify:\/\/shop_images\/DSC04825.jpg",
             "link": "",
             "text": "<p style=\"width: 100%; text-align: center; font-size: 18px;\">\n  <span1 style=\"color: black; font-size: 15px;\">For Ages:\n  <span style=\"font-size: 15px; font-weight: bold;\">10+ years old<\/span>\n  <br>\n  <span1 style=\"color: black; font-size: 15px;\">Child Height:\n  <span style=\"font-size: 15px; font-weight: bold;\">37\"-63\"<\/span>\n<\/span1><\/span1><\/p>",
-            "text_cl": "#ffffff",
+            "text_cl": "#000000",
             "text_fs": 16
           }
         }
