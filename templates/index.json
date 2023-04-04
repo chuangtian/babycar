@@ -1937,14 +1937,14 @@
             "mgb_mb": 10
           }
         },
-        "8b8e2e5a-7c4b-4a29-acad-161b831466e4": {
+        "c85a5006-4402-426f-8c86-62ea1e129ec4": {
           "type": "bl_text",
           "settings": {
-            "text": "<style>.show_more{text-decoration: underline !important;color: var(--text-color) !important;}<\/style><p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store...<a class=\"show_more\" data-bs-toggle=\"collapse\" role=\"button\" href=\"#collapseExample\">Show more<\/a><\/p>",
+            "text": "<style>.show_more{text-decoration: underline !important;color: var(--text-color) !important;}<\/style><p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store...<a class=\"show_more d-none\" data-bs-toggle=\"collapse\" role=\"button\" href=\"#collapseExample\">Show more<\/a><\/p>",
             "mgb": 25,
             "mgb_mb": 10,
             "hide_text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "show": "collapse show"
+            "show": "collapse"
           }
         }
       },
@@ -1952,7 +1952,7 @@
         "template--18304757039381__8d5fc824-2ba3-4059-af0e-761edcaba86b-1680586644101a6594-0",
         "template--18304757039381__8d5fc824-2ba3-4059-af0e-761edcaba86b-1680586644101a6594-1",
         "template--18304757039381__8d5fc824-2ba3-4059-af0e-761edcaba86b-1680586644101a6594-2",
-        "8b8e2e5a-7c4b-4a29-acad-161b831466e4"
+        "c85a5006-4402-426f-8c86-62ea1e129ec4"
       ],
       "settings": {
         "design_heading": "1",
