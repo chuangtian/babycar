@@ -1969,6 +1969,7 @@
         "template--18304757039381__04dadbf8-42cc-4323-b808-038674a369f9-1680598219403eb751-0": {
           "type": "bl_image",
           "settings": {
+            "image1": "shopify:\/\/shop_images\/MB-03.154.png",
             "col_dk": "6",
             "col_tb": "6",
             "layout_des": "carousel",
@@ -2024,7 +2025,8 @@
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "text1": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "text2": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "text3": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "text3": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/MB-03.211A.jpg"
           }
         }
       },
