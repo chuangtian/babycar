@@ -771,7 +771,10 @@
 {% endschema %}
 
 {% javascript %}
-  $(".show_more ").click(function(){
+  $(".show_more").click(function(){
     $(this).hide();
+  });
+  $(".hide_more").click(function(){
+    $(".show_more").show();
   });
 {% endjavascript %}
