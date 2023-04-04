@@ -1924,7 +1924,8 @@
           "settings": {
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
             "mgb": 25,
-            "mgb_mb": 10
+            "mgb_mb": 10,
+            "hide_text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
           }
         },
         "template--18304757039381__8d5fc824-2ba3-4059-af0e-761edcaba86b-1680586644101a6594-2": {
@@ -1938,9 +1939,10 @@
         "9719c8ce-d747-4f03-be5f-56df79712f21": {
           "type": "bl_text",
           "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text": "Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.",
             "mgb": 25,
-            "mgb_mb": 10
+            "mgb_mb": 10,
+            "hide_text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
           }
         }
       },
