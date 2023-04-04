@@ -1939,7 +1939,7 @@
         "9719c8ce-d747-4f03-be5f-56df79712f21": {
           "type": "bl_text",
           "settings": {
-            "text": "<style>\n.show_more{\n    text-decoration: underline !important;\n\n}\n<\/style>\n<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store. <a class=\"show_more\" href=\"#\">Show more<\/a><\/p>",
+            "text": "<style>\n.show_more{\n    text-decoration: underline !important;\n color:var(--text-color);\n}\n<\/style>\n<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store. <a class=\"show_more\" href=\"#\">Show more<\/a><\/p>",
             "mgb": 25,
             "mgb_mb": 10,
             "hide_text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
