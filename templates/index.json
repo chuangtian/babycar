@@ -1940,7 +1940,7 @@
         "c85a5006-4402-426f-8c86-62ea1e129ec4": {
           "type": "bl_text",
           "settings": {
-            "text": "<style>.show_more{text-decoration: underline !important;color: var(--text-color) !important;}<\/style><p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<a class=\"show_more d-none\" data-bs-toggle=\"collapse\" role=\"button\" href=\"#collapseExample\">..Show more<\/a><\/p>",
+            "text": "<style>.show_more{text-decoration: underline !important;color: var(--text-color) !important;}<\/style><p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<a class=\"show_more\" data-bs-toggle=\"collapse\" role=\"button\" href=\"#collapseExample\">..Show more<\/a><\/p>",
             "mgb": 25,
             "mgb_mb": 10,
             "hide_text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
