@@ -1910,18 +1910,10 @@
       "blocks": {
         "template--18304757039381__78a4ff44-e993-4004-91e5-a895c4cc4cc8-1680592983ae4f5d43-0": {
           "type": "bl_image",
-          "disabled": true,
           "settings": {
+            "image": "shopify:\/\/shop_images\/parents_5018ea5c-796a-40db-be7d-45125254c9c1.jpg",
             "use_border": true,
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "mgb": 15,
-            "mgb_mb": 10
-          }
-        },
-        "template--18304757039381__78a4ff44-e993-4004-91e5-a895c4cc4cc8-1680592983ae4f5d43-2": {
-          "type": "bl_sig",
-          "settings": {
-            "image_sig": "shopify:\/\/shop_images\/parents_5018ea5c-796a-40db-be7d-45125254c9c1.jpg",
+            "video_url": "",
             "mgb": 15,
             "mgb_mb": 10
           }
@@ -1933,14 +1925,21 @@
             "mgb": 25,
             "mgb_mb": 10,
             "hide_text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "show": "collapse"
+            "show": "collapse show"
+          }
+        },
+        "template--18304757039381__78a4ff44-e993-4004-91e5-a895c4cc4cc8-1680592983ae4f5d43-2": {
+          "type": "bl_sig",
+          "settings": {
+            "mgb": 15,
+            "mgb_mb": 10
           }
         }
       },
       "block_order": [
         "template--18304757039381__78a4ff44-e993-4004-91e5-a895c4cc4cc8-1680592983ae4f5d43-0",
-        "template--18304757039381__78a4ff44-e993-4004-91e5-a895c4cc4cc8-1680592983ae4f5d43-2",
-        "template--18304757039381__78a4ff44-e993-4004-91e5-a895c4cc4cc8-1680592983ae4f5d43-1"
+        "template--18304757039381__78a4ff44-e993-4004-91e5-a895c4cc4cc8-1680592983ae4f5d43-1",
+        "template--18304757039381__78a4ff44-e993-4004-91e5-a895c4cc4cc8-1680592983ae4f5d43-2"
       ],
       "settings": {
         "design_heading": "1",
