@@ -1925,7 +1925,8 @@
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
             "mgb": 25,
             "mgb_mb": 10,
-            "hide_text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+            "hide_text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "show": "block"
           }
         },
         "template--18304757039381__8d5fc824-2ba3-4059-af0e-761edcaba86b-1680586644101a6594-2": {
@@ -1936,13 +1937,14 @@
             "mgb_mb": 10
           }
         },
-        "9719c8ce-d747-4f03-be5f-56df79712f21": {
+        "75078c58-48e0-4924-873e-eb53e7f0316d": {
           "type": "bl_text",
           "settings": {
-            "text": "<style>\n.show_more{\ntext-decoration: underline !important;color: var(--text-color);\n}\n<\/style>\n<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store. <a class=\"show_more\" href=\"#\">Show more<\/a><\/p>",
+            "text": "<style>.show_more{text-decoration: underline !important;color: var(--text-color) !important;}<\/style><p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store...<a class=\"show_more\" data-bs-toggle=\"collapse\" role=\"button\" href=\"#collapseExample\">Show more<\/a><\/p>",
             "mgb": 25,
             "mgb_mb": 10,
-            "hide_text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+            "hide_text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "show": "block"
           }
         }
       },
@@ -1950,7 +1952,7 @@
         "template--18304757039381__8d5fc824-2ba3-4059-af0e-761edcaba86b-1680586644101a6594-0",
         "template--18304757039381__8d5fc824-2ba3-4059-af0e-761edcaba86b-1680586644101a6594-1",
         "template--18304757039381__8d5fc824-2ba3-4059-af0e-761edcaba86b-1680586644101a6594-2",
-        "9719c8ce-d747-4f03-be5f-56df79712f21"
+        "75078c58-48e0-4924-873e-eb53e7f0316d"
       ],
       "settings": {
         "design_heading": "1",
