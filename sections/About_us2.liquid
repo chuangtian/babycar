@@ -60,7 +60,21 @@
                                 </div>
                             {%- when 'bl_text' -%}
                                 <div class="t4s-about-us-txt" style="--mgb:{{bk_stts.mgb}}px;--mgb-mb:{{bk_stts.mgb_mb}}px;">{{bk_stts.text}}</div>
-                                <div  class="{{ bk_stts.show }}" id="collapseExample" class="t4s-about-us-txt" style="">{{bk_stts.hide_text}}</div>
+                                <div  class="{{ bk_stts.show }}" id="collapseExample" class="t4s-about-us-txt" style="">
+                                    {{bk_stts.hide_text}}
+                                     <div style=" display: flex;justify-content: center;align-items: center;">
+                                      <a  
+                                        
+                                        id="btnCollapseClose4"
+                                          style="margin-top: 10px;text-decoration: none;background: #ffffff73;color: #222222;border: 2px solid #222222;  --padding-btn: 0 6px;width: 40px;height: 40px;"  
+                                          class="t4s-btn t4s-btn-base t4s-btn-style-default t4s-btn-size-extra-medium t4s-btn-color-dark t4s-btn-effect-sweep-to-right t4s-btn-radius- fd4">
+                                         <i class="las la-times" style="font-size:20px"></i>
+                                         
+                                <!--         &nbsp  <span>Close</span> -->
+                                      </a>
+                                
+                                    </div>
+                                </div>
                             {%- when 'bl_sig' -%} 
                                 {%- assign image = bk_stts.image_sig -%}
                                 <div class="t4s-about_us_sig t4s-pr t4s-d-inline-block" style="--mgb:{{bk_stts.mgb}}px;--mgb-mb:{{bk_stts.mgb_mb}}px;">
