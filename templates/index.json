@@ -1904,6 +1904,65 @@
         "social_product_id": "none",
         "social_widget_type": "none"
       }
+    },
+    "78a4ff44-e993-4004-91e5-a895c4cc4cc8": {
+      "type": "About_us2",
+      "blocks": {
+        "template--18304757039381__78a4ff44-e993-4004-91e5-a895c4cc4cc8-1680592983ae4f5d43-0": {
+          "type": "bl_image",
+          "disabled": true,
+          "settings": {
+            "use_border": true,
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "mgb": 15,
+            "mgb_mb": 10
+          }
+        },
+        "template--18304757039381__78a4ff44-e993-4004-91e5-a895c4cc4cc8-1680592983ae4f5d43-2": {
+          "type": "bl_sig",
+          "settings": {
+            "image_sig": "shopify:\/\/shop_images\/parents_5018ea5c-796a-40db-be7d-45125254c9c1.jpg",
+            "mgb": 15,
+            "mgb_mb": 10
+          }
+        },
+        "template--18304757039381__78a4ff44-e993-4004-91e5-a895c4cc4cc8-1680592983ae4f5d43-1": {
+          "type": "bl_text",
+          "settings": {
+            "text": "<style>.show_more{text-decoration: underline !important;color: var(--text-color) !important;}<\/style><p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<a class=\"show_more\" data-bs-toggle=\"collapse\" role=\"button\" href=\"#collapseExample\">..Show more<\/a><\/p>",
+            "mgb": 25,
+            "mgb_mb": 10,
+            "hide_text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "show": "collapse"
+          }
+        }
+      },
+      "block_order": [
+        "template--18304757039381__78a4ff44-e993-4004-91e5-a895c4cc4cc8-1680592983ae4f5d43-0",
+        "template--18304757039381__78a4ff44-e993-4004-91e5-a895c4cc4cc8-1680592983ae4f5d43-2",
+        "template--18304757039381__78a4ff44-e993-4004-91e5-a895c4cc4cc8-1680592983ae4f5d43-1"
+      ],
+      "settings": {
+        "design_heading": "1",
+        "heading_align": "t4s-text-center",
+        "top_heading": "",
+        "icon_heading": "las la-gem",
+        "top_subheading": "",
+        "tophead_mb": 30,
+        "txt_align": "center",
+        "image_ratio": "ratio16_9",
+        "image_size": "cover",
+        "image_position": "8",
+        "layout": "t4s-container-wrap",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": ",,50px,",
+        "pd": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": "",
+        "use_cus_css": false,
+        "code_cus_css": ""
+      }
     }
   },
   "order": [
@@ -1919,6 +1978,7 @@
     "fb039f39-4044-4d73-b30a-25448333fa21",
     "71d89a81-d119-4ef7-b099-d8fa4ebb328d",
     "be730dd6-81c8-4a6b-9e7a-957676bb3c2f",
-    "social_widget_53816"
+    "social_widget_53816",
+    "78a4ff44-e993-4004-91e5-a895c4cc4cc8"
   ]
 }
