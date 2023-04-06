@@ -1538,11 +1538,11 @@
   <script>
         console.log('{{ section.id }}');
   // 获取展开按钮和收缩按钮的 DOM 元素
-  const btnCollapse+{{ section.id }} = document.getElementById('btnCollapse-{{ section.id }}');
-  const btnCollapseClose+{{sid}} = document.getElementById('btnCollapseClose-{{sid}}');
+  // const btnCollapse+{{ section.id }} = document.getElementById('btnCollapse-{{ section.id }}');
+  // const btnCollapseClose+{{sid}} = document.getElementById('btnCollapseClose-{{sid}}');
 
   // 为收缩按钮添加 click 事件监听器
-  btnCollapse{{sid}}.addEventListener('click', () => {
+    $("btnCollapse-{{ section.id }}").click(function(){
       // 切换展开收缩区域的状态
       var htmlFont=$('.plus-html-{{sid}}').html();
        console.log(htmlFont);
@@ -1565,8 +1565,32 @@
           changeHash('#dv-{{sid}}');
         console.log(21);
       }
-  });
-  btnCollapseClose{{sid}}.addEventListener('click', () => {
+    });
+  // btnCollapse{{sid}}.addEventListener('click', () => {
+  //     // 切换展开收缩区域的状态
+  //     var htmlFont=$('.plus-html-{{sid}}').html();
+  //      console.log(htmlFont);
+
+  //     if(htmlFont == 'Learn More'){
+  //         $('.plus-html-{{sid}}').html('Close');
+  //         $('#plus-icon-{{sid}}').removeClass('la-plus');
+  //         $('#plus-icon-{{sid}}').addClass('la-times');
+  //         // $('#exampleModal').toggleClass('show');
+  //         $('#exampleModal-{{sid}}').css('display','block');
+  //         changeHash2('#btnCollapse-{{sid}}');
+  //       console.log(11);
+
+  //     }else{
+  //         $('.plus-html-{{sid}}').html('Learn More');
+  //         $('#plus-icon-{{sid}}').removeClass('la-times');
+  //         $('#plus-icon-{{sid}}').addClass('la-plus');;
+  //         // $('#exampleModal').toggleClass('show');
+  //         $('#exampleModal-{{sid}}').css('display','none');
+  //         changeHash('#dv-{{sid}}');
+  //       console.log(21);
+  //     }
+  // });
+    $("btnCollapseClose-{{ section.id }}").click(function(){
       // 切换展开收缩区域的状态
         $('.plus-html-{{sid}}').html('Learn More');
         $('#plus-icon-{{sid}}').removeClass('la-times');
@@ -1574,8 +1598,18 @@
         // $('#exampleModal').toggleClass('show');
         $('#exampleModal-{{sid}}').css('display','none');
         changeHash('#dv-{{sid}}');
-    console.log(31);
-  });
+        console.log(31);
+    });
+  // btnCollapseClose{{sid}}.addEventListener('click', () => {
+  //     // 切换展开收缩区域的状态
+  //       $('.plus-html-{{sid}}').html('Learn More');
+  //       $('#plus-icon-{{sid}}').removeClass('la-times');
+  //       $('#plus-icon-{{sid}}').addClass('la-plus');;
+  //       // $('#exampleModal').toggleClass('show');
+  //       $('#exampleModal-{{sid}}').css('display','none');
+  //       changeHash('#dv-{{sid}}');
+  //   console.log(31);
+  // });
   function changeHash(idName) {
           document.querySelector(idName).scrollIntoView({block: "center"});
   };
