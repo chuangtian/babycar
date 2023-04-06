@@ -1538,8 +1538,8 @@
   <script>
         console.log('{{ section.id }}');
   // 获取展开按钮和收缩按钮的 DOM 元素
-  const btnCollapse{{ section.id }} = document.getElementById('btnCollapse-{{ section.id }}');
-  const btnCollapseClose{{sid}} = document.getElementById('btnCollapseClose-{{sid}}');
+  const btnCollapse+{{ section.id }} = document.getElementById('btnCollapse-{{ section.id }}');
+  const btnCollapseClose+{{sid}} = document.getElementById('btnCollapseClose-{{sid}}');
 
   // 为收缩按钮添加 click 事件监听器
   btnCollapse{{sid}}.addEventListener('click', () => {
@@ -1582,10 +1582,6 @@
 function changeHash2(idName) {
           document.querySelector(idName).scrollIntoView(true);
 };
-
-
-
-
 
 
 
