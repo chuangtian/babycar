@@ -1536,7 +1536,7 @@
   {%- endschema -%}
   
 {% javascript %}
-  
+    console.log({{ section.id }});
   // 获取展开按钮和收缩按钮的 DOM 元素
   const btnCollapse{{ section.id }} = document.getElementById('btnCollapse-{{ section.id }}');
   const btnCollapseClose{{sid}} = document.getElementById('btnCollapseClose-{{sid}}');
@@ -1584,6 +1584,10 @@ function changeHash2(idName) {
 };
 
 
+
+
+
+  
 
   
 {% endjavascript %}
