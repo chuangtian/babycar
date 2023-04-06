@@ -1546,27 +1546,27 @@
     $("#btnCollapse-{{ section.id }}").click(function(){
       // 切换展开收缩区域的状态
       console.log('{{ section.id }}');
-      // var htmlFont=$('.plus-html-{{sid}}').html();
-      //  console.log(htmlFont);
+      var htmlFont=$('.plus-html-{{sid}}').html();
+       console.log(htmlFont);
 
-      // if(htmlFont == 'Learn More'){
-      //     $('.plus-html-{{sid}}').html('Close');
-      //     $('#plus-icon-{{sid}}').removeClass('la-plus');
-      //     $('#plus-icon-{{sid}}').addClass('la-times');
-      //     // $('#exampleModal').toggleClass('show');
-      //     $('#exampleModal-{{sid}}').css('display','block');
-      //     changeHash2('#btnCollapse-{{sid}}');
-      //   console.log(11);
+      if(htmlFont == 'Learn More'){
+          $('.plus-html-{{sid}}').html('Close');
+          $('#plus-icon-{{sid}}').removeClass('la-plus');
+          $('#plus-icon-{{sid}}').addClass('la-times');
+          // $('#exampleModal').toggleClass('show');
+          $('#exampleModal-{{sid}}').css('display','block');
+          changeHash2('#btnCollapse-{{sid}}');
+        console.log(11);
 
-      // }else{
-      //     $('.plus-html-{{sid}}').html('Learn More');
-      //     $('#plus-icon-{{sid}}').removeClass('la-times');
-      //     $('#plus-icon-{{sid}}').addClass('la-plus');;
-      //     // $('#exampleModal').toggleClass('show');
-      //     $('#exampleModal-{{sid}}').css('display','none');
-      //     changeHash('#dv-{{sid}}');
-      //   console.log(21);
-      // }
+      }else{
+          $('.plus-html-{{sid}}').html('Learn More');
+          $('#plus-icon-{{sid}}').removeClass('la-times');
+          $('#plus-icon-{{sid}}').addClass('la-plus');;
+          // $('#exampleModal').toggleClass('show');
+          $('#exampleModal-{{sid}}').css('display','none');
+          changeHash('#dv-{{sid}}');
+        console.log(21);
+      }
     });
   
   // btnCollapse{{sid}}.addEventListener('click', () => {
