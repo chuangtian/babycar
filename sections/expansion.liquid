@@ -1553,7 +1553,7 @@
           $('#plus-icon').addClass('la-times');
           // $('#exampleModal').toggleClass('show');
           $('#exampleModal').css('display','block');
-        
+          changeHash2('#ydd2');
         console.log(11);
 
       }else{
@@ -1578,6 +1578,9 @@
   });
   function changeHash(idName) {
           document.querySelector(idName).scrollIntoView({block: "center"});
+  };
+    function changeHash2(idName) {
+          document.querySelector(idName).scrollIntoView(true);
   };
 
 {% endjavascript %}
