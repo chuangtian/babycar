@@ -245,7 +245,7 @@ endif -%}
   <div class="t4s-row">
     <div class="t4s-col-item t4s-col-12 t4s-main-area">
       <div data-product-featured='{"id":"{{product.id}}","isMainProduct":true, "sectionId":"{{se_id}}", "disableSwatch":{{isProductDefault}}, "media": {% if media_size > 1 %}true{% else %}false{% endif %},"enableHistoryState": {{enableHistoryState}}, "formID": "#product-form-{{pr_se_id}}", "removeSoldout":{{remove_soldout}}, "changeVariantByImg":{{settings.use_change_variant_by_img}}, "isNoPick":{{PR_no_pick}},"hasSoldoutUnavailable":{{ck_so_un}},"canMediaGroup":{{canMedia_group}},"isGrouped":{{isGrouped}},"hasIsotope":{{hasIsotope}},"available":{{product.available}}, "customBadge":{{arr_badge | json }}, "customBadgeHandle":{{arr_badge_handle | json }},"dateStart":{{product.created_at | date: "%s"}}, "compare_at_price":{{current_variant.compare_at_price | json}},"price":{{current_variant.price| json}}, "isPreoder":{{isPreoder}}, "showFirstMedia":{{settings.show_first_media}}, "isSticky":{{isSticky}}, "isStickyMB":{{isStickyMB}}, "stickyShow":"{{se_stts.sticky_show}}" }' class="t4s-row t4s-row__product is-zoom-type__{{se_stts.zoom_tp}}" data-t4s-zoom-main{% if main_click == 'zoom' %} data-zoom-options='{"type":"{{se_stts.zoom_tp}}", "magnify":2, "touch":false, "pr_type":"1","isZoomPR": true}'{% endif %}>
-        <div class="t4s-{{class_media}} t4s-col-12 t4s-col-item t4s-product__media-wrapper">
+        <div class="t4s-{{class_media}} t4s-col-12 t4s-col-item t4s-product__media-wrapper"  style="position: initial;">
           {%- case media_layout -%}
 
           {%- when 'no_media_size' -%}
