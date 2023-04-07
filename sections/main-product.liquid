@@ -231,7 +231,7 @@ endif -%}
 
 {%- if Block_price != blank and product.price_varies and block_price_stts.price != '0' -%}
   {%- capture style_price -%}
-  style="--price-size:{{block_price_stts.size_price_pr}}px;--price-weight:{{block_price_stts.fw_price_pr}};--price-color:{{block_price_stts.price_color}};--price-sale-color:{{block_price_stts.price_sale_color}};"
+  style="--price-size:{{block_price_stts.size_price_pr}}px;--price-weight:{{block_price_stts.fw_price_pr}};--price-color:{{block_price_stts.price_color}};--price-sale-color:{{block_price_stts.price_sale_color}};position: initial;"
   {%- endcapture -%}
   {%- capture html_price -%}
     {%- render 'product-price-single', variant: current_variant, product:product, PR_no_pick:false, type_sale:block_price_stts.type_sale, price_varies_style:'0', style_inline:style_price -%}
@@ -373,7 +373,7 @@ endif -%}
             <h1 class="t4s-product__title" style="--title-family:var(--font-family-{{bk_stts.fnt_df_pr}});--title-style:{{bk_stts.txt_tr_pr}};--title-size:{{bk_stts.size_pr}}px;--title-weight:{{bk_stts.fw_pr}};--title-line-height:{{lh_pr}};--title-spacing:{{bk_stts.ls_pr}}px;--title-color:{{bk_stts.pr_title_color}};--title-color-hover:{{bk_stts.pr_title_color}};" {{ block.shopify_attributes }}>{{product.title}}</h1>
            {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', jm_style: '', concierge_install: true, product: product %}
             {%- when 'price_review' -%}
-            <div class="t4s-product__price-review" style="--price-size:{{bk_stts.size_price_pr}}px;--price-weight:{{bk_stts.fw_price_pr}};--price-color:{{bk_stts.price_color}};--price-sale-color:{{bk_stts.price_sale_color}};">
+            <div class="t4s-product__price-review" style="--price-size:{{bk_stts.size_price_pr}}px;--price-weight:{{bk_stts.fw_price_pr}};--price-color:{{bk_stts.price_color}};--price-sale-color:{{bk_stts.price_sale_color}};position: initial;">
               {%- render 'product-price-single', variant: current_variant, product:product, PR_no_pick:PR_no_pick, type_sale:bk_stts.type_sale, price_varies_style:bk_stts.price -%}
               {%- if bk_stts.rating -%}
               {%- assign pid = product.id -%}
