@@ -2153,7 +2153,7 @@
         "template--18304757039381__f11aa2dc-d25c-4d6f-a21e-50bdc4f0c9de-1680875326f2309165-0": {
           "type": "bl_image",
           "settings": {
-            "image1": "shopify:\/\/shop_images\/MB-06_fbe9b8e8-b97c-4eb3-be5f-a676c3a944a1.jpg",
+            "image1": "shopify:\/\/shop_images\/20230407215514.png",
             "col_dk": "6",
             "col_tb": "6",
             "layout_des": "carousel",
@@ -2223,7 +2223,7 @@
         "cl_bg": "",
         "cl_bg_gradient": "",
         "mg": ",,50px,",
-        "pd": "100px,,100px,",
+        "pd": "",
         "mg_mb": ",,30px,",
         "pd_mb": "",
         "use_cus_css": false,
