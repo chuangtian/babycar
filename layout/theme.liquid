@@ -108,15 +108,17 @@ t4sp-theme t4s-wrapper__{{settings.general_layout}} rtl_{{isRTL}} swatch_color_s
         	//开始监听滚动条
         	$(window).scroll(function(){
         		var top = $(document).scrollTop();
-                console.log(top);
+              // console.log(top);
                 if(top>0){
+                  if(top<52){
+                     //$(".t4s-header__wrapper").css("top", top+"px");
+                      $(".t4s-header__wrapper").css("top", "49px");
+                  }
                   $(".t4s-header__wrapper").css("--h-bg-color", "#ffffff70");
-                  $(".t4s-header__wrapper").css("position", "fixed");
                 }else{
+                  $(".t4s-header__wrapper").css("top", top+"px");
                   $(".t4s-header__wrapper").css("--h-bg-color", "#ffffff00");
-                  $(".t4s-header__wrapper").css("position", "initial");
                 }
-              
         	})
         })
        
