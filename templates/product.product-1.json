@@ -1451,7 +1451,7 @@
         "mg_mb": ",,30px,",
         "pd_mb": "",
         "use_cus_css": true,
-        "code_cus_css": "@media (max-width: 768px){\n.t4s-container{\n width:800px;\n}\n}"
+        "code_cus_css": "@media (min-width: 768px) {.t4s-container{\n width:1000px;\n}\n}"
       }
     },
     "6d8fc448-0334-497d-a22e-2005a961bb22": {
