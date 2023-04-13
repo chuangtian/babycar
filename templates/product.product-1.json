@@ -1158,8 +1158,8 @@
         "template--18304757367061__1328cebd-cacf-42b9-b878-75cd0a9bcebb-1680070251e007955a-0": {
           "type": "bl_image",
           "settings": {
-            "col_dk": "6",
-            "col_tb": "6",
+            "col_dk": "4",
+            "col_tb": "4",
             "layout_des": "carousel",
             "post_mobile": "default",
             "image_ratio": "ratioadapt",
