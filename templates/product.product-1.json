@@ -1450,8 +1450,8 @@
         "pd": "",
         "mg_mb": ",,30px,",
         "pd_mb": "",
-        "use_cus_css": true,
-        "code_cus_css": "@media (min-width: 768px) {.t4s-container{\n width:1000px;\n}\n}"
+        "use_cus_css": false,
+        "code_cus_css": ""
       }
     },
     "6d8fc448-0334-497d-a22e-2005a961bb22": {
